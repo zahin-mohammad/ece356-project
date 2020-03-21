@@ -52,8 +52,8 @@ CREATE TABLE Comment (
     FOREIGN KEY (post_id) REFERENCES Post(id)
 );
 
-DROP TABLE IF EXISTS Reaction;
-CREATE TABLE Reaction (
+DROP TABLE IF EXISTS Emoji;
+CREATE TABLE Emoji (
     emoji VARCHAR(255) NOT NULL,
     PRIMARY KEY (emoji)
 );
