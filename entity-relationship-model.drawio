@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-03-21T21:16:33.852Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" etag="_5jEzI9agiiXRnU4aL6U" version="12.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-03-21T21:20:23.763Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" etag="zVFH4C6M6F-qXP5WVcaQ" version="12.8.8" type="github">
   <diagram id="-OBd6vNJXbK18NpUTdxf" name="Page-1">
-    <mxGraphModel dx="1693" dy="1892" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1547" dy="1754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="hPBj0JyTopRc1FPNhInp-1" value="User" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="160" height="182" as="geometry" />
+          <mxGeometry x="40" y="40" width="160" height="208" as="geometry" />
         </mxCell>
         <mxCell id="hPBj0JyTopRc1FPNhInp-2" value="ID" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontStyle=4" vertex="1" parent="hPBj0JyTopRc1FPNhInp-1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
@@ -24,6 +24,9 @@
         </mxCell>
         <mxCell id="hPBj0JyTopRc1FPNhInp-4" value="email" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="hPBj0JyTopRc1FPNhInp-1">
           <mxGeometry y="156" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="hPBj0JyTopRc1FPNhInp-114" value="last_login_time" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="hPBj0JyTopRc1FPNhInp-1">
+          <mxGeometry y="182" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="hPBj0JyTopRc1FPNhInp-5" value="Follows &lt;br&gt;Repositories" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="280" y="10" width="120" height="60" as="geometry" />
