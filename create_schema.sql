@@ -87,6 +87,6 @@ CREATE TABLE Reaction (
     username VARCHAR(255) NOT NULL,
     PRIMARY KEY (comment_id, emoji, username),
     FOREIGN KEY (comment_id) REFERENCES Comment(id),
-    FOREIGN KEY (emoji) REFERENCES Reaction(emoji),
+    FOREIGN KEY (emoji) REFERENCES Emoji(emoji),
     FOREIGN KEY (username) REFERENCES User(username)
 );
