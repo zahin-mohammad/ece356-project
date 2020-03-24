@@ -1,0 +1,5 @@
+.vscode
+scraper/key.py
+scraper/venv
+scraper/__pycache__
+
