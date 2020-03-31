@@ -5,6 +5,7 @@ import json
 from key import *
 from api.githubapi import GitHubAPI
 import time
+import traceback
 
 USER = "zahin-mohammad"
 TOKEN = GITHUB_PERSONAL_ACCESS_TOKEN
@@ -14,6 +15,8 @@ GITHUB_BASE_URL = "https://api.github.com"
 GET_USER = "/users/%s"
 GET_REPOS = "/users/%s/repos"
 GET_REPO = "/repos/%s"
+GET_ISSUES = "/repos/%s/issues"
+GET_COMMENTS = "/repos/%s/issues/%s/comments"  # rep, issue number
 GET_FOLLOWING = "/users/%s/following"
 
 # TODO: Make this a set so that we avoid duplicate requests
@@ -97,21 +100,77 @@ for user, following in userToFollowing.items():
 # Get Info needed for Repository Entity
 
 repoInfo = {}
+issueInfo = {}
+commentInfo = {}
+
+
+def getIssueComments(issueID, repo):
+    URL = GITHUB_BASE_URL + (GET_COMMENTS % (repo, issueID))
+    response = gitHubAPI.makeRequest("get", URL, auth=(USER, TOKEN))
+    try:
+        for comment in response.json():
+            id = comment["id"]
+            commentInfo[id] = {}
+
+            commentInfo[id]["id"] = id
+            commentInfo[id]["post_id"] = issueID
+            commentInfo[id]["username"] = comment["user"]["login"]
+            commentInfo[id]["body"] = comment["body"]
+            commentInfo[id]["created_at"] = comment["created_at"]
+            commentInfo[id]["updated_at"] = comment["updated_at"]
+
+    except:
+        print(json.dumps(response.json(), indent=2))
+        traceback.print_exc()
+
+
+def getIssues(repo):
+    URL = GITHUB_BASE_URL + (GET_ISSUES % (repo))
+    response = gitHubAPI.makeRequest("get", URL, auth=(USER, TOKEN))
+
+    try:
+        for issue in response.json():
+            id = issue["id"]
+            issueInfo[id] = {}
+            issueInfo[id]["id"] = issue["id"]
+            issueInfo[id]["title"] = issue["title"]
+            # TODO: These users should get added to the database as well?
+            issueInfo[id]["username"] = issue["user"]["login"]
+            # TODO: Potential id conflict? But who cares
+            # Adding the issue body as a first comment
+            commentInfo[id] = {}
+            commentInfo[id]["id"] = id
+            commentInfo[id]["post_id"] = id
+            commentInfo[id]["username"] = issue["user"]["login"]
+            commentInfo[id]["body"] = issue["body"]
+            commentInfo[id]["created_at"] = issue["created_at"]
+            commentInfo[id]["updated_at"] = issue["updated_at"]
+            if issue["comments"] > 0:
+                print(issue["comments"])
+                getIssueComments(id, repo)
+    except:
+        print(json.dumps(response.json(), indent=2))
+        traceback.print_exc()
 
 
 def getRepoInfo(repo):
     URL = GITHUB_BASE_URL + (GET_REPO % (repo))
     response = gitHubAPI.makeRequest("get", URL, auth=(USER, TOKEN))
 
-    repoInfo[user] = {}
+    repoInfo[repo] = {}
     try:
-        repoInfo[user]["id"] = response.json()["id"]
-        repoInfo[user]["name"] = repo
-        repoInfo[user]["description"] = response.json()["description"]
-        repoInfo[user]["created_at"] = response.json()["created_at"]
-        repoInfo[user]["updated_at"] = response.json()["updated_at"]
+        repoInfo[repo]["id"] = response.json()["id"]
+        repoInfo[repo]["name"] = repo
+        repoInfo[repo]["description"] = response.json()["description"]
+        repoInfo[repo]["created_at"] = response.json()["created_at"]
+        repoInfo[repo]["updated_at"] = response.json()["updated_at"]
+        if response.json()["has_issues"]:
+            getIssues(repo)
+        else:
+            print(response.json()["has_issues"])
     except:
         print(json.dumps(response.json(), indent=2))
+        traceback.print_exc()
 
 
 for user, repos in userToRepos.items():
@@ -131,6 +190,12 @@ def createJSONFiles():
 
     with open('repoInfo.json', 'w') as fp:
         json.dump(repoInfo, fp)
+
+    with open('issueInfo.json', 'w') as fp:
+        json.dump(issueInfo, fp)
+
+    with open('commentInfo.json', 'w') as fp:
+        json.dump(commentInfo, fp)
 
 
 createJSONFiles()
