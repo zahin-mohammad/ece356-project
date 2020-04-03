@@ -12,6 +12,7 @@ CREATE TABLE User (
     avatar_url VARCHAR(255) NOT NULL,
     email VARCHAR(255),
     last_login_time TIMESTAMP NOT NULL,
+    password VARCHAR(255) NOT NULL,
     PRIMARY KEY (username)
 );
 
@@ -89,4 +90,13 @@ CREATE TABLE Reaction (
     FOREIGN KEY (comment_id) REFERENCES Comment(id),
     FOREIGN KEY (emoji) REFERENCES Emoji(emoji),
     FOREIGN KEY (username) REFERENCES User(username)
+);
+
+DROP TABLE IF EXISTS Reply;
+CREATE TABLE Reply (
+    comment_id VARCHAR(255) NOT NULL,
+    reply_id VARCHAR(255) NOT NULL,
+    PRIMARY KEY(comment_id, reply_id),
+    FOREIGN KEY (comment_id) REFERENCES Comment(id),
+    FOREIGN KEY (reply_id) REFERENCES Comment(id)
 );
