@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
     port: '3306',
     user: 'express',
     password: 'password',
-    database: 'social_network'
+    database: 'github'
 })
 
 connection.connect()
