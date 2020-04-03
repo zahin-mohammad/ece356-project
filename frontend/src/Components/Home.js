@@ -1,13 +1,14 @@
 import React from "react"
 import { Link, Route, useRouteMatch, Switch } from "react-router-dom"
+import Feed from "./Feed"
+import People from "./People"
+import Repos from "./Repos"
 
 export default function Home() {
-    // TODO: https://reacttraining.com/react-router/web/example/nesting
     let { path, url } = useRouteMatch()
 
     return (
         <div>
-            <h1>Home</h1>
             <ul>
                 <li>
                     <Link to={`${url}`}>Feed</Link>
@@ -22,15 +23,17 @@ export default function Home() {
 
             <Switch>
                 <Route exact path={path}>
-                    <h3>Feed</h3>
+                    <Feed />
                 </Route>
                 <Route path={`${path}people`}>
-                    <h3>People</h3>
+                    <People />
                 </Route>
                 <Route path={`${path}repos`}>
-                    <h3>Repos</h3>
+                    <Repos />
                 </Route>
             </Switch>
         </div>
     )
 }
+
+// Reference: https://reacttraining.com/react-router/web/example/nesting
