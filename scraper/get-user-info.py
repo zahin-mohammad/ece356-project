@@ -86,7 +86,10 @@ def getUserInfo(user):
     userInfo[user]["username"] = user
     userInfo[user]["name"] = response.json()["name"]
     userInfo[user]["avatar_url"] = response.json()["avatar_url"]
-    userInfo[user]["email"] = response.json()["email"]
+    if "email" not in response.json() or response.json()["email"] is None:
+        userInfo[user]["email"] = user+"@example.com"
+    else:
+        userInfo[user]["email"] = response.json()["email"]
     userInfo[user]["last_login_time"] = int(time.time())
 
 
@@ -288,14 +291,14 @@ def createJSONFiles():
 def createCSVFiles():
     print(len(userInfo))
     with open('userInfo.csv', 'w') as fp:
-        fp.write("username,name,avatar_url,email,last_login_time")
+        fp.write("username,name,avatar_url,email,last_login_time\n")
         for user in userInfo.values():
             fp.write("%s,%s,%s,%s,%s\n" % (user["username"], user["name"], user["avatar_url"],
                                            user["email"], user["last_login_time"]))
 
     print(len(repoInfo))
     with open('repoInfo.csv', 'w') as fp:
-        fp.write("id,name,description,created_at,updated_at")
+        fp.write("id,name,description,created_at,updated_at\n")
         for repo in repoInfo.values():
             try:
                 fp.write("%s,%s,%s,%s,%s\n" % (repo["id"], repo["name"], repo["description"],
@@ -306,21 +309,21 @@ def createCSVFiles():
 
     print(len(issueInfo))
     with open('issueInfo.csv', 'w') as fp:
-        fp.write("id,title,username")
+        fp.write("id,title,username\n")
         for issue in issueInfo.values():
             fp.write("%s,%s,%s\n" %
                      (issue["id"], issue["title"], issue["username"]))
 
     print(len(commentInfo))
     with open('commentInfo.csv', 'w') as fp:
-        fp.write("id,post_id,username,body,created_at,updated_at")
+        fp.write("id,post_id,username,body,created_at,updated_at\n")
         for comment in commentInfo.values():
             fp.write("%s,%s,%s,%s,%s,%s" % (
                 comment["id"], comment["post_id"], comment["username"], comment["body"], comment["created_at"], comment["updated_at"]))
 
     print(len(reactionInfo))
     with open('reactionInfo.csv', 'w') as fp:
-        fp.write("post_id,username,emoji,created_at")
+        fp.write("post_id,username,emoji,created_at\n")
 
         for reaction in reactionInfo:
             fp.write("%s,%s,%s,%s" % (
@@ -328,7 +331,7 @@ def createCSVFiles():
 
     print(len(userToFollowing))
     with open('userToFollowing.csv', 'w') as fp:
-        fp.write("follower,followee")
+        fp.write("follower,followee\n")
 
         for follower, followingList in userToFollowing.items():
             for followee in followingList:
@@ -336,7 +339,7 @@ def createCSVFiles():
 
     print(len(userToRepos))
     with open('userToRepos.csv', 'w') as fp:
-        fp.write("user,repo")
+        fp.write("user,repo\n")
 
         for user, repoList in userToRepos.items():
             for repo in repoList:
@@ -345,5 +348,7 @@ def createCSVFiles():
 
 createJSONFiles()
 createCSVFiles()
+print('\007')
+
 
 # TODO: convert all timestamps to UNIX time
