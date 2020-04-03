@@ -15,16 +15,16 @@ export default function App() {
     <Router>
       <div>
         <nav>
-          <NavLink exact to = "/" style = {navStyle}> Home </NavLink>
-          <NavLink exact to = "/signOut" style = {navStyle}> Sign Out </NavLink>
+          <NavLink to = "/" style = {navStyle}> Home </NavLink>
+          <NavLink to = "/signOut" style = {navStyle}> Sign Out </NavLink>
         </nav>
 
         <Switch>
+          <Route exact path = "/">
+            <Home />
+          </Route>
           <Route path = "/signOut">
             <SignOut />
-          </Route>
-          <Route path = "/">
-            <Home />
           </Route>
         </Switch>
       </div>
