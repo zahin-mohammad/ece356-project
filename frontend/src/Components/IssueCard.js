@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button'
 
 export default function IssueCard(props) {
     // TODO: Get user who posted profile photo to display
+    // TODO: Notification for new issue
     return (
         <Card style={{ width: '25rem', marginTop: '1rem', marginLeft: '1rem' }}>
             <Card.Body>
