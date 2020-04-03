@@ -7,10 +7,11 @@ from api.githubapi import GitHubAPI
 import time
 import traceback
 
-USER = "zahin-mohammad"
+
 TOKEN = GITHUB_PERSONAL_ACCESS_TOKEN
 
-
+REACTION_HEADER = {
+    'Accept': 'application/vnd.github.squirrel-girl-preview+json'}
 GITHUB_BASE_URL = "https://api.github.com"
 GET_USER = "/users/%s"
 GET_REPOS = "/users/%s/repos"
@@ -18,6 +19,9 @@ GET_REPO = "/repos/%s"
 GET_ISSUES = "/repos/%s/issues"
 GET_COMMENTS = "/repos/%s/issues/%s/comments"  # rep, issue number
 GET_FOLLOWING = "/users/%s/following"
+GET_ISSUE_COMMENT_REACTION = "/repos/%s/issues/comments/%s/reactions"  # repo, comment ID
+GET_ISSUE_REACTION = "/repos/%s/issues/%s/reactions"  # repo, issue number
+GET_CONTRIBUTORS = "/repos/%s/contributors"  # repo
 
 # TODO: Make this a set so that we avoid duplicate requests
 users = []
@@ -46,12 +50,12 @@ for user in users:
     # Get all the repos of this user
     URL = GITHUB_BASE_URL + (GET_REPOS % (user))
     response = gitHubAPI.makeRequest("get", URL, auth=(USER, TOKEN))
-    # print(json.dumps(response.json(), indent=2))
     try:
         repos = [repo["full_name"] for repo in response.json()]
         userToRepos[user] = repos
     except:
         print(URL)
+        traceback.print_exc()
 ##########################################################################################################
 # Get tier 2 user data (the people followed by users in users.txt)
 
@@ -62,12 +66,12 @@ for user, following in userToFollowing.items():
             continue
         URL = GITHUB_BASE_URL + (GET_REPOS % (user))
         response = gitHubAPI.makeRequest("get", URL, auth=(USER, TOKEN))
-        # print(json.dumps(response.json(), indent=2))
         try:
             repos = [repo["full_name"] for repo in response.json()]
             userToRepos[user] = repos
         except:
             print(URL)
+            traceback.print_exc()
 
 
 ##########################################################################################################
@@ -97,15 +101,91 @@ for user, following in userToFollowing.items():
         getUserInfo(followingUser)
 
 ##########################################################################################################
+# Add repo's for thing's you've contributed to
+tempMap = {}
+contributorToRepo = {}
+for repos in userToRepos.values():
+    for repo in repos:
+        if repo in tempMap:
+            continue
+        URL = GITHUB_BASE_URL + (GET_CONTRIBUTORS % (repo))
+        response = gitHubAPI.makeRequest("get", URL, auth=(USER, TOKEN))
+
+        try:
+            if response.status_code == 200:
+
+                for contributor in response.json():
+                    # try:
+                    # if "login" not in contributor:
+                    #     print(response.json())
+                    #     break
+                    contributorUsername = contributor["login"]
+                    if contributorUsername not in userToRepos:
+                        continue
+                    if contributorUsername not in contributorToRepo:
+                        contributorToRepo[contributorUsername] = []
+                    contributorToRepo[contributorUsername].append(repo)
+                    # except:
+                    #     print(json.dumps(contributor, indent=2))
+                    #     traceback.print_exc()
+
+        except:
+            print(response)
+            print(json.dumps(response.json(), indent=2))
+            traceback.print_exc()
+
+for contributor, repos in contributorToRepo.items():
+    userToRepos[contributor].extend(repos)
+print("Hello")
+
+
+##########################################################################################################
 # Get Info needed for Repository Entity
 
 repoInfo = {}
 issueInfo = {}
 commentInfo = {}
+reactionInfo = []
 
 
-def getIssueComments(issueID, repo):
-    URL = GITHUB_BASE_URL + (GET_COMMENTS % (repo, issueID))
+def getIssueReaction(repo, issueNumber, issueID):
+    URL = GITHUB_BASE_URL + (GET_ISSUE_REACTION % (repo, issueNumber))
+    response = gitHubAPI.makeRequest(
+        "get", URL, headers=REACTION_HEADER, auth=(USER, TOKEN))
+    try:
+        for reaction in response.json():
+
+            reactionInfo.append({
+                "post_id": issueID,
+                "username": reaction["user"]["login"],
+                "emoji": reaction["content"],
+                "created_at": reaction["created_at"]
+            })
+    except:
+        print(json.dumps(response.json(), indent=2))
+        traceback.print_exc()
+
+
+def getIssueCommentReaction(repo, commentID):
+    URL = GITHUB_BASE_URL + (GET_ISSUE_COMMENT_REACTION % (repo, commentID))
+    response = gitHubAPI.makeRequest(
+        "get", URL, headers=REACTION_HEADER, auth=(USER, TOKEN))
+    try:
+        for reaction in response.json():
+
+            reactionInfo.append({
+                "post_id": commentID,
+                "username": reaction["user"]["login"],
+                "emoji": reaction["content"],
+                "created_at": reaction["created_at"]
+            })
+    except:
+        print(json.dumps(response.json(), indent=2))
+        traceback.print_exc()
+
+
+def getIssueComments(issueID, issueNumber, repo):
+    URL = GITHUB_BASE_URL + (GET_COMMENTS % (repo, issueNumber))
     response = gitHubAPI.makeRequest("get", URL, auth=(USER, TOKEN))
     try:
         for comment in response.json():
@@ -118,6 +198,7 @@ def getIssueComments(issueID, repo):
             commentInfo[id]["body"] = comment["body"]
             commentInfo[id]["created_at"] = comment["created_at"]
             commentInfo[id]["updated_at"] = comment["updated_at"]
+            getIssueCommentReaction(repo, id)
 
     except:
         print(json.dumps(response.json(), indent=2))
@@ -134,9 +215,10 @@ def getIssues(repo):
             issueInfo[id] = {}
             issueInfo[id]["id"] = issue["id"]
             issueInfo[id]["title"] = issue["title"]
-            # TODO: These users should get added to the database as well?
             issueInfo[id]["username"] = issue["user"]["login"]
-            # TODO: Potential id conflict? But who cares
+            getUserInfo(issue["user"]["login"])
+            issueNumber = issue["number"]
+
             # Adding the issue body as a first comment
             commentInfo[id] = {}
             commentInfo[id]["id"] = id
@@ -145,9 +227,10 @@ def getIssues(repo):
             commentInfo[id]["body"] = issue["body"]
             commentInfo[id]["created_at"] = issue["created_at"]
             commentInfo[id]["updated_at"] = issue["updated_at"]
+            getIssueReaction(repo, issueNumber, id)
+
             if issue["comments"] > 0:
-                print(issue["comments"])
-                getIssueComments(id, repo)
+                getIssueComments(id, issueNumber, repo)
     except:
         print(json.dumps(response.json(), indent=2))
         traceback.print_exc()
@@ -166,14 +249,16 @@ def getRepoInfo(repo):
         repoInfo[repo]["updated_at"] = response.json()["updated_at"]
         if response.json()["has_issues"]:
             getIssues(repo)
-        else:
-            print(response.json()["has_issues"])
     except:
         print(json.dumps(response.json(), indent=2))
         traceback.print_exc()
 
 
-for user, repos in userToRepos.items():
+# remove dupes
+for user in userToRepos.keys():
+    userToRepos[user] = list(set(userToRepos[user]))
+
+for repos in userToRepos.values():
     for repo in repos:
         getRepoInfo(repo)
 
@@ -197,10 +282,58 @@ def createJSONFiles():
     with open('commentInfo.json', 'w') as fp:
         json.dump(commentInfo, fp)
 
+    with open('reactionInfo.json', 'w') as fp:
+        json.dump(reactionInfo, fp)
+
+
+def createCSVFiles():
+    with open('userInfo.csv', 'w') as fp:
+        fp.write("username,name,avatar_url,email,last_login_time")
+        for user in userInfo.values():
+            fp.write("%s,%s,%s,%s,%s\n" % (user["username"], user["name"], user["avatar_url"],
+                                           user["email"], user["last_login_time"]))
+
+    with open('repoInfo.csv', 'w') as fp:
+        fp.write("id,name,description,created_at,updated_at")
+        for repo in repoInfo.values():
+            fp.write("%s,%s,%s,%s,%s\n" % (repo["id"], repo["name"], repo["description"],
+                                           repo["created_at"], repo["updated_at"]))
+
+    with open('issueInfo.csv', 'w') as fp:
+        fp.write("id,title,username")
+        for issue in issueInfo.values():
+            fp.write("%s,%s,%s\n" %
+                     (issue["id"], issue["title"], issue["username"]))
+
+    with open('commentInfo.csv', 'w') as fp:
+        fp.write("id,post_id,username,body,created_at,updated_at")
+        for comment in commentInfo.values():
+            fp.write("%s,%s,%s,%s,%s,%s" % (
+                comment["id"], comment["post_id"], comment["username"], comment["body"], comment["created_at"], comment["updated_at"]))
+
+    with open('reactionInfo.csv', 'w') as fp:
+        fp.write("post_id,username,emoji,created_at")
+
+        for reaction in reactionInfo:
+            fp.write("%s,%s,%s,%s" % (
+                reaction["post_id"], reaction["username"], reaction["emoji"], reaction["created_at"]))
+
+    with open('userToFollowing.csv', 'w') as fp:
+        fp.write("follower,followee")
+
+        for follower, followingList in userToFollowing.items():
+            for followee in followingList:
+                fp.write("%s,%s" % (follower, followee))
+
+    with open('userToRepos.csv', 'w') as fp:
+        fp.write("follower,followee")
+
+        for follower, followingList in userToFollowing.items():
+            for followee in followingList:
+                fp.write("%s,%s" % (follower, followee))
+
 
 createJSONFiles()
+createCSVFiles()
 
-
-# print (json.dumps(userToRepos, indent=2))
-# print (json.dumps(userToFollowing, indent=2))
-# print(json.dumps(userInfo, indent=2))
+# TODO: convert all timestamps to UNIX time
