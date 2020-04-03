@@ -20,11 +20,11 @@ export default function App() {
         </nav>
 
         <Switch>
-          <Route exact path = "/">
-            <Home />
-          </Route>
-          <Route path = "/signOut">
+          <Route exact path = "/signOut">
             <SignOut />
+          </Route>
+          <Route path = "/">
+            <Home />
           </Route>
         </Switch>
       </div>
