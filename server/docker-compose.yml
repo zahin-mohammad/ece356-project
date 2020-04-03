@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  mysql-development:
+    image: mysql:8.0.19
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: social_network
+    ports:
+      - "3308:3306"
+    volumes:
+      - my-datavolume:/var/lib/mysql
+volumes:
+  my-datavolume:
