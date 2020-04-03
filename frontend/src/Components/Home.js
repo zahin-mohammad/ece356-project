@@ -10,13 +10,13 @@ export default function Home() {
             <h1>Home</h1>
             <ul>
                 <li>
-                    <Link to = {`${url}/`}>Feed</Link>
+                    <Link to={`${url}/`}>Feed</Link>
                 </li>
                 <li>
-                    <Link to = {`${url}/people`}>People</Link>
+                    <Link to={`${url}people`}>People</Link>
                 </li>
                 <li>
-                    <Link to = {`${url}/repos`}>Repos</Link>
+                    <Link to={`${url}repos`}>Repos</Link>
                 </li>
             </ul>
 
@@ -24,7 +24,7 @@ export default function Home() {
                 <Route exact path={path}>
                     <h3>Testing</h3>
                 </Route>
-                <Route path={`${path}/people`}>
+                <Route path={`${path}people`}>
                     <h3>People</h3>
                 </Route>
             </Switch>
