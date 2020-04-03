@@ -136,7 +136,6 @@ for repos in userToRepos.values():
 
 for contributor, repos in contributorToRepo.items():
     userToRepos[contributor].extend(repos)
-print("Hello")
 
 
 ##########################################################################################################
@@ -287,30 +286,39 @@ def createJSONFiles():
 
 
 def createCSVFiles():
+    print(len(userInfo))
     with open('userInfo.csv', 'w') as fp:
         fp.write("username,name,avatar_url,email,last_login_time")
         for user in userInfo.values():
             fp.write("%s,%s,%s,%s,%s\n" % (user["username"], user["name"], user["avatar_url"],
                                            user["email"], user["last_login_time"]))
 
+    print(len(repoInfo))
     with open('repoInfo.csv', 'w') as fp:
         fp.write("id,name,description,created_at,updated_at")
         for repo in repoInfo.values():
-            fp.write("%s,%s,%s,%s,%s\n" % (repo["id"], repo["name"], repo["description"],
-                                           repo["created_at"], repo["updated_at"]))
+            try:
+                fp.write("%s,%s,%s,%s,%s\n" % (repo["id"], repo["name"], repo["description"],
+                                               repo["created_at"], repo["updated_at"]))
+            except:
+                print(json.dumps(repo, indent=2))
+                traceback.print_exc()
 
+    print(len(issueInfo))
     with open('issueInfo.csv', 'w') as fp:
         fp.write("id,title,username")
         for issue in issueInfo.values():
             fp.write("%s,%s,%s\n" %
                      (issue["id"], issue["title"], issue["username"]))
 
+    print(len(commentInfo))
     with open('commentInfo.csv', 'w') as fp:
         fp.write("id,post_id,username,body,created_at,updated_at")
         for comment in commentInfo.values():
             fp.write("%s,%s,%s,%s,%s,%s" % (
                 comment["id"], comment["post_id"], comment["username"], comment["body"], comment["created_at"], comment["updated_at"]))
 
+    print(len(reactionInfo))
     with open('reactionInfo.csv', 'w') as fp:
         fp.write("post_id,username,emoji,created_at")
 
@@ -318,6 +326,7 @@ def createCSVFiles():
             fp.write("%s,%s,%s,%s" % (
                 reaction["post_id"], reaction["username"], reaction["emoji"], reaction["created_at"]))
 
+    print(len(userToFollowing))
     with open('userToFollowing.csv', 'w') as fp:
         fp.write("follower,followee")
 
@@ -325,12 +334,13 @@ def createCSVFiles():
             for followee in followingList:
                 fp.write("%s,%s" % (follower, followee))
 
+    print(len(userToRepos))
     with open('userToRepos.csv', 'w') as fp:
-        fp.write("follower,followee")
+        fp.write("user,repo")
 
-        for follower, followingList in userToFollowing.items():
-            for followee in followingList:
-                fp.write("%s,%s" % (follower, followee))
+        for user, repoList in userToRepos.items():
+            for repo in repoList:
+                fp.write("%s,%s" % (user, repo))
 
 
 createJSONFiles()
