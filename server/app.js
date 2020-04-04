@@ -136,7 +136,7 @@ app.get('/repository', function (req, res) {
 });
 
 app.get('/following/repository', function (req, res) {
-    user_name = req.query.user_name
+    var user_name = req.query.user_name
     var query = `SELECT Repository.* FROM FollowsRepository INNER JOIN Repository ON Repository.name = FollowsRepository.repository_name WHERE FollowsRepository.follower='${user_name}'`
     connection.query(query, function (err, rows, fields) {
         if (err) throw err
@@ -146,9 +146,17 @@ app.get('/following/repository', function (req, res) {
 });
 
 // Post
-app.post('/create/issue', (req, res) => (
-    res.send("create comment")
-))
+app.post('/create/issue', function (req, res) {
+    var user_name = req.body.follower;
+    var repository_name = req.body.repository_name;
+    var issue_body = req.body.repository_name;
+    if (!issue_body) {
+        issue_body = ""
+    }
+    // TODO:
+
+    res.send("Not implemented")
+});
 
 app.post('/create/comment', (req, res) => (
     res.send("create comment")
