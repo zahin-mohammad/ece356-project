@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import RepoCard from "./RepoCard"
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
+import Button from 'react-bootstrap/Button'
 
 
 export default function Repos() {
@@ -36,6 +37,10 @@ export default function Repos() {
                     aria-label="search"
                     aria-describedby="basic-addon1"
                 />
+                <Button 
+                    variant="outline-dark" 
+                    style={{ marginLeft: "1rem" }}
+                >+</Button>
             </InputGroup>
 
         {reposToDisplay}

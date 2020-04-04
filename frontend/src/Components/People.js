@@ -3,23 +3,29 @@ import UserCard from "./UserCard"
 import CardColumns from 'react-bootstrap/CardColumns'
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
-
+import Button from "react-bootstrap/Button"
 
 
 export default function People() {
     const [search, setSearch] = useState("")
     const [users, setUsers] = useState([])
+    const [addNew, setAddNew] = useState(false)
 
     useEffect(() => {
         // TODO: Fetch from server here
 
-        setUsers([
-            {"username": "zahin-mohammad", "name": "Zahin Mohammad", "avatar_url": "https://avatars1.githubusercontent.com/u/24881706?v=4", "email": "zahin.dev@gmail.com", "last_login_time": 1585950315}, 
-            {"username": "JakeWharton", "name": "Jake Wharton", "avatar_url": "https://avatars0.githubusercontent.com/u/66577?v=4", "email": "j@ke.fyi", "last_login_time": 1585950006},
-            {"username": "brian-norman", "name": "Brian Norman", "avatar_url": "https://avatars0.githubusercontent.com/u/9154202?v=4", "email": "briankn8@gmail.com", "last_login_time": 1585952466},
-            {"username": "atulbipin", "name": "Atul Bipin", "avatar_url": "https://avatars2.githubusercontent.com/u/19649216?v=4", "email": "atulbipin@gmail.com", "last_login_time": 1585952112}
-        ])
-    }, []) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
+        if (addNew) {
+            setUsers([
+                {"username": "zahin-mohammad", "name": "Zahin Mohammad", "avatar_url": "https://avatars1.githubusercontent.com/u/24881706?v=4", "email": "zahin.dev@gmail.com", "last_login_time": 1585950315}, 
+                {"username": "JakeWharton", "name": "Jake Wharton", "avatar_url": "https://avatars0.githubusercontent.com/u/66577?v=4", "email": "j@ke.fyi", "last_login_time": 1585950006}
+            ])
+        } else {
+            setUsers([
+                {"username": "brian-norman", "name": "Brian Norman", "avatar_url": "https://avatars0.githubusercontent.com/u/9154202?v=4", "email": "briankn8@gmail.com", "last_login_time": 1585952466},
+                {"username": "atulbipin", "name": "Atul Bipin", "avatar_url": "https://avatars2.githubusercontent.com/u/19649216?v=4", "email": "atulbipin@gmail.com", "last_login_time": 1585952112}
+            ])
+        }
+    }, [addNew]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
     const usersToDisplay = users
@@ -38,7 +44,13 @@ export default function People() {
                     aria-label="search"
                     aria-describedby="basic-addon1"
                 />
+                <Button 
+                    variant="outline-dark" 
+                    style={{ marginLeft: "1rem" }}
+                    onClick={(event) => setAddNew(!addNew)}
+                >{addNew ? "x" : "+"}</Button>
             </InputGroup>
+            
 
             <CardColumns>
                 {usersToDisplay}

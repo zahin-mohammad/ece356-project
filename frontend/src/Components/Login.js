@@ -31,16 +31,15 @@ export default function Login() {
             isSubmitting: true,
             errorMessage: null
         })
-        fetch("https://jsonplaceholder.typicode.com/todos/1", {
-            // method: "post"
-            method: "get",
+        fetch("http://localhost:3001/login", {
+            method: "post",
             headers: {
                 "Content-Type": "application/json"
             },
-            // body: JSON.stringify({
-            //     username: data.username,
-            //     password: data.password
-            // })
+            body: JSON.stringify({
+                user: data.username,
+                password: data.password
+            })
         })
         .then(res => {
             if (res.ok) {
@@ -52,7 +51,6 @@ export default function Login() {
         .then(resJson => {
             dispatch({
                 type: "LOGIN",
-                // payload: resJson,
                 payload: {
                     username: data.username
                 }
