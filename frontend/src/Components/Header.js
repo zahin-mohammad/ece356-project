@@ -19,7 +19,7 @@ export default function Header() {
                             type: "LOGOUT"
                         })
                     }
-                > {"Hi " + state.username + " (LOGOUT)"}
+                > Sign Out
                 </Button> : null }
         </Navbar>
     )
