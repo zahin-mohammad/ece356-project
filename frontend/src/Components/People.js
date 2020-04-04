@@ -12,26 +12,42 @@ export default function People() {
     const [addNew, setAddNew] = useState(false)
 
     useEffect(() => {
-        fetch("http://localhost:3001/following/user?user_name=atulbipin", {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-        .then(res => {
-            if (res.ok) {
-                return res.json()
-            } else {
-                throw res
-            }
-        })
-        .then(resJson => {
-            if (!addNew) {
+        if (!addNew) {
+            fetch("http://localhost:3001/following/user?user_name=atulbipin", { // People they're following
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(res => {
+                if (res.ok) {
+                    return res.json()
+                } else {
+                    throw res
+                }
+            })
+            .then(resJson => {
                 setUsers(resJson)
-            } else {
-                setUsers([])
-            }
-        })
+            })
+        } else {
+            fetch("http://localhost:3001/users?user_name=atulbipin", { // People they're not following
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(res => {
+                if (res.ok) {
+                    return res.json()
+                } else {
+                    throw res
+                }
+            })
+            .then(resJson => {
+                setUsers(resJson)
+            })
+        }
+        
     }, [addNew]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
