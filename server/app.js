@@ -171,6 +171,28 @@ app.get('/following/repository', function (req, res) {
 });
 
 // Post
+
+app.post('/create/issue', function (req, res) {
+
+    var user_name = req.body.follower;
+    var repository_name = req.body.repository_name;
+    var description = req.body.description;
+    var created_at = Date.now()
+    var updated_at = Date.now()
+
+    query = `
+    INSERT INTO Repository (name, description, username, created_at, updated_at)
+    VALUES('${repository_name}', '${description}', '${user_name}', ${created_at}, ${updated_at})
+    `
+
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(`${user_name} created ${repository_name}`)
+    })
+
+});
+
 app.post('/create/issue', function (req, res) {
     var user_name = req.body.follower;
     var repository_name = req.body.repository_name;
