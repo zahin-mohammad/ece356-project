@@ -21,7 +21,7 @@ export default function People() {
     // TODO: Should probably actually do filtering with SQL...
     const usersToDisplay = users
                             .filter(user => user.name.toLowerCase().includes(search.toLowerCase()))
-                            .map(user => <UserCard name={user.name} avatar_url={user.avatar_url} email={user.email}/>)
+                            .map(user => <UserCard key={user.username} name={user.name} avatar_url={user.avatar_url} email={user.email}/>)
 
     return (
         <div>

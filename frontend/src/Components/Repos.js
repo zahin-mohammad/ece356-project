@@ -19,7 +19,7 @@ export default function Repos() {
     // TODO: Should probably actually do filtering with SQL...
     const reposToDisplay = repos
                             .filter(repo => repo.name.toLowerCase().includes(search.toLowerCase()))
-                            .map(repo => <RepoCard name={repo.name} description={repo.description} />)
+                            .map(repo => <RepoCard key={repo.id} name={repo.name} description={repo.description} />)
 
     return (
         <div>
