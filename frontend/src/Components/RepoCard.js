@@ -8,7 +8,7 @@ export default function RepoCard(props) {
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>
                 <Card.Text>{props.description}</Card.Text>
-                <Button variant="outline-primary" style={{position: "absolute", right: "0.5rem", bottom: "0.5rem"}}>Unfollow</Button>
+                <Button variant="outline-primary" style={{position: "absolute", right: "0.5rem", bottom: "0.5rem"}}>{props.following ? "Unfollow" : "Follow"}</Button>
             </Card.Body>
         </Card>
     )
