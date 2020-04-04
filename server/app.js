@@ -59,14 +59,27 @@ app.get('/comments/reactions', (req, res) => (
     res.send("reactions")
 ))
 
-app.get('/users', (req, res) => (
-    res.send("users")
-))
-
-app.get('/following/user', function (req, res) {
+app.get('/users', function (req, res) {
     user_name = req.query.user_name
 
-    connection.query(`SELECT * from FollowsUser where follower='${user_name}'`, function (err, rows, fields) {
+    if (user_name) {
+
+    } else {
+        connection.query(
+            `SELECT user_name, name, avatar_url, email, last_login_time FROM User'`, function (err, rows, fields) {
+                if (err) throw err
+                res.status(200)
+                res.send(rows)
+            })
+    }
+
+})
+
+app.get('/following/user', function (req, res) {
+    var user_name = req.query.user_name
+    var query = `SELECT User.* FROM FollowsUser INNER JOIN User ON FollowsUser.followee = User.username WHERE FollowsUser.follower = '${user_name}'`
+
+    connection.query(query, function (err, rows, fields) {
         if (err) throw err
         res.status(200)
         res.send(rows)
