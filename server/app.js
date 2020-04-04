@@ -107,6 +107,8 @@ app.delete('/unfollow/repo', (req, res) => (
 
 app.post('/login', function (req, res) {
 
+
+    console.log(req.body)
     const user_name = req.body.user;
     const password = req.body.password;
 
