@@ -18,25 +18,24 @@ CREATE TABLE User (
 
 DROP TABLE IF EXISTS Repository;
 CREATE TABLE Repository (
-    id VARCHAR(255) NOT NULL,
     name VARCHAR(255) NOT NULL,
     description TEXT,
     username VARCHAR(255) NOT NULL,
     created_at INT NOT NULL,
     updated_at INT NOT NULL,
-    PRIMARY KEY (id),
+    PRIMARY KEY (name),
     FOREIGN KEY (username) REFERENCES User(username)
 );
 
 DROP TABLE IF EXISTS Post;
 CREATE TABLE Post (
     id VARCHAR(255) NOT NULL,
-    repository_id VARCHAR(255) NOT NULL,
+    repository_name VARCHAR(255) NOT NULL,
     title VARCHAR(255) NOT NULL,
     username VARCHAR(255) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (username) REFERENCES User(username),
-    FOREIGN KEY (repository_id) REFERENCES Repository(id)
+    FOREIGN KEY (repository_name) REFERENCES Repository(name)
 );
 
 DROP TABLE IF EXISTS Comment;
@@ -74,10 +73,10 @@ CREATE TABLE FollowsUser (
 DROP TABLE IF EXISTS FollowsRepository;
 CREATE TABLE FollowsRepository (
     follower VARCHAR(255) NOT NULL,
-    repository_id VARCHAR(255) NOT NULL,
-    PRIMARY KEY (follower, repository_id),
+    repository_name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (follower, repository_name),
     FOREIGN KEY (follower) REFERENCES User(username),
-    FOREIGN KEY (repository_id) REFERENCES Repository(id)
+    FOREIGN KEY (repository_name) REFERENCES Repository(name)
 );
 
 DROP TABLE IF EXISTS Reaction;

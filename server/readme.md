@@ -24,6 +24,9 @@
 - port: 3306
 - with mycli run `mycli -u root  --password password --port 3308 --host localhost`
 
+## Exporting Database
+- in bash run `export_data.sh`
+
 ## Database script
 - run `init-db.sql` to create an empty github database and create the `express` user for the express server
 
