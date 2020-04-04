@@ -1,19 +1,4 @@
 id;post_id;username;body;created_at;updated_at
-573408419;573408419;zahin-mohammad;;1583009138;1583009138
-549249843;549249843;zahin-mohammad;If the script is run within a folder that is not at `~/` then the wrong path will be assigned from the following lines 
-```
-	echo \"\\e[45m Installing zsh\-autosuggestions \\e[0m\"
-	# Install zsh\-autosuggestions (not via oh\-my\-zsh)
-	git clone https://github\.com/zsh\-users/zsh\-autosuggestions ~/\.zsh/zsh\-autosuggestions
-	echo \"source ${(q\-)PWD}/\.zsh/zsh\-autosuggestions/zsh\-autosuggestions\.zsh\" >> ${ZDOTDIR:\-$HOME}/\.zshrc
-
-
-	echo \"\\e[45m Installing zsh\-syntax\-highlighting \\e[0m\"
-	# Install zsh\-syntax\-highlighting (not via oh\-my\-zsh)
-	git clone https://github\.com/zsh\-users/zsh\-syntax\-highlighting\.git ~/\.zsh/zsh\-syntax\-highlighting
-	echo \"source ${(q\-)PWD}/\.zsh/zsh\-syntax\-highlighting/zsh\-syntax\-highlighting\.zsh\" >> ${ZDOTDIR:\-$HOME}/\.zshrc
-```;1578959548;1578959574
-545331007;545331007;zahin-mohammad;;1578170967;1578170967
 510116274;510116274;dependabot[bot];Bumps [urllib3](https://github\.com/urllib3/urllib3) from 1\.23 to 1\.24\.2\.
 <details>
 <summary>Changelog</summary>
@@ -111,10 +96,23 @@ You can trigger Dependabot actions by commenting on this PR:
 You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github\.com/atulbipin/spotify\-slackbot/network/alerts)\.
 
 </details>;1571676788;1571676789
+573408419;573408419;zahin-mohammad;;1583009138;1583009138
+549249843;549249843;zahin-mohammad;If the script is run within a folder that is not at `~/` then the wrong path will be assigned from the following lines 
+```
+	echo \"\\e[45m Installing zsh\-autosuggestions \\e[0m\"
+	# Install zsh\-autosuggestions (not via oh\-my\-zsh)
+	git clone https://github\.com/zsh\-users/zsh\-autosuggestions ~/\.zsh/zsh\-autosuggestions
+	echo \"source ${(q\-)PWD}/\.zsh/zsh\-autosuggestions/zsh\-autosuggestions\.zsh\" >> ${ZDOTDIR:\-$HOME}/\.zshrc
+
+
+	echo \"\\e[45m Installing zsh\-syntax\-highlighting \\e[0m\"
+	# Install zsh\-syntax\-highlighting (not via oh\-my\-zsh)
+	git clone https://github\.com/zsh\-users/zsh\-syntax\-highlighting\.git ~/\.zsh/zsh\-syntax\-highlighting
+	echo \"source ${(q\-)PWD}/\.zsh/zsh\-syntax\-highlighting/zsh\-syntax\-highlighting\.zsh\" >> ${ZDOTDIR:\-$HOME}/\.zshrc
+```;1578959548;1578959574
+545331007;545331007;zahin-mohammad;;1578170967;1578170967
 464977589;464977589;zahin-mohammad;;1562522669;1562522669
 464977554;464977554;zahin-mohammad;;1562522649;1562522649
-11843860;11843860;AttwellBrian;Clean this up some time\. And follow this: Read http://opencv\.org/platforms/android/android\-best\-practices\.html before making modifications\.
-;1362861825;1362861827
 581340665;581340665;dependabot[bot];Bumps [acorn](https://github\.com/acornjs/acorn) from 5\.7\.3 to 5\.7\.4\.
 <details>
 <summary>Commits</summary>
@@ -159,6 +157,8 @@ You can trigger Dependabot actions by commenting on this PR:
 You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github\.com/AttwellBrian/nico/network/alerts)\.
 
 </details>;1584214355;1584214356
+11843860;11843860;AttwellBrian;Clean this up some time\. And follow this: Read http://opencv\.org/platforms/android/android\-best\-practices\.html before making modifications\.
+;1362861825;1362861827
 383727930;383727930;li-boxuan;Hi\, this dataset seems interesting\, but the latest update is 3 years ago\.
 
 Just wondering if there is any plan on updates\.;1542959386;1542959386
@@ -399,7 +399,13 @@ It would appear a relevant `LaTeX` command is the `\\titlespacing{\\subsection}`
 ;1426913614;1426913614
 57410171;57410171;EmmanueleSalvati;Update from original
 ;1423709272;1423709272
+355811190;355811190;brian-norman;Glen requests this visual cue that the level has indeed changes\, a good idea!
+;1535680080;1535994770
 357461207;357461207;brian-norman;Brian this would be significantly cooler if it auto\-ran on a fixed time\-period as you originally imagined\.\.\. Learn how to do that! Heroku maybe?;1536197030;1536197030
+451217561;451217561;brian-norman;;1559498415;1559498415
+356879856;356879856;brian-norman;Or any user\'s commits that week\.;1536077319;1554088072
+355453005;355453005;brian-norman;!google “anything”;1535613056;1535613570
+355452779;355452779;brian-norman;!git issues user repo add \"Issue title\" \"Issue description\";1535613006;1535613570
 585591514;585591514;brian-norman;;1584827209;1584828545
 602111660;585591514;brian-norman;lol;1584828544;1584828544
 585583679;585583679;zahin-mohammad;;1584824397;1585023151
@@ -423,12 +429,6 @@ Reply to comment 2;1585023137;1585023137
 603003605;585583679;zahin-mohammad;Multiline
 Comment
 ;1585023151;1585023151
-451217561;451217561;brian-norman;;1559498415;1559498415
-356879856;356879856;brian-norman;Or any user\'s commits that week\.;1536077319;1554088072
-355453005;355453005;brian-norman;!google “anything”;1535613056;1535613570
-355452779;355452779;brian-norman;!git issues user repo add \"Issue title\" \"Issue description\";1535613006;1535613570
-355811190;355811190;brian-norman;Glen requests this visual cue that the level has indeed changes\, a good idea!
-;1535680080;1535994770
 383953069;383953069;keenangaudio;;1543027545;1543027545
 383948347;383948347;keenangaudio;;1543022138;1543022138
 383948004;383948004;louisj381;fudge;1543021796;1543021796
@@ -1085,7 +1085,7 @@ For the time being\, i suggest you use two Brace()es\, which is tedious\, but pe
 
 If you feel like probing the problem deeper\, you can modify tex_template\.tex\, and see if you can get it to work\.
 
-All the best ;);1585400402;1585400402
+All the best \;);1585400402;1585400402
 589007446;589007446;nosnakeob;When I use:
 ```
 t = TextMobject(\'aaaaa\'\, \'\'\'a
@@ -1189,7 +1189,7 @@ It _does_ work when just writing to a file (\-w)\. However\, just for the shape 
 605678964;588606969;qo4on;What text doesn\'t work? `tex_mobject` or `text_mobject`?;1585506426;1585506426
 605719004;588606969;t-wolfeadam;> What text doesn\'t work? `tex_mobject` or `text_mobject`?
 
-Both\, unfortunately; I also tried modifying the example scenes with just using one or the other\. Both result in `OSError: No file matching \./media\\Tex\\ab47de5016aed0d4\.svg in image directory`\.
+Both\, unfortunately\; I also tried modifying the example scenes with just using one or the other\. Both result in `OSError: No file matching \./media\\Tex\\ab47de5016aed0d4\.svg in image directory`\.
 
 I dug into it and it stems from the `dvisvgm` command (called from the `dvi_to_svg` function inside `\\manimlib\\utils\\tex_file_writing\.py`) \- the command executes successfully but nothing gets outputted (no files or messages\, even with the highest level of verbosity)\. I even tried searching my entire file system for the file and still nothing\. It\'s really weird\. 
 
@@ -1330,7 +1330,7 @@ I\'ll post the console log asap\. ;1585154891;1585154891
 Building wheels for collected packages: pycairo
   Building wheel for pycairo (setup\.py) \.\.\. error
   ERROR: Command errored out with exit status 1:
-   command: /usr/bin/python3\.7 \-u \-c \'import sys\, setuptools\, tokenize; sys\.argv[0] = \'\"\'\"\'/tmp/pip\-install\-95eiqbht/pycairo/setup\.py\'\"\'\"\'; __file__=\'\"\'\"\'/tmp/pip\-install\-95eiqbht/pycairo/setup\.py\'\"\'\"\';f=getattr(tokenize\, \'\"\'\"\'open\'\"\'\"\'\, open)(__file__);code=f\.read()\.replace(\'\"\'\"\'\\r\\n\'\"\'\"\'\, \'\"\'\"\'\\n\'\"\'\"\');f\.close();exec(compile(code\, __file__\, \'\"\'\"\'exec\'\"\'\"\'))\' bdist_wheel \-d /tmp/pip\-wheel\-vgeh7_q5
+   command: /usr/bin/python3\.7 \-u \-c \'import sys\, setuptools\, tokenize\; sys\.argv[0] = \'\"\'\"\'/tmp/pip\-install\-95eiqbht/pycairo/setup\.py\'\"\'\"\'\; __file__=\'\"\'\"\'/tmp/pip\-install\-95eiqbht/pycairo/setup\.py\'\"\'\"\'\;f=getattr(tokenize\, \'\"\'\"\'open\'\"\'\"\'\, open)(__file__)\;code=f\.read()\.replace(\'\"\'\"\'\\r\\n\'\"\'\"\'\, \'\"\'\"\'\\n\'\"\'\"\')\;f\.close()\;exec(compile(code\, __file__\, \'\"\'\"\'exec\'\"\'\"\'))\' bdist_wheel \-d /tmp/pip\-wheel\-vgeh7_q5
        cwd: /tmp/pip\-install\-95eiqbht/pycairo/
   Complete output (17 lines):
   running bdist_wheel
@@ -1462,7 +1462,7 @@ The next hurdle is the MEDIA_DIR variable\. It is by default set by the constant
 It would be great if there were some default assets to replace the normal pi_creatures and a fix for the above problem\. Besides these issues I am really happy with manim ^^;1584639736;1584639752
 583833153;583833153;hanwenzhu;I worked on manim back in 2018\. I added the function for using CTeX (XeLaTeX package for Chinese) and XeLaTeX instead of LaTeX using the flag `TEX_USE_CTEX` in constants\.py (#315)\.
 
-I have stopped working on manim since 2019\, but over the months there are apparently more and more people who want to use LaTeX rendering in non\-English languages\, and even on very old issues I still occasionally see people asking how to do that\.\.\. Looking back at my change I really should have \*\*decoupled using CTeX (TeX template) from XeLaTeX (rendering tool)\*\*\. This has caused a \*lot\* of confusions and made weird hacks/fixes necessary for only using XeLaTeX\, especially for a language that is not Chinese or English\, with the most recent #858 and #840\. It really should have been a flag `TEX_USE_XELATEX` and another flag `TEMPLATE_TEX_NAME`\, and the flag `TEX_USE_CTEX` is such that when it is `True`\, `TEX_USE_XELATEX` is `True` and `TEMPLATE_TEX_NAME` is `\"ctex_template\.tex\"`; otherwise `TEX_USE_XELATEX` is `False` and `TEMPLATE_TEX_NAME` is `\"tex_template\.tex\"`\. Then set `TEMPLATE_TEX_FILE` to `os\.path\.join(os\.path\.dirname(os\.path\.realpath(__file__))\, TEMPLATE_TEX_NAME)`\. Corresponding logic: constants\.py lines 74–79\.
+I have stopped working on manim since 2019\, but over the months there are apparently more and more people who want to use LaTeX rendering in non\-English languages\, and even on very old issues I still occasionally see people asking how to do that\.\.\. Looking back at my change I really should have \*\*decoupled using CTeX (TeX template) from XeLaTeX (rendering tool)\*\*\. This has caused a \*lot\* of confusions and made weird hacks/fixes necessary for only using XeLaTeX\, especially for a language that is not Chinese or English\, with the most recent #858 and #840\. It really should have been a flag `TEX_USE_XELATEX` and another flag `TEMPLATE_TEX_NAME`\, and the flag `TEX_USE_CTEX` is such that when it is `True`\, `TEX_USE_XELATEX` is `True` and `TEMPLATE_TEX_NAME` is `\"ctex_template\.tex\"`\; otherwise `TEX_USE_XELATEX` is `False` and `TEMPLATE_TEX_NAME` is `\"tex_template\.tex\"`\. Then set `TEMPLATE_TEX_FILE` to `os\.path\.join(os\.path\.dirname(os\.path\.realpath(__file__))\, TEMPLATE_TEX_NAME)`\. Corresponding logic: constants\.py lines 74–79\.
 
 It might be even better to set it dynamically using a function or as a parameter of `TexMobject()`\, (see issues like #891)\. I looked at the source code and this is definitely possible\. The options I can think of are
 1\. Use the current `TEX_USE_CTEX`
@@ -1557,10 +1557,10 @@ Thanks again for all of your help! I really appreciate it!;1584595246;1584595246
 <?xml version=\"1\.0\" encoding=\"utf\-8\"?>
 <!\-\- Generator: Adobe Illustrator 21\.0\.2\, SVG Export Plug\-In \. SVG Version: 6\.00 Build 0)  \-\->
 <svg version=\"1\.1\" id=\"Layer_1\" xmlns=\"http://www\.w3\.org/2000/svg\" xmlns:xlink=\"http://www\.w3\.org/1999/xlink\" x=\"0px\" y=\"0px\"
-	 viewBox=\"0 0 480 480\" style=\"enable\-background:new 0 0 480 480;\" xml:space=\"preserve\">
+	 viewBox=\"0 0 480 480\" style=\"enable\-background:new 0 0 480 480\;\" xml:space=\"preserve\">
 <style type=\"text/css\">
-	\.st0{fill:#FFFFFF;}
-	\.st1{fill:#0C7F99;}
+	\.st0{fill:#FFFFFF\;}
+	\.st1{fill:#0C7F99\;}
 </style>
 <path class=\"st0\" d=\"M251\.6\,114\.7c0\,4\.2\-1\.4\,8\.2\-3\.7\,11\.3l\-30\.4\,0\.3c\-2\.6\-3\.1\-4\-7\.3\-4\-11\.6c0\-10\.5\,8\.5\-19\,19\-19
 	C243\.1\,95\.6\,251\.6\,104\.2\,251\.6\,114\.7z\"/>
@@ -1635,17 +1635,17 @@ Here is my code that I get for my PsiCreatures_happy\.svg also:
      inkscape:groupmode=\"layer\"
      id=\"layer1\">
     <path
-       style=\"fill:#05d5fa;stroke:#000000;stroke\-width:0\.965;stroke\-linecap:butt;stroke\-linejoin:miter;stroke\-opacity:1;fill\-opacity:1;stroke\-miterlimit:4;stroke\-dasharray:none\"
+       style=\"fill:#05d5fa\;stroke:#000000\;stroke\-width:0\.965\;stroke\-linecap:butt\;stroke\-linejoin:miter\;stroke\-opacity:1\;fill\-opacity:1\;stroke\-miterlimit:4\;stroke\-dasharray:none\"
        d=\"m 86\.543101\,117\.34948 \-6\.674715\,\-0\.28525 \-9\.470109\,\-1\.14097 \-6\.50357\,\-1\.48327 \-6\.560616\,\-2\.6813 \-4\.792104\,\-2\.39605 \-3\.47998\,\-2\.6813 \-3\.137686\,\-2\.62424 \-2\.90949\,\-3\.87933 L 41\.189267\,96\.925991 38\.507971\,89\.053248 37\.823386\,84\.831636 37\.1388\,77\.301187 36\.796506\,70\.113032 36\.62536\,64\.065856 36\.454212\,58\.931457 35\.65553\,53\.797062 34\.457502\,51\.115766 32\.746037\,49\.461351 31\.20572\,48\.49152 28\.296227\,47\.863982 h \-0\.627536 l 0\.02889\,\-3\.672229 2\.253062\,0\.07815 3\.765222\,0\.285244 2\.795394\,0\.627536 2\.567199\,0\.51344 3\.594077\,1\.312124 2\.738344\,1\.597367 2\.681296\,2\.4531 2\.396053\,3\.251785 2\.224905\,4\.221614 0\.855732\,1\.825565 1\.140975\,3\.93637 0\.798685\,5\.533736 0\.45639\,4\.906201 0\.228196\,4\.278664 0\.171148\,3\.47998 0\.285245\,3\.93637 0\.741635\,4\.050469 0\.741635\,3\.708175 1\.312121\,3\.651126 1\.54032\,2\.453101 1\.711465\,2\.11081 1\.93966\,1\.82556 2\.05376\,1\.48327 2\.90949\,1\.76852 2\.738345\,1\.02688 3\.137686\,1\.02687 3\.993419\,0\.68459 3\.02359\,0\.2282 3\.93637\,0\.11409 0\.114099\,\-46\.437761 \-0\.399343\,\-3\.87932 \-0\.399341\,\-3\.308834 \-1\.198026\,\-2\.567197 \-2\.167858\,\-2\.224905 \-2\.96654\,\-1\.711465 \-3\.308831\,\-0\.684586 \-3\.308835\,\-0\.399343 \-3\.87932\,\-0\.285245 \-1\.198026\,0\.114099 \-0\.05705\,\-3\.651126 55\.679681\,0\.114097 0\.17114\,3\.42293 \-2\.73834\,0\.114099 \-3\.19474\,0\.114096 \-3\.25178\,0\.570489 \-3\.19474\,1\.02688 \-2\.85244\,1\.768515 \-1\.65442\,1\.654416 \-0\.96983\,1\.825564 \-0\.68458\,2\.738345 \-0\.28525\,3\.194735 \-0\.22819\,4\.335711 \-0\.0571\,5\.248494 v 6\.560617 l 0\.0571\,32\.232605 h 3\.99342 l 3\.70817\,\-0\.3423 3\.99342\,\-0\.74163 3\.30883\,\-1\.08393 3\.53703\,\-1\.65442 2\.339\,\-1\.65441 2\.51015\,\-2\.28196 2\.4531\,\-2\.96654 1\.14098\,\-2\.167856 1\.59737\,\-4\.050469 0\.74163\,\-4\.050466 0\.57049\,\-5\.077349 0\.39934\,\-4\.96325 0\.3423\,\-6\.674715 0\.68458\,\-4\.506857 0\.62754\,\-4\.164565 1\.65442\,\-4\.96325 1\.25507\,\-2\.852444 1\.54032\,\-2\.738345 1\.99671\,\-2\.624246 3\.08064\,\-2\.4531 3\.13768\,\-1\.711465 5\.1344\,\-1\.825564 3\.47998\,\-0\.399341 4\.16457\,\-0\.342294 1\.59736\,0\.114099 \-0\.057\,3\.36588 \-2\.5672\,0\.51344 \-2\.51015\,1\.255075 \-1\.76852\,2\.053759 \-0\.79868\,1\.99671 \-0\.74164\,3\.137686 \-0\.28524\,2\.738345 \-0\.2282\,3\.194735 \-0\.057\,2\.624246 \-0\.57049\,13\.691724 \-0\.28525\,3\.651126 \-0\.62753\,2\.738345 \-0\.62754\,4\.107516 \-1\.65442\,5\.761934 \-1\.31212\,2\.795395 \-1\.71147\,2\.852441 \-2\.2249\,2\.62425 \-2\.5672\,2\.6813 \-2\.39605\,1\.76851 \-3\.25179\,2\.16786 \-3\.70817\,1\.93966 \-4\.56391\,1\.65441 \-3\.59408\,1\.08393 \-3\.82227\,0\.85573 \-5\.64783\,1\.02688 \-5\.41964\,0\.45639 \-4\.10752\,0\.39935 \-1\.82556\,\-0\.17115 \-0\.17115\,16\.14482 0\.34229\,20\.82283 0\.3423\,3\.53703 0\.51344\,3\.02359 0\.85573\,1\.59737 1\.48327\,1\.65441 1\.93966\,1\.31213 1\.71146\,0\.91278 1\.99671\,0\.62753 2\.51015\,0\.62754 3\.30884\,0\.28525 3\.99342\,0\.057 v 3\.59407 l \-55\.736731\,\-0\.11409 0\.05705\,\-3\.47998 4\.735054\,\-0\.17115 3\.936371\,\-0\.51344 3\.365881\,\-1\.08393 2\.339004\,\-1\.14098 1\.312124\,\-0\.96983 0\.96983\,\-1\.31212 0\.96983\,\-1\.48327 0\.627536\,\-2\.22491 0\.57049\,\-3\.99341 v \-4\.79211 l 0\.171145\,\-14\.88975 z\"
        id=\"path24\"
        inkscape:connector\-curvature=\"0\" />
     <path
-       style=\"fill:none;stroke:#000000;stroke\-width:0\.748;stroke\-linecap:butt;stroke\-linejoin:miter;stroke\-opacity:1;stroke\-miterlimit:4;stroke\-dasharray:none\"
+       style=\"fill:none\;stroke:#000000\;stroke\-width:0\.748\;stroke\-linecap:butt\;stroke\-linejoin:miter\;stroke\-opacity:1\;stroke\-miterlimit:4\;stroke\-dasharray:none\"
        d=\"m 100\.74351\,45\.639074 h 22\.5961 c 0\,0 \-1\.32918\,\-13\.54538 \-11\.96264\,\-14\.28422 \-10\.63346\,\-0\.73884 \-10\.63346\,14\.28422 \-10\.63346\,14\.28422 z\"
        id=\"path50\"
        inkscape:connector\-curvature=\"0\" />
     <ellipse
-       style=\"fill:#050000;fill\-opacity:1;fill\-rule:evenodd;stroke\-width:0\.145492\"
+       style=\"fill:#050000\;fill\-opacity:1\;fill\-rule:evenodd\;stroke\-width:0\.145492\"
        id=\"path52\"
        cx=\"111\.24973\"
        cy=\"39\.960098\"
@@ -1655,16 +1655,16 @@ Here is my code that I get for my PsiCreatures_happy\.svg also:
        inkscape:connector\-curvature=\"0\"
        id=\"path50\-5\"
        d=\"m 67\.636488\,45\.513256 h 22\.596103 c 0\,0 \-1\.32918\,\-13\.54538 \-11\.96264\,\-14\.28422 \-10\.633463\,\-0\.73884 \-10\.633463\,14\.28422 \-10\.633463\,14\.28422 z\"
-       style=\"fill:none;stroke:#000000;stroke\-width:0\.848;stroke\-linecap:butt;stroke\-linejoin:miter;stroke\-opacity:1;stroke\-miterlimit:4;stroke\-dasharray:none\" />
+       style=\"fill:none\;stroke:#000000\;stroke\-width:0\.848\;stroke\-linecap:butt\;stroke\-linejoin:miter\;stroke\-opacity:1\;stroke\-miterlimit:4\;stroke\-dasharray:none\" />
     <ellipse
        ry=\"2\.957778\"
        rx=\"3\.1074717\"
        cy=\"39\.477459\"
        cx=\"78\.607201\"
        id=\"path52\-8\"
-       style=\"fill:#050000;fill\-opacity:1;fill\-rule:evenodd;stroke\-width:0\.145492\" />
+       style=\"fill:#050000\;fill\-opacity:1\;fill\-rule:evenodd\;stroke\-width:0\.145492\" />
     <path
-       style=\"fill:#050000;fill\-opacity:1;stroke:#000000;stroke\-width:0\.108385px;stroke\-linecap:butt;stroke\-linejoin:miter;stroke\-opacity:1\"
+       style=\"fill:#050000\;fill\-opacity:1\;stroke:#000000\;stroke\-width:0\.108385px\;stroke\-linecap:butt\;stroke\-linejoin:miter\;stroke\-opacity:1\"
        d=\"m 75\.959759\,61\.477064 c 13\.457701\,5\.68591 26\.622331\,4\.339439 39\.675031\,0\.305194 \-4\.21382\,3\.690331 \-9\.14664\,6\.997189 \-19\.379726\,7\.477228 C 85\.414893\,68\.929287 79\.496059\,65\.864988 75\.959759\,61\.477064 Z\"
        id=\"path907\"
        inkscape:connector\-curvature=\"0\"
@@ -1676,10 +1676,10 @@ Here is my code that I get for my PsiCreatures_happy\.svg also:
 <?xml version=\"1\.0\" encoding=\"utf\-8\"?> 
 <!\-\- Generator: Adobe Illustrator 21\.0\.2\, SVG Export Plug\-In \. SVG Version: 6\.00 Build 0)  \-\->
 <svg version=\"1\.1\" id=\"Layer_1\" xmlns=\"http://www\.w3\.org/2000/svg\" xmlns:xlink=\"http://www\.w3\.org/1999/xlink\" x=\"0px\" y=\"0px\"
-	 viewBox=\"0 0 480 480\" style=\"enable\-background:new 0 0 480 480;\" xml:space=\"preserve\">
+	 viewBox=\"0 0 480 480\" style=\"enable\-background:new 0 0 480 480\;\" xml:space=\"preserve\">
 <style type=\"text/css\">
-	\.st0{fill:#FFFFFF;}
-	\.st1{fill:#0C7F99;}
+	\.st0{fill:#FFFFFF\;}
+	\.st1{fill:#0C7F99\;}
 </style>
 <path class=\"st0\" d=\"M251\.6\,114\.7c0\,4\.2\-1\.4\,8\.2\-3\.7\,11\.3l\-30\.4\,0\.3c\-2\.6\-3\.1\-4\-7\.3\-4\-11\.6c0\-10\.5\,8\.5\-19\,19\-19
 	C243\.1\,95\.6\,251\.6\,104\.2\,251\.6\,114\.7z\"/>

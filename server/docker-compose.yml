@@ -6,9 +6,9 @@ services:
     image: mysql:8.0.19
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: social_network
+      MYSQL_DATABASE: github
     ports:
-      - "3306:3306"
+      - "3308:3306"
     volumes:
       - my-datavolume:/var/lib/mysql
 volumes:

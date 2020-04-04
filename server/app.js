@@ -3,7 +3,7 @@ const mysql = require('mysql')
 
 var connection = mysql.createConnection({
     host: 'localhost',
-    port: '3306',
+    port: '3308',
     user: 'express',
     password: 'password',
     database: 'github'
