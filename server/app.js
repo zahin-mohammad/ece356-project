@@ -172,9 +172,21 @@ app.post('/follow/repo', (req, res) => (
 
 // Delete 
 
-app.delete('/unfollow/user', (req, res) => (
-    res.send("unfollow user")
-))
+app.delete('/unfollow/user', function (req, res) {
+    var follower = req.body.follower;
+    var followee = req.body.followee;
+    query = `
+    DELETE FROM FollowsUser
+    WHERE follower = '${follower}'
+    AND followee = '${followee}'
+    `
+
+    connection.query(`SELECT * from User where username='${user_name}' and password='${password}'`, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(`${follower} unfollowed ${followee}`)
+    })
+});
 
 app.delete('/unfollow/repo', (req, res) => (
     res.send("unfollow repo")
