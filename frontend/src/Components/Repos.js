@@ -7,33 +7,53 @@ import Button from 'react-bootstrap/Button'
 
 
 export default function Repos() {
-    const { state, dispatch } = useContext(AuthContext)
+    const { state } = useContext(AuthContext)
     const [search, setSearch] = useState("")
     const [repos, setRepos] = useState([])
+    const [addNew, setAddNew] = useState(false)
 
     useEffect(() => {
-        fetch(`http://localhost:3001/following/repository?user_name=${state.username}`, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-        .then(res => {
-            if (res.ok) {
-                return res.json()
-            } else {
-                throw res
-            }
-        })
-        .then(resJson => {
-            setRepos(resJson)
-        })
-    }, []) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
+        if (!addNew) {
+            fetch(`http://localhost:3001/following/repository?user_name=${state.username}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(res => {
+                if (res.ok) {
+                    return res.json()
+                } else {
+                    throw res
+                }
+            })
+            .then(resJson => {
+                setRepos(resJson)
+            })
+        } else {
+            fetch(`http://localhost:3001/repository?user_name=${state.username}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(res => {
+                if (res.ok) {
+                    return res.json()
+                } else {
+                    throw res
+                }
+            })
+            .then(resJson => {
+                setRepos(resJson)
+            })
+        }
+    }, [addNew]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
     const reposToDisplay = repos
                             .filter(repo => repo.name.toLowerCase().includes(search.toLowerCase()))
-                            .map(repo => <RepoCard key={repo.id} name={repo.name} description={repo.description} />)
+                            .map(repo => <RepoCard key={repo.id} name={repo.name} description={repo.description} following={!addNew} />)
 
     return (
         <div>
@@ -50,7 +70,8 @@ export default function Repos() {
                 <Button 
                     variant="outline-dark" 
                     style={{ marginLeft: "1rem" }}
-                >Follow New</Button>
+                    onClick={(event) => setAddNew(!addNew)}
+                >{addNew ? "← Back" : "Follow New"}</Button>
             </InputGroup>
 
         {reposToDisplay}
