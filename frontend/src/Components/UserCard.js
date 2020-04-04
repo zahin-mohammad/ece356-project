@@ -49,7 +49,6 @@ function handleFollowUnfollowClick(following, currentFollower, currentFollowee, 
             alert(error)
         })
     }
-    
 }
 
 export default function UserCard(props) {
