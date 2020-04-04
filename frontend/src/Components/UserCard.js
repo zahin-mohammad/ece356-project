@@ -9,7 +9,7 @@ export default function UserCard(props) {
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>
                 <Card.Text>{props.email}</Card.Text>
-                <Button variant="outline-primary" style={{position: "absolute", right: "0.5rem", bottom: "0.5rem"}}>Unfollow</Button>
+                <Button variant="outline-primary" style={{position: "absolute", right: "0.5rem", bottom: "0.5rem"}}>{props.following ? "Unfollow" : "Follow"}</Button>
             </Card.Body>
         </Card>
     )

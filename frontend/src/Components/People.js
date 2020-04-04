@@ -12,25 +12,33 @@ export default function People() {
     const [addNew, setAddNew] = useState(false)
 
     useEffect(() => {
-        // TODO: Fetch from server here
-
-        if (addNew) {
-            setUsers([
-                {"username": "zahin-mohammad", "name": "Zahin Mohammad", "avatar_url": "https://avatars1.githubusercontent.com/u/24881706?v=4", "email": "zahin.dev@gmail.com", "last_login_time": 1585950315}, 
-                {"username": "JakeWharton", "name": "Jake Wharton", "avatar_url": "https://avatars0.githubusercontent.com/u/66577?v=4", "email": "j@ke.fyi", "last_login_time": 1585950006}
-            ])
-        } else {
-            setUsers([
-                {"username": "brian-norman", "name": "Brian Norman", "avatar_url": "https://avatars0.githubusercontent.com/u/9154202?v=4", "email": "briankn8@gmail.com", "last_login_time": 1585952466},
-                {"username": "atulbipin", "name": "Atul Bipin", "avatar_url": "https://avatars2.githubusercontent.com/u/19649216?v=4", "email": "atulbipin@gmail.com", "last_login_time": 1585952112}
-            ])
-        }
+        fetch("http://localhost:3001/following/user?user_name=atulbipin", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        .then(res => {
+            if (res.ok) {
+                return res.json()
+            } else {
+                throw res
+            }
+        })
+        .then(resJson => {
+            if (!addNew) {
+                setUsers(resJson)
+            } else {
+                setUsers([])
+            }
+        })
     }, [addNew]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
+
     const usersToDisplay = users
                             .filter(user => user.name.toLowerCase().includes(search.toLowerCase()))
-                            .map(user => <UserCard key={user.username} name={user.name} avatar_url={user.avatar_url} email={user.email}/>)
+                            .map(user => <UserCard key={user.username} name={user.name} avatar_url={user.avatar_url} email={user.email} following={!addNew}/>)
 
     return (
         <div>
@@ -48,7 +56,7 @@ export default function People() {
                     variant="outline-dark" 
                     style={{ marginLeft: "1rem" }}
                     onClick={(event) => setAddNew(!addNew)}
-                >{addNew ? "x" : "+"}</Button>
+                >{addNew ? "← Back" : "Follow New"}</Button>
             </InputGroup>
             
 

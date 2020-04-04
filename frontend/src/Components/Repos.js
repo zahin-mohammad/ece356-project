@@ -40,7 +40,7 @@ export default function Repos() {
                 <Button 
                     variant="outline-dark" 
                     style={{ marginLeft: "1rem" }}
-                >+</Button>
+                >Follow New</Button>
             </InputGroup>
 
         {reposToDisplay}
