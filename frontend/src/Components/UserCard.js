@@ -58,7 +58,7 @@ export default function UserCard(props) {
             <Card.Img variant="top" src={props.avatar_url} />
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>
-                <Card.Text>{props.email}</Card.Text>
+                <Card.Text style={{fontSize: "0.8rem"}}>{props.email}</Card.Text>
                 <Button 
                     variant="outline-primary" 
                     style={{position: "absolute", right: "0.5rem", bottom: "0.5rem"}}

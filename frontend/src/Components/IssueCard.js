@@ -10,9 +10,10 @@ export default function IssueCard(props) {
     return (
         <div>
             <Badge pill variant="light">{props.notif ? "🔔" : ""}</Badge>
-            <Card style={{ width: '25rem', marginBottom: '1rem', marginLeft: '1rem' }}>
+            <Card style={{ width: '40rem', marginBottom: '1rem', marginLeft: '1rem' }}>
                 <Card.Body>
                     <Card.Title>{props.title}</Card.Title>
+                    <Card.Text>{props.repository_name}</Card.Text>
                     <Card.Text> {props.date} - {props.user}</Card.Text>
                     <Button variant="outline-primary" style={{position: "absolute", right: "0.5rem", bottom: "0.5rem"}}>Open</Button>
                 </Card.Body>
