@@ -63,7 +63,8 @@ export default function People() {
                                             email={user.email} 
                                             following={!addNew} 
                                             followUnfollowCallback={() => setFollowUnfollow(!followUnfollow)}
-                                        />)
+                                        />
+                                )
 
     return (
         <div>
