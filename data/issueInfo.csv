@@ -1,305 +1,84 @@
-id,title,username
-573408419,Add flutter,zahin-mohammad
-549249843,Incorrect zsh paths in ~/.zshrc,zahin-mohammad
-545331007,Add xclip,zahin-mohammad
-585591514,Title,brian-norman
-585583679,Test Issue,zahin-mohammad
-464977589,Add operating system specific flags,zahin-mohammad
-464977554,Add npm,zahin-mohammad
-592978529,reflect-lint: Support Kotlin annotations with default retention,PhilGlass
-583645852,Cumbersome injection with generics,emartynov
-569373440,Issue with proguard,ivazhnov
-558013195,dagger-reflect more strict than dagger-compiler (scopes),plnice
-557662934,Add support for new Dagger Kotlin features,JakeWharton
-550751227,Dagger-reflect fails to inject classes with Android-dependent methods,molokoka
-503304545,dagger-reflect does not resolve Provider/Lazy indirection based dependency cycles,matejdro
-501536772,ContributesAndroidInjector doesn't work for Fragment inside an Activity,kokeroulis
-491003061,Verbose android injection does not actually perform any injection,matejdro
-490936608,Verbose android Injection fails with missing binding,matejdro
-477841813,IllegalArgumentException: No provider available for V when injecting a field in a generic subclass,amatkovsky
-477837767,Fix looking up generics when injecting fields in generic subclasses.,amatkovsky
-477148865,Move access checking to link-time,JakeWharton
-476460086,Add messages to replaced explicit bindings,TWiStErRob
-476399746,Add Linker and Scope toString + tests,TWiStErRob
-470289507,Add check for nullability mismatch.,runningcode
-470042981,Adding support for generic builder interface.,Laimiux
-470032382,Adding module generic support. (WIP),Laimiux
-469459790,Reflect compiler not generating default builder class.,Laimiux
-467887952,Add R8/ProGuard rules to the codegen artifact,JakeWharton
-465339936,Module with generic fails to find the target,kokeroulis
-464232896,Crashes with "apply changes" (SIGABRT),PaulWoitaschek
-462907569,Allow nested generic types,runningcode
-408354560,Enable parallel build,TWiStErRob
-408354475,Clean up build warnings,TWiStErRob
-406158629,Fill in README.md,TWiStErRob
-405091528,Start Kotlin runtime,JakeWharton
-405088583,Kotlin extension runtime and annotation processor for extension specialization,JakeWharton
-584071493,Migration to offical action,JakeWharton
-568960683,Writes files as root,JakeWharton
-565848598,Do something about hangs,JakeWharton
-562307441,Testing?,JakeWharton
-562306284,Docker image versioning,JakeWharton
-562302071,Fix up DockerHub listing,JakeWharton
-216617388,Add behavior name resource,heinrichreimer
-175434116,update AndroidStudio to 2.2.0-rc1,linuxbelletian
-162473378,Fix peak persisting when it shouldn't,ISatya
-158945492,Save and restore state,rubensousa
-158942427,Add Open/close/query,rubensousa
-158782030,Fix peek persisting,rubensousa
-158491962,Add back key listener functionality,charbgr
-158298185,Add travisci,jaredsburrows
-158297399,Add travis ci,jaredsburrows
-158295626,Peek persisting when it shouldn't,JakeWharton
-158295548,Back press,JakeWharton
-158295542,Focus,JakeWharton
-158295533,Accessibility,JakeWharton
-158295520,Listeners,JakeWharton
-158295513,State Save & Restore,JakeWharton
-158295498,Shadow / Elevation,JakeWharton
-158295481,Public API for open/close/query,JakeWharton
-158295463,Insets dim,JakeWharton
-158295455,Content dim,JakeWharton
-158295436,Locking,JakeWharton
-30834792,to the latest 0.9,paulvi
-590609528,java.lang.BootstrapMethodError: Exception from call site #1 bootstrap method,wwwjiandan
-588257917,R2 not found in my library module,Jafar396
-559697400,How handle key press on views?,SIARAY
-552295498,Update version of libs,Kolyall
-551721648,Version 10.2.1 always failed since it was added,Primer1889
-551442497,Need your help,ChenXi1995
-519075265,When migrating to Androidx, giving few issues, Hope you can help me with that,dharmeshrathore
-515304508,R2 file generation,nyjsl
-508560135,How do I get butterknife to recognize R2 in a library test class?,Txagg1992
-508327585,Build project cannot generate xxxActivity_ViewBinding,aojiaoqiang
-498079081,组件化时，R2中生产了许多系统组件的常量，运行脚本打包组件aar，报错提醒， 错误: 已在类 styleable中定义了变量 ActionBarLayout_android_layout_gravity     public static final int ActionBarLayout_android_layout_gravity = 1;,yunxingyu
-487671358,Binding Not Found,Oliver-Binns
-477417526,Error in Android X,PartapSBimrah
-473653220,Fix #1498: kotlin lib missing resource ID for OnClick annotation ,JantHsueh
-464152012,Strange behaviour of `ButterKnife.bind(this, rootView)`,miPlodder
-464016133,No getting started documentation,bomberm
-457849093,@BindView and @org.jetbrains.annotations.Nullable fails when field is of type android.view.View,ntherning
-456240346, Required view (...) with ID (...) for method (..) was not found.,mateuszkwiecinski
-450259308,is it bug ,lianchengtong
-444294398,R8 produces the following warnings on build,ber4444
-444028367,Inclusivity Issue: No contributing documentation,willdarnell
-442916021,OnClick Stops Working After sometime - DebouncingOnClickListener Design?,LucioC
-441759983,Inclusivity Issue: Standardize Labels in Issues and PRs (for first time users),abi-edmondem-osu464
-440169313,my gradle verion=5.1.1 plugin=3.4.0,themass
-439194889,ButterKnife R2 generated file not seen in my project,amiraelsayed
-438039898,r2 id repeat,vjHuang
-437734912,How to obfiscate variable name in @Bindview when using progaurd ?,TechRova
-433056209,Missing resource ID for OnClick annotation,cooperkong
-424788008,Issue with R2 in library module,iamdeveloper-lopez
-422053932,how can i successful build the source project ?,HoldMyOwn
-584071423,Migrate to official action,JakeWharton
-568960845,Writes files as root,JakeWharton
-473375842,Update to Slack client 5.0,JakeWharton
-458873050,Messages in threads are not replied to in-thread,JakeWharton
-455900925,Backfill public links from the last few minutes when added to channel,JakeWharton
-578187235,Investigate multiplatform,JakeWharton
-427499958,Strange characters for the table border,albert-kam
-288309156,Introducing Google Java Format,tomasbjerre
-287695706,Fixed column-width,tomasbjerre
-231113614,add TableFormat support,bitsofinfo
-231058885,Provide way to customize divider characters, should be basic ascii,bitsofinfo
-199409106,Support variable length data,MarounMaroun
-223169222,Tab size issue with Android 7.0,JMHaro
-122788499,Added a fix for android 6+,AlfredoBejarano
-115766952,Watson.java,YuyQuan
-114242111,Update README.md,Catalystical
-93549280,Alert Dialogue and Pop up menu theme ,ravipradeep89
-69558044,Compile with API level 22 error: Error:In <declare-styleable> SherlockSpinner, unable to find attribute android:popupPromptView,Morteza-Rastgoo
-47704768,ActionBar Height is double in landscape on GT-S5360 2.3.6,Loda
-36155918,Black area is showing at left side in Action Bar Sherlock,williams-sgvu
-34556375,Searchview results are overlaping the keyboard,androidoutput
-33023559,Indeterminate progress spinner is visible by default @ non-native action bar,Tobiaqs
-29735404,DarkActionBar Theme not set in 2.3.3 ,balasaheb143
-28104107,java.lang.NumberFormatException,ricardobocchi
-27384922,Launcher icon not found bug?,Rolf-Smit
-24245187,SearchView not working in multiple fragments,bhavikmandalia
-23609472,Second time custom layout for actionbar is added, actionbar didn't update itself on 4.2.x and higher,arsalan-mehmood
-22753086,ActionMode causes problems in api-8,rothschild86
-22659677,Probably fix intermittent irreproducible NPE,sleekweasel
-22269064,ShareActionProvider not working with ActionBarSherlock types, when used with custom theme. ,FireAndIce
-21906236,Content Descriptions not showing up,jmieleiii
-21754093,Overlapping tab navigation and ActionMode,giuseppe83ac
-20836803,Could not find method android.widget.FrameLayout.getTranslationY, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout.getTranslationY,devilmac
-20794302,ABS causes an IllegalStateException on some devices,Don-Doudou
-20746199,android:showAsAction="ifRoom" not working for Sony Xperia E Dual (OS 4.1.1),rosamerinoclaros
-20160589,setSupportProgressBarIndeterminateVisibility,aloneblood
-18879738,Hardware Menu Button Causing Problems With Child Fragments Menus,jay8ee
-18875609,SearchView setQuery, other customizations not possible?,inmyth
-18587195,Menu Item is unable to press in the first visible when use 2 fragment have option Menu in Viewpager,hungnguyenvan
-18331401,Removing unused declared attributes,jonasfa
-18039519,Disappearing ActionBar after finishing ActionMode,KamilLelonek
-17957293,ActionBar tabs are overflowing on pre-ICS devices ,josemando
-573990440,add: cache entry creation time param to Snapshot,feivur
-276889668,Avoid IOExceptions in delete() when the cache dir is deleted externally.,sjudd
-266765606,Key length is 64 for dependencies resolved via maven/jcenter,rahul-a
-233252243,Get entry count/iterator,miguelvillasenor
-232661565,Request for new release 2.0.3,vagrawal13
-198650533,what can cause cache is closed,iloveaman
-119093421,max size doesn't take in consideration minimum 4kb block size.,hjudez
-80229040,Add method to evict all entries from the cache.,Cellena
-76703967,Multi-thread: Infinite loop in trimToSize,la-urre
-50406569,Total number of files limit of FAT filesystem,yuwentw
-42308562,A resource was acquired at attached stack trace but never released.,caxton
-41017656,Silent commit failure due to ignore renameTo return value,TWiStErRob
-27461304,Add public method to request the disk cache to cleanup,daj
-27167034,Add a lightweight contains( key ) method for quickly checking if a key exists in the cache,Wavesonics
-25756099,Journal READ Corruption Issue,doapp-nick
-22819205,I get this error: "Caused by: java.io.IOException: failed to delete file: /mnt/sdcard/Android/data/mypackage/cache/media/361bd6dab3696905ef0139a9e9969820a98218 83b4b8d0d014bdf3f7f313eede.0",cutler
-14159588,IllegalStateException in Editor#newOutputStream(),bergstr11
-12150565,Add call to force immediate reduction in cache size,jwoolston
-7028532,Concurrent edit experience is cumbersome,swankjesse
-6953889,Lost cache in some condition,teoking
-5597396,Editor edit(String key, long expectedSequenceNumber) should throw ConcurrentModificationException,wischweh
-591018490,Update README.md with some building/usage steps,marcin-kozinski
-524270933,Lightweight input type,blipinsk
-522449436,Replace embedded picnic with released version,JakeWharton
-509703560,Produce Graal-compiled binaries,JakeWharton
-478769856,Run R8 over the binaries to make them smaller,JakeWharton
-369823222,Expose type objects which contain a collection of members,JakeWharton
-181551535,Request for method annotation in the method signature,andersjanmyr
-322757700,Change KB unit string to kB according to SI standard,erikghonyan
-164696089,Add a value type that represents both amount and unit.,JakeWharton
-163030454,Inclusion in JDK,krisskross
-14570819,Error: A factory has already been set on this LayoutInflater,cesards
-385053834,Replace PI with pi.,jwmuchow
-583642947,Bump minimist from 1.2.1 to 1.2.5,dependabot[bot]
-63459908,Dynamic loading of point images from server,GoogleCodeExporter
-63459907,Point caching issue,GoogleCodeExporter
-63459906,Font issue in Samsung phones.,GoogleCodeExporter
-63459904,Problems in Camera Orientation for samsung devices,GoogleCodeExporter
-63459903,how to add a button?,GoogleCodeExporter
-63459902,Id not set in the constructor of point.impl.SimplePoint,GoogleCodeExporter
-63459901,Problems in CameraView in older versions than ICS,GoogleCodeExporter
-332375588,Required to run on ios device,sebasbad
-52487337,CodePath Bootcamp application - Tip Calculator,ctuong
-59436843,Please Review,ctuong
-58546016,Please Review,ctuong
-56996886,Please Review,ctuong
-57687321,Please Review,ctuong
-510324337,Bump stringstream from 0.0.5 to 0.0.6 in /examples/basic,dependabot[bot]
-215585233,Composable forms,jschr
-215584331,set form state from on props update,jschr
-213562291,Support validating on blur and on change,jschr
-174105453,Add isValidating form state ,jschr
-168702759,Document API ,jschr
-168698244,Add more tests,jschr
-168698216,Add CRUD example,jschr
-430187417,Activating Open Collective,monkeywithacupcake
-383859473,event listener for complete loading,ghost
-311946973,Will you upgrade to Bootstrap 4?,lucivaldo
-284425044,Fix padding issue when show/hide modal,ptcong
-268974869,Stackable: Close modal when clicked outside ,nasfathr
-253573216,when using this with bootbox.js ,the bootbox dialog style was confused,jellybins
-206099279,Publish as NPM package,Invis1ble
-199380023,How to relocate modal inside into a div,cyberzilla
-134874447,make collapsable?,JamesRamm
-134778353,The bootstrap dependency is different between github repo and bower repo.,edwardmeng
-132732698,Modal don't scroll when closing top modal,malcomxcia
-131863849,body class="modal-open" style="padding-right: 15px",ParentsPal
-121754650,Modal opens with a delay compared to standard BS3 modal,iadj
-111382364,Show Modal Without overlay.,mitul69
-110636586,angular 1.2.* ng-include used inside ui-bootstrap - modal opening page scrolls to top,brianmyler
-110410243,can i use this without bootstrap,ckrad
-107324494,Construct ajax query (ie. ajax Contact form),ezersky
-106482498,is there any compatibility issues with select2.js?,Misakic
-106023835,Modal crops content,aricca
-102351087,How to explicitly call sidebar show/hide by javascript function call,anemdhana
-101149595,body having background image with fixed position responsive modal does not scroll in small screen devices,rishisc
-90368810,dropdown-menu in modal-footer cannot popup correctly,madlee
-87139304,Remove moot `version` property from bower.json,kkirsche
-56268287,Second level and above stackable modals issue,gunjanvarshney
-52359254,iPhone no scrolling when the finger is over input box,jehogo
-46611505,Scrolling on Chrome,cuongtallcat
-43343965,Bootstrap Modal JS conflicting with ASP.NET button postback,1parkplace
-42769956,create modal and hide and show all script listener lost.,lxbzmy
-39233545,AJAX broke in IE10,ryanjohnsond
-35996743,Fixed height breaks due to !important in responsive rule,nealeu
-510324349,Bump underscore.string from 3.3.4 to 3.3.5,dependabot[bot]
-586921503,Bump lodash from 4.17.11 to 4.17.15,dependabot[bot]
-586921481,Bump mixin-deep from 1.3.1 to 1.3.2,dependabot[bot]
-581002784,Update Electron / React / Redux,roscoevanderboom
-500974133,Run Develop never starts,ImBeCiliC
-14766314,Save connection settings ,alfaiyma
-14766306,Automatic MAC address retrieval,alfaiyma
-14766278,Conform to PEP8 Standards,alfaiyma
-14766275,GUI for application ,alfaiyma
-14766273,Error Checking for Class Constructor ,alfaiyma
-582984290,Auto switch keyboard Japanese to QWERTY,oLeVanLong
-559642779,Sometimes onLinkLongClickListener called before the onTextViewLongClickListener,tarik-git
-550152529,Link not working if the description of the link (the part between the tags) itself is not a link.,mparyani445
-538398247,Other click view not clickable,nAkhmedov
-298108748,Add Ui tests to ensure correctness of Better-Link-Movement-Method,saket
-25596120,Switching away and back during entry,RoundSparrow
-433757975,Allow opening YouTube URLs in third-party clients and MODs.,SubhrajyotiSen
-430167692,Support for third party YouTube client,SubhrajyotiSen
-411638503,F-droid release,ghost
-407330248,Long click options menu for in-text links,Tunous
-407329283,Thumbnails on the left side of submission,Tunous
-407324118,Do not display submission subreddit if it's same as viewed subreddit,Tunous
-399176635,Add codestyle for contributions,saket
-399176594,Document contribution guidelines,saket
-398866234,Improve detection of markdown sent by Reddit,saket
-398681535,Compose a new post,saket
-523946752,Library availability through jcenter or maven,vipulasri
-507375613,Does not work with translucent status bar Activities.,iamBedant
-440066854,Fragments are not destroyed while using the lib,kakai248
-383708777,How do use with coordinatorlayout,dev-juyoung
-367598564,Replace ObjectAnimator with Transitions API,kaeawc
-555246359,Flick does not seems to replace the View where it was after image was swipped out,christophehenry
-478169777,Convert ExpandablePageLayout into a FrameLayout,saket
-393751073,Fix for NestedScrollView issues,andb3
-384523619,Issues with InboxRecyclerView inside NestedScrollView,andb3
-360497368,Support nested scrolling in ExpandablePageLayout,saket
-357461207,Host and Auto-Run This,brian-norman
-451217561,New PRs should notify the reviewers on discord,brian-norman
-356879856,Report's new commits made every week in Cobresun,brian-norman
-355453005,Add ability to google and pull up first search result,brian-norman
-355452779,Ability to add issues to a repo,brian-norman
-355811190,Change barrier colour each level,brian-norman
-592977009,Can I find the slope of a function and plot it?,lewis-cooper
-591643321,"Type Error: run() missing 1 required positional argument: 'self' "Fix a bug in extract_scene.py,chenxijun
-591325292,Better pycairo installation instructions in docs,applemonkey496
-590532375,Generate some missing ressources for generate all scenes in from_3b1b/old/spirals,badele
-590505279,Can I change the axis font on graphs?,lewis-cooper
-590498714,Changed -1 to -1.0 for broader GPU suppot.,kolibril13
-590497153,doc,azarzadavila
-590320691,Unexpected error when plotting data points,lewis-cooper
-590102894,LinearTransformationScene not working,Micoael
-589883404,add death state to SIR model,timalive
-589661219,Fixed execution of counting.py,Lalourche
-589568867,error that it is an `int` not `float`,edasubert
-589400887,Using braces,mvfs314
-589007446,How to add a new line when using TextMobject like arrays,nosnakeob
-588937811,Update cairo versions in README.md,Ranoiaetep
-588714915,When trying to run the example_scenes.py from the console nothing happens,MatejVe
-588606969,New Manim version that supports GPU,qo4on
-588343035,Added virtual machine to install manim,girishgargcool
-587571726,Unable to run manim from Spyder,Enempie
-585766275,Help to install manim,Steff-san
-584628633,Trouble rendering an SVG Image correctly ,luketimmerman314
-584556456,Unable to run scenes with pi creatures,Haffi112
-583833153,Reconsidering TEX_USE_CTEX / using XeLaTeX,hanwenzhu
-583286873,Trouble using SVG images in the newest form of manim,luketimmerman314
-583202077,Set the axis tick label numbers to be the same color as the axis.,rpadams
-581833854,Update graph_scene.py,daniel-lara-ec
-581411761,manim numpy error,emanueldias242
-580929459,Updated Graph Scale factor at 10:29,iGeek098
-580052922,Trouble Downloading Requirements File,luketimmerman314
-579660639,Better discontinuity detecting and implicit function graphing,ddxtanx
-592688672,Adding text below the menu image,roselight
-589532272,Keyboard is closed abruptly when try to type on editText field,iabduul7
-486366330,how to convert persian date to gregorian date??,cloner7575
-575687689,input keyboard opens and suddenly closes dramatically ,mohammedelnady
-569031738,Clicked on view multiple times,imankhorshidi
-561234722,Set count,rezaghahremani77
-560766931,keyboard does not open, when i using this library,rezaghahremani77
-466186292,How set the icon size?,samuelhalim1
-449393480,show method error,drvafa
-416683839,Add text,Marcosmaliki
-510116274,Bump urllib3 from 1.23 to 1.24.2,dependabot[bot]
-217561901,version 2.0,virgillee97
-374033366,Added DOCS for Once Upon a Time project,djoksimo
+id;repository_id;title;username
+573408419;194542271;Add flutter;zahin-mohammad
+549249843;194542271;Incorrect zsh paths in ~/.zshrc;zahin-mohammad
+545331007;194542271;Add xclip;zahin-mohammad
+510116274;143510694;Bump urllib3 from 1.23 to 1.24.2;dependabot[bot]
+464977589;194540529;Add operating system specific flags;zahin-mohammad
+464977554;194540529;Add npm;zahin-mohammad
+11843860;7884405;Slow operatings on the UI thread;AttwellBrian
+581340665;230031073;Bump acorn from 5.7.3 to 5.7.4 in /frontend;dependabot[bot]
+383727930;46354495;Any plan on updates?;li-boxuan
+517043197;19312540;How to specify the vertical limit in the document.?;anil-goudar
+481923312;19312540;Update deedy_resume.xtx;tanyachawla412
+478103608;19312540;removing hanging indent in tightitemize;margarineHound
+448359411;19312540;fixed hacky space;hengdashi
+412694458;19312540;Fix Publications section overlap;voidstarstar
+409262011;19312540;Serbian accented c;utkuturk
+350898657;19312540;textbf not working in conjunction with this;yadavabhinav16
+318642291;19312540;Modifying Colors;prateekiiest
+307608049;19312540;Solved the overflow issue, albeit temporarily.;DeeprajPandey
+298012184;19312540;Suggestion on design;srdg
+291973577;19312540;Publications: overlap between section name and body;niranjantdesai
+277975364;19312540;Added Cover Letter Templates;anthonyattard
+273544317;19312540;Extending to two Pages;naveenT1010
+265499138;19312540;adapting to 2 pages? ;csaund
+261485044;19312540;Cover Letters;anthonyattard
+254465607;19312540;Remove more "//"s;wrmacrae
+254465081;19312540;Change links to not have "://";wrmacrae
+208788231;19312540;Column 2 Causes Overflow When Aligned at Same Depth as Column 1;joshjacobson
+190428237;19312540;Wrong accents with scshape;kfeine
+183199388;19312540;I am not able to install or use the fonts on ubuntu 16.04 can anyone assist?;Data-drone
+175121549;19312540;update fonts;jck
+145788671;19312540;Update Overleaf;alanyee
+142323881;19312540;To fulfill the requirements in Chinese jobsearching;kirkang
+127175342;19312540;Suggestion on typography;isometric
+123607701;19312540;Everyone loves Makefiles!;nickyr
+123607114;19312540;Fix alignment of employer and position;nickyr
+92031907;19312540;\sectionspace e \begin{tightitemize} undefined control sequence;SquaredPi
+62188066;19312540;No way to italicize;rrshaban
+57681975;19312540;Large Institution names;Void2258
+57410171;19312540;Merge pull request #1 from deedydas/master;EmmanueleSalvati
+357461207;80943821;Host and Auto-Run This;brian-norman
+585591514;249038105;Title;brian-norman
+585583679;249038105;Test Issue;zahin-mohammad
+451217561;146331420;New PRs should notify the reviewers on discord;brian-norman
+356879856;146331420;Report's new commits made every week in Cobresun;brian-norman
+355453005;146331420;Add ability to google and pull up first search result;brian-norman
+355452779;146331420;Ability to add issues to a repo;brian-norman
+355811190;145190437;Change barrier colour each level;brian-norman
+383953069;157974626;TODO: connect registered buyer updateData to DB with handler (assign observers);keenangaudio
+383948347;157974626;TODO: create catolog and open it at startup - connect checkDocument function in DB to search and display on gui;keenangaudio
+383948004;157974626;Creating a catlog object that is an arraylist of Documents following abstract factory pattern;louisj381
+536209332;227275660;Add and plot change data (percentage change from previous day);SunnyNagam
+592977009;32689863;Can I find the slope of a function and plot it?;lewis-cooper
+591643321;32689863;"Type Error: run() missing 1 required positional argument: 'self' "Fix a bug in extract_scene.py;chenxijun
+591325292;32689863;Better pycairo installation instructions in docs;applemonkey496
+590532375;32689863;Generate some missing ressources for generate all scenes in from_3b1b/old/spirals;badele
+590505279;32689863;Can I change the axis font on graphs?;lewis-cooper
+590498714;32689863;Changed -1 to -1.0 for broader GPU suppot.;kolibril13
+590497153;32689863;doc;azarzadavila
+590320691;32689863;Unexpected error when plotting data points;lewis-cooper
+590102894;32689863;LinearTransformationScene not working;Micoael
+589883404;32689863;add death state to SIR model;timalive
+589661219;32689863;Fixed execution of counting.py;Lalourche
+589568867;32689863;error that it is an `int` not `float`;edasubert
+589400887;32689863;Using braces;mvfs314
+589007446;32689863;How to add a new line when using TextMobject like arrays;nosnakeob
+588937811;32689863;Update cairo versions in README.md;Ranoiaetep
+588714915;32689863;When trying to run the example_scenes.py from the console nothing happens;MatejVe
+588606969;32689863;New Manim version that supports GPU;qo4on
+588343035;32689863;Added virtual machine to install manim;girishgargcool
+587571726;32689863;Unable to run manim from Spyder;Enempie
+585766275;32689863;Help to install manim;Steff-san
+584628633;32689863;Trouble rendering an SVG Image correctly ;luketimmerman314
+584556456;32689863;Unable to run scenes with pi creatures;Haffi112
+583833153;32689863;Reconsidering TEX_USE_CTEX / using XeLaTeX;hanwenzhu
+583286873;32689863;Trouble using SVG images in the newest form of manim;luketimmerman314
+583202077;32689863;Set the axis tick label numbers to be the same color as the axis.;rpadams
+581833854;32689863;Update graph_scene.py;daniel-lara-ec
+581411761;32689863;manim numpy error;emanueldias242
+580929459;32689863;Updated Graph Scale factor at 10:29;iGeek098
+580052922;32689863;Trouble Downloading Requirements File;luketimmerman314
+579660639;32689863;Better discontinuity detecting and implicit function graphing;ddxtanx
+198259639;77751207;Error when handling non-words using Google API;Jspsun
+318514926;129928931;Webpack;Jli0423

@@ -11,7 +11,7 @@ CREATE TABLE User (
     name VARCHAR(255),
     avatar_url VARCHAR(255) NOT NULL,
     email VARCHAR(255),
-    last_login_time TIMESTAMP NOT NULL,
+    last_login_time INT NOT NULL,
     password VARCHAR(255) NOT NULL,
     PRIMARY KEY (username)
 );
@@ -20,10 +20,10 @@ DROP TABLE IF EXISTS Repository;
 CREATE TABLE Repository (
     id VARCHAR(255) NOT NULL,
     name VARCHAR(255) NOT NULL,
-    description VARCHAR(255),
+    description TEXT,
     username VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    updated_at TIMESTAMP NOT NULL,
+    created_at INT NOT NULL,
+    updated_at INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (username) REFERENCES User(username)
 );
@@ -46,8 +46,8 @@ CREATE TABLE Comment (
     post_id VARCHAR(255) NOT NULL,
     username VARCHAR(255) NOT NULL,
     body TEXT NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    updated_at TIMESTAMP NOT NULL,
+    created_at INT NOT NULL,
+    updated_at INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (username) REFERENCES User(username),
     FOREIGN KEY (post_id) REFERENCES Post(id)

@@ -5,7 +5,14 @@ import json
 from key import *
 from api.githubapi import GitHubAPI
 import time
+import datetime
+import dateutil.parser
 import traceback
+import re
+
+# import re
+
+# escaped = re.escape(a_string)
 
 
 TOKEN = GITHUB_PERSONAL_ACCESS_TOKEN
@@ -35,8 +42,13 @@ print(gitHubAPI.rateLimitRemaining)
 userToRepos = {}
 userToFollowing = {}
 
+
+def getEpochSecondTime(dateTimeString):
+    return int(dateutil.parser.parse(dateTimeString).timestamp())
+
 ##########################################################################################################
 # Get tier 1 user data (users.txt)
+
 
 for user in users:
     if user in userToFollowing:
@@ -90,6 +102,9 @@ def getUserInfo(user):
         userInfo[user]["email"] = user+"@example.com"
     else:
         userInfo[user]["email"] = response.json()["email"]
+
+    # output_date = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+    # print(output_date)
     userInfo[user]["last_login_time"] = int(time.time())
 
 
@@ -161,7 +176,7 @@ def getIssueReaction(repo, issueNumber, issueID):
                 "post_id": issueID,
                 "username": reaction["user"]["login"],
                 "emoji": reaction["content"],
-                "created_at": reaction["created_at"]
+                "created_at": getEpochSecondTime(reaction["created_at"])
             })
     except:
         print(json.dumps(response.json(), indent=2))
@@ -179,7 +194,7 @@ def getIssueCommentReaction(repo, commentID):
                 "post_id": commentID,
                 "username": reaction["user"]["login"],
                 "emoji": reaction["content"],
-                "created_at": reaction["created_at"]
+                "created_at": getEpochSecondTime(reaction["created_at"])
             })
     except:
         print(json.dumps(response.json(), indent=2))
@@ -198,8 +213,10 @@ def getIssueComments(issueID, issueNumber, repo):
             commentInfo[id]["post_id"] = issueID
             commentInfo[id]["username"] = comment["user"]["login"]
             commentInfo[id]["body"] = comment["body"]
-            commentInfo[id]["created_at"] = comment["created_at"]
-            commentInfo[id]["updated_at"] = comment["updated_at"]
+            commentInfo[id]["created_at"] = getEpochSecondTime(
+                comment["created_at"])
+            commentInfo[id]["updated_at"] = getEpochSecondTime(
+                comment["updated_at"])
             getIssueCommentReaction(repo, id)
 
     except:
@@ -207,7 +224,7 @@ def getIssueComments(issueID, issueNumber, repo):
         traceback.print_exc()
 
 
-def getIssues(repo):
+def getIssues(repo, repoID):
     URL = GITHUB_BASE_URL + (GET_ISSUES % (repo))
     response = gitHubAPI.makeRequest("get", URL, auth=(USER, TOKEN))
 
@@ -216,6 +233,7 @@ def getIssues(repo):
             id = issue["id"]
             issueInfo[id] = {}
             issueInfo[id]["id"] = issue["id"]
+            issueInfo[id]["repository_id"] = repoID
             issueInfo[id]["title"] = issue["title"]
             issueInfo[id]["username"] = issue["user"]["login"]
             getUserInfo(issue["user"]["login"])
@@ -227,8 +245,10 @@ def getIssues(repo):
             commentInfo[id]["post_id"] = id
             commentInfo[id]["username"] = issue["user"]["login"]
             commentInfo[id]["body"] = issue["body"]
-            commentInfo[id]["created_at"] = issue["created_at"]
-            commentInfo[id]["updated_at"] = issue["updated_at"]
+            commentInfo[id]["created_at"] = getEpochSecondTime(
+                issue["created_at"])
+            commentInfo[id]["updated_at"] = getEpochSecondTime(
+                issue["updated_at"])
             getIssueReaction(repo, issueNumber, id)
 
             if issue["comments"] > 0:
@@ -238,7 +258,7 @@ def getIssues(repo):
         traceback.print_exc()
 
 
-def getRepoInfo(repo):
+def getRepoInfo(user, repo):
     URL = GITHUB_BASE_URL + (GET_REPO % (repo))
     response = gitHubAPI.makeRequest("get", URL, auth=(USER, TOKEN))
 
@@ -246,11 +266,14 @@ def getRepoInfo(repo):
     try:
         repoInfo[repo]["id"] = response.json()["id"]
         repoInfo[repo]["name"] = repo
+        repoInfo[repo]["username"] = user
         repoInfo[repo]["description"] = response.json()["description"]
-        repoInfo[repo]["created_at"] = response.json()["created_at"]
-        repoInfo[repo]["updated_at"] = response.json()["updated_at"]
+        repoInfo[repo]["created_at"] = getEpochSecondTime(
+            response.json()["created_at"])
+        repoInfo[repo]["updated_at"] = getEpochSecondTime(
+            response.json()["updated_at"])
         if response.json()["has_issues"]:
-            getIssues(repo)
+            getIssues(repo, repoInfo[repo]["id"])
     except:
         print(json.dumps(response.json(), indent=2))
         traceback.print_exc()
@@ -260,9 +283,9 @@ def getRepoInfo(repo):
 for user in userToRepos.keys():
     userToRepos[user] = list(set(userToRepos[user]))
 
-for repos in userToRepos.values():
+for user, repos in userToRepos.items():
     for repo in repos:
-        getRepoInfo(repo)
+        getRepoInfo(user, repo)
 
 
 def createJSONFiles():
@@ -289,61 +312,75 @@ def createJSONFiles():
 
 
 def createCSVFiles():
-    print(len(userInfo))
     with open('userInfo.csv', 'w') as fp:
-        fp.write("username,name,avatar_url,email,last_login_time\n")
+        fp.write("username;name;avatar_url;email;last_login_time;password\n")
         for user in userInfo.values():
-            fp.write("%s,%s,%s,%s,%s\n" % (user["username"], user["name"], user["avatar_url"],
-                                           user["email"], user["last_login_time"]))
+            fp.write("%s;%s;%s;%s;%s;%s\n" % (user["username"], user["name"], user["avatar_url"],
+                                              user["email"], user["last_login_time"], "password"))
 
-    print(len(repoInfo))
     with open('repoInfo.csv', 'w') as fp:
-        fp.write("id,name,description,created_at,updated_at\n")
+        fp.write("id;name;username;description;created_at;updated_at\n")
         for repo in repoInfo.values():
             try:
-                fp.write("%s,%s,%s,%s,%s\n" % (repo["id"], repo["name"], repo["description"],
-                                               repo["created_at"], repo["updated_at"]))
+                description = ""
+                if "description" in repo and repo["description"] is not None:
+                    description = repo["description"].translate(str.maketrans({"-":  r"\-",
+                                                                               ",":  r"\,",
+                                                                               "'":  r"\'",
+                                                                               '"':  r"\"",
+                                                                               "\\":  r"\\",
+                                                                               "%":  r"\%",
+                                                                               "*":  r"\*",
+                                                                               ".":  r"\."}))
+
+                fp.write("%s;%s;%s;%s;%s;%s\n" % (repo["id"], repo["name"], repo["username"], description,
+                                                  repo["created_at"], repo["updated_at"]))
             except:
                 print(json.dumps(repo, indent=2))
                 traceback.print_exc()
 
-    print(len(issueInfo))
     with open('issueInfo.csv', 'w') as fp:
-        fp.write("id,title,username\n")
+        fp.write("id;repository_id;title;username\n")
         for issue in issueInfo.values():
-            fp.write("%s,%s,%s\n" %
-                     (issue["id"], issue["title"], issue["username"]))
+            fp.write("%s;%s;%s;%s\n" %
+                     (issue["id"], issue["repository_id"], issue["title"], issue["username"]))
 
-    print(len(commentInfo))
     with open('commentInfo.csv', 'w') as fp:
-        fp.write("id,post_id,username,body,created_at,updated_at\n")
+        fp.write("id;post_id;username;body;created_at;updated_at\n")
         for comment in commentInfo.values():
-            fp.write("%s,%s,%s,%s,%s,%s" % (
-                comment["id"], comment["post_id"], comment["username"], comment["body"], comment["created_at"], comment["updated_at"]))
+            body = ""
+            if "body" in comment and comment["body"] is not None:
+                body = comment["body"].translate(str.maketrans({"-":  r"\-",
+                                                                ",":  r"\,",
+                                                                "'":  r"\'",
+                                                                '"':  r"\"",
+                                                                "\\":  r"\\",
+                                                                "%":  r"\%",
+                                                                "*":  r"\*",
+                                                                ".":  r"\."}))
+            fp.write("%s;%s;%s;%s;%s;%s\n" % (
+                comment["id"], comment["post_id"], comment["username"], body, comment["created_at"], comment["updated_at"]))
 
-    print(len(reactionInfo))
     with open('reactionInfo.csv', 'w') as fp:
-        fp.write("post_id,username,emoji,created_at\n")
+        fp.write("post_id;username;emoji;created_at\n")
 
         for reaction in reactionInfo:
-            fp.write("%s,%s,%s,%s" % (
+            fp.write("%s;%s;%s;%s\n" % (
                 reaction["post_id"], reaction["username"], reaction["emoji"], reaction["created_at"]))
 
-    print(len(userToFollowing))
     with open('userToFollowing.csv', 'w') as fp:
-        fp.write("follower,followee\n")
+        fp.write("follower;followee\n")
 
         for follower, followingList in userToFollowing.items():
             for followee in followingList:
-                fp.write("%s,%s" % (follower, followee))
+                fp.write("%s;%s\n" % (follower, followee))
 
-    print(len(userToRepos))
     with open('userToRepos.csv', 'w') as fp:
-        fp.write("user,repo\n")
+        fp.write("user;repo\n")
 
         for user, repoList in userToRepos.items():
             for repo in repoList:
-                fp.write("%s,%s" % (user, repo))
+                fp.write("%s;%s\n" % (user, repo))
 
 
 createJSONFiles()
