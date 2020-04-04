@@ -273,11 +273,11 @@ app.post('/login', function (req, res) {
             res.status(401);
             res.send('Auth error.');
         } else {
-            var query2 = `UPDATE User SET last_login_time =${Date.now()} where username='${user_name}'`
-            connection.query(query2, function (err2, rows2, fields2) {
-                if (err2) throw err2
+            // var query2 = `UPDATE User SET last_login_time =${Date.now()} where username='${user_name}'`
+            // connection.query(query2, function (err2, rows2, fields2) {
+            //     if (err2) throw err2
 
-            })
+            // })
 
             res.status(200)
             res.send(rows[0])
