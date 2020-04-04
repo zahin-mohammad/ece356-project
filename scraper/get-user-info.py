@@ -177,7 +177,7 @@ def getIssueReaction(repo, issueNumber, issueID):
         for reaction in response.json():
 
             reactionInfo.append({
-                "post_id": issueID,
+                "comment_id": issueID,
                 "username": reaction["user"]["login"],
                 "emoji": reaction["content"],
                 "created_at": getEpochSecondTime(reaction["created_at"])
@@ -195,7 +195,7 @@ def getIssueCommentReaction(repo, commentID):
         for reaction in response.json():
 
             reactionInfo.append({
-                "post_id": commentID,
+                "comment_id": commentID,
                 "username": reaction["user"]["login"],
                 "emoji": reaction["content"],
                 "created_at": getEpochSecondTime(reaction["created_at"])
@@ -293,25 +293,25 @@ for user, repos in userToRepos.items():
 
 
 def createJSONFiles():
-    with open('userToFollowing.json', 'w') as fp:
+    with open('./data/userToFollowing.json', 'w') as fp:
         json.dump(userToFollowing, fp)
 
-    with open('userToRepos.json', 'w') as fp:
+    with open('./data/userToRepos.json', 'w') as fp:
         json.dump(userToRepos, fp)
 
-    with open('userInfo.json', 'w') as fp:
+    with open('./data/userInfo.json', 'w') as fp:
         json.dump(userInfo, fp)
 
-    with open('repoInfo.json', 'w') as fp:
+    with open('./data/repoInfo.json', 'w') as fp:
         json.dump(repoInfo, fp)
 
-    with open('issueInfo.json', 'w') as fp:
+    with open('./data/issueInfo.json', 'w') as fp:
         json.dump(issueInfo, fp)
 
-    with open('commentInfo.json', 'w') as fp:
+    with open('./data/commentInfo.json', 'w') as fp:
         json.dump(commentInfo, fp)
 
-    with open('reactionInfo.json', 'w') as fp:
+    with open('./data/reactionInfo.json', 'w') as fp:
         json.dump(reactionInfo, fp)
 
 
@@ -326,19 +326,14 @@ def createCSVFiles():
         fp.write("id;name;username;description;created_at;updated_at\n")
         for repo in repoInfo.values():
             try:
-                description = ""
                 if "description" in repo and repo["description"] is not None:
-                    description = repo["description"].translate(str.maketrans({"-":  r"\-",
-                                                                               ",":  r"\,",
-                                                                               "'":  r"\'",
-                                                                               '"':  r"\"",
-                                                                               "\\":  r"\\",
-                                                                               "%":  r"\%",
-                                                                               "*":  r"\*",
-                                                                               ".":  r"\."}))
+                    description = repo["description"].replace(";", "SEMICOLON")
 
-                fp.write("%s;%s;%s;%s;%s;%s\n" % (repo["id"], repo["name"], repo["username"], description,
-                                                  repo["created_at"], repo["updated_at"]))
+                    fp.write("%s;%s;%s;%s;%s;%s\n" % (repo["id"], repo["name"], repo["username"], description,
+                                                      repo["created_at"], repo["updated_at"]))
+                else:
+                    fp.write("%s;%s;%s;%s;%s;%s\n" % (repo["id"], repo["name"], repo["username"], "",
+                                                      repo["created_at"], repo["updated_at"]))
             except:
                 print(json.dumps(repo, indent=2))
                 traceback.print_exc()
@@ -352,21 +347,17 @@ def createCSVFiles():
     with open('./data/commentInfo.csv', 'w') as fp:
         fp.write("id;post_id;username;body;created_at;updated_at\n")
         for comment in commentInfo.values():
-            body = ""
             if "body" in comment and comment["body"] is not None:
-                body = comment["body"].translate(str.maketrans({"-":  r"\-",
-                                                                ",":  r"\,",
-                                                                "'":  r"\'",
-                                                                '"':  r"\"",
-                                                                "%":  r"\%",
-                                                                ";":  r"\;",
-                                                                "*":  r"\*",
-                                                                ".":  r"\."}))
-            fp.write("%s;%s;%s;%s;%s;%s\n" % (
-                comment["id"], comment["post_id"], comment["username"], body, comment["created_at"], comment["updated_at"]))
+                body = comment["body"].replace(";", "SEMICOLON")
+
+                fp.write("%s;%s;%s;%s;%s;%s\n" % (
+                    comment["id"], comment["post_id"], comment["username"], body, comment["created_at"], comment["updated_at"]))
+            else:
+                fp.write("%s;%s;%s;%s;%s;%s\n" % (
+                    comment["id"], comment["post_id"], comment["username"], "", comment["created_at"], comment["updated_at"]))
 
     with open('./data/reactionInfo.csv', 'w') as fp:
-        fp.write("post_id;username;emoji;created_at\n")
+        fp.write("comment_id;username;emoji;created_at\n")
 
         for reaction in reactionInfo:
             fp.write("%s;%s;%s;%s\n" % (
