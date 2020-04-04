@@ -1,13 +1,10 @@
-import React, { useContext, useEffect } from "react"
+import React from "react"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 import Feed from "./Feed"
 import People from "./People"
 import Repos from "./Repos"
-import { AuthContext } from "../App"
 
 export default function Home() {
-
-    const {state: authState} = useContext(AuthContext)
 
     return (
         <Router>
@@ -39,5 +36,3 @@ export default function Home() {
         </Router>
     )
 }
-
-// Reference: https://reacttraining.com/react-router/web/example/nesting

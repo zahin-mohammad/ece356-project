@@ -1,5 +1,4 @@
-import React, { useEffect } from "react"
-import { useReducer } from "react"
+import React, { useEffect, useReducer } from "react"
 import Home from "./Components/Home"
 import Login from "./Components/Login"
 import Header from "./Components/Header"

@@ -1,6 +1,4 @@
-import React, { useContext } from "react"
-import { useState } from "react"
-import logo from "../logo.svg"
+import React, { useContext, useState } from "react"
 import { AuthContext } from "../App"
 
 export default function Login() {
