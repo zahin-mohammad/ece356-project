@@ -2,7 +2,6 @@ const express = require('express')
 const mysql = require('mysql')
 const cors = require('cors')
 
-// var app = express()
 
 var connection = mysql.createConnection({
     host: 'localhost',
@@ -28,6 +27,7 @@ const app = express()
 app.use(cors())
 const port = 3001
 
+// Test
 app.get('/', function (req, res) {
     connection.query(`SELECT * from User where username='${"zahin-mohammad"}'`, function (err, rows, fields) {
         if (err) throw err
