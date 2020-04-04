@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import IssueCard from "./IssueCard.js"
 
+
 export default function Feed() {
     const [issues, setIssues] = useState([])
 

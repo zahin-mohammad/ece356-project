@@ -1,4 +1,5 @@
 import React, { useEffect, useReducer } from "react"
+import "./App.css";
 import Home from "./Components/Home"
 import Login from "./Components/Login"
 import Header from "./Components/Header"

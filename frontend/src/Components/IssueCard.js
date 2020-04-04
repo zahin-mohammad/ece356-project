@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Badge from 'react-bootstrap/Badge'
 
+
 export default function IssueCard(props) {
     // TODO: Get user who posted profile photo to display
     // TODO: Notification should be based on date last updated and date last logged in
