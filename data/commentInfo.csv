@@ -1,6 +1,4 @@
 id;post_id;username;body;created_at;updated_at
-464977589;464977589;zahin-mohammad;;1562522669;1562522669
-464977554;464977554;zahin-mohammad;;1562522649;1562522649
 573408419;573408419;zahin-mohammad;;1583009138;1583009138
 549249843;549249843;zahin-mohammad;<p>If the script is run within a folder that is not at <code>~/</code> then the wrong path will be assigned from the following lines 
 ```
@@ -15,6 +13,8 @@ echo "source ${(q-)PWD}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 </code></pre>
 <p>```</p>;1578959548;1578959574
 545331007;545331007;zahin-mohammad;;1578170967;1578170967
+464977589;464977589;zahin-mohammad;;1562522669;1562522669
+464977554;464977554;zahin-mohammad;;1562522649;1562522649
 510116274;510116274;dependabot[bot];<p>Bumps <a href="https://github.com/urllib3/urllib3">urllib3</a> from 1.23 to 1.24.2.
 <details>
 <summary>Changelog</summary></p>
@@ -120,7 +120,6 @@ You can trigger Dependabot actions by commenting on this PR:
 You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/atulbipin/spotify-slackbot/network/alerts).
 
 </details>;1571676788;1571676789
-11843860;11843860;AttwellBrian;<p>Clean this up some time. And follow this: Read http://opencv.org/platforms/android/android-best-practices.html before making modifications.</p>;1362861825;1362861827
 581340665;581340665;dependabot[bot];<p>Bumps <a href="https://github.com/acornjs/acorn">acorn</a> from 5.7.3 to 5.7.4.
 <details>
 <summary>Commits</summary>
@@ -157,6 +156,9 @@ You can trigger Dependabot actions by commenting on this PR:
 You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/AttwellBrian/nico/network/alerts).
 
 </details>;1584214355;1584214356
+11843860;11843860;AttwellBrian;<p>Clean this up some time. And follow this: Read http://opencv.org/platforms/android/android-best-practices.html before making modifications.</p>;1362861825;1362861827
+383727930;383727930;li-boxuan;<p>Hi, this dataset seems interesting, but the latest update is 3 years ago.</p>
+<p>Just wondering if there is any plan on updates.</p>;1542959386;1542959386
 517043197;517043197;anil-goudar;<p>How to specify the vertical limit so that the column contents can be modified accordingly.</p>;1572860880;1572860880
 481923312;481923312;tanyachawla412;;1566073628;1566073628
 478103608;478103608;margarineHound;<p>I want the bullet points for each position to line up with the position title and employer. I have modified the \tightitemize command as follows: </p>
@@ -320,13 +322,8 @@ Thank you</p>;1435655287;1495940774
 84255137;57681975;Travis-S;<p>I had the same problem with my institution, and ended up simply breaking the name apart by hand. Admittedly not an elegant solution, but the alternative is probably a little complicated to code...</p>
 <p>It would appear a relevant <code>LaTeX</code> command is the <code>\titlespacing{\subsection}</code> command in the <code>.cls</code> files.</p>;1426913614;1426913614
 57410171;57410171;EmmanueleSalvati;<p>Update from original</p>;1423709272;1423709272
-383727930;383727930;li-boxuan;<p>Hi, this dataset seems interesting, but the latest update is 3 years ago.</p>
-<p>Just wondering if there is any plan on updates.</p>;1542959386;1542959386
-451217561;451217561;brian-norman;;1559498415;1559498415
-356879856;356879856;brian-norman;<p>Or any user's commits that week.</p>;1536077319;1554088072
-355453005;355453005;brian-norman;<p>!google “anything”</p>;1535613056;1535613570
-355452779;355452779;brian-norman;<p>!git issues user repo add "Issue title" "Issue description"</p>;1535613006;1535613570
 357461207;357461207;brian-norman;<p>Brian this would be significantly cooler if it auto-ran on a fixed time-period as you originally imagined... Learn how to do that! Heroku maybe?</p>;1536197030;1536197030
+355811190;355811190;brian-norman;<p>Glen requests this visual cue that the level has indeed changes, a good idea!</p>;1535680080;1535994770
 585591514;585591514;brian-norman;;1584827209;1584828545
 602111660;585591514;brian-norman;<p>lol</p>;1584828544;1584828544
 585583679;585583679;zahin-mohammad;;1584824397;1585023151
@@ -347,11 +344,14 @@ Thank you</p>;1435655287;1495940774
 <p>Reply to comment 2</p>;1585023137;1585023137
 603003605;585583679;zahin-mohammad;<p>Multiline
 Comment</p>;1585023151;1585023151
-355811190;355811190;brian-norman;<p>Glen requests this visual cue that the level has indeed changes, a good idea!</p>;1535680080;1535994770
+451217561;451217561;brian-norman;;1559498415;1559498415
+356879856;356879856;brian-norman;<p>Or any user's commits that week.</p>;1536077319;1554088072
+355453005;355453005;brian-norman;<p>!google “anything”</p>;1535613056;1535613570
+355452779;355452779;brian-norman;<p>!git issues user repo add "Issue title" "Issue description"</p>;1535613006;1535613570
+536209332;536209332;SunnyNagam;;1576052051;1576052051
 383953069;383953069;keenangaudio;;1543027545;1543027545
 383948347;383948347;keenangaudio;;1543022138;1543022138
 383948004;383948004;louisj381;<p>fudge</p>;1543021796;1543021796
-536209332;536209332;SunnyNagam;;1576052051;1576052051
 592977009;592977009;lewis-cooper;<p>Is there anyway to take a graph thats already been plotted and find the gradient at each point of the graph and plot the values for the gradient on the graph?</p>;1585869816;1585869816
 591643321;591643321;chenxijun;<p>To fix the bug that causes <code>Type Error: run() missing 1 required positional argument: 'self'</code></p>
 <p>Thanks for contributing to manim!</p>
@@ -1595,6 +1595,7 @@ Then, remove all previously installed packages, so we have a clean slate to work
 </blockquote>
 <p>So maybe check out https://repperiumsci.blogspot.com/2019/12/my-adventures-with-manim-part_22.html and see if the instructions there work out.</p>;1584208615;1584208615
 579660639;579660639;ddxtanx;<p>This is a merging of two pull requests to add better discontinuity detecting functionality and implicit function graphing capabilities in requests #832 and #839. I don't think it would serve much to repeat the rationale and testing again in another PR, so the relevant information is in the separate pull requests. If, however, it would be more conducive to reviewers to include such information here I would be happy to transfer it all over here. </p>;1583982162;1583982181
+318514926;318514926;Jli0423;<p>Webpack dependency not installed with 'npm install'</p>;1524855493;1524855493
 198259639;198259639;Jspsun;<p>Traceback (most recent call last):
   File "<strong>main</strong>.py", line 17, in <module>
     main()
@@ -1609,4 +1610,3 @@ Then, remove all previously installed packages, so we have a clean slate to work
 AttributeError: 'list' object has no attribute 'get'</p>
 <p>To Reproduce:
 - Just make a horse sound. I'm not even kidding its the easiest way to reproduce the bug</p>;1483256595;1483256595
-318514926;318514926;Jli0423;<p>Webpack dependency not installed with 'npm install'</p>;1524855493;1524855493

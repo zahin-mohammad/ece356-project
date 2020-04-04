@@ -1,12 +1,13 @@
 id;repository_name;title;username;created_at;updated_at
-464977589;atulbipin/dev-env-setup;Add operating system specific flags;zahin-mohammad;1562522669;1562522669
-464977554;atulbipin/dev-env-setup;Add npm;zahin-mohammad;1562522649;1562522649
 573408419;zahin-mohammad/dev-env-setup;Add flutter;zahin-mohammad;1583009138;1583009138
 549249843;zahin-mohammad/dev-env-setup;Incorrect zsh paths in ~/.zshrc;zahin-mohammad;1578959548;1578959574
 545331007;zahin-mohammad/dev-env-setup;Add xclip;zahin-mohammad;1578170967;1578170967
+464977589;atulbipin/dev-env-setup;Add operating system specific flags;zahin-mohammad;1562522669;1562522669
+464977554;atulbipin/dev-env-setup;Add npm;zahin-mohammad;1562522649;1562522649
 510116274;atulbipin/spotify-slackbot;Bump urllib3 from 1.23 to 1.24.2;dependabot[bot];1571676788;1571676789
-11843860;AttwellBrian/face-access-control;Slow operatings on the UI thread;AttwellBrian;1362861825;1362861827
 581340665;AttwellBrian/nico;Bump acorn from 5.7.3 to 5.7.4 in /frontend;dependabot[bot];1584214355;1584214356
+11843860;AttwellBrian/face-access-control;Slow operatings on the UI thread;AttwellBrian;1362861825;1362861827
+383727930;deedy/gradcafe_data;Any plan on updates?;li-boxuan;1542959386;1542959386
 517043197;deedy/Deedy-Resume;How to specify the vertical limit in the document.?;anil-goudar;1572860880;1572860880
 481923312;deedy/Deedy-Resume;Update deedy_resume.xtx;tanyachawla412;1566073628;1566073628
 478103608;deedy/Deedy-Resume;removing hanging indent in tightitemize;margarineHound;1565206562;1565206562
@@ -37,19 +38,18 @@ id;repository_name;title;username;created_at;updated_at
 62188066;deedy/Deedy-Resume;No way to italicize;rrshaban;1426534802;1447765627
 57681975;deedy/Deedy-Resume;Large Institution names;Void2258;1423891489;1426913614
 57410171;deedy/Deedy-Resume;Merge pull request #1 from deedydas/master;EmmanueleSalvati;1423709272;1423709272
-383727930;deedy/gradcafe_data;Any plan on updates?;li-boxuan;1542959386;1542959386
+357461207;brian-norman/TrumpBot;Host and Auto-Run This;brian-norman;1536197030;1536197030
+355811190;brian-norman/CubicPolynomial;Change barrier colour each level;brian-norman;1535680080;1535994770
+585591514;zahin-mohammad/ece356-project;Title;brian-norman;1584827209;1584828545
+585583679;zahin-mohammad/ece356-project;Test Issue;zahin-mohammad;1584824397;1585023151
 451217561;brian-norman/sPam-Beesly;New PRs should notify the reviewers on discord;brian-norman;1559498415;1559498415
 356879856;brian-norman/sPam-Beesly;Report's new commits made every week in Cobresun;brian-norman;1536077319;1554088072
 355453005;brian-norman/sPam-Beesly;Add ability to google and pull up first search result;brian-norman;1535613056;1535613570
 355452779;brian-norman/sPam-Beesly;Ability to add issues to a repo;brian-norman;1535613006;1535613570
-357461207;brian-norman/TrumpBot;Host and Auto-Run This;brian-norman;1536197030;1536197030
-585591514;zahin-mohammad/ece356-project;Title;brian-norman;1584827209;1584828545
-585583679;zahin-mohammad/ece356-project;Test Issue;zahin-mohammad;1584824397;1585023151
-355811190;brian-norman/CubicPolynomial;Change barrier colour each level;brian-norman;1535680080;1535994770
+536209332;SunnyNagam/StockMarketSimulator;Add and plot change data (percentage change from previous day);SunnyNagam;1576052051;1576052051
 383953069;SunnyNagam/ENSF480Project1;TODO: connect registered buyer updateData to DB with handler (assign observers);keenangaudio;1543027545;1543027545
 383948347;SunnyNagam/ENSF480Project1;TODO: create catolog and open it at startup - connect checkDocument function in DB to search and display on gui;keenangaudio;1543022138;1543022138
 383948004;SunnyNagam/ENSF480Project1;Creating a catlog object that is an arraylist of Documents following abstract factory pattern;louisj381;1543021796;1543021796
-536209332;SunnyNagam/StockMarketSimulator;Add and plot change data (percentage change from previous day);SunnyNagam;1576052051;1576052051
 592977009;3b1b/manim;Can I find the slope of a function and plot it?;lewis-cooper;1585869816;1585869816
 591643321;3b1b/manim;"Type Error: run() missing 1 required positional argument: 'self' "Fix a bug in extract_scene.py;chenxijun;1585719943;1585895530
 591325292;3b1b/manim;Better pycairo installation instructions in docs;applemonkey496;1585679292;1585690103
@@ -80,5 +80,5 @@ id;repository_name;title;username;created_at;updated_at
 580929459;3b1b/manim;Updated Graph Scale factor at 10:29;iGeek098;1584142091;1584142091
 580052922;3b1b/manim;Trouble Downloading Requirements File;luketimmerman314;1584029801;1584208615
 579660639;3b1b/manim;Better discontinuity detecting and implicit function graphing;ddxtanx;1583982162;1583982181
-198259639;Jspsun/Athena2.0;Error when handling non-words using Google API;Jspsun;1483256595;1483256595
 318514926;Jspsun/MinimalReactBoilerPlate;Webpack;Jli0423;1524855493;1524855493
+198259639;Jspsun/Athena2.0;Error when handling non-words using Google API;Jspsun;1483256595;1483256595
