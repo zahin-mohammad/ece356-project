@@ -15,6 +15,7 @@ export default function Feed() {
         ])
     }, [])
 
+    // Notification logic will need to be more ... logical :) Should do it in SQL!
     const issuesToDisplay = issues.map(issue => <IssueCard key={issue.id} title={issue.title} user={issue.username} date={"Unknown Date"} notif={true} />)
 
     return (

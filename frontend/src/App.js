@@ -1,33 +1,57 @@
-import React from "react"
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom"
-import SignOut from "./Components/SignOut"
+import React, { useEffect } from "react"
+import { useReducer } from "react"
 import Home from "./Components/Home"
+import Login from "./Components/Login"
+import Header from "./Components/Header"
 
+export const AuthContext = React.createContext()
+
+const initialState = {
+  isAuthenticated: false,
+  username: null
+}
+
+const reducer = (state, action) => {
+  switch(action.type) {
+    case "LOGIN":
+      localStorage.setItem("username", JSON.stringify(action.payload.username))
+      return {
+        ...state,
+        isAuthenticated: true,
+        username: action.payload.username
+      }
+    case "LOGOUT":
+      localStorage.clear()
+      return {
+        ...state,
+        isAuthenticated: false,
+        username: null
+      }
+    default:
+      return state
+  }
+}
 
 export default function App() {
-  // TODO: https://reacttraining.com/react-router/web/example/auth-workflow
-  let navStyle = {
-    fontWeight: "normal",
-    margin: "0.5rem",
-    background: "none"
-  }
-  return (
-    <Router>
-      <div>
-        <nav>
-          <NavLink to = "/" style = {navStyle}> Home </NavLink>
-          <NavLink to = "/signOut" style = {navStyle}> Sign Out </NavLink>
-        </nav>
+  const [state, dispatch] = useReducer(reducer, initialState)
 
-        <Switch>
-          <Route exact path = "/signOut">
-            <SignOut />
-          </Route>
-          <Route path = "/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+  useEffect(() => {
+    const username = JSON.parse(localStorage.getItem("username") || null)
+
+    if (username) {
+      dispatch({
+        type: "LOGIN",
+        payload: {
+          username
+        }
+      })
+    }
+  }, [])
+
+  return (
+    <AuthContext.Provider value={{ state, dispatch }}>
+      <Header />
+      {!state.isAuthenticated ? <Login /> : <Home />}
+    </AuthContext.Provider>
   )
 }
