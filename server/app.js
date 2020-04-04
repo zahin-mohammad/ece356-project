@@ -24,7 +24,17 @@ connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
 const app = express()
 const port = 3001
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', function (req, res) {
+    connection.query(`SELECT * from User where username='${"zahin-mohammad"}'`, function (err, rows, fields) {
+        if (err) throw err
+        if (rows.length > 1) {
+            res.status(502);
+            res.send('Auth error, multiple users.');
+        } else {
+            res.send(rows[0])
+        }
+    })
+});
 
 // GET Requests
 
@@ -91,13 +101,27 @@ app.delete('/unfollow/repo', (req, res) => (
     res.send("unfollow repo")
 ))
 
-app.post('/login', (req, res) => (
+app.post('/login', function (req, res) {
+
+    const user_name = req.body.user;
+    const password = req.body.password;
+
+    connection.query(`SELECT * from User where username=${user_name} and password=${password}`, function (err, rows, fields) {
+        if (err) throw err
+        if (rows.length > 1) {
+            res.status(502);
+            res.send('Auth error, multiple users.');
+        } else {
+            res.send(rows[0])
+        }
+    })
+
     res.send("login")
-))
+});
 
 app.post('/logout', (req, res) => (
     res.send("logout")
-))
+));
 
 
 
