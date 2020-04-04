@@ -224,7 +224,7 @@ app.delete('/unfollow/user', function (req, res) {
 app.delete('/unfollow/repo', function (req, res) {
     // stored procedure to avoid unfollowing a repo we don't followed?
     var follower = req.body.follower;
-    var repository_name = req.body.followee;
+    var repository_name = req.body.repository_name;
     query = `
     DELETE FROM FollowsRepository
     WHERE follower = '${follower}'
