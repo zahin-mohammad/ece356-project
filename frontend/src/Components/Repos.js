@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react"
 import RepoCard from "./RepoCard"
+import InputGroup from 'react-bootstrap/InputGroup'
+import FormControl from 'react-bootstrap/FormControl'
+
 
 export default function Repos() {
     const [search, setSearch] = useState("")
@@ -23,13 +26,17 @@ export default function Repos() {
 
     return (
         <div>
-            <input 
-                type="text"
-                name="search"
-                value={search}
-                onChange={(event) => setSearch(event.target.value)}
-                placeholder="Search"
-            />
+            <InputGroup className="mb-3" style={{width: "40rem", margin: "1rem"}}>
+                <InputGroup.Prepend>
+                    <InputGroup.Text id="basic-addon1">🔍</InputGroup.Text>
+                </InputGroup.Prepend>
+                <FormControl
+                    onChange={(event) => setSearch(event.target.value)}
+                    placeholder="Search"
+                    aria-label="search"
+                    aria-describedby="basic-addon1"
+                />
+            </InputGroup>
 
         {reposToDisplay}
         </div>
