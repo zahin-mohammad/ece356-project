@@ -7,7 +7,6 @@ id;repository_id;title;username
 464977554;194540529;Add npm;zahin-mohammad
 581340665;230031073;Bump acorn from 5.7.3 to 5.7.4 in /frontend;dependabot[bot]
 11843860;7884405;Slow operatings on the UI thread;AttwellBrian
-383727930;46354495;Any plan on updates?;li-boxuan
 517043197;19312540;How to specify the vertical limit in the document.?;anil-goudar
 481923312;19312540;Update deedy_resume.xtx;tanyachawla412
 478103608;19312540;removing hanging indent in tightitemize;margarineHound
@@ -38,18 +37,20 @@ id;repository_id;title;username
 62188066;19312540;No way to italicize;rrshaban
 57681975;19312540;Large Institution names;Void2258
 57410171;19312540;Merge pull request #1 from deedydas/master;EmmanueleSalvati
+383727930;46354495;Any plan on updates?;li-boxuan
 355811190;145190437;Change barrier colour each level;brian-norman
-357461207;80943821;Host and Auto-Run This;brian-norman
+585591514;249038105;Title;brian-norman
+585583679;249038105;Test Issue;zahin-mohammad
 451217561;146331420;New PRs should notify the reviewers on discord;brian-norman
 356879856;146331420;Report's new commits made every week in Cobresun;brian-norman
 355453005;146331420;Add ability to google and pull up first search result;brian-norman
 355452779;146331420;Ability to add issues to a repo;brian-norman
-585591514;249038105;Title;brian-norman
-585583679;249038105;Test Issue;zahin-mohammad
+357461207;80943821;Host and Auto-Run This;brian-norman
+536209332;227275660;Add and plot change data (percentage change from previous day);SunnyNagam
 383953069;157974626;TODO: connect registered buyer updateData to DB with handler (assign observers);keenangaudio
 383948347;157974626;TODO: create catolog and open it at startup - connect checkDocument function in DB to search and display on gui;keenangaudio
 383948004;157974626;Creating a catlog object that is an arraylist of Documents following abstract factory pattern;louisj381
-536209332;227275660;Add and plot change data (percentage change from previous day);SunnyNagam
+593996872;32689863;Exception: Latex error converting to dvi and other errors during implementing transformation;arpon113
 592977009;32689863;Can I find the slope of a function and plot it?;lewis-cooper
 591643321;32689863;"Type Error: run() missing 1 required positional argument: 'self' "Fix a bug in extract_scene.py;chenxijun
 591325292;32689863;Better pycairo installation instructions in docs;applemonkey496
@@ -79,6 +80,5 @@ id;repository_id;title;username
 581411761;32689863;manim numpy error;emanueldias242
 580929459;32689863;Updated Graph Scale factor at 10:29;iGeek098
 580052922;32689863;Trouble Downloading Requirements File;luketimmerman314
-579660639;32689863;Better discontinuity detecting and implicit function graphing;ddxtanx
 198259639;77751207;Error when handling non-words using Google API;Jspsun
 318514926;129928931;Webpack;Jli0423

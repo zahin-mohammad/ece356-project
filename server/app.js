@@ -173,7 +173,7 @@ app.post('/create/comment', (req, res) => (
 app.post('/follow/user', function (req, res) {
     // stored procedure to avoid following someone we already follow?
     var follower = req.body.follower;
-    var followee = req.body.repository_name;
+    var followee = req.body.followee;
     query = `
         INSERT INTO FollowsUser (follower, followee)
         VALUES ('${follower}', '${followee}')

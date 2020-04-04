@@ -9,6 +9,8 @@ import datetime
 import dateutil.parser
 import traceback
 import re
+import markdown
+
 
 # import re
 
@@ -38,6 +40,8 @@ with open("./scraper/users.txt") as f:
 gitHubAPI = GitHubAPI(USER, TOKEN)
 print(gitHubAPI.USER)
 print(gitHubAPI.rateLimitRemaining)
+
+md = markdown.Markdown()
 
 userToRepos = {}
 userToFollowing = {}
@@ -212,7 +216,7 @@ def getIssueComments(issueID, issueNumber, repo):
             commentInfo[id]["id"] = id
             commentInfo[id]["post_id"] = issueID
             commentInfo[id]["username"] = comment["user"]["login"]
-            commentInfo[id]["body"] = comment["body"]
+            commentInfo[id]["body"] = md.convert(comment["body"])
             commentInfo[id]["created_at"] = getEpochSecondTime(
                 comment["created_at"])
             commentInfo[id]["updated_at"] = getEpochSecondTime(
@@ -224,7 +228,7 @@ def getIssueComments(issueID, issueNumber, repo):
         traceback.print_exc()
 
 
-def getIssues(repo, repoID):
+def getIssues(repo):
     URL = GITHUB_BASE_URL + (GET_ISSUES % (repo))
     response = gitHubAPI.makeRequest("get", URL, auth=(USER, TOKEN))
 
@@ -233,7 +237,7 @@ def getIssues(repo, repoID):
             id = issue["id"]
             issueInfo[id] = {}
             issueInfo[id]["id"] = issue["id"]
-            issueInfo[id]["repository_id"] = repoID
+            issueInfo[id]["repository_name"] = repo
             issueInfo[id]["title"] = issue["title"]
             issueInfo[id]["username"] = issue["user"]["login"]
             getUserInfo(issue["user"]["login"])
@@ -244,7 +248,7 @@ def getIssues(repo, repoID):
             commentInfo[id]["id"] = id
             commentInfo[id]["post_id"] = id
             commentInfo[id]["username"] = issue["user"]["login"]
-            commentInfo[id]["body"] = issue["body"]
+            commentInfo[id]["body"] = md.convert(issue["body"])
             commentInfo[id]["created_at"] = getEpochSecondTime(
                 issue["created_at"])
             commentInfo[id]["updated_at"] = getEpochSecondTime(
@@ -273,7 +277,7 @@ def getRepoInfo(user, repo):
         repoInfo[repo]["updated_at"] = getEpochSecondTime(
             response.json()["updated_at"])
         if response.json()["has_issues"]:
-            getIssues(repo, repoInfo[repo]["id"])
+            getIssues(repo)
     except:
         print(json.dumps(response.json(), indent=2))
         traceback.print_exc()
@@ -312,13 +316,13 @@ def createJSONFiles():
 
 
 def createCSVFiles():
-    with open('userInfo.csv', 'w') as fp:
+    with open('./data/userInfo.csv', 'w') as fp:
         fp.write("username;name;avatar_url;email;last_login_time;password\n")
         for user in userInfo.values():
             fp.write("%s;%s;%s;%s;%s;%s\n" % (user["username"], user["name"], user["avatar_url"],
                                               user["email"], user["last_login_time"], "password"))
 
-    with open('repoInfo.csv', 'w') as fp:
+    with open('./data/repoInfo.csv', 'w') as fp:
         fp.write("id;name;username;description;created_at;updated_at\n")
         for repo in repoInfo.values():
             try:
@@ -339,13 +343,13 @@ def createCSVFiles():
                 print(json.dumps(repo, indent=2))
                 traceback.print_exc()
 
-    with open('issueInfo.csv', 'w') as fp:
-        fp.write("id;repository_id;title;username\n")
+    with open('./data/issueInfo.csv', 'w') as fp:
+        fp.write("id;repository_name;title;username\n")
         for issue in issueInfo.values():
             fp.write("%s;%s;%s;%s\n" %
-                     (issue["id"], issue["repository_id"], issue["title"], issue["username"]))
+                     (issue["id"], issue["repository_name"], issue["title"], issue["username"]))
 
-    with open('commentInfo.csv', 'w') as fp:
+    with open('./data/commentInfo.csv', 'w') as fp:
         fp.write("id;post_id;username;body;created_at;updated_at\n")
         for comment in commentInfo.values():
             body = ""
@@ -354,7 +358,6 @@ def createCSVFiles():
                                                                 ",":  r"\,",
                                                                 "'":  r"\'",
                                                                 '"':  r"\"",
-                                                                "\\":  r"\\",
                                                                 "%":  r"\%",
                                                                 ";":  r"\;",
                                                                 "*":  r"\*",
@@ -362,21 +365,21 @@ def createCSVFiles():
             fp.write("%s;%s;%s;%s;%s;%s\n" % (
                 comment["id"], comment["post_id"], comment["username"], body, comment["created_at"], comment["updated_at"]))
 
-    with open('reactionInfo.csv', 'w') as fp:
+    with open('./data/reactionInfo.csv', 'w') as fp:
         fp.write("post_id;username;emoji;created_at\n")
 
         for reaction in reactionInfo:
             fp.write("%s;%s;%s;%s\n" % (
                 reaction["post_id"], reaction["username"], reaction["emoji"], reaction["created_at"]))
 
-    with open('userToFollowing.csv', 'w') as fp:
+    with open('./data/userToFollowing.csv', 'w') as fp:
         fp.write("follower;followee\n")
 
         for follower, followingList in userToFollowing.items():
             for followee in followingList:
                 fp.write("%s;%s\n" % (follower, followee))
 
-    with open('userToRepos.csv', 'w') as fp:
+    with open('./data/userToRepos.csv', 'w') as fp:
         fp.write("user;repo\n")
 
         for user, repoList in userToRepos.items():
