@@ -63,14 +63,23 @@ app.get('/users', function (req, res) {
     user_name = req.query.user_name
 
     if (user_name) {
+        var query = `
+        SELECT username, name, avatar_url, email, last_login_time FROM User
+        `;
+
+        connection.query(query, function (err, rows, fields) {
+            if (err) throw err
+            res.status(200)
+            res.send(rows)
+        })
 
     } else {
-        connection.query(
-            `SELECT user_name, name, avatar_url, email, last_login_time FROM User'`, function (err, rows, fields) {
-                if (err) throw err
-                res.status(200)
-                res.send(rows)
-            })
+        var query = `SELECT username, name, avatar_url, email, last_login_time FROM User`
+        connection.query(query, function (err, rows, fields) {
+            if (err) throw err
+            res.status(200)
+            res.send(rows)
+        })
     }
 
 })
