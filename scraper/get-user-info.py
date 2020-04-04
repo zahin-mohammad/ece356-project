@@ -240,8 +240,10 @@ def getIssues(repo):
             issueInfo[id]["repository_name"] = repo
             issueInfo[id]["title"] = issue["title"]
             issueInfo[id]["username"] = issue["user"]["login"]
-            issueInfo["created_at"] = getEpochSecondTime(issue["created_at"])
-            issueInfo["updated_at"] = getEpochSecondTime(issue["updated_at"])
+            issueInfo[id]["created_at"] = getEpochSecondTime(
+                issue["created_at"])
+            issueInfo[id]["updated_at"] = getEpochSecondTime(
+                issue["updated_at"])
             getUserInfo(issue["user"]["login"])
             issueNumber = issue["number"]
 
@@ -363,7 +365,7 @@ def createCSVFiles():
 
         for reaction in reactionInfo:
             fp.write("%s;%s;%s;%s\n" % (
-                reaction["post_id"], reaction["username"], reaction["emoji"], reaction["created_at"]))
+                reaction["comment_id"], reaction["username"], reaction["emoji"], reaction["created_at"]))
 
     with open('./data/userToFollowing.csv', 'w') as fp:
         fp.write("follower;followee\n")

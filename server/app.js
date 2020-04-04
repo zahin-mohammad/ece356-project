@@ -172,7 +172,7 @@ app.get('/following/repository', function (req, res) {
 
 // Post
 
-app.post('/create/issue', function (req, res) {
+app.post('/create/repository', function (req, res) {
 
     var user_name = req.body.follower;
     var repository_name = req.body.repository_name;
@@ -180,6 +180,7 @@ app.post('/create/issue', function (req, res) {
     var created_at = Date.now()
     var updated_at = Date.now()
 
+    // TODO: follow the repo
     query = `
     INSERT INTO Repository (name, description, username, created_at, updated_at)
     VALUES('${repository_name}', '${description}', '${user_name}', ${created_at}, ${updated_at})

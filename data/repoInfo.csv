@@ -1,1029 +1,190 @@
 id;name;username;description;created_at;updated_at
-240529808;zahin-mohammad/gh-analytics;zahin-mohammad;Playing around with the github API.;1581691457;1581722071
-92558271;YuhanLiin/EngHack;YuhanLiin;Enghack project;1495845044;1495856661
-169446011;virgillee97/ezplanner-flask-api;virgillee97;;1549473968;1549473970
-194542271;zahin-mohammad/dev-env-setup;atulbipin;;1561915194;1578170933
-249038105;zahin-mohammad/ece356-project;brian-norman;A social network using sample data retrieved from the github api. This project was completed for the database course at UWaterloo, ECE356, taught by Paul Ward.;1584815817;1586037484
-169423456;virgillee97/ezplanner-react-client;virgillee97;Front end code for the EZPlanner website;1549465193;1551150012
-160772271;abdurrehman135/CoolDown-TO;abdurrehman135;Android app that uses your phone's location and the Toronto AC locations API to find you the nearest publicly accessible air conditioned area.;1544158180;1559532123
-134916417;zahin-mohammad/RuHacks18;abdurrehman135;RuHacks 2018. An app that utilizes your phones location and the Toronto AC locations API to find you the nearest publicly accessible air conditioned area.;1527294449;1527558689
-194540529;atulbipin/dev-env-setup;atulbipin;;1561913978;1562184324
+78606115;atulbipin/VoiceChanger;atulbipin;;1484112766;1495203590
+90090374;atulbipin/ShopifyDemo;atulbipin;;1493770551;1493770760
+194540529;atulbipin/dev-env-setup;zahin-mohammad;;1561913978;1562184324
+106156389;atulbipin/clojure-spellchecker;atulbipin;A simple spellchecker written in Clojure;1507445750;1511136027
+92543422;atulbipin/EngHacks;atulbipin;EngHacks project;1495827899;1495828176
+111072679;atulbipin/callback;atulbipin;A full-stack web app that lets users send out surveys to a group of people for their product/business;1510904138;1516674933
+158585260;atulbipin/uw-wkrpt;atulbipin;LaTeX class for writing work reports for the University of Waterloo.;1542821986;1542821988
+124338867;pranavjain97/the-social-network-backend;pranavjain97;;1520484955;1520484957
+86136716;atulbipin/WatSwift;atulbipin;UWaterloo OpenData Client in Swift;1490422342;1490422343
+194542271;zahin-mohammad/dev-env-setup;zahin-mohammad;;1561915194;1578170933
+107675471;atulbipin/ReSwift;atulbipin;Unidirectional Data Flow in Swift - Inspired by Redux;1508502525;1508502526
+213059868;atulbipin/moment;atulbipin;Parse, validate, manipulate, and display dates in javascript.;1570304055;1570304057
+143510694;atulbipin/spotify-slackbot;atulbipin;;1533370439;1533402366
+124338780;pranavjain97/the-social-network-ios;pranavjain97;;1520484882;1520484884
+145274447;atulbipin/PantsOrShorts-iOS;atulbipin;The Official iOS Port of Pants or Shorts;1534654817;1534703920
+69369002;atulbipin/TrueFalseStarter;atulbipin;;1474988741;1474988858
+141934330;AttwellBrian/CarND-Behavioral-Cloning-P3;AttwellBrian;Starting files for the Udacity CarND Behavioral Cloning Project;1532297498;1532905502
+158718410;AttwellBrian/agario;AttwellBrian;Realtime multiplayer game, in spirit of agar.io;1542900447;1544023770
+37763815;AttwellBrian/JCenter;AttwellBrian;;1434790315;1456960812
+106746787;AttwellBrian/angularjs-Quizzler;AttwellBrian;The AngularJS Challenge: Create an online Quiz builder & testing application.;1507843413;1507843415
+136832719;AttwellBrian/CarND-LaneLines-P1;AttwellBrian;Lane Finding Project for Self-Driving Car ND;1528653899;1528685419
+94792272;AttwellBrian/decompiling-android;AttwellBrian;Source code for 'Decompiling Android' by Godfrey Nolan;1497886209;1497886211
+94790683;AttwellBrian/parse_androiddex;AttwellBrian;解析Android中的dex文件格式;1497885332;1497885334
+7884405;AttwellBrian/face-access-control;AttwellBrian;Face Unlock;1359429496;1538224093
+105116156;AttwellBrian/erlang-atrace-flamegraphs;AttwellBrian;Generate flamegraphs from Android method trace files;1506583608;1506583610
+220119510;AttwellBrian/helm-charts;AttwellBrian;You know, for Kubernetes;1573087763;1573087765
+45432151;AttwellBrian/hugo;AttwellBrian;Annotation-triggered method call logging for your debug builds.;1446512052;1490264869
+65251183;AttwellBrian/dagger;AttwellBrian;A fast dependency injector for Android and Java.;1470704904;1470704906
+38277643;AttwellBrian/Android-StaticLauncher;AttwellBrian;An example project of Android annotation processing using Gradle.;1435622399;1435622399
+151014764;AttwellBrian/CarND-Extended-Kalman-Filter-Project;AttwellBrian;Self-Driving Car Nanodegree Program Starter Code for the Extended Kalman Filter Project;1538348763;1538860066
+94557072;AttwellBrian/dexClassSizeAnalyzer;AttwellBrian;Tool for analyzing size of classes in dex files;1497626751;1541786794
+230031073;AttwellBrian/nico;AttwellBrian;A web game written with family over Chistmas.;1577242115;1578541641
+94794976;AttwellBrian/oatdump_plus;AttwellBrian;Extended oatdump from Android ART repo, to support class & method level dumps;1497887904;1497887911
+124595585;AttwellBrian/LinearAlloc-Samples;AttwellBrian;LinearAlloc sample code;1520631142;1520631144
+44362207;AttwellBrian/android-ramping-noise;AttwellBrian;Android app that gradually starts generating white noise after you fall asleep.;1444969617;1482816441
+38709574;AttwellBrian/loglifecycle;AttwellBrian;Logs all lifecycle methods of annotated Activities, Fragments, Services, Views, etc.;1436296862;1436296863
+143644676;AttwellBrian/CarND-Advanced-Lane-Lines;AttwellBrian;;1533500160;1534779177
+153022776;AttwellBrian/CarND-Unscented-Kalman-Filter-Project;AttwellBrian;Self-Driving Car Nanodegree Program Starter Code for the Unscented Kalman Filter Project;1539554276;1539554504
+122398204;AttwellBrian/material-components-android;AttwellBrian;Modular and customizable Material Design UI components for Android;1519249814;1519249819
+146212420;AttwellBrian/CarND-Vehicle-Detection;AttwellBrian;Vehicle Detection Project;1535313799;1535313801
+168479763;AttwellBrian/contrib;AttwellBrian;This is a place for various components in the Kubernetes ecosystem that aren't part of the Kubernetes core. Consider creating a new repo instead.;1548918534;1555470271
+63472004;AttwellBrian/phab-username-highlighter-plugin;AttwellBrian;Highlights specified usernames in the reviewer line under diffs. Helps you determine if you have been directly added as a reviewer, or if you have been added as a part of a group. Also deletes diffs that you have approved from your queue.;1468655515;1491190598
+168031381;AttwellBrian/k8s-stackdriver;AttwellBrian;;1548707140;1551470522
+181704388;AttwellBrian/onelogin-oidc-java;AttwellBrian;OpenId Connect client examples for Java apps;1555424385;1555424387
+141069594;AttwellBrian/CarND-Traffic-Sign-Classifier-Project;AttwellBrian;Classify Traffic Signs.;1531702460;1532291594
+181577534;AttwellBrian/onelogin-oidc-node;AttwellBrian;OpenId Connect client examples for SPA or Node apps;1555369349;1555369354
+19312540;deedy/Deedy-Resume;deedy;A one page , two asymmetric column resume template in XeTeX that caters to an undergraduate Computer Science student;1398860075;1586015402
+24302594;deedy/dotfiles;deedy;My dotfiles;1411330858;1493625801
+19453835;deedy/jekyll;deedy;Jekyll is a blog-aware, static site generator in Ruby;1399290001;1493625808
+19309965;deedy/Latex-Templates;deedy;A concise set of Latex templates that serves a small set of needs - CV, Essays, Articles and Problem Sets;1398853284;1585747651
+13280168;deedy/elasticsearch;deedy;Open Source, Distributed, RESTful Search Engine;1380740771;1493625824
+19401726;deedy/Apache-License;deedy;How to add Apache license to a project;1399116921;1522040275
+125902755;deedy/cbse_schools_data;deedy;Cleaned, scraped data of all 20,367 CBSE schools, primarily in India, in 2018. Data scraped from: cbseaff.nic.in/cbse_aff/schdir_Report/userview.aspx;1521484057;1580686203
+6321385;deedy/Custom-Scheme-Interpreter;deedy;A custom Scheme Interpreter designed in OCaml.;1350830555;1579223670
+6316784;deedy/Breakout;deedy;A full implementation of the classic game Breakout on Java;1350792527;1381444364
+125965936;deedy/cisce_schools_data;deedy;Cleaned, scraped data of all 2,341 CISCE schools, primarily in India, in 2018. Data scraped from: http://www.cisce.org/locate-search.aspx?country=0&state=0&dist=0&city=0&location=&schooltype=&cve=&isc=&icse=&schoolclassi=&school=&search=locate;1521524165;1569397692
+6321769;deedy/Explorer-Navigational-Website;deedy;A file explorer like navigational website which allows adding, storing and viewing of images, other webpages and other file formats.;1350832687;1383639491
+10893725;deedy/FindPasture;deedy;Submission for the Stanford Hack/Meat 2013 Hackathon;1372028316;1493625838
+18821079;deedy/FantasyIPL-Moneyball;deedy;;1397608100;1493625803
+37183170;deedy/HiddenMarkovModelRandomWalk;deedy;;1433922613;1556466871
+6516997;deedy/eBayBay;deedy;A Chrome Extension that finds better prices for books on eBay if you're about to buy it on Amazon.;1351923534;1493625851
+6316992;deedy/HotelManagement;deedy;A text-based Hotel Management application built on C++.;1350794417;1422801444
+91134166;deedy/india-nfhs4;deedy;;1494628197;1558110529
+46354495;deedy/gradcafe_data;deedy;;1447772675;1580777405
+13894101;deedy/Connect4AI;deedy;A web-based Connect Four game built on the Java/Scala framework, Play. Intended to backed by an AI based on Minimax Trees, Heuristic Search and Alpha-Beta Pruning.;1382838159;1493625819
+6321434;deedy/2x2x2CubeSolver;deedy;A text-based 2x2x2 Rubix Cube Solver, built in OCaml.;1350830804;1399610502
+12631876;deedy/Compilers;deedy;Compilers Repo;1378425809;1493625816
+6317833;deedy/AudioGrab;deedy;A script that fetches the top 100 songs of iTunes off the web, albeit unreliably.;1350801958;1386595599
+11231006;deedy/CheerPeer;deedy;Submission for the Human API hackathon;1373187593;1493625836
+57976664;deedy/cricket-predictor;deedy;;1462286593;1538231878
+6316823;deedy/LabelStuffDataAnalysis;deedy;Some tools to analyze the .xml data of LabelStuff, http://labelstuff.cs.cornell.edu/;1350792924;1392556391
+9263704;deedy/CS5625Interactive;deedy;;1365269141;1493625840
+13281376;deedy/javaee7-samples;deedy;Java EE 7 Samples;1380744294;1493625826
+6321237;deedy/FacebookFun;deedy;A few shell scripts which shows you some fun facts about your Facebook profile.;1350829554;1556696225
+6316757;deedy/3DGrapherJava;deedy;A 3D Graphing tool in Java;1350792265;1396149170
+107482204;rahul-iyer/ghtorrent.org;rahul-iyer;The GHtorrent project website;1508376150;1508376152
+74667405;rahul-iyer/rahul-iyer.github.io;rahul-iyer;Personal Page;1479987263;1554045005
+77361125;rahul-iyer/resumecard;rahul-iyer;You can see the live demo;1482731512;1482731515
+16024702;rahul-iyer/autocompletetext;rahul-iyer;My First project.Used JavaScript/Jquery/PHP for autocomplete text.The Suggestions are based upon data in the database ;1390046611;1390099560
+36865887;rahul-iyer/BuildingMachineLearningSystemsWithPython;rahul-iyer;Source Code for the book Building Machine Learning Systems with Python;1433416592;1494485159
+20436315;rahul-iyer/Allroundstudentevalsystem;rahul-iyer;All round student evaluation system using Machine learning;1401786520;1482173030
+153497466;rahul-iyer/polite-dialogue-generation;rahul-iyer;Code for "Polite Dialogue Generation Without Parallel Data";1539797563;1539797565
+168787067;rahul-iyer/transformer-xl;rahul-iyer;;1549075621;1549075623
+16045054;rahul-iyer/Messaging-System;rahul-iyer;Facebook like messaging System especially developed for Joomla CMS using Joomla API and PHP.;1390132784;1482173214
+84585600;rahul-iyer/awesome-courses;rahul-iyer;:books: List of awesome university courses for learning Computer Science!;1489167773;1494485227
+93432347;rahul-iyer/AI-resources;rahul-iyer;Selection of resources to learn Artificial Intelligence / Machine Learning / Deep Learning ;1496685684;1496682732
+77379499;rahul-iyer/elasticsearch-jq;rahul-iyer;;1482751597;1482751620
+67192219;rahul-iyer/SQL_to_English_Machine_Translation;rahul-iyer;;1472793418;1472794468
+20436612;rahul-iyer/LBS;rahul-iyer;All round Eval System using machine learning;1401787136;1436586560
+86903012;rahul-iyer/word2vec_commented;rahul-iyer;Commented (but unaltered) version of original word2vec C implementation.;1491039605;1491039606
+37298456;rahul-iyer/mosesdecoder;rahul-iyer;Moses, the machine translation system;1434077353;1434077363
+58869603;rahul-iyer/OpinionMiningForProductEnhancement;rahul-iyer;BE project;1463326651;1463326669
+175911354;rahul-iyer/mcdowell-cv;rahul-iyer;A Nice-looking CV template made into LaTeX;1552699114;1552699116
+120059478;rahul-iyer/torchMoji;rahul-iyer;A pyTorch implementation of the DeepMoji model: state-of-the-art deep learning model for analyzing sentiment, emotion, sarcasm etc;1517632371;1517632373
+77379688;rahul-iyer/repo_as_subtree;rahul-iyer;Pulls a repository and makes it as a sub folder in another respository;1482751814;1482751850
+181978768;rahul-iyer/CSrankings;rahul-iyer;A web app for ranking computer science departments according to their research output in selective venues.;1555541002;1555541006
+92273893;rahul-iyer/http_request_signer_AWS;rahul-iyer;Signs the HTTP request producing Authorization headers for AWS API Gateway requests.;1495617617;1507666317
+42651003;rahul-iyer/smsdetection;rahul-iyer;SMS spam detector;1442487227;1442496227
 146331420;brian-norman/sPam-Beesly;brian-norman;💁🏼 A general purpose Discord Bot with GitHub API integration useful for teams.;1535390982;1584546815
-84094361;brian-norman/ISeeYouHacking.com;darcy-clark;🔌 Website and winner of Martello API Challenge at CUHacking 2017.;1488817094;1535697537
-233693396;brian-norman/weightLess;brian-norman;⚖️ Weight Tracking Android Application;1578949523;1579550401
-250709899;brian-norman/Covid-19;brian-norman;🦠 Tracking stats about Covid-19;1585367768;1585420980
-145190437;brian-norman/CubicPolynomial;brian-norman;🎮 3D Minimalist Arcade Game for Android and Mac/PC. Download on the Play Store now!;1534567204;1548735586
-93773888;brian-norman/ChristmasRedditBot;brian-norman;🎅🏼 Python Reddit Bot I made in 2014 to respond to "Merry Christmas" in Reddit comments;1496942040;1574138839
+41633407;brian-norman/Dem2Cal;brian-norman;📆 Downloads course schedules from school website and uploads it to Google Calendar.;1440948583;1574138756
 80943821;brian-norman/TrumpBot;SunnyNagam;🤴🏻 A twitter bot that aggregates and lists Trump's most tweeted words.;1486237542;1535697411
 218194125;brian-norman/bin2Dec;brian-norman;💯 Quick and dirty app to convert binary to decimal;1572318665;1578841352
-106777980;cole-adams/Comunly.com;cole-adams;2016 Mayor's Youth Council Hackathon submission;1507869007;1507869172
-41633407;brian-norman/Dem2Cal;brian-norman;📆 Downloads course schedules from school website and uploads it to Google Calendar.;1440948583;1574138756
+84094361;brian-norman/ISeeYouHacking.com;brian-norman;🔌 Website and winner of Martello API Challenge at CUHacking 2017.;1488817094;1535697537
+249038105;zahin-mohammad/ece356-project;zahin-mohammad;A social network using sample data retrieved from the github api. This project was completed for the database course at UWaterloo, ECE356, taught by Paul Ward.;1584815817;1586041914
+145190437;brian-norman/CubicPolynomial;brian-norman;🎮 3D Minimalist Arcade Game for Android and Mac/PC. Download on the Play Store now!;1534567204;1548735586
 86856355;brian-norman/column-remover;brian-norman;A simple column remover for large files (any character separated);1490990865;1574138862
-69369002;atulbipin/TrueFalseStarter;atulbipin;;1474988741;1474988858
-213059868;atulbipin/moment;atulbipin;Parse, validate, manipulate, and display dates in javascript.;1570304055;1570304057
-124338867;pranavjain97/the-social-network-backend;pranavjain97;;1520484955;1520484957
-92543422;atulbipin/EngHacks;atulbipin;EngHacks project;1495827899;1495828176
-86136716;atulbipin/WatSwift;atulbipin;UWaterloo OpenData Client in Swift;1490422342;1490422343
-90090374;atulbipin/ShopifyDemo;atulbipin;;1493770551;1493770760
-145274447;atulbipin/PantsOrShorts-iOS;atulbipin;The Official iOS Port of Pants or Shorts;1534654817;1534703920
-143510694;atulbipin/spotify-slackbot;atulbipin;;1533370439;1533402366
-158585260;atulbipin/uw-wkrpt;atulbipin;LaTeX class for writing work reports for the University of Waterloo.;1542821986;1542821988
-107675471;atulbipin/ReSwift;atulbipin;Unidirectional Data Flow in Swift - Inspired by Redux;1508502525;1508502526
-111072679;atulbipin/callback;atulbipin;A full-stack web app that lets users send out surveys to a group of people for their product/business;1510904138;1516674933
-78606115;atulbipin/VoiceChanger;atulbipin;;1484112766;1495203590
-124338780;pranavjain97/the-social-network-ios;pranavjain97;;1520484882;1520484884
-106156389;atulbipin/clojure-spellchecker;atulbipin;A simple spellchecker written in Clojure;1507445750;1511136027
-97630005;AlecStrong/AssistedInject;AlecStrong;Assisted injection for JSR 330.;1500401891;1500401893
-1544791;JakeWharton/apibuilder;JakeWharton;A Java utility class which facilitates the construction of RESTful API wrappers using the builder pattern.;1301459263;1577715409
-31044553;AlecStrong/sqlbrite;AlecStrong;A lightweight wrapper around SQLiteOpenHelper which introduces reactive stream semantics to SQL operations.;1424392222;1453882769
-1657204;JakeWharton/domainr-java;JakeWharton;A Java wrapper around the Domainr API and a simple DSL for easy interaction.;1303666954;1577715419
-113929634;digitalbuddha/dagger;digitalbuddha;A fast dependency injector for Android and Java.;1513043414;1513043418
-100624553;chrisbanes/tivi;chrisbanes;Tivi is a work-in-progress TV show tracking Android app, which connects to Trakt.tv. It is still in its early stages of development and currently only contains two pieces of UI. It is under heavy development.;1502987758;1585986336
-45879966;digitalbuddha/leakcanary;digitalbuddha;A memory leak detection library for Android and Java.;1447120041;1447120042
-45432151;AttwellBrian/hugo;AttwellBrian;Annotation-triggered method call logging for your debug builds.;1446512052;1490264869
-1621585;JakeWharton/github-deploy-maven-plugin;JakeWharton;[DEPRECATED] Use GitHub's first-party plugin.;1302915782;1580576205
-2264200;JakeWharton/Android-DirectionalViewPager;JakeWharton;[DEPRECATED] Implementation of the compatibility library ViewPager class that supports paging both vertically and horizontally.;1314218661;1584756605
-65251183;AttwellBrian/dagger;AttwellBrian;A fast dependency injector for Android and Java.;1470704904;1470704906
-22028103;JakeWharton/byteunits;JakeWharton;Utility classes for converting between granularities of SI and IEC byte units and bit units.;1405840312;1579864557
-31970565;AlecStrong/pizzasort;AlecStrong;Sort a given list of pizzas by tastiness;1426007462;1571034383
-227895226;AlecStrong/okhttp;AlecStrong;An HTTP client for Android, Kotlin, and Java.;1576259999;1576260002
-2135106;JakeWharton/Android-MapForgeFragment;JakeWharton;[DEPRECATED: Use Google Play Services] Port of the MapsForge library to provide a self-contained MapFragment for both the native type and compatibility library.;1312173169;1565707700
-239020995;JakeWharton/docker-gphotos-sync;JakeWharton;A Docker image for synchronizing your original-quality Google Photos;1581108957;1586023896
-242060051;JakeWharton/docker-mbsync;JakeWharton;A Docker container which runs the mbsync tool automatically to synchronize your email;1582262106;1584959824
-8441757;JakeWharton/gms-mvn-install;JakeWharton;[DEPRECATED] Installs Google Play Services to your local Maven repo or deploys it to a remote repo.;1361911974;1565709406
-50455289;JakeWharton/dalvik-dx;JakeWharton;A standalone packaging of AOSP's platform/dalvik dx library.;1453838319;1585442706
-109001340;chrisbanes/trakt-java;chrisbanes;A Java wrapper around the trakt v2 API using retrofit 2.;1509457339;1565937046
-3106696;JakeWharton/DiskLruCache;swankjesse;Java implementation of a Disk-based LRU cache which specifically targets Android compatibility.;1325723794;1585962473
-148797966;AlecStrong/dagger-intellij-plugin;AlecStrong;An IntelliJ IDEA plugin for Dagger which provides insight into how injections and providers are used.;1536934349;1537546880
-8575137;JakeWharton/butterknife;JakeWharton;Bind Android views and callbacks to fields and methods.;1362471539;1586031670
-117678903;chrisbanes/SdkSearch;chrisbanes;An Android app and Chrome Extension for searching the Android SDK documentation.;1516104437;1525340828
-125339085;saket/auto-value-moshi;saket;Adds a reeaaalllyy dirty workaround to initialize Optional fields as Optional.empty();1521104226;1521110806
-123461056;AlecStrong/android-ktx;florina-muntenescu;A set of Kotlin extensions for Android app development.;1519921573;1519921575
-191814681;JakeWharton/decorp;JakeWharton;Post public version of b.corp issue links sent to Slack;1560450777;1568179800
-248560940;JakeWharton/agp-java-support;JakeWharton;Tracking your ability to use new Java language features and APIs in an Android app;1584637849;1585845718
-4930384;JakeWharton/ActivityCompat2;JakeWharton;[DEPRECATED] Please use the support library r13 or newer for these features.;1341604858;1565708741
-9198813;JakeWharton/adjacent-fragment-pager-sample;JakeWharton;Demonstrates how to manage two fragments where portrait displays them in a ViewPager and landscape displays them side-by-side.;1365004936;1585449775
-246120719;JakeWharton/confundus;JakeWharton;Kotlin compiler plugin which brings Kotlin/JS's unsafeCast to Kotlin/JVM;1583781092;1585748422
-102883784;AlecStrong/wire;AlecStrong;Clean, lightweight protocol buffers for Android and Java.;1504889219;1504889222
-57321907;AlecStrong/gradle-intellij-plugin;AlecStrong;Plugin for building plugins for IntelliJ IDEs;1461865094;1461865094
-56207515;JakeWharton/AutoValueAnnotations;JakeWharton;A standalone packaging of the annotations from Google's AutoValue library.;1460608593;1585047560
-4239681;JakeWharton/AndroidDesignKeynoteTheme;JakeWharton;A simple theme for Apple Keynote which adheres to the clean look of the Android Design website.;1336297565;1581854851
-48683075;JakeWharton/diffuse;JakeWharton;Diffuse is a tool for diffing APKs, AABs, AARs, and JARs;1451292202;1585881143
-11718829;JakeWharton/ActionBarSherlock-Gradle-Sample;JakeWharton;[DEPRECATED] A tiny sample project that uses ActionBarSherlock via Gradle;1375010398;1576602734
-66332424;yigit/javapoet;AlecStrong;A Java API for generating .java source files.;1471925601;1495541708
-1451060;JakeWharton/ActionBarSherlock;chrisbanes;[DEPRECATED] Action bar implementation which uses the native action bar on Android 4.0+ and a custom implementation on pre-4.0 through a single API and theme.;1299518934;1585748965
-3070104;JakeWharton/abs.io;JakeWharton;Simple URL shortener for ActionBarSherlock using node.js and express.;1325181754;1567455008
-104113820;AlecStrong/ResurgenceOfSQL;AlecStrong;Sample data/queries for DroidconNYC2017 talk "The Resurgence of SQL";1505846412;1585047256
-867856;JakeWharton/BreakoutWallpaper;JakeWharton;An Android live wallpaper which plays the brick-busting game of breakout around your icons. Available on the Android Market.;1282968814;1565706972
-182582502;yigit/robolectric;yigit;Android Unit Testing Framework;1555880837;1555880844
-100426545;AlecStrong/sql-psi;AlecStrong;An extendable parsing environment for sql which outputs PSI;1502838607;1582050396
-98220615;digitalbuddha/Code-Of-Conduct;digitalbuddha;Code of Conduct for the Android Study Group Slack;1500919902;1500395134
-2014561;romainguy/ViewServer;romainguy;Local server for Android's HierarchyViewer;1310071694;1585909290
-2628356;JakeWharton/DocBrown;JakeWharton;Dynamically inject classes from future Android versions into old API levels.;1319324273;1577715552
-168431743;JakeWharton/dagger-reflect;JakeWharton;A reflection-based implementation of the Dagger dependency injection library for fast IDE builds.;1548891124;1585039890
-16431468;JakeWharton/double-espresso;JakeWharton;[DEPRECATED] A pure Gradle port of the Espresso testing utility for Android!;1391247398;1581853022
-127668802;AlecStrong/SdkSearch;AlecStrong;An Android app for searching the Android SDK documentation.;1522614499;1528120759
-3473126;JakeWharton/ActionBarSherlock-Plugin-Maps;JakeWharton;[DEPRECATED] Plugin for ActionBarSherlock which provides a base activity that can be used for adding a MapView to your action bar-enabled layouts.;1329507095;1568629383
-165780048;AlecStrong/square.github.io;AlecStrong;A simple, static portal which outlines our open source offerings.;1547523449;1547523451
-60321262;JakeWharton/DrawerBehavior;JakeWharton;A CoordinatorLayout behavior which mimics the functionality of DrawerLayout.;1464932531;1582271814
-47360596;swankjesse/jni-example;swankjesse;A JNI “Hello World” example;1449176941;1585047624
-127521977;LouisCAD/android-ktx;LouisCAD;A set of Kotlin extensions for Android app development.;1522491714;1522491716
-17166449;JakeWharton/flip-tables;JakeWharton;Because pretty-printing text tables in Java should be easy.;1393317267;1585757666
-100279003;chrisbanes/kotterknife;chrisbanes;View "injection" library for Android.;1502722335;1548845240
-85836418;AlecStrong/sqldelight;digitalbuddha;Generates Java models from CREATE TABLE statements.;1490192261;1567352308
-14499643;sergiandreplace/1000pigs;sergiandreplace;;1384795627;1391853592
-51781133;sergiandreplace/breadcrumbview;sergiandreplace;A view to draw breadcrumbs from a given path;1455565882;1455565883
-21812868;sergiandreplace/Android-FoldingLayout;sergiandreplace;A layout to switch over its children using a page folding animation;1405327161;1403023217
-32652018;sergiandreplace/appunta;sergiandreplace;Automatically exported from code.google.com/p/appunta;1426975728;1469172101
-245623796;sergiandreplace/cyf_hotels_api;sergiandreplace;Api for the class;1583582044;1584477663
-56337770;sergiandreplace/dummy;sergiandreplace;;1460741004;1460741004
-246382855;sergiandreplace/cyf_ecommerce_api;sergiandreplace;Another api exercise;1583866446;1584797431
-32651951;sergiandreplace/catdroid-vallfosca;sergiandreplace;Automatically exported from code.google.com/p/catdroid-vallfosca;1426975571;1426975610
-92817698;sergiandreplace/feign-mock;sergiandreplace;An easy way to test https://github.com/Netflix/feign. Since using feign most of the logic is store into annotations this helps to check if the annotations are right.;1496136900;1496136902
-129800021;sergiandreplace/flutter_bcn_challenges;sergiandreplace;;1523909718;1564875404
-199200953;sergiandreplace/coroutines_playground;sergiandreplace;;1564252448;1564252956
-48993983;sergiandreplace/AndroidSwipeLayout;sergiandreplace;The Most Powerful Swipe Layout!;1451908224;1451908225
-88032788;sergiandreplace/BadgeView;sergiandreplace;a BadeView  base on android;1491988434;1491988435
-94126825;sergiandreplace/chainsmokers;sergiandreplace;A simple project to play around with Kotlin;1497291446;1504244924
-47033227;sergiandreplace/electron;sergiandreplace;Build cross platform desktop apps with web technologies;1448732488;1459797948
-104641121;sergiandreplace/51-android;sergiandreplace;Setting up an android Device for Development;1506255002;1506254955
-38564442;sergiandreplace/bare-conductive-html-frontend;sergiandreplace;An html frontend consuming the bare conductive Python websocket server + driver;1436090388;1436090628
-234709560;sergiandreplace/clean-code-javascript;sergiandreplace;:bathtub: Clean Code concepts adapted for JavaScript;1579338961;1579338963
-207000270;sergiandreplace/androiddatetimetextprovider;sergiandreplace;A solution for day and month formatting for languages with standalone configuration for ThreeTenBP for Android;1567876139;1585245763
-52738156;sergiandreplace/bash-it;sergiandreplace;A community Bash framework.;1456686472;1456686474
-32651976;sergiandreplace/catdroid-finappsparty-encaixat;sergiandreplace;Automatically exported from code.google.com/p/catdroid-finappsparty-encaixat;1426975623;1426975665
-32652002;sergiandreplace/bcnappsjam-apparca;sergiandreplace;Automatically exported from code.google.com/p/bcnappsjam-apparca;1426975688;1426975731
-17940108;sergiandreplace/Android-Switch-Demo-pre-4.0;sergiandreplace;;1395314989;1411919959
-36100943;sergiandreplace/canvas_workshop;sergiandreplace;Exercises from the "It's the arts! Playing around with the Android Canvas" workshop;1432340486;1526596267
-21812873;sergiandreplace/Android-FlipBook;sergiandreplace;An Android component that has a flipping animation;1405327182;1403514752
-58239303;sergiandreplace/DaggerWorkshopGDG;sergiandreplace;Dagger Workshop for GDG Barcelona;1462575814;1462575815
-122098237;sergiandreplace/flutter_animations;sergiandreplace;A list of samples of animations on Flutter based on a tutorial on sergiandreplace.com;1519062108;1578077571
-134141955;sergiandreplace/flutter_appodeal;sergiandreplace;A Flutter plugin for appodeal;1526813183;1564875098
-37678328;sergiandreplace/bare-conductive-python-sdk;sergiandreplace;A simple sdk to interact with the Bare Conductive board from python;1434653437;1459576571
-6695331;sergiandreplace/AndroidFontInflaterFactory;sergiandreplace;An example on how to create an InflaterFactory that changes the font of all widgets;1352928954;1446425058
-210696076;ctuong/migrate;ctuong;Database migrations. CLI and Golang library.;1569358527;1569358529
-30523027;ctuong/Rotten-Tomatoes;ctuong;;1423465321;1423466295
-28231429;ctuong/TipCalculator;ctuong;;1418997443;1418998619
-155647146;ctuong/prop;ctuong;Puts a cork in their requests;1541037207;1541037209
-30689625;ctuong/Yelp;ctuong;;1423723449;1424380178
-31049969;ctuong/iOS-class-3-parseclient;ctuong;;1424404051;1424404272
-30686664;ctuong/iOS-class-4-koobecaf;ctuong;;1423717575;1423717593
-31179203;ctuong/Twitter;ctuong;;1424637246;1425269451
-31350044;ctuong/CodePath-Week4-Canvas;ctuong;;1424923639;1424923679
-242417391;ppong/unipdf;ppong;Golang PDF library for creating and processing PDF files (pure go);1582408653;1582408655
-193303915;ppong/blockbook;ppong;:blue_book: TREZOR address/account balance backend ;1561262086;1561262089
-157621203;ppong/subzero;ppong;Square's Bitcoin Cold Storage solution.;1542235542;1542235544
-145346297;ppong/cleargraph;ppong;⛓ Cleargraph is a GraphQL runtime for decentralized applications;1534723280;1534723282
-157621346;ppong/beancounter;ppong;Utility to audit the balance of Hierarchical Deterministic (HD) wallets. Supports multisig + segwit wallets.;1542235641;1542235643
-136627744;ppong/funnel;ppong;A minimalistic 12 factor log router written in Go;1528467222;1528467224
-146364823;ppong/gqlparser;ppong;A port of the parser from graphql-js into golang;1535411872;1535412282
-131219256;ppong/react-native-art-nanovg;ppong;;1524783634;1524784235
-130161754;ppong/cryptocoins;ppong;Cryptocoins is the most complete vector/webfont icon pack of your favourite cryptocurrencies;1524114367;1524114558
-10925334;jschr/animate.js;jschr;Javascript counterpart to animate.css;1372124807;1395135021
-42462339;jschr/electron-react-redux-boilerplate;jschr;A minimal boilerplate to get started with Electron, React and Redux.;1442249097;1585936552
-64572130;jschr/form-provider;jschr;React components for building forms and managing state. ;1469930034;1494052045
-9355754;jschr/jquery.kinetic;jschr;add kinetic scrolling functionality to a container using mouse or touch devices;1365627191;1368579039
-175345631;jschr/awesome-vscode;jschr;🎨 A curated list of delightful VS Code packages and resources.;1552450914;1552450916
-11352580;jschr/bootstrap-slider;jschr;Fork of bootstrap-slider by eyecon.ro: http://www.eyecon.ro/bootstrap-slider/;1373575342;1570696128
-5971563;jschr/bootstrap-modal;jschr;Extends the default Bootstrap Modal class. Responsive, stackable, ajax and more.;1348689960;1585885614
-16500223;jschr/as-proto;jschr;;1391480989;1405512422
-9508877;jschr/Font-Awesome;jschr;The iconic font designed for use with Twitter Bootstrap;1366237674;1366237674
-44038535;jschr/frp-pong;jschr;FRP pong built with React, RxJS;1444536121;1494505191
-53608610;jschr/gdc2016;jschr;A fractional game that the team C-ALT-Z made for GDC 2016 at UW Stratford.;1457635631;1457635632
-73633021;jschr/glamor;jschr;inline css for react et al;1479059917;1479059919
-121190412;jschr/emotion;jschr;⚡️ The Next Generation of CSS-in-JS;1518402496;1518402499
-81751200;jschr/apollo-client;jschr;:rocket: A fully-featured caching GraphQL client for any server or UI framework;1486927996;1486927998
-5971169;jschr/jquery-placeholder;jschr;Placeholder shim based on webkit;1348688225;1382555100
-12744341;jschr/AppScroll.js;jschr;AppScroll is a tiny (< 100 lines) JS library that fixes the "website dragging" issue caused on iDevices;1378861177;1395135037
-101821829;jschr/heliumpay-budgetweb-frontend;jschr;Budget proposals website front-end for Helium Payments;1504055116;1504055148
-9660333;jschr/animate.css;jschr;Cross-browser CSS3 animations. Plug and play. Do a little dance.;1366848482;1395135001
-13109771;jschr/bootstrap-colorpicker;jschr;Colorpicker plugin for Twitter Bootstrap, originally written by Stefan Petre http://eyecon.ro;1380158129;1569431478
-12190499;jschr/bootstrap-glyphicons;jschr;Easily add icons via Web fonts to any Bootstrap project. Powered by Glyphicons.;1376801549;1376801550
-77578001;jschr/docker-typescript-koa;jschr;;1482980540;1482980562
-11241947;jschr/compose;jschr;ComposeJS is a lightweight JavaScript library for object composition;1373239621;1373239621
-8470611;jschr/es5-shim;jschr;ECMAScript 5 compatibility shims for legacy JavaScript engines;1362019915;1388428941
-21923276;jschr/chrome-app-samples;jschr;Chrome Apps;1405557691;1505790380
-34344674;jschr/dns;jschr;free and short JS.ORG domains for GitHub Pages;1429640754;1429640896
-65560031;jschr/chrome-video-socket-issue;jschr;Demonstrates chrome not releasing sockets when removing a buffering video element;1471012693;1471013409
-101231364;jschr/heliumpay-budgetweb-backend;jschr;;1503528629;1503528631
-19765976;jschr/jquery.pep.js;jschr;Pep, a lightweight plugin for kinetic drag on mobile/desktop;1400040692;1400040695
-9179761;jschr/history.js;jschr;History.js gracefully supports the HTML5 History/State APIs (pushState, replaceState, onPopState) in all browsers. Including continued support for data, titles, replaceState. Supports jQuery, MooTools and Prototype.  For HTML5 browsers this means that you can modify the URL directly, without needing to use hashes anymore. For HTML4 browsers it will revert back to using the old onhashchange functionality.;1364935274;1395135062
-5784822;jschr/google-fastbutton;jschr;Implementation of Google's FastButton javascript and jQuery and XUI.js integration;1347478454;1410709421
-113238892;ldevalliere/react-native-typography;ldevalliere;Pixel–perfect, native–looking typographic styles for React Native ✒️;1512512170;1512512172
-205948522;alfaiyma/alfaiyma.github.io;alfaiyma;Hosting for Resume Site;1567465131;1584061559
-10127565;alfaiyma/PythonRemote;alfaiyma;Samsung Smart TV remote written in a Python class ;1368808312;1552603242
-225510994;saket/InlineClassCastBug;saket;Sample project for https://youtrack.jetbrains.com/issue/KT-35234;1575339413;1575339598
-66142176;saket/GestureViews;saket;ImageView and FrameLayout with gestures control and position animation;1471690541;1585141052
-50138387;saket/callerpy;saket;Truecaller Name Retriever;1453412162;1453412163
-85421904;saket/JRAW;saket;The Java Reddit API Wrapper;1489860452;1527416992
-68443703;saket/Better-Link-Movement-Method;saket;A custom LinkMovementMethod for TextView that attempts to improve how clickable links are detected, highlighted and handled.;1474104895;1585896999
-58354141;saket/HugeMapMaker;saket;Android library to render more than a lot of markers on google maps for android;1462775910;1585141039
-243077131;saket/BottomSheetPlease;saket;Sample project for reproducing https://github.com/material-components/material-components-android/issues/1059;1582656936;1585140887
-86900509;saket/ExoMedia;saket;An Android ExoPlayer wrapper to simplify Audio and Video implementations;1491037545;1585140973
-227655621;saket/assertk;saket;assertions for kotlin inspired by assertj;1576169978;1576169980
-119823720;saket/ChromeCustomTabsAuth;saket;Sample app for redirecting user from a chrome custom tab back to app using deep-links;1517482698;1538987283
-50232732;saket/Learning-F-Sharp;saket;Random experiments with F#;1453542494;1453543272
-58870176;saket/android-smsmms;saket;Fork of klinker41's MMS library which lets you use a different database than the default Android SMS one.;1463327380;1463327445
-116402941;saket/ItemAnimators;saket;ItemAnimators: Supercharged Animators for your RecyclerView;1515168521;1585140993
-13172215;saket/Bunk-o-Meter;saket;App for tracking college bunks.;1380370016;1572880428
-65084042;saket/Binoculars2;saket;A better image viewer for Android with support for flick-dismiss and pagination.;1470490553;1533225253
-80362083;saket/Dank;saket;Here lies the greatest Reddit app that was never released;1485712967;1586025062
-131950344;saket/Cascade;saket;Nested popup menus;1525328312;1533223610
-73401743;saket/Balloon;saket;;1478796395;1529566656
-103365144;saket/Android-RTEditor;saket;The Android RTEditor is a rich text editor component for Android that can be used as a drop in for EditText;1505286039;1585141007
-118105982;saket/BaseAndroidProject;saket;A project with all the necessary dependencies and basic configuration I use everywhere.;1516354555;1566494115
-150970562;saket/FluidKeyboardResize;saket;Smoothly reacting to keyboard visibility changes in Android;1538314800;1585937663
-106687502;saket/commonmark-java;saket;Java implementation of CommonMark, a specification of the Markdown format;1507809964;1507809966
-113963879;saket/custom-lint-checks;saket;;1513067325;1515143158
-145278249;saket/InboxRecyclerView;chrisbanes;Build expandable descendant navigation, inspired by Google Inbox;1534659290;1585989671
-220590173;chrisbanes/InboxRecyclerView;chrisbanes;Build expandable descendant navigation, inspired by Google Inbox;1573272990;1581921687
-143316210;saket/Flick;saket;Flick dismiss all the things!;1533225291;1585281030
-70840497;saket/Gitbook-demo;saket;;1476386752;1476387247
-150824995;saket/gradle-maven-publish-plugin;swankjesse;Gradle plugin that configures an uploadArchives task to automatically upload all of your Java, Kotlin or Android libraries to any Maven instance.;1538195773;1566210697
-154190628;saket/CatchUp;saket;An app for catching up on things.;1540231087;1549457575
-204873352;LouisCAD/contour;LouisCAD;Layouts with lambdas 😎;1566977230;1575239760
-63012769;saket/ios-android-bonjour;saket;A simple example cross-platform Bonjour implementation.;1468175288;1468175289
-181978768;rahul-iyer/CSrankings;rahul-iyer;A web app for ranking computer science departments according to their research output in selective venues.;1555541002;1555541006
-67192219;rahul-iyer/SQL_to_English_Machine_Translation;rahul-iyer;;1472793418;1472794468
-77361125;rahul-iyer/resumecard;rahul-iyer;You can see the live demo;1482731512;1482731515
-20436315;rahul-iyer/Allroundstudentevalsystem;rahul-iyer;All round student evaluation system using Machine learning;1401786520;1482173030
-58869603;rahul-iyer/OpinionMiningForProductEnhancement;rahul-iyer;BE project;1463326651;1463326669
-77379499;rahul-iyer/elasticsearch-jq;rahul-iyer;;1482751597;1482751620
-42651003;rahul-iyer/smsdetection;rahul-iyer;SMS spam detector;1442487227;1442496227
-86903012;rahul-iyer/word2vec_commented;rahul-iyer;Commented (but unaltered) version of original word2vec C implementation.;1491039605;1491039606
-168787067;rahul-iyer/transformer-xl;rahul-iyer;;1549075621;1549075623
-37298456;rahul-iyer/mosesdecoder;rahul-iyer;Moses, the machine translation system;1434077353;1434077363
-92273893;rahul-iyer/http_request_signer_AWS;rahul-iyer;Signs the HTTP request producing Authorization headers for AWS API Gateway requests.;1495617617;1507666317
-16045054;rahul-iyer/Messaging-System;rahul-iyer;Facebook like messaging System especially developed for Joomla CMS using Joomla API and PHP.;1390132784;1482173214
-120059478;rahul-iyer/torchMoji;rahul-iyer;A pyTorch implementation of the DeepMoji model: state-of-the-art deep learning model for analyzing sentiment, emotion, sarcasm etc;1517632371;1517632373
-93432347;rahul-iyer/AI-resources;rahul-iyer;Selection of resources to learn Artificial Intelligence / Machine Learning / Deep Learning ;1496685684;1496682732
-84585600;rahul-iyer/awesome-courses;rahul-iyer;:books: List of awesome university courses for learning Computer Science!;1489167773;1494485227
-175911354;rahul-iyer/mcdowell-cv;rahul-iyer;A Nice-looking CV template made into LaTeX;1552699114;1552699116
-36865887;rahul-iyer/BuildingMachineLearningSystemsWithPython;rahul-iyer;Source Code for the book Building Machine Learning Systems with Python;1433416592;1494485159
-153497466;rahul-iyer/polite-dialogue-generation;rahul-iyer;Code for "Polite Dialogue Generation Without Parallel Data";1539797563;1539797565
-20436612;rahul-iyer/LBS;rahul-iyer;All round Eval System using machine learning;1401787136;1436586560
-74667405;rahul-iyer/rahul-iyer.github.io;rahul-iyer;Personal Page;1479987263;1554045005
-16024702;rahul-iyer/autocompletetext;rahul-iyer;My First project.Used JavaScript/Jquery/PHP for autocomplete text.The Suggestions are based upon data in the database ;1390046611;1390099560
-107482204;rahul-iyer/ghtorrent.org;rahul-iyer;The GHtorrent project website;1508376150;1508376152
-77379688;rahul-iyer/repo_as_subtree;rahul-iyer;Pulls a repository and makes it as a sub folder in another respository;1482751814;1482751850
-71916823;cchawn/watson-fitness;cchawn;Course project for CISC 490: Cognitive Computing Using Watson;1477412912;1559660085
-151874564;cchawn/JavaScript30;cchawn;30 Day Vanilla JS Challenge;1538854127;1539141414
-61552739;cchawn/gitstory;cchawn;Let's learn how to use git! (for @BrainStationEducation);1466431885;1492112293
-26296499;cchawn/java-roman-candle-simulation;cchawn;Physics Simulation of Roman Candle with Sparks;1415319968;1559660133
-26245863;cchawn/python-qa-project;cchawn;Software Quality Assurance | Course Project;1415232573;1559660117
-67143629;cchawn/angular2-todo-app;cchawn;Practice Angular 2 Universal, building todo app;1472743796;1475756822
-66952029;cchawn/angular2-tutorial;cchawn;Learning Angular 2, following https://angular.io/docs/ts/latest/tutorial/;1472569844;1472743125
-29995977;cchawn/haskell-practice;cchawn;;1422492163;1472743690
-220293628;cchawn/slackmojis;cchawn;✨ custom emojis for Slack ✨;1573148061;1578596430
-119618777;cchawn/wwc-ios-workshop;cchawn;Following along with Women Who Code: Intro to iOS Workshop;1517362982;1559660037
-29687773;cchawn/java-practice;cchawn;;1421943725;1472743722
-115756862;cchawn/GildedRose-js;cchawn;Gilded Rose Kata in JavaScript 🌹;1514584855;1538931905
-26295963;cchawn/unity-gravity-switch;cchawn;Game design project, developed with Unity Game Engine.;1415318741;1559660022
-63616846;cchawn/react-mlb-demo;cchawn;React app to interact with MLB games-to-date data: http://gd2.mlb.com/components/game/mlb/;1468857262;1514578282
-27348740;cchawn/python-algorithms;cchawn;Basic algorithm implementations, in Python! 🐍;1417378914;1538931894
-107342462;cchawn/last-call;cchawn;Source files for Queen's Startup Summit demo website;1508289417;1508333965
-24797697;cchawn/personal-site;cchawn;Personal Website;1412447373;1575913106
-28283044;cchawn/rails-tutorial;cchawn;http://guides.railsgirls.com/;1419120072;1472743387
-29715360;cchawn/ruby-practice;cchawn;;1421984891;1472743711
-52317610;3b1b/perseus;3b1b;Perseus is Khan Academy's new exercise question editor and renderer.;1456188280;1585997182
-233317550;3b1b/moderngl;3b1b;Modern OpenGL binding for python;1578789394;1585825738
-32689863;3b1b/manim;3b1b;Animation engine for explanatory math videos;1427050258;1586037685
-114285793;CatastrophiClam/Java-Programs;CatastrophiClam;A complete collection of all the java programs I've written;1513277844;1513277862
-230344132;CatastrophiClam/MaxD_ai;CatastrophiClam;My personal website;1577405322;1580488000
-248291369;CatastrophiClam/PCS;CatastrophiClam;;1584550672;1585928895
-97175214;CatastrophiClam/RockPaperScissorsAI;CatastrophiClam;Very dumb neural network that plays rock paper scissors;1499991201;1499991296
-240061221;CatastrophiClam/Poker_Simulator;CatastrophiClam;A poker simulator that can run games involving AIs and humans;1581525207;1583434317
-140499639;CatastrophiClam/HomeAutomation;CatastrophiClam;Website and backend to enable control of various things around the house;1531267402;1531799893
-121390801;CatastrophiClam/Summative;CatastrophiClam;;1518531317;1567305557
-247060894;oneHamidreza/Kodein-DI;oneHamidreza;Painless Kotlin Dependency Injection;1584100624;1584100626
-169237709;oneHamidreza/AndroidAudioRecorder;oneHamidreza;A fancy audio recorder lib for Android. Supports WAV format at 48kHz.;1549369797;1578374454
-237856626;oneHamidreza/MeowBottomNavigationJava;oneHamidreza;Meow Bottom Navigation For Java Projects without androidx ;1580688906;1585995682
-169960567;oneHamidreza/MeowBottomNavigation;oneHamidreza;Android Meow Bottm Navigation;1549789915;1585981802
-239642692;oneHamidreza/Meow-Framework-MVVM;oneHamidreza;Android Framework with most useful tools. Coming Soon!!!;1581380927;1586037437
-192532226;oneHamidreza/TestForm;oneHamidreza;;1560859562;1560859650
-249112097;oneHamidreza/material-components-android-examples;oneHamidreza;Companion example apps and code for MDC-Android.;1584850906;1584850908
-116672499;oneHamidreza/MeowDateTimePicker;oneHamidreza;A newer version of mohamad-amin/PersianMaterialDateTimePicker with ability of set typeface;1515413626;1583776478
-245450208;oneHamidreza/Meow-Api-Ktor;oneHamidreza;The project of Meow Framework Api using ktor library;1583507460;1583709951
-173105555;oneHamidreza/barcodescanner;oneHamidreza;Barcode Scanner Libraries for Android;1551355778;1565626078
-241758873;oneHamidreza/COVID-19;oneHamidreza;Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE;1582159024;1582159026
-250507277;YuhanLiin/morse-msp430;YuhanLiin;Morse code related project on MSP430 microcontroller;1585305705;1585305745
-204557330;YuhanLiin/msp430-rt;YuhanLiin;Minimal startup / runtime for MSP430 microcontrollers ;1566851845;1581716046
-249138754;YuhanLiin/awesome-embedded-rust;YuhanLiin;Curated list of resources for Embedded and Low-level development in the Rust programming language;1584864176;1584864177
-231717024;YuhanLiin/embedded-hal;YuhanLiin;A Hardware Abstraction Layer (HAL) for embedded systems;1578117796;1578117798
-205871830;YuhanLiin/msp430fr2355-quickstart;YuhanLiin;Example Rust code for msp430fr2355;1567433695;1578022328
-204552754;YuhanLiin/panic-msp430;YuhanLiin;Set panicking implementation to infinite loop on MSP430 target;1566850094;1577418164
-45285134;YuhanLiin/Lexer-and-Parser-Python;YuhanLiin;A complete parser generator which tokenizes the input string before creating a abstract syntax tree by processing the tokens with a context-free grammar. The tokens are defined using the regex library and the actual parser an implementation of Earley's parsing algorithm. This personal project was created after I had finished the Programming Languages course from Udacity and is my way of applying my newly gained knowledge on parsers as a personal "final project".;1446256708;1584597081
-192861544;YuhanLiin/blog_os;YuhanLiin;Minimal X64 Rust kernel based on https://os.phil-opp.com/;1561011876;1585799080
-201877609;YuhanLiin/PingCap-Rust-Course;YuhanLiin;Key-value store implemented for the PingCap training course at https://github.com/pingcap/talent-plan/tree/master/rust;1565593982;1574731085
-65058459;YuhanLiin/frontend-nanodegree-resume;YuhanLiin;;1470445677;1470445680
-103827113;YuhanLiin/HtN-2017;YuhanLiin;Random Sentence Generator for Hack the North 2017;1505651410;1505651440
-112054541;YuhanLiin/CCompiler;YuhanLiin;C Compiler written in C;1511669045;1511669207
-148969953;YuhanLiin/Ethreddit;YuhanLiin;My project for Hack the North 2018. Essentially Reddit running on the Ethereum blockchain.;1537079441;1537079504
-45311832;YuhanLiin/Equation-Solver-Python;YuhanLiin;Contains code for solving the roots of algebraic equations. Supports fractions and variables via classes with arithmetic methods. The input equation is parsed using a context-free grammar built upon my Parser generator program. ;1446313371;1472005317
-204164617;YuhanLiin/msp430fr2355;YuhanLiin;Peripheral access API for MSP430FR2355 microcontroller (generated via svd2rust);1566655104;1584884782
-67941485;YuhanLiin/Mini-Chat;YuhanLiin;A simple chat web app built using Google App Engine's Channel API.;1473612001;1473612253
-205773191;YuhanLiin/once_cell;YuhanLiin;Rust library for single assignment cells and lazy statics without macros;1567396426;1567396429
-67975094;YuhanLiin/create-your-own-adventure;YuhanLiin;;1473653643;1473653649
-135869022;YuhanLiin/Disposal;YuhanLiin;C code running on a Pocketbeagle.;1527994988;1528685909
-220841975;YuhanLiin/msp430fr2x5x-hal;YuhanLiin;Implementation of "embedded-hal" for MSP430FR2x5x microcontroller;1573415344;1585305229
-77951047;YuhanLiin/Parsing;YuhanLiin;Contains implementations of various parsing algorithms in both Python and C++, including a C++ Regexp engine.;1483475579;1487041001
-122236445;YuhanLiin/PoweredArm;YuhanLiin;;1519150520;1542001103
-45222390;YuhanLiin/Chemistry-Software-Python;YuhanLiin;A series of programs written in Python 2 for digitally handling the tedious stoichiometric calculation I had to do in Gr 11. Chemistry. The large volumes of console "print" output ensure coverage of most problem types. ;1446169699;1471797838
-204055653;YuhanLiin/msp430_svd;YuhanLiin;;1566587205;1566587340
-73129159;YuhanLiin/MyoSVM1;YuhanLiin;;1478560077;1478560080
-143683693;YuhanLiin/Cryptopals-C;YuhanLiin;Code for the Cryptopals problems written in C;1533535747;1533535780
-221612193;YuhanLiin/msp430-atomic;YuhanLiin;Atomic operations for MSP430 MCUs;1573706052;1573776747
-66414974;YuhanLiin/my-site;YuhanLiin;My personal website for showcasing projects and resume.;1471999444;1494816313
-250382490;YuhanLiin/msp430;YuhanLiin;Low level access to MSP430 microcontrollers;1585260482;1585260484
-116282252;RichardXFC/PsychologyResearchApp;RichardXFC;;1515083284;1515083469
-112641659;RichardXFC/SixtyFPS;RichardXFC;;1512063788;1512093070
-49835028;RichardXFC/richardxfc.github.io;RichardXFC;;1453063841;1505834583
-116759181;RichardXFC/InterFrame;RichardXFC;;1515467344;1515467402
-156476854;franklad/DragAndDropModule;franklad;;1541556538;1541556928
-156477452;franklad/DirectoryOpsModule;franklad;;1541556882;1541556943
-154583719;franklad/AMR_Code;franklad;;1540424866;1544557129
-186896315;franklad/clrmd;franklad;Microsoft.Diagnostics.Runtime is a set of APIs for introspecting processes and dumps.;1557951211;1557951215
-252898453;franklad/A3ML;franklad;;1585970524;1586025044
-189665548;franklad/CPS530;franklad;;1559341709;1559690240
-227679128;franklad/ppio-grpc-api;franklad;;1576178204;1576178301
-220562727;franklad/mattermost-bot-sample-golang;franklad;;1573255148;1575319353
-250717324;franklad/hr_platform;franklad;;1585371292;1585697901
-192818286;franklad/Typer.js;franklad;Typing effect completely configurable in HTML.;1560987798;1560987800
-228146320;franklad/dotfiles;franklad;💻 macOS / Ubuntu dotfiles;1576395132;1583182425
-220020277;franklad/ping-pong-api;franklad;;1573051743;1573962300
-221817506;franklad/github-actions-badge;franklad;A GitHub Actions README badge;1573780770;1573780772
-90697029;NathanielRN/ShopifyBackendProblemFall2017;NathanielRN;Solved the back end problem for Shopify internship over fall 2017 term;1494299425;1494299930
-132856678;NathanielRN/iOSMessageExport;NathanielRN;;1525932718;1525932909
-90695164;NathanielRN/ShopifyMobileProblemFall2017;NathanielRN;My solution to Shopify's mobile problem for fall 2017!;1494298069;1494298292
-84698679;NathanielRN/Pray4Me;NathanielRN;An app to ask for prayer and receive notifications to pray for others!;1489291508;1496206863
-79659360;NathanielRN/Laugh-A-Lot;NathanielRN;An iOS app to laugh a lot!;1485018034;1485018245
-113278055;NathanielRN/WAT2048;NathanielRN;A Android Accelerometer based single-player game;1512541663;1512542127
-135867716;NathanielRN/wedebate;NathanielRN;A website to debate and help your position to be the accepted solution;1527993534;1528173111
-90929687;NathanielRN/exampractice;NathanielRN;Gives students option to practice random questions for every subject in preparation for exams. Widgets separates into separate subjects and courses and allows users to input questions they don't know the solution to and answer unanswered questions.;1494470636;1494470638
-88566203;NathanielRN/Pray4MeBackend;NathanielRN;The backend for my payer app!;1492477998;1492478119
-99094266;NathanielRN/155_notes;NathanielRN;;1501663897;1497621594
-112288305;NathanielRN/eliseoruizlife;NathanielRN;Eliseo Ruiz Nowell Portfolio Website;1511845486;1573357431
-112693394;darcy-clark/impo;darcy-clark;Using BitBucket web hooks to announce all your excruciating pipeline issues to the dev team;1512101086;1512101339
-83911962;darcy-clark/cuhacking2017;darcy-clark;Repo for Andrew, Darcy, Brian and Wilson over the course of the hackathon;1488648915;1493140888
-137577950;darcy-clark/HardwareCalculator;darcy-clark;Code space for a simple VHDL calculator to get back into digital design.;1529150959;1529151330
-146664549;darcy-clark/FoodLocker-firebaseFunctions;darcy-clark;Houses the event-driven functions for the Food Locker app.;1535580717;1537512268
-89045830;darcy-clark/whatsinthefridge;darcy-clark;A program that helps you keep track of what you're populating your fridge with;1492837591;1504995753
-140945671;darcy-clark/FoodLocker-android;darcy-clark;Source code for the FoodLocker Android mobile app.;1531572463;1537512025
-177519704;darcy-clark/unixchange-server;darcy-clark;Server-side code for Unixchange project.;1553491449;1554428771
-109212912;darcy-clark/pathfinder;darcy-clark;;1509592985;1511048788
-84388814;darcy-clark/nhlscores;darcy-clark;;1489026600;1516934700
-80435951;virgillee97/iBoost;virgillee97;;1485791445;1550080862
-86462584;virgillee97/hello-world;virgillee97;Test;1490707224;1490707224
-108455450;virgillee97/PersonalWebsite;virgillee97;;1509045543;1509045641
-106491988;erikterwiel/DHMODestroyer;erikterwiel;Arduino based remote control boat with an Android app as the controller.;1507686604;1573175541
-123014846;erikterwiel/NaughtyOrNice;erikterwiel;Web app which uses a neural network to analyze social media accounts to determine an individual's personality traits. Created at Hack the Valley II.;1519670887;1573175539
-139882692;erikterwiel/ARVideoKit;erikterwiel;Capture & record ARKit videos 📹, photos 🌄, Live Photos 🎇, and GIFs 🎆. Fork fixes issue #41.;1530812846;1577154006
-109457950;erikterwiel/EasyDoor;erikterwiel;Facial recognition home security system that automatically unlocks doors for known residents of a home. Created at ECHacks 2017.;1509759428;1573175541
-96161165;erikterwiel/ConsecutiveAlarms1.0;erikterwiel;Consecutive Alarms is an Android application that allows the user to set multiple alarms in a row in a single "Consecutive Alarm.". Completely overhauled by ConsecutiveAlarms2.0.;1499129454;1573175542
-148866146;erikterwiel/OnceUponATime;erikterwiel;Unity app that remotely generates a world in virtual reality based on any story spoken into any device anywhere. Winner of Hack the North 2018.;1536982435;1579793968
-147912140;erikterwiel/Fire;erikterwiel;React Native application that provides real-time forest fire maps, air quality reports, and fire alerts for endangered property.;1536391903;1573175531
-150025706;erikterwiel/ShopifyDeveloperChallenge;erikterwiel;RESTful API made with Node.js, Express, and MongoDB for Shopify's Winter 2019 Developer Internship Application;1537736875;1573175528
-110312326;erikterwiel/FaceLock;erikterwiel;Android and web app that analyzes the phone user's face to lock the device when an unrecognised individual is using it. Started at HackPrinceton Fall 2017.;1510368193;1573175532
-148830032;erikterwiel/FireAPI;erikterwiel;Node + Express + MongoDB RESTful API for Fire;1536951393;1573175530
-133599717;erikterwiel/runelite;erikterwiel;Open source Old School RuneScape client;1526438053;1573175537
-140202453;erikterwiel/KidneyDialysisTimer;erikterwiel;Android app that allows the user to set sequenced alarms for their kidney dialysis cycles.;1531083784;1573175533
-118196314;erikterwiel/Summitr;erikterwiel;Social media and backcountry safety platform for outdoor enthusiasts. Created at PennApps XVII.;1516410787;1573175538
-97433566;erikterwiel/Emojify;erikterwiel;Android app that allows the user to enter a string of text which is converted into the same string but with excessive amounts of Emoji inserted.;1500263820;1573175539
-96162039;erikterwiel/ConsecutiveAlarms;erikterwiel;Android app that allows the user to set multiple alarms in a row in a single "Consecutive Alarm.";1499130440;1573175535
-164004147;erikterwiel/ExpenseParser;erikterwiel;;1546537163;1573175527
-148873020;erikterwiel/OnceUponATimeServer;erikterwiel;OnceUponATimeServer;1536989685;1573175529
-148540208;erikterwiel/InterviewPrep;erikterwiel;;1536785271;1573175526
-172421734;abdurrehman135/reddit_utils;abdurrehman135;A collection of reddit utility scripts organized as a web app — includes the ability to search through your saved posts;1551062553;1551062555
-152796905;abdurrehman135/awesome-cryptoeconomics;abdurrehman135;An awesome curated list of Cryptoeconomic research and learning materials;1539371489;1539371491
-237703065;abdurrehman135/personal-website;abdurrehman135;Code that'll help you kickstart a personal website that showcases your work as a software developer.;1580607368;1580607369
-188644166;abdurrehman135/SmartShelter;abdurrehman135;Messaging app built as an emergency relief system to help people find important resources closest to their searched location. Built using Flask and Twilio.;1558848774;1579324478
-167748677;abdurrehman135/Deltahacks5-Flutter;abdurrehman135;A new Flutter project: an app that simply makes it easy, convenient, and fun for people in your community to connect and plan physical activities together around your area.;1548543940;1560311812
-158991814;abdurrehman135/flask-app-test;abdurrehman135;Test deploying a Flask app to be hosted on Heroku;1543113868;1555127911
-158750262;abdurrehman135/Learn-Flask-and-Semantic-UI;abdurrehman135;Website using SemanticUI and Flask;1542920923;1579016495
-167733873;abdurrehman135/Deltahacks5;abdurrehman135;;1548533428;1548537853
-165547974;ksalaheen/Turtle;ksalaheen;;1547409371;1547409371
-190424519;andymatuschak/long-term-research-reports;andymatuschak;Repository for developing longer-form reports from the Long-term Research team;1559749949;1559749953
-233275816;andymatuschak/note-link-janitor;andymatuschak;Maintains backlink structure among interlinked Markdown notes;1578766266;1585833113
-190424581;andymatuschak/hivemind;andymatuschak;Experimental knowledge-management system for Long-term Research references;1559749967;1559749969
-159859261;andymatuschak/free-response-report;andymatuschak;Publication regarding our experiments with open-ended online learning;1543600132;1543600135
-243882823;andymatuschak/react-native-web;andymatuschak;React Native for Web;1582938618;1585330652
-23949627;andymatuschak/articles;andymatuschak;All current objc.io articles;1410503867;1516878916
-190424658;andymatuschak/Early-Math-Prototype-Player;andymatuschak;Play the Early Math Prototypes embedded in an iPad app.;1559749995;1559749998
-38558135;andymatuschak/PSPushPopPressView;andymatuschak;Zoom, Rotate, Drag – everything at the same time. A view-container for direct manipulation, inspired by Our Choice from Push Pop Press.;1436074587;1436074588
-195556953;andymatuschak/alfred-ulysses-workflow;andymatuschak;Alfred 3 workflow for Ulysses;1562428230;1583875732
-218064781;andymatuschak/phoenix;andymatuschak;A lightweight macOS/OS X window and app manager scriptable with JavaScript;1572272628;1572272630
-142796528;andymatuschak/idyll-glitch-template;andymatuschak;Toying around with making a remixable Glitch template for Idyll…;1532899462;1532899500
-197275311;andymatuschak/alfred-bear;andymatuschak;Alfred 3 workflow to create and search notes in Bear.;1563315536;1583554653
-22810842;andymatuschak/66;andymatuschak;Quartz Composer-based reinterpretation of Tangent Spaces' reinterpretation of Geometry Daily #66;1407681467;1545217248
-69508458;andymatuschak/android-graphql-client;andymatuschak;;1475101362;1475101364
-249840600;andymatuschak/Base64.js;andymatuschak;Polyfill for browsers that don't provide window.btoa and window.atob;1585092459;1585092461
-250364704;andymatuschak/expo;andymatuschak;An open-source platform for making universal native apps with React. Expo runs on Android, iOS, and the web.;1585254526;1585254529
-197407369;andymatuschak/Bear-Markdown-Export;andymatuschak;Markdown export from Bear sqlite database;1563374341;1585732104
-52560106;andymatuschak/hogwarts;andymatuschak;A slackbot to award house points;1456437795;1456437796
-76081848;andymatuschak/appbot-asana-adapter;andymatuschak;;1481331724;1481331975
-21522472;andymatuschak/Khan-Academy-Offer-Acceptance-Toy;andymatuschak;The playful way that I joined Khan Academy.;1404573538;1565711121
-118288138;andymatuschak/dynamicland-video-dropzone;andymatuschak;Physical-to-digital-to-physical bridge for video in Dynamicland: video uploading webserver;1516489615;1519087557
-190424649;andymatuschak/Early-Math-Prototypes;andymatuschak;Exploratory prototypes of interactions for early math;1559749992;1559750003
-203630969;andymatuschak/babel-eslint;andymatuschak;:tokyo_tower: A wrapper for Babel's parser used for ESLint;1566407792;1566407794
-248809518;andymatuschak/react-native-fit-image;andymatuschak;Responsive image component to fit perfectly itself.;1584723819;1584724074
-227160572;andymatuschak/react-native;andymatuschak;A framework for building native apps with React.;1575993577;1575993580
-246148742;andymatuschak/FakeSmile;andymatuschak;This ECMAScript library emulates declarative SVG animations in renderers that don't support them.;1583790402;1583790403
-52630818;andymatuschak/Prototope;andymatuschak;Swift library of lightweight interfaces for prototyping, bridged to JS;1456518525;1456518527
-209165938;andymatuschak/ahc;mnielsen;;1568758359;1568758360
-3682819;andymatuschak/DOMNodeAndChildOffsetContainingViewportLocation;andymatuschak;What is at this location—to the letter?;1331417586;1465830207
-198147249;andymatuschak/bear-link-janitor;andymatuschak;A fairly dangerous script which monitors + fixes broken wiki-style links in one's Bear library;1563769869;1581180600
-20407000;mnielsen/experiments;mnielsen;;1401719722;1559503983
-4930434;mnielsen/ec2_tools;mnielsen;Deprecated.  Formerly: scripts to make it easier to set up and manipulate clusters at Amazon EC2;1341605090;1583195834
-33210138;mnielsen/cognitivemedium;mnielsen;Repo for cognitivemedium.com;1427836232;1585230566
-14049246;mnielsen/nnlsv;mnielsen;Paper by @colah and @mnielsen on visualizing the behaviour of large numbers of neural nets;1383327474;1578974832
-7667716;mnielsen/notes-on-writing;mnielsen;Notes on writing;1358433386;1585385589
-1907741;mnielsen/Pregel;mnielsen;Toy single-machine implementation of the Pregel graph-based framework;1308255976;1580657346
-109915278;mnielsen/rmnist;mnielsen;Some examples trained on very reduced versions of the MNIST training set;1510106872;1583943435
-91248046;mnielsen/DCGAN-tensorflow;mnielsen;A tensorflow implementation of "Deep Convolutional Generative Adversarial Networks";1494771365;1585925540
-138922561;mnielsen/ahc;mnielsen;;1530126449;1571837057
-4330972;mnielsen/cognitive_tools;mnielsen;Rough in-progress notes on cognitive tools;1337045926;1561596947
-13974580;mnielsen/digital-money;mnielsen;My notes on digital money;1383098357;1559503975
-8102495;mnielsen/ftwe;mnielsen;Notes on the fundamental theorems of welfare economics;1360361805;1559503964
-2148453;mnielsen/Information-extraction---first-notes;mnielsen;Rough, undistilled first notes, getting an overview of the field, unlikely to be of use to others;1312376794;1559504020
-91392600;mnielsen/iGAN;mnielsen;Interactive Image Generation via Generative Adversarial Networks;1494889915;1585925545
-1169944;mnielsen/Snippets;mnielsen;Snippets of code and recipes that I occasionally find useful;1292378200;1559504017
-12973189;mnielsen/nnadl_site;mnielsen;Web site for book on "Neural Networks and Deep Learning";1379681193;1578915106
-109048947;mnielsen/magic_paper;mnielsen;Experiments in an explorable visual medium for mathematics;1509481770;1582399615
-4365012;mnielsen/reference_notebook;mnielsen;;1337306714;1559503962
-10466707;mnielsen/notes-on-collective-intelligence;mnielsen;;1370300498;1559503974
-4961300;mnielsen/nltk;mnielsen;NLTK Source;1341852513;1559503960
-2133341;mnielsen/Notebook;mnielsen;;1312137733;1559504018
-7697277;mnielsen/open_government;mnielsen;Open Government, released as part of #PDFtribute;1358556323;1559503963
-4607677;mnielsen/mini_qa;mnielsen;Toy question answering program.  Aimed at "Who ....?" questions, e.g., "Who invented the C programming language?";1339250832;1575983491
-11694685;mnielsen/mnielsen.github.io;mnielsen;;1374872185;1559503982
-1761795;mnielsen/expander_graph_notes;mnielsen;Notes on expander graphs;1305652591;1559504018
-21310446;mnielsen/notes;mnielsen;Rough working notes on a variety of subjects;1403987430;1559503984
-4337095;mnielsen/finding_scenius;mnielsen;;1337094379;1581310058
-122635;mnielsen/mr_py;mnielsen;Very basic python MapReduce library, still in early development;1233867421;1565704730
-6671099;mnielsen/neural-networks-and-deep-learning;mnielsen;Code samples for my book "Neural Networks and Deep Learning";1352813904;1586032295
-8007420;mnielsen/notes-on-neural-networks;mnielsen;Rough working notes on neural networks;1359983242;1570563555
-209722505;yigit/ArtifactFinder;yigit;An Android Studio Plugin to find Maven Artifacts by class name;1568961499;1585830806
-6846362;yigit/secondary-dex-example;yigit;a sample project to demonstrate how to dynamically include an external jar file into an android project to avoid LinearAlloc limits;1353806442;1530010819
-203901356;yigit/android-sunflower;yigit;A gardening app illustrating Android development best practices with Android Jetpack.;1566523926;1573576632
-71755596;yigit/jsonapi-parser;yigit;A sample JSON API parser using GSON;1477287878;1575893118
-48334753;yigit/error-prone;yigit;Catch common Java mistakes as compile-time errors;1450640742;1450640745
-2116198;yigit/AckMate;yigit;TextMate plugin (Cocoa) shell for running 'ack';1311815657;1357254997
-141065612;yigit/bazel;yigit;a fast, scalable, multi-language and extensible build system;1531697468;1531697487
-231875103;yigit/rv-physics-animator;yigit;item animator that uses physics animations;1578204241;1579198901
-222268890;digitalbuddha/architecture-components-samples;digitalbuddha;Samples for Android Architecture Components. ;1574004346;1574004348
-765421;yigit/Put.io-Chrome-Plugin-and-JS-Library;yigit;Chrome Plugin for Put.io . Also includes the JS implementation of the Put.io API.;1278658014;1486381631
-194454615;yigit/Core;digitalbuddha;Android Library for Async Data Loading and Caching;1561848573;1579539297
-47584176;yigit/dev-summit-architecture-demo;yigit;The demo application that we've used in the Architecture Talk @ Android Dev Summit 2015;1449528559;1585851785
-213516371;yigit/plaid;florina-muntenescu;An Android app which provides design news & inspiration as well as being an example of implementing material design.;1570496123;1577972001
-5227026;yigit/AndroidBugs;yigit;sample project to test Android Bugs;1343609143;1385480899
-4451856;yigit/greenDAO;yigit;greenDAO is a light & fast ORM solution for Android that maps objects to SQLite databases.;1337996630;1557211608
-211624;yigit/fshp;yigit;Fairly Secure Hashed Password;1243439421;1392519597
-238126855;yigit/store4-issue;yigit;Issue with the stream  of https://github.com/dropbox/Store library;1580792372;1584980045
-147971021;yigit/epoxy;elihart;Epoxy is an Android library for building complex screens in a RecyclerView;1536441914;1550597625
-88216218;yigit/SlidesCodeHighlighter;yigit;A little web app that helps you copy+paste syntax-highlighted code into slide decks.;1492128294;1498250095
-16447814;yigit/android-livecode-demo;yigit;repo for the android live code event, Feb 5, 2014;1391309786;1529473801
-231247296;yigit/ktor-coroutines-bug;yigit;sample project reproducing ktor coroutines bug;1577901506;1577901655
-21019797;yigit/android-priority-jobqueue;yigit;A Job Queue specifically written for Android to easily schedule jobs (tasks) that run in the background, improving UX and application stability.;1403223165;1585986301
-222135242;yigit/architecture-components-samples;florina-muntenescu;Samples for Android Architecture Components. ;1573925462;1577380111
-1950182;yigit/InAppSettingsKit;yigit;This iPhone framework allows settings to be in-app in addition to being in the Settings app;1308955533;1357238422
-58401761;yigit/android-architecture;yigit;A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.;1462821446;1569532653
-139895706;yigit/android-artifacts;yigit;list of useful maven artifacts;1530821525;1531137684
-104678677;chrisbanes/SlidesCodeHighlighter;chrisbanes;A little web app that helps you copy+paste syntax-highlighted code into slide decks.;1506289759;1513345363
-182589594;yigit/kotlinx.coroutines;LouisCAD;Library support for Kotlin coroutines ;1555886536;1555886540
-1954437;yigit/scorll;yigit;scorll;1309055742;1357238803
-65491752;yigit/awesome-android-libraries;yigit;This is an alphabetical list of libraries for Android development, the majority being actively maintained.;1470939561;1577274654
-122398204;AttwellBrian/material-components-android;AttwellBrian;Modular and customizable Material Design UI components for Android;1519249814;1519249819
-69500811;swankjesse/encoding;swankjesse;Code examples from my 2016 tech talk on encoding;1475094223;1578454843
-250076779;swankjesse/jetty.project;swankjesse;Eclipse Jetty® - Web Container & Clients - supports HTTP/2, HTTP/1.1, HTTP/1.0, websocket, servlets, and more;1585165872;1585165874
-243017539;swankjesse/guava;swankjesse;Google core libraries for Java;1582640336;1582640338
-145129096;swankjesse/maintainability;swankjesse; Code examples from my 2018 tech talk on maintainability;1534515298;1583544046
-86187672;swankjesse/concurrency;swankjesse;Code from my 2017 talk on concurrency;1490474962;1559978154
-77411021;swankjesse/harmonyclient;swankjesse;Java client to Logitech Harmony Hub + Harmony Hub Home Extender;1482793239;1557607793
-48680605;swankjesse/dex;swankjesse;dex stuff;1451288554;1567089705
-181325678;swankjesse/jsonexplained;swankjesse;Code examples from my 2019 tech talk on JSON;1555254091;1584759711
-191278830;swankjesse/http-benchmarking;swankjesse;Looking for OkHttp regressions;1560220116;1563185283
-71122811;jlfwong/hugo;jlfwong;A Fast and Flexible Static Site Generator built with love in GoLang;1476697333;1534884208
-3077975;jlfwong/desire2download;jlfwong;Download all of the content from the University of Waterloo's Desire2Learn LMS;1325300818;1404842684
-50720022;jlfwong/boggle;jlfwong;;1454149686;1454149704
-8867822;jlfwong/hammer.vim;jlfwong;vim,  your markup language of choice, and your browser of choice.;1363654620;1404842685
-390979;jlfwong/GameOfLife;jlfwong;;1259631048;1485732547
-28826304;jlfwong/dedistract;jlfwong;Stupid simple site "blocker" Chrome extension.;1420483578;1579540682
-6649095;jlfwong/flask_debugtoolbar_lineprofilerpanel;jlfwong;Line Profiler Panel for Flask Debug Toolbar;1352699913;1580249355
-25991632;jlfwong/error-monitor-db;jlfwong;Error database for automatically categorizing and collecting errors from the Khan Academy webapp logs.;1414706630;1414380452
-14602326;jlfwong/chrome2calltree;jlfwong;Convert CPU profiles exported from Chrome to callgrind format;1385073636;1582391721
-1104317;jlfwong/Give-Me-Your-Knowledge;jlfwong;GMYK is a set of talks given for and by Software Engineering students at the University of Waterloo;1290479344;1429714385
-39922636;jlfwong/1rt;jlfwong;One Round Trip! Based off https://github.com/erikras/react-redux-universal-hot-example;1438215889;1559186953
-5261297;jlfwong/gundo.vim;jlfwong;A git mirror of gundo.vim;1343836302;1404842685
-2228724;jlfwong/a2q1;jlfwong;Dynamically-Sized Objects - Assignment 2 Question 1;1313682774;1404842684
-1773681;jlfwong/dotfiles;jlfwong;Dotfiles (mostly vim);1305842315;1570232439
-2499242;jlfwong/blog;jlfwong;Jamie Wong's blog;1317559066;1585464925
-61317051;jlfwong/gpu-boids;jlfwong;Implementation of flocking behaviour using the GPU via webgl;1466102152;1535483177
-51532522;gaearon/aphrodite;gaearon;It's inline styles, but they work!;1455211929;1563055654
-911725;jlfwong/1TWorkReport;jlfwong;Simple Blog System for comparison of Fixtures vs Factories;1284526132;1404842684
-54750780;jlfwong/engblog;jlfwong;KA Engineering blog.;1458944438;1458944439
-4349761;jlfwong/arcanist;jlfwong;Arcanist is the CLI to Differential, Facebook's code review tool. Currently an unstable preview release.;1337189292;1404842684
-16130150;jlfwong/GameOfLifeJS;jlfwong;Just messin around;1390369607;1534884216
-179886539;jlfwong/font-learning;jlfwong;;1554584674;1558543702
-86664046;jlfwong/graphics-experiments;jlfwong;Bucket of unrelated graphics experiments. Just a place to keep stuff so I don't lose it.;1490853046;1526801109
-41179990;jlfwong/crowdin-sso-examples;jlfwong;Examples using Crowdin SSO;1440195883;1440195884
-2581513;jlfwong/fifteen-puzzle;jlfwong;Implementation of Sliding 15 Puzzle with a Solver;1318680217;1582972581
-1368782;jlfwong/gamejs;jlfwong;Library for writing 2D games or other interactive graphics applications for the HTML Canvas.;1297763283;1404842684
-15214325;jlfwong/euler_scala;jlfwong;Scala solution to Project Euler solutions for learning and code review;1387156658;1404842684
-71114098;jlfwong/blackfriday;jlfwong;Blackfriday: a markdown processor for Go;1476691466;1566180098
-5545344;jlfwong/backbone;jlfwong;Give your JS App some Backbone with Models, Views, Collections, and Events;1345839462;1404842684
-11441164;jlfwong/brunch-with-caffeine;jlfwong;A frameworkless Brunch skeleton all set up with bonus caffeine from CoffeeScript and Mocha.;1373951082;1404842684
-217187718;jlfwong/csswg-drafts;jlfwong;CSS Working Group Editor Drafts;1571881492;1571881494
-102631260;chrisbanes/debug-insetter;chrisbanes;;1504714670;1528964644
-224310869;chrisbanes/tmdb-java;chrisbanes;A Java wrapper around themoviedb.org API v3 using retrofit2.;1574814306;1574818728
-186051494;chrisbanes/android-ConstraintLayoutExamples;chrisbanes;Repository of examples that showcase the various features of ConstraintLayout;1557520713;1575231460
-227738771;chrisbanes/flexbox-layout;chrisbanes;Flexbox for Android ;1576204191;1585482082
-191306071;chrisbanes/forty-jekyll-theme;chrisbanes;A Jekyll version of the "Forty" theme by HTML5 UP.;1560233686;1568568157
-152052279;chrisbanes/docker-flexget;chrisbanes;An auto updating FlexGet container.;1538990512;1538990806
-91247205;chrisbanes/emoji-data;chrisbanes;Easy to parse data and spritesheets for emoji;1494770547;1542963651
-7622340;chrisbanes/photup;chrisbanes;photup;1358243753;1584524880
-10480910;chrisbanes/ActionBar-PullToRefresh;chrisbanes;DEPRECATED;1370357093;1585889128
-36470590;chrisbanes/cheesesquare;chrisbanes;Demos the new Android Design library.;1432853674;1585883442
-114282937;chrisbanes/epoxy;elihart;Epoxy is an Android library for building complex screens in a RecyclerView;1513275888;1577672283
-20968699;chrisbanes/philm;chrisbanes;Movie collection and information app for Android.;1403107698;1585494838
-174906959;chrisbanes/material-components-android;AttwellBrian;Modular and customizable Material Design UI components for Android;1552269247;1552269252
-214312472;chrisbanes/insetter;chrisbanes;Insetter is a library to help apps handle WindowInsets more easily;1570755065;1585897701
-4848634;chrisbanes/Android-BitmapCache;chrisbanes;Android-BitmapCache is a specialised cache, for use with Android Bitmap objects.;1341127651;1584777069
-165594315;chrisbanes/santa-tracker-android;chrisbanes;Ho Ho Ho;1547439450;1547630113
-211987835;chrisbanes/markers;chrisbanes;Sample app demonstrating use of Android touch APIs for pressure-sensitive drawing.;1569892005;1580895124
-146693021;chrisbanes/MvRx;elihart;MvRx: Android on Autopilot;1535601194;1580021310
-2874001;chrisbanes/Android-PullToRefresh;chrisbanes;DEPRECATED;1322560796;1585957909
-14227546;chrisbanes/gradle-mvn-push;chrisbanes;Helper to upload Gradle Android Artifacts to Maven repositories;1383899022;1585963596
-4953704;chrisbanes/PhotoProcessing;chrisbanes;A demo of how you can process photos leveraging the ndk.;1341815911;1571300373
-5084750;chrisbanes/PhotoView;chrisbanes;Implementation of ImageView for Android that supports zooming, by various touch gestures.;1342543140;1586024733
-177019602;chrisbanes/navigation-postpone-sample;chrisbanes;https://issuetracker.google.com/129035555;1553200391;1584754458
-92936471;chrisbanes/m2m;chrisbanes;Converts Medium posts to Markdown;1496227822;1582289698
-95802721;elizarov/AtomicFU;elizarov;;1498757489;1581168744
-131050595;elizarov/icpc2018stats;elizarov;;1524682481;1524684590
-131508294;elizarov/CodeJam2018;elizarov;;1525017412;1525017456
-30880607;elizarov/FanControl;elizarov;Controls 12V fan based on inside and outside temp/RH to dehumidify cellar;1424109405;1425232296
-1074332;elizarov/haworks;elizarov;;1289558913;1382440892
-95583489;elizarov/CoroutinesStrategiesBenchmark;elizarov;;1498584250;1498584307
-88045101;elizarov/CoroutinesMockitoPlayground;elizarov;Verify Mockito functionality Kotlin Coroutines;1491997114;1566057349
-77567582;elizarov/coroutine-examples;elizarov;Examples of co-routines using Kotlin 1.1;1482967686;1482967689
-77472641;elizarov/CancellableCoroutinesPlayground;elizarov;;1482860500;1530441931
-157839547;elizarov/FlowPrototype;elizarov;;1542358435;1548879929
-117342431;elizarov/AsyncExample;elizarov;;1515847142;1561411966
-72985228;elizarov/ElectricityMeter;elizarov;Gather data from M230 electricity meter via RS485 protocol;1478430407;1478430472
-2682384;elizarov/blog;elizarov;Sources for elizarov.livejournal.com blog;1320082825;1546623740
-30608840;elizarov/avrbuddy;elizarov;Collection of C++ utility code for AVR ATTiny and ATMega MCUs (works with Arduino);1423594847;1423686894
-145170971;elizarov/hack-kotlin-ea;elizarov;;1534544089;1534545095
-165137219;elizarov/DeadlocksInCSP;elizarov;Companion project with code for "Deadlocks in non-hierarchical CSP" blog post;1547157605;1581073383
-1074384;elizarov/ControlHeater;elizarov;;1289560567;1389384285
-15638794;elizarov/Boiler;elizarov;Termex boiler automation;1388866077;1546437319
-188040093;digitalbuddha/kotlinx.coroutines;LouisCAD;Library support for Kotlin coroutines ;1558530234;1558530238
-33450913;elizarov/ClockIt_MOD;elizarov;Advanced mode for the SparkFun ClockIt Kit;1428259252;1428260672
-144160470;elizarov/AtomicFuPluginPlayground;elizarov;;1533823266;1534856372
-15807143;elizarov/Display;elizarov;Display Arduino module for HA network;1389381503;1389468424
-140975150;elizarov/Codeforces;elizarov;My Codeforces solutions and algos;1531599245;1585906399
-30660605;elizarov/haworkslibs;elizarov;A collection of Arduino libraries for home automation tasks;1423676252;1579441702
-44771108;elizarov/CargoBotSolver;elizarov;;1445545345;1445545646
-32351732;elizarov/ezstack;elizarov;AVR stack usage calculator;1426538474;1426538474
-98217732;elizarov/coroutines-debugger-agent;elizarov;;1500918002;1499161728
-100396113;elizarov/byte-buddy;elizarov;Runtime code generation for the Java virtual machine.;1502813876;1554604224
-4242903;elizarov/fasthash;elizarov;Hash benchmarking and fast hash implementation for ADD-3 conference;1336326443;1567653398
-143731723;elizarov/CoroutinesWorkshop;elizarov;;1533561717;1585999963
-227052622;elizarov/ICPC-Tools-Analyzer;elizarov;;1575961928;1579203597
-22435366;gaearon/Backbone.localStorage;gaearon;A localStorage adapter for Backbone.js;1406736950;1563055551
-21550860;gaearon/bluebird;gaearon;Bluebird is a full featured promise library with unmatched performance.;1404690082;1563055551
-36098349;gaearon/boilerplate-webpack-react;gaearon;Boilerplate project for Reactjs with webpack, gulp and stylus;1432334653;1518832936
-42456337;gaearon/amas;gaearon;Awesome & Marvelous Amas;1442243452;1571944286
-41516944;gaearon/babel-plugin-react-transform;gaearon;Babel plugin to instrument React components with custom transforms;1440719400;1581563713
-59781076;gaearon/cashay;gaearon;:moneybag: Relay for the rest of us :moneybag: ;1464294344;1465013898
-39353259;gaearon/babel-plugin-flow-comments;gaearon;Turn flow type annotations into comments.;1437349643;1563055585
-28995860;gaearon/6to5;gaearon;Turn ES6+ code into readable vanilla ES5 with source maps and more!;1420768831;1571944265
-25299845;gaearon/awesome-react;gaearon;A collection of awesome React libraries, resources and shiny things.;1413460338;1577484989
-43076341;gaearon/base16-js;gaearon;Base16 themes in JS;1443109369;1579975236
-215059590;gaearon/babel-plugin-functional-hmr;gaearon;Babel plugin enables HMR for functional components in React Native.;1571061778;1579975245
-26532899;gaearon/berlinjs.org;gaearon;The official BerlinJS website;1415791807;1563055551
-121971724;gaearon/babel-sublime;gaearon;Syntax definitions for ES6 JavaScript with React JSX extensions.;1518973616;1579975312
-31287004;gaearon/additive-animation;gaearon;Additive animation npm module;1424819626;1522907883
-41214103;gaearon/autobind-decorator;gaearon;Decorator to automatically bind methods to class instances;1440258375;1537993767
-29473708;gaearon/cancellation;gaearon;A method for making async operations cancellable;1421676583;1421676583
-21549551;gaearon/Backbone.NativeView;gaearon;A reference implementation of a native Backbone.View ;1404684277;1563055551
-65143495;gaearon/case-sensitive-paths-webpack-plugin;gaearon;Enforces case sensitive paths in Webpack requires.;1470587871;1583508614
-20787501;gaearon/Backbone.NativeAjax;gaearon;A Backbone.Ajax function powered by native XHR methods;1402620198;1563055551
-28985271;gaearon/6to5-loader;gaearon;6to5 webpack loader;1420749977;1539540405
-43254928;gaearon/amok;gaearon;Develop your web application without reloading;1443372261;1563055620
-188077793;gaearon/babel-handbook;gaearon;:blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.;1558543323;1584985961
-42456012;gaearon/ama;gaearon;Ask me anything!;1442243132;1578986611
-34746931;gaearon/babel.github.io;gaearon;;1430243984;1579975321
-74247112;gaearon/bullentin-board;gaearon;ReactJS Bulletin Board;1479607156;1571944258
-28733605;gaearon/Ambidex;gaearon;Effortlessly host your React app on both the client and the server.  Some call it isomorphic JavaScript - we call it Ambidex.;1420255232;1563055551
-79903667;gaearon/awesome-create-react-app;gaearon;Awesome list of Create React App articles / tutorials / videos and FAQ;1485255719;1571944255
-40179515;gaearon/awesome-redux;gaearon;Awesome list of Redux examples and middlewares;1438685657;1571944287
-21580362;gaearon/bundle-loader;gaearon;bundle loader for webpack;1404755073;1563055551
-30985654;ncase/2.5D-VR-Tests;ncase;2.5D VR Tests, obviously;1424291900;1435216139
-15445798;ncase/collatz;ncase;a merry mathmas gift from nick to rin;1388032500;1390777257
-136216860;ncase/anime;ncase;I AM BECOME ANIME;1528222405;1577678288
-7594680;ncase/easy-easel;ncase;Yet another Canvas drawing app, except it exports to EaselJS code;1358116870;1562854803
-170167664;ncase/anxiety-demo;ncase;AHHHHH!;1549904647;1584848895
-6053015;ncase/crossbreed.js;ncase;Multiple Inheritance in Javascript;1349219840;1418651676
-94913873;ncase/fireflies-de;ncase;German translation for Fireflies;1497977050;1501756903
-18255324;ncase/campfire;ncase;an interactive story maker, with a focus on modability;1396144554;1506047836
-20350726;ncase/conversation;ncase;A conversation engine in the style of The Walking Dead games;1401518774;1511078269
-9662300;ncase/commonly.cc;ncase;Commonly.cc, a marketplace to unlock assets for the public domain;1366857585;1439095594
-30813726;ncase/cos;ncase;Coming Out Simulator - Mobile web version;1423961913;1431809127
-23547732;ncase/birds;ncase;Angry Physics! A demonstration of See, Model, Predict;1409586705;1558978938
-60484842;ncase/eyeo2016;ncase;My EyeO 2016 Talk;1465167131;1465167131
-160548695;ncase/experiment-stats;ncase;A short experiment on expectation failure & learning;1544028092;1557257452
-20701406;ncase/coming-out-simulator-2014;ncase;Coming Out Simulator 2014;1402433835;1583740138
-142704579;ncase/bees;ncase;BEES;1532806148;1577678320
-126836820;ncase/crowds;ncase;The Wisdom and/or Madness of the Crowds;1522072562;1585520558
-45217532;ncase/emoji-prototype;ncase;emoji-based artificial life, coz why not;1446162265;1552689858
-207583399;ncase/anxiety;ncase;;1568126141;1586011932
-117897954;ncase/crowds-prototype;ncase;the wisdom and/or madness of crowds;1516226480;1577668929
-91912119;ncase/fireflies;ncase;Fireflies: an example of emergence;1495309138;1585919512
-76184519;ncase/ballot;ncase;An interactive guide to alternative voting systems;1481472061;1582959155
-6453127;ncase/cuttingedge-craftyy;ncase;The Cutting-edge Craftyy;1351579968;1391020172
-94015664;ncase/fireflies-fr;ncase;French translation of Fireflies;1497196889;1497196902
-30677998;ncase/door;ncase;A Valentine's Day one-minute minigame;1423702090;1585884579
-8417352;ncase/cccheckout;ncase;Your one-stop shop to download & attribute CC works from across the internet.;1361823527;1392021601
-93342931;ncase/fireflies-pt-br;ncase;Portuguese (Brazilian) translation of Fireflies;1496612290;1577678092
-10277920;ncase/crowdfunding-tuts;ncase;Make your own Crowdfunding Site: Tutorial & Source Code;1369444540;1580267481
-119093899;ncase/attractors;ncase;prototypin' shtuff;1516994824;1582885265
-10148769;ncase/anypay.js;ncase;Anypay.js - Pay what you want, however you want.;1368921775;1398589264
-15429152;romainguy/road-trip;romainguy;A sample Android application that demonstrates how to implement various visual effects.;1387943695;1584803259
-115212016;romainguy/kotlin-math;romainguy;Set of Kotlin APIs to make graphics math easier to write;1514051143;1585376581
-38389987;romainguy/filthy-rich-clients;romainguy;Samples for the book Filthy Rich Clients;1435778006;1573045480
-178443004;romainguy/markdeep-rasterizer;romainguy;Converts Markdeep (https://casual-effects.com/markdeep/) files to static HTML.;1553877937;1583136381
-235728549;romainguy/jext;digitalbuddha;Source code editor;1579756920;1585435331
-21266028;romainguy/google-io-2014;romainguy;Demo for the Material Witness talk I gave at Google I/O.;1403849908;1585794662
-241520233;romainguy/cgltf;romainguy;:diamond_shape_with_a_dot_inside: Single-file glTF 2.0 loader and writer written in C99;1582081510;1582741083
-235736636;digitalbuddha/jext;digitalbuddha;Source code editor;1579760852;1579760854
-62201618;romainguy/elegant-underline;romainguy;Exploring possible implementations for better underline text decoration on Android;1467181888;1585650967
-208514534;LouisCAD/coroutineworker;LouisCAD;Kotlin Coroutine-based workers for native;1568502305;1568511873
-65299525;benasher44/Core;benasher44;The models used within the CocoaPods gem;1470751225;1470751228
-4983490;benasher44/asqus;benasher44;;1341973639;1357872466
-70652957;benasher44/IGListKit;benasher44;A data-driven UICollectionView framework for building fast and flexible lists.;1476238018;1476238020
-69318445;benasher44/IUOExample;benasher44;Sample project that illustrates IUO collection bug;1474949560;1474949577
-93663766;benasher44/fmdb;benasher44;A Cocoa / Objective-C wrapper around SQLite;1496858023;1496858026
-117901775;benasher44/bugsnag-cocoa;benasher44;Bugsnag crash reporting for iOS, macOS, and tvOS apps;1516229036;1516229038
-54108532;benasher44/CocoaPods;benasher44;The Cocoa Dependency Manager.;1458209800;1547070416
-68012250;benasher44/blog.cocoapods.org;benasher44;The blog for CocoaPods;1473687616;1473687617
-134982261;benasher44/Commandant;benasher44;Type-safe command line argument handling;1527356315;1527356317
-69254834;benasher44/cocoapods-downloader;benasher44;A small library that provides downloaders for various source types (HTTP/SVN/Git/Mercurial);1474897866;1474897867
-65558266;benasher44/bacon;benasher44;a small RSpec clone;1471011166;1471011167
-147375047;benasher44/DifferenceKit;benasher44;💻 A fast and flexible O(n) difference algorithm framework for Swift collection.;1536078189;1536078191
-51939017;benasher44/cocoadocs.org;benasher44;Static generator for CocoaDocs.org and the CocoaPods.org fancy web pages;1455728096;1455728098
-82090384;benasher44/examples;benasher44;📝 A collection of example fastlane setups;1487181947;1487181948
-233327515;benasher44/jessesquires.com;benasher44;Turing complete with a stack of 0xdeadbeef;1578796370;1578796372
-128685145;benasher44/AlamofireNetworkActivityIndicator;benasher44;Controls the visibility of the network activity indicator on iOS using Alamofire.;1523224590;1523224592
-8107147;benasher44/clornado-libs;benasher44;This library is for use as a submodule with clornado.;1360393228;1387334257
-174923499;benasher44/danger-ktlint;benasher44;A Danger Plugin to lint kotlin files using ktlint command line interface.;1552277141;1552277143
-170523224;benasher44/esoteric-swift;benasher44;A collection of obscure Swift programs. The less comprehensible, the better — just like normal code.;1550068745;1550068748
-52467320;benasher44/CocoaPods4943;benasher44;Project for replicating a bug in CocoaPods reported in #4943;1456340875;1456340893
-74484744;benasher44/CocoaPodsLibExample;benasher44;Sample project that shows how to use CocoaPods in a project with an app target and a framework target;1479827626;1562848011
-8106035;benasher44/clornado;benasher44;Pronounced "klor-naah-doh," the first place to start when creating a Tornado and Google Closure-based web app.;1360383665;1387376701
-50547407;benasher44/CocoaPods4146;benasher44;Repo for helping debug and test CocoaPods PR 4146;1453939866;1453939903
-236412371;benasher44/benasher.co;AlecStrong;Ben Asher's personal website and blog;1580095044;1584926899
-83489653;benasher44/Amplitude-iOS;benasher44;;1488324422;1488324424
-69568759;benasher44/fourflusher;benasher44;A library for interacting with Xcode simulators.;1475154751;1475154752
-239645496;AlecStrong/benasher.co;AlecStrong;Ben Asher's personal website and blog;1581382259;1581382261
-214672207;benasher44/Connectivity;benasher44;🌐 Makes Internet connectivity detection more robust by detecting Wi-Fi networks without Internet access.;1570894962;1571501297
-65396355;benasher44/cocoapods-integration-specs;benasher44;The integration specs of CocoaPods;1470844823;1470844827
-181598841;benasher44/gradle;benasher44;Adaptable, fast automation for all;1555381405;1555381454
-73962991;benasher44/fastlane;benasher44;The easiest way to automate building and releasing your iOS and Android apps;1479331894;1547499887
-55990183;cassidoo/cassidoo-v4;cassidoo;My personal website!;1460393320;1477876912
-75363107;cassidoo/carbon-copy;cassidoo;;1480655829;1480664792
-197079717;cassidoo/call-it-what-it-is;cassidoo;A Chrome extension to replace the phrase, "racially offensive" and "racially charged" to "racist" because that's what it means;1563229001;1582650717
-42784175;cassidoo/clarifai-car-trainer;cassidoo;Basic example using Clarifai custom training.;1442686270;1540567642
-17945623;cassidoo/ASL2048;cassidoo;A small clone of 2048;1395325763;1395410867
-51271370;cassidoo/clarifai-go-cli;cassidoo;A CLI for the Clarifai /tag endpoint;1454887429;1460748698
-112802017;cassidoo/electron;cassidoo;Build cross platform desktop apps with JavaScript, HTML, and CSS;1512177170;1520375623
-24835779;cassidoo/cassidoo-v3;cassidoo;My personal website;1412576241;1578286401
-62611843;cassidoo/cs-education-funding;cassidoo;List of U.S. Senators and Representatives who are key decision-makers in terms of providing funding for K-12 computer science.;1467700405;1584335278
-54230999;cassidoo/curator;cassidoo;;1458334612;1458336417
-53622300;cassidoo/chihuahua-or-muffin;cassidoo;A quick webapp that determines if a picture is a chihuahua or a muffin.;1457649671;1564184146
-15387602;cassidoo/ErmergershScript;cassidoo;This is the greatest compile-to-JavaScript language of all time: Ermergersh.;1387772888;1557554445
-23001829;cassidoo/effective-javascript;cassidoo;Douglas Crockford's class on Effective JavaScript;1408134006;1567231139
-163534207;cassidoo/flapjack-fwop;cassidoo;A game where you have to get butter on all of the pancakes.;1546109921;1583321493
-28548699;cassidoo/getting-a-gig;cassidoo;Guide for getting a gig as a tech major.;1419722432;1586031058
-11381912;cassidoo/dooodles;cassidoo;Draw with your friends.;1373682918;1426873111
-235798851;cassidoo/accordion;cassidoo;A React accordion;1579785572;1585730884
-66906326;cassidoo/cassidoo-v5;cassidoo;My personal website, version 5.;1472531187;1585768212
-11410842;cassidoo/CSS-Notes;cassidoo;A CSS notepad;1373843347;1504243936
-18246254;cassidoo/Balance;cassidoo;A game in which players have to get through college while staying out of debt.;1396113564;1504243991
-17039083;cassidoo/cassidoo.github.io;cassidoo;Cassidy's Blog;1392938404;1456245335
-39868265;cassidoo/es6-party;cassidoo;You're going to learn ES6 and you're going to like it.;1438136147;1452794853
-138071727;cassidoo/awesome-GoBadukWeiqi;cassidoo;Awesome list for board game Go/Baduk/Weiqi;1529519781;1529519783
-112802778;cassidoo/desktop-lava;cassidoo;A lava lamp for your desktop built with CSS and Electron.;1512178101;1573639464
-11410745;cassidoo/Dots;cassidoo;CSS3 + JavaScript dots orbiting the center of the page;1373842813;1545311919
-46007927;cassidoo/found;cassidoo;Search and find your loved ones in crisis through machine learning;1447273580;1475423666
-165905660;cassidoo/babel-plugin-root-import;cassidoo;Add the opportunity to import modules by the root path;1547578382;1547578384
-50274046;cassidoo/clarifai-javascript-starter;cassidoo;Basic starter in JavaScript for the Clarifai API;1453614119;1525674947
-11411065;cassidoo/Color-Detect;cassidoo;JavaScript + HTML5 app to detect dominant colors in an image;1373844738;1439829978
-16061085;cassidoo/course-info;cassidoo;Contains the syllabus as well as other logistical information like setting up and understanding Git/GitHub.;1390192332;1390192376
-99352367;AlecStrong/sqlite-bnf;AlecStrong;Machine readable BNF form of the sqlite grammar and a script which generates it from published sqlite website;1501857927;1571923719
-53143660;AlecStrong/sqlite-parser;AlecStrong;An ANTLR4 grammar for SQLite statements.;1457104212;1457104224
-238493468;AlecStrong/gradle-grammar-kit-plugin;AlecStrong;Gradle plugin for generating lexers (with JFlex) and BNF parsers (with Grammar-Kit) for IntelliJ language plugins;1580919316;1580919318
-131056394;AlecStrong/projectDependencyGraph;AlecStrong;A gradle task using Graphviz to display your projects dependency graph.;1524685967;1566701113
-235918635;AlecStrong/alecstrong.com;AlecStrong;https://alecstrong.com;1579828484;1581623648
-97512936;AlecStrong/Karabiner-Elements;AlecStrong;The next generation Karabiner for macOS Sierra;1500318735;1572192639
-172760419;AlecStrong/swift-evolution;AlecStrong;This maintains proposals for changes and user-visible enhancements to the Swift Programming Language.;1551203145;1551203149
-238369219;AlecStrong/Grammar-Kit-Composer;AlecStrong;A Gradle Plugin which modifies IntelliJ grammar kit grammars to be composable;1580877614;1581653974
-235928104;AlecStrong/gohugo-theme-ananke;AlecStrong;Ananke: A theme for Hugo Sites;1579833481;1579833483
-134014668;AlecStrong/koptional;AlecStrong;Minimalistic Optional type for Kotlin that tries to fit its null-safe type system as smooth as possible.;1526688091;1528852095
-105570733;AlecStrong/intellij-graphql;AlecStrong;GraphQL language support for IntelliJ;1506969617;1562697985
-166295572;AlecStrong/kotlin-native-cocoapods;AlecStrong;A Gradle plugin for configuring Kotlin/Native with Cocoapods;1547758561;1583373088
-179571962;elihart/flank;elihart;:speedboat: Massively parallel Android and iOS test runner for Firebase Test Lab;1554409603;1578442058
-12799787;elihart/picdora;elihart;;1379039591;1387407278
-11376142;elihart/Maqaw-Client;elihart;;1373656399;1376681257
-8514993;elihart/maple-android;elihart;This is the android portion of our app;1362194963;1370556797
-12656630;elihart/hvman;elihart;Source for human;1378509498;1378587097
-21593292;elihart/flickr;elihart;;1404782736;1404783401
-14382159;elihart/snippet-backend;elihart;backend of snippet;1384393816;1384393816
-12656494;elihart/snippet-ui;elihart;UI for snippet;1378508906;1378508907
-8565592;elihart/maple;elihart;This is the web portion of our app;1362433291;1372788127
-80458779;elihart/EpoxyLeakExample;elihart;;1485807035;1485807036
-13847798;elihart/lyric-matcher;elihart;;1382660641;1382947406
-186001852;elihart/kscript;elihart;Scripting enhancements for Kotlin;1557498369;1573240925
-21913501;elihart/timeful;elihart;;1405537711;1405541840
-42330840;elihart/test;elihart;;1442003607;1442003607
-15297719;elihart/picdora-backend;elihart;;1387412527;1403862606
-11871104;elihart/tracker;elihart;;1375572264;1399885878
-100656579;elihart/android-state;elihart;A utility library for Android to save objects in a Bundle without any boilerplate.;1503016212;1529911850
-11376373;elihart/Maqaw;elihart;;1373657215;1373657215
-78681207;elihart/Android-SwitchIcon;elihart;Google launcher-style implementation of switch (enable/disable) icon;1484169916;1509596729
-17555824;elihart/android-async-http;elihart;An Asynchronous HTTP Library for Android;1394330914;1558226312
-15240504;elihart/picdora-android;elihart;;1387237973;1504545922
-11647530;elihart/Maqaw-Site;elihart;Maqaw official site - maqaw.com;1374707881;1374708029
-11082565;elihart/stocks;elihart;;1372646098;1381679531
-55990877;florina-muntenescu/MVPvsMVVM;florina-muntenescu;Model-View-Presenter vs Model-View-ViewModel in a "Hello, World!" project;1460393914;1585040393
-55142041;florina-muntenescu/DroidconMVVM;florina-muntenescu;"Hello, World!" example of the Model-View-ViewModel pattern;1459420153;1585885160
-173076464;florina-muntenescu/speakers;florina-muntenescu;;1551344038;1551344040
-25457116;florina-muntenescu/FiltermusicRadio;florina-muntenescu;Android app for filtermusic.net;1413793090;1525917706
-37496253;florina-muntenescu/Shutterstock;florina-muntenescu;;1434410079;1434410095
-63481746;florina-muntenescu/ReactiveBurgers;florina-muntenescu;Code example for "The ABCs of RxJava";1468671785;1584542210
-29407888;florina-muntenescu/StreamPlayer;florina-muntenescu;Simple library for playing audio streams, with demo app.;1421533602;1525124959
-133256459;digitalbuddha/android-architecture;digitalbuddha;A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.;1526230155;1574027595
-146877796;florina-muntenescu/dn_api_v2;florina-muntenescu;Documentation files for v2 of the Designer News API;1535711475;1535711477
-65200498;florina-muntenescu/android-architecture;florina-muntenescu;A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.;1470657369;1585657263
-71575292;florina-muntenescu/BottomNavigationPlayground;florina-muntenescu;Simple playground project for the BottomNavigationView;1477061965;1579035602
-70793158;florina-muntenescu/vectordrawable-vs-png;florina-muntenescu;Testing the loading time of VectorDrawables vs PNGs;1476352560;1582926132
-146879531;florina-muntenescu/android-tutorials;florina-muntenescu;Resources for our Android workshops;1535712523;1539322499
-58555229;florina-muntenescu/Playground;florina-muntenescu;;1462979190;1517401419
-20925643;florina-muntenescu/EnhancedListView;florina-muntenescu;An Android ListView with enhanced functionality (e.g. Swipe To Dismiss or Undo);1403013705;1573415063
-70185560;andyzg/duet;andyzg;SE 464 project;1475781685;1549620345
-51635259;andyzg/CS2102-Project;andyzg;DB project at NUS;1455345452;1513289506
-74406346;andyzg/gallery;andyzg;Visual Portfolio Generator with no extra installation;1479762868;1584663673
-15947917;andyzg/Duel-Feature;andyzg;Main feature soon to be implemented in Duel where users get to race through problems;1389818992;1389886018
-38138070;andyzg/keytar;andyzg;EngHack Spring 2015 Project - Type on your keyboard by playing the guitar;1435359746;1539323612
-92615317;andyzg/calendar;andyzg;;1495908061;1513289351
-16220597;andyzg/AndroidPad;andyzg;Facebook Hackathon Project, Android application;1390607456;1409246722
-15363953;andyzg/MazeRace;andyzg;;1387652271;1389829591
-39308092;andyzg/electron;andyzg;Build cross platform desktop apps with web technologies;1437243525;1459797916
-26724728;andyzg/old;andyzg;I found a Dropbox folder with all of the websites I made when I first started programming. Putting it up here on Github so I don't lose it because these websites are pretty funny to look back on;1416165043;1513289528
-69197085;andyzg/cs343;andyzg;concurrency course. may or may not be wrong.;1474846812;1524064721
-17647748;andyzg/GoogleCodeJam;andyzg;Practice for the Google Code Jam;1394577490;1398486318
-15543619;andyzg/Datastruct-and-Algorithms;andyzg;Repository with algorithms and data structures to practice with;1388467421;1391023172
-252634687;andyzg/doif;andyzg;do if X;1585889200;1586022639
-131313993;andyzg/classprofile;andyzg;UWaterloo Software Engineering 2018 Class Profile;1524842867;1574522856
-118210495;andyzg/infosesh;andyzg;test;1516424147;1516428431
-14129260;andyzg/FoodMenuUW;andyzg;;1383616257;1385104250
-234828274;andyzg/faker;andyzg;fun shtuff;1579401006;1579509281
-15424242;andyzg/Duel;andyzg;A NodeJS project to practice and get familiar with everything;1387914264;1389819842
-120946151;andyzg/cs486-ai;andyzg;Assignments for cs486. Probably contains some bugs so don't copy.;1518204207;1534295537
-33518491;andyzg/Khan-Project;andyzg;Project for Khan Academy's interview;1428375204;1499306471
-18249103;andyzg/BestWord;andyzg;hackWaterloo submission. Compares two words and see which one is more used based on the Twitter Search API;1396121874;1407436307
-18928194;andyzg/dotfiles;andyzg;Resource files. Mainly my Vim configuration, will be adding more;1397861824;1524431313
-18026565;andyzg/Emochart;andyzg;;1395549509;1395699622
-46192137;andyzg/journal;andyzg;Write message entries as a journal;1447535161;1465371225
-9991058;andyzg/Math_Code;andyzg;;1368222677;1400585745
-15911486;andyzg/MongoBlog;andyzg;A blog made using the tutorial from http://howtonode.org/express-mongodb;1389724759;1389819951
-95158851;andyzg/blog.andyzhang.net;andyzg;My own personal blog.;1498167682;1532894067
-26610162;andyzg/Brogramming;andyzg;Facebook Global Hackathon 2014;1415916169;1421729456
-19095927;andyzg/Coding_Problems;andyzg;Problems that frustrate me, leading me to attempting to find a solution. Also some solid practice for C++;1398314480;1499292264
-140492295;norvig/jupyter;norvig;;1531260668;1584290173
-83516498;norvig/pytudes;norvig;Python programs to practice or demonstrate skills.;1488347015;1586025973
-250892145;norvig/tic-tac-toe-python-notebook-game;norvig;Minimax algorithm for a Tic Tac Toe for Python Jupyter Notebook;1585429087;1585440842
-120367500;norvig/paip-lisp;norvig;Lisp code for the textbook "Paradigms of Artificial Intelligence Programming";1517868154;1586015160
-38878975;digitalbuddha/DBFlow;digitalbuddha;A blazing fast, powerful, and very simple ORM android database library that writes database code for you.;1436530893;1539637271
-56094741;digitalbuddha/angular-using-event-directives-lab-Continued-Education;digitalbuddha;;1460492233;1460492234
-18682397;digitalbuddha/CameraSocketUpload;digitalbuddha;;1397236715;1397236843
-17872509;digitalbuddha/gradleWalkThrough;digitalbuddha;;1395158961;1412573642
-36681516;digitalbuddha/homebrew-versions;digitalbuddha;Alternate versions of Casks for homebrew-cask;1433184750;1527256318
-213976579;digitalbuddha/hypershard-android;digitalbuddha;CLI tool for collecting tests;1570640780;1570640782
-128424642;digitalbuddha/Dispatcher;digitalbuddha;;1523035424;1585416511
-37823962;digitalbuddha/android-dagger2-excercise;digitalbuddha;;1434917148;1434917150
-115583116;digitalbuddha/FeatureDagger;digitalbuddha;;1514433424;1569925789
-98478246;digitalbuddha/dagger-android-injection;digitalbuddha;Sample project explains Dependency Injection in Android using dagger-android framework. ;1501116981;1501116982
-79751546;digitalbuddha/apollo-android;digitalbuddha;:pager: A GraphQL client for Android (WIP);1485125570;1485125574
-65147603;digitalbuddha/CompassAnimation;digitalbuddha;;1470593976;1470594377
-17500764;digitalbuddha/GitPullRank;digitalbuddha;Rest Service that returns top 5 repos for an organization by number of pull requests;1394160630;1502357225
-10584404;digitalbuddha/Fresh;digitalbuddha;;1370788956;1370789789
-110353341;digitalbuddha/DaggerAndroidViewInjectior;digitalbuddha;;1510411687;1557938596
-133251518;digitalbuddha/groupie;digitalbuddha;Groupie helps you display and manage complex RecyclerView layouts.;1526226552;1526226554
-23031640;digitalbuddha/AndroidStarter;digitalbuddha;Live Code From GDG NY September 2014;1408243045;1513500215
-17424340;digitalbuddha/Android-OCR;digitalbuddha;;1393984099;1412540216
-46672721;digitalbuddha/HMS_Beagle;digitalbuddha;Paleo games - multiplatform ;1448215471;1448215474
-21384337;digitalbuddha/docs;digitalbuddha;Documentation for Polymer;1404211798;1404204689
-11241876;digitalbuddha/FIreBoard;digitalbuddha;Live message board built using bootstrap & firebase.  ;1373239239;1374892113
-46355024;digitalbuddha/gotraining;digitalbuddha;Hardcore Go Training Class Material : ;1447773170;1447773173
-98483731;digitalbuddha/dagger-android-sample;digitalbuddha;Sample Android app project using dagger-android;1501121464;1501121465
-115618613;LouisCAD/KEEP;LouisCAD;Kotlin Evolution and Enhancement Process;1514462044;1514300426
-238299131;LouisCAD/ev3dev.github.io;LouisCAD;pretty web page for ev3dev;1580847987;1580847989
-136584453;LouisCAD/android-dynamic-features;LouisCAD;;1528443564;1568840884
-161218619;LouisCAD/android-junit5;LouisCAD;Testing with JUnit 5 for Android.;1544466437;1544466440
-62401990;LouisCAD/flatbuffers;LouisCAD;Memory Efficient Serialization Library;1467386484;1467386485
-155862683;LouisCAD/coroutineFileDownload;LouisCAD;App to demonstrate file download with progress using Kotlin coroutines;1541161491;1541161493
-211728079;LouisCAD/hello-github-actions;LouisCAD;;1569792230;1570291320
-50569537;LouisCAD/android-wear-BasicNotifications;LouisCAD;Demonstrate vector drawable issues on Android Wear;1453971026;1569626609
-204931333;LouisCAD/canvas-talk;LouisCAD;Slides for the Toronto Android Developers talk on the Android Canvas. Written in Kotlin.;1566996808;1566996811
-203774883;LouisCAD/everywhere-website;LouisCAD;;1566471210;1566471215
-247820559;LouisCAD/flowmarbles;LouisCAD;Interactive diagrams of Kotlin Flow https://flowmarbles.com;1584394399;1584394401
-112741364;LouisCAD/android-coroutines;LouisCAD;Additional coroutine support for Android;1512133894;1512133896
-171939573;LouisCAD/android-makers-2019;LouisCAD;Android Makers 2019 website;1550780575;1550780578
-133969699;LouisCAD/android-studio-poet;LouisCAD;Improve your Android Studio build times;1526655938;1526655940
-78680690;LouisCAD/eddystone-scanner;LouisCAD;Example implementation of an Android device scanning for Eddystone-UID packets;1484169493;1484169495
-217602343;LouisCAD/buildSrcVersions;LouisCAD;Gradle dependencies with IDE integration and lookup for available updates;1572031904;1572031906
-50673657;LouisCAD/GoogleDevelopersColorScheme;LouisCAD;Color scheme for Android Studio and IntelliJ, inspired by code snippets style seen on Google Developers website;1454083722;1581855489
-144275198;LouisCAD/Humanizer.jvm;LouisCAD;;1533898613;1533982260
-183291858;LouisCAD/Enamel;LouisCAD;Kotlin powered Layout;1556133267;1556133269
-45385988;LouisCAD/androidannotations;LouisCAD;Fast Android Development. Easy maintainance.;1446457999;1476012450
-47458357;LouisCAD/android-WatchFace;LouisCAD;;1449324832;1568846075
-114563715;LouisCAD/conference-talk-proposal-advice;LouisCAD;Never given a conference talk before, but would like to try? Hints and tips to get started.;1513539954;1513091158
-234555778;LouisCAD/JetBrainsMono;LouisCAD; JetBrains Mono – the free and open-source typeface for developers;1579268360;1579268361
-213034283;LouisCAD/hello-github-actions-playground;LouisCAD;;1570293544;1570299936
-202868257;LouisCAD/intellij-community;LouisCAD;IntelliJ IDEA Community Edition;1566038480;1566038482
-217041941;LouisCAD/gradle;LouisCAD;Adaptable, fast automation for all;1571830528;1571830531
-194425139;LouisCAD/clikt;LouisCAD;Intuitive command line interface parsing for Kotlin;1561824898;1561824901
-137171962;kevintpeng/dev-environment-as-code;kevintpeng;:wrench: Development environment state managed by ansible, with mackup and dotfiles managing other configuration files.;1528871270;1581091312
-67329927;kevintpeng/go-patterns;kevintpeng;A curated list of Go patterns and idioms;1472971498;1494677391
-44893247;kevintpeng/Launchpad_GOL;kevintpeng;Game of Life on the Texas-Instrument Launchpad micro-processor.;1445739829;1462464216
-21283269;kevintpeng/2048;kevintpeng;A small clone of 1024 (https://play.google.com/store/apps/details?id=com.veewo.a1024);1403889559;1409157835
-58180698;kevintpeng/dotfiles-2;kevintpeng;@holman does dotfiles;1462508389;1584092063
-83517656;kevintpeng/diatex;kevintpeng;Add LaTeX and diagram support to notes stored on Github;1488347888;1488347890
-58577830;kevintpeng/minitest;kevintpeng;minitest provides a complete suite of testing facilities supporting TDD, BDD, mocking, and benchmarking.;1462997871;1462997874
-71028264;kevintpeng/docker;kevintpeng;Docker - the open-source application container engine;1476589046;1478897420
-46286986;kevintpeng/kevintpeng.com;kevintpeng;⚒ git hooks used to pre-compile static html using ruby, with content defined using YAML, markdown, and erb.;1447691087;1537489553
-54301073;kevintpeng/Learn-Something-Every-Day;kevintpeng;📝 A compilation of everything that I learnSEMICOLON Computer Science, Software Development, Engineering, Math, and Coding in General.  Read the rendered results here ->;1458449576;1585939199
-33204697;kevintpeng/CellularAutonomy;kevintpeng;Game of Life project and custom Forest Fire simulator based on cellular automata principles.;1427829357;1447017979
-22401423;kevintpeng/Dota-Counter-Picker;kevintpeng;:video_game: This program is designed to aid Dota 2 players during the drafting process. Using massive sample sizes from stat website Dotabuff, we can evaluate general effectiveness of specific heroes against a given enemy team. To run the counter picker, run main.py to launch the GUI.;1406680138;1566982909
-65352473;kevintpeng/crawlify.io;kevintpeng;The web crawling tool with the trendiest name;1470806038;1470882809
-41846459;kevintpeng/Blogging-Web-Application;kevintpeng;Blogging application built with Rails.;1441263795;1447017994
-63723418;kevintpeng/chefspec;kevintpeng;Write RSpec examples and generate coverage reports for Chef recipes!;1468957836;1468957838
-66966133;kevintpeng/deepmask;kevintpeng;Torch implementation of DeepMask and SharpMask;1472581047;1478897470
-53916987;kevintpeng/Extended-Euclidean-Algorithm;kevintpeng;Ruby implementation of the Extended Euclidean Algorithm.;1458019257;1458019308
-42750877;kevintpeng/GroupProj;kevintpeng;;1442617241;1442617720
-208065039;kevintpeng/grpc-go;kevintpeng;The Go language implementation of gRPC. HTTP/2 based RPC;1568296983;1568296985
-103687665;kevintpeng/kubernetes.github.io;kevintpeng;Kubernetes website and documentation repo: ;1505499231;1505499236
-55219110;kevintpeng/dotfiles-1;kevintpeng;:wrench: .files, including ~/.osx — sensible hacker defaults for OS X;1459502071;1459502072
-68431760;kevintpeng/dataless;kevintpeng;Data-free navigation using Google Maps and Yelp, through SMS.;1474086337;1478897444
-59043287;kevintpeng/cobra;kevintpeng;A Commander for modern Go CLI interactions;1463505372;1463505373
-132827139;kevintpeng/dotfiles-mac;kevintpeng;;1525912026;1525912026
-62912300;kevintpeng/bundler;kevintpeng;Manage your application's gem dependencies with less pain;1468005990;1578618807
-61549107;kevintpeng/capistrano;kevintpeng;Remote multi-server automation tool;1466428746;1466428747
-22928723;kevintpeng/Data-Dumper;kevintpeng;A project completed during a work term. This program is used to sanitize csv files and dump the data to file or to a database. A Django Model can also be generated from the file.;1407958877;1577879484
-54521991;kevintpeng/Like-My-GF;kevintpeng;An auto robot to like my GF's post on Instagram;1458697526;1540914149
-33214973;kevintpeng/Mandelbrot_and_Julia_Sets;kevintpeng;Scalable animated display of the Mandelbrot Set and Julia Sets.;1427843165;1427843182
-40378780;kevintpeng/Farthest-Points-in-a-Set;kevintpeng;Generates a set of points and uses rotating calipers and convex hull algorithms to find the pair of points with the farthest distance between each other.;1438977754;1438978064
-60356099;WilliamY97/DataSciencePython;WilliamY97;common data analysis and machine learning tasks using python;1464965889;1528815051
-57412719;WilliamY97/Boston-House-Pricing-Prediction;WilliamY97;Built an optimal model based on a statistical analysis with the tools available. This model is used to estimate the best selling price for a client’s Boston home. Project 1 of the Udacity Machine Learning Nanodegree Program - details included.;1461963771;1464722010
-59166063;WilliamY97/Student-Intervention-ML;WilliamY97;Developed a model that can predict the likelihood that a given student will pass, thus helping diagnose whether or not an intervention is necessary. Project 2 of the Udacity Machine Learning Nanodegree Program - details included.;1463623756;1463625397
-60295949;WilliamY97/Parkinsons-Vocal-Analysis-Model;WilliamY97;Verifying suitability of dysphonia measurements for diagnosis of Parkinson’s Disease using multiple supervised learning algorithms.;1464900176;1582273635
-108704755;WilliamY97/iOS-Applications;WilliamY97;A collection of iOS Apps I've made to learn mobile development with Swift;1509250979;1521350472
-50267877;WilliamY97/Texty;WilliamY97;PennApps2015 - A new app that makes use of simple SMS messaging to return a variety of content everywhere you go - without the Wi-Fi.;1453600456;1453650369
-59793611;WilliamY97/Customer-Segments;WilliamY97;Used unsupervised learning techniques to see if any similarities exist between customers, and how to best segment customers into distinct categories. Project 3  of the Udacity Machine Learning Nanodegree program - details included.;1464311469;1464311513
-63070658;WilliamY97/Item-Catalog;WilliamY97;https://catalogit1997.herokuapp.com/ Developed a content management system using the Flask framework in Python. Authentication is provided via OAuth and all data is stored within a PostgreSQL database.;1468244073;1528814866
-49924139;WilliamY97/WatSat;WilliamY97;This repository contains a complete overhaul of the previous Waterloo Satellite team site which needed a re-design. I re-created the site from scratch.;1453174789;1461483413
-74695858;WilliamY97/ECE250_Algorithms_DataStructures_Projects;WilliamY97;A series of four lab projects I developed during the course Algorithms and Data Structures at the University of Waterloo;1480011114;1480011859
-56959639;WilliamY97/Titanic-Survival-ML-Analysis;WilliamY97;Applied Machine Learning concepts and created decision functions that attempt to predict survival outcomes from the 1912 Titanic disaster based on each passenger’s features. An optional mini-project as a part of the Udacity Machine Learning Nanodegree Program - details included;1461482862;1461965395
-66655230;WilliamY97/Old-Site;WilliamY97;My old site;1472222648;1506234151
-100137572;WilliamY97/Deep-Learning;WilliamY97;Personal projects related to the study of Deep Learning;1502571637;1528814748
-67183038;WilliamY97/Neighborhood-Map;WilliamY97;A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. Users can search all included restaurants and, when selected, additional information about a landmark is presented from the FourSquare API.;1472783279;1573829081
-41265447;WilliamY97/WilliamY97.github.io;WilliamY97;www.williamyang.me - My website containing personal information, work experience, and my resume.;1440360853;1562783116
-62352829;WilliamY97/Fantasy-Basketball-Schema;WilliamY97;Built a PostgreSQL database scheme to store the results of a fantasy basketball tournament. I provided a number of queries to report the results of the tournament and determine the winner.;1467336215;1489465812
-149896474;WilliamY97/Network-Buffer-Simulator;WilliamY97;Simulation of a network buffer for packet ingestion;1537634760;1538950128
-60009841;WilliamY97/Smartcab;WilliamY97;Designed an AI driving agent for the smartcab. It should receive inputs at each time step t, and generate an output move. Based on the rewards and penalties it gets, the agent should learn an optimal policy for driving on city roads, obeying traffic rules correctly, and trying to reach the destination within a goal time. Project 4 of the Udacity Machine Learning Nanodegree program - details included.;1464612698;1563834266
-62148362;WilliamY97/Multi-User-Blog;WilliamY97;http://williamyblog.appspot.com/blog This is a project I built to allow multiple users to register and publish to a blog. It is built using a python backend and Jinja2 template.;1467124552;1487999323
-61584353;WilliamY97/awesome-python;WilliamY97;A curated list of awesome Python frameworks, libraries, software and resources;1466461269;1466461271
-67838403;WilliamY97/Finalytics;WilliamY97;A data visualization platform that helps users assess their portfolios;1473462704;1580908786
-68559309;WilliamY97/LearningJournal;WilliamY97;📕 This is a repository that I hope to commit everything I learn about software development to - on a day to day basis. The goal is to make some time everyday to learn something new.;1474249621;1573829085
-100877488;WilliamY97/coding-interview-university;WilliamY97;A complete computer science study plan to become a software engineer.;1503249993;1503249992
-63312049;WilliamY97/Mini-Portfolio;WilliamY97;Developed a responsive website that will display images, descriptions and links. A practice in working with scaling front-end.;1468480714;1468480800
-40332620;WilliamY97/Klondike-Solitaire;WilliamY97;The solitaire card game developed using Java;1438906460;1440396177
-140892354;SunnyNagam/GANsPaperCollection;SunnyNagam;;1531515432;1531515434
-106144429;SunnyNagam/Fadeway;SunnyNagam;Cobresun GameJam 2k17 possibly #1 but ya know we'll see what happens, we're all busy but at the same time appreciate coding so we might do another one on winter break or Christmas or something like that idk, a Christmas themed gamejam would be lit af not that I'm saying we'd do one I'm just saying it would be lit if we possibly did one maybe ok?;1507429464;1507489796
-105926726;SunnyNagam/3DPool;SunnyNagam;3DPool Game made in the Java based language "Processing";1507228845;1507228890
-134113811;SunnyNagam/site;SunnyNagam;;1526783676;1526785334
-184942232;SunnyNagam/BeerBot-backend;SunnyNagam;;1557002350;1557008909
-157974626;SunnyNagam/ENSF480Project1;SunnyNagam;;1542451305;1543283063
+93773888;brian-norman/ChristmasRedditBot;brian-norman;🎅🏼 Python Reddit Bot I made in 2014 to respond to "Merry Christmas" in Reddit comments;1496942040;1574138839
+233693396;brian-norman/weightLess;brian-norman;⚖️ Weight Tracking Android Application;1578949523;1579550401
+250709899;brian-norman/Covid-19;brian-norman;🦠 Tracking stats about Covid-19;1585367768;1585420980
+45326138;SunnyNagam/TriggerEdge;SunnyNagam;;1446346306;1556932262
 94374274;SunnyNagam/JokeTweetBot;SunnyNagam;Tweets top voted joke from reddit daily;1497475412;1497475660
-138233634;SunnyNagam/Keras-GAN;SunnyNagam;Keras implementations of Generative Adversarial Networks.;1529625387;1529625389
-178758137;SunnyNagam/SomeMachineLearningProject;SunnyNagam;A convolutional neural network based on the CycleGan architecture designed to turn cartoons into realistic photos and the other way around.;1554078790;1579401305
-227275660;SunnyNagam/StockMarketSimulator;SunnyNagam;;1576038098;1578122344
-146355500;SunnyNagam/BMObot;SunnyNagam;A friendly discord bot with the ultimate goal of contextual human language processing!;1535404706;1557976174
-45591044;wesley-tang/BattleField;wesley-tang;Comp Sci 2015 ;1446703020;1446703021
-29412818;SunnyNagam/Llama-Run;SunnyNagam;Cobresun Game Jam 2015 ;1421547113;1507225116
-89771856;SunnyNagam/DigitRecognition;SunnyNagam;Neural network in Java to read simple writing;1493452700;1497409961
-28123005;SunnyNagam/sokasuki.github.io;SunnyNagam;;1418794829;1562267386
 170564136;SunnyNagam/SENG438;SunnyNagam;SENG438 ;1550085203;1550085205
-136498112;SunnyNagam/AntiSocialMediaStyleSheet;SunnyNagam;;1528385872;1528386560
-70562978;SunnyNagam/ArraySorterVisualization;SunnyNagam;A simple program that provides a visualization for different sorting algorithms;1476167267;1485281253
-133831997;SunnyNagam/cnn-ms-lesion-segmentation;SunnyNagam;MS lesion segmentation using cascaded 3D convolutional neural networks;1526570332;1526570334
-46638964;SunnyNagam/Brun-Craft;SunnyNagam;Waterloo come at us ;1448149859;1448150045
-29414547;SunnyNagam/Sweet-Tooth;SunnyNagam;;1421552011;1574138627
-45326138;SunnyNagam/TriggerEdge;wesley-tang;;1446346306;1556932262
-45417526;SunnyNagam/BattleField;wesley-tang;Comp Sci 2015 ;1446493225;1556932270
-139205660;SunnyNagam/sunnynagam.github.io;SunnyNagam;Personal site;1530316429;1574322013
-38081188;SunnyNagam/old.SunnyNagam.github.io;SunnyNagam;A website for me! Learning html and css bbqs.;1435277631;1530316347
-235706826;SunnyNagam/ArmageddonBlitz;SunnyNagam;;1579745114;1579751391
+184942232;SunnyNagam/BeerBot-backend;SunnyNagam;;1557002350;1557008909
+29412818;SunnyNagam/Llama-Run;SunnyNagam;Cobresun Game Jam 2015 ;1421547113;1507225116
+138233634;SunnyNagam/Keras-GAN;SunnyNagam;Keras implementations of Generative Adversarial Networks.;1529625387;1529625389
 134912111;SunnyNagam/FizzBuzz-with-Deep-Neural-Networks;SunnyNagam;Accuracy - 99%;1527289228;1527300935
-144517129;SunnyNagam/FancyFit;SunnyNagam;Personal Fitness Android Application ;1534125595;1536482904
-45285525;SunnyNagam/AddingWithFriends;wesley-tang;Learning to use git to cooperate with other people via adding numbers;1446257635;1446259691
+178758137;SunnyNagam/SomeMachineLearningProject;SunnyNagam;A convolutional neural network based on the CycleGan architecture designed to turn cartoons into realistic photos and the other way around.;1554078790;1579401305
+45285525;SunnyNagam/AddingWithFriends;SunnyNagam;Learning to use git to cooperate with other people via adding numbers;1446257635;1446259691
+106144429;SunnyNagam/Fadeway;SunnyNagam;Cobresun GameJam 2k17 possibly #1 but ya know we'll see what happens, we're all busy but at the same time appreciate coding so we might do another one on winter break or Christmas or something like that idk, a Christmas themed gamejam would be lit af not that I'm saying we'd do one I'm just saying it would be lit if we possibly did one maybe ok?;1507429464;1507489796
+133831997;SunnyNagam/cnn-ms-lesion-segmentation;SunnyNagam;MS lesion segmentation using cascaded 3D convolutional neural networks;1526570332;1526570334
+38081188;SunnyNagam/old.SunnyNagam.github.io;SunnyNagam;A website for me! Learning html and css bbqs.;1435277631;1530316347
+70562978;SunnyNagam/ArraySorterVisualization;SunnyNagam;A simple program that provides a visualization for different sorting algorithms;1476167267;1485281253
+157974626;SunnyNagam/ENSF480Project1;SunnyNagam;;1542451305;1543283063
 127518603;SunnyNagam/LearningPlatform;SunnyNagam;;1522488817;1523652340
+146355500;SunnyNagam/BMObot;SunnyNagam;A friendly discord bot with the ultimate goal of contextual human language processing!;1535404706;1557976174
+105926726;SunnyNagam/3DPool;SunnyNagam;3DPool Game made in the Java based language "Processing";1507228845;1507228890
+136498112;SunnyNagam/AntiSocialMediaStyleSheet;SunnyNagam;;1528385872;1528386560
+144517129;SunnyNagam/FancyFit;SunnyNagam;Personal Fitness Android Application ;1534125595;1536482904
+140892354;SunnyNagam/GANsPaperCollection;SunnyNagam;;1531515432;1531515434
+227275660;SunnyNagam/StockMarketSimulator;SunnyNagam;;1576038098;1578122344
+46638964;SunnyNagam/Brun-Craft;SunnyNagam;Waterloo come at us ;1448149859;1448150045
+235706826;SunnyNagam/ArmageddonBlitz;SunnyNagam;;1579745114;1579751391
 179473183;SunnyNagam/GlobalInternet;SunnyNagam;Information about any location, at your fingertips.;1554372607;1554961710
-224987434;wesley-tang/preferential-secret-santa;cole-adams;An AI search system to pair individuals for a secret santa where each person has receive preference and make preferences;1575105466;1575254106
-166460899;wesley-tang/wesley-tang.github.io;wesley-tang;My personal website;1547839160;1555303094
-124034581;wesley-tang/BTree;wesley-tang;;1520319301;1520319511
-165938824;wesley-tang/TextEngine2;wesley-tang;A text adventure game engine (second iteration).;1547594489;1547623937
-147438622;wesley-tang/FR_SecretSanta;wesley-tang;Automate all the Secret Santas;1536108774;1575254390
-174781078;wesley-tang/chat-app-backend;wesley-tang;Backend for a chat app;1552195045;1552445498
-47011181;wesley-tang/ChatProgram;wesley-tang;A chat program.;1448687944;1452541267
-158754846;wesley-tang/Overlap;wesley-tang;Android application for fast, efficient scheduling between people made for you!;1542925095;1544132114
-93180252;cole-adams/bonspiel2.github.io;cole-adams;;1496418011;1496418309
-106506480;cole-adams/CPSC-233-project;cole-adams;Space Invaders-esque game;1507696875;1507869544
-44420918;cole-adams/school-architect;cole-adams;CS 30 Final project;1445049211;1445063828
-212145769;cole-adams/preferential-secret-santa;cole-adams;An AI search system to pair individuals for a secret santa where each person has receive preference and make preferences;1569947522;1569947586
-47673032;cole-adams/degrees-of-wikipedia;cole-adams;Fun coding project to find the shortest route between wikipedia pages;1449642387;1525919528
-106507108;cole-adams/protect-the-president;cole-adams;Tower Defense game for the Cobresun Game Jam;1507697415;1525676988
-101456756;wangwalton/Car-Price-Estimator-by-Scraping-Kijiji;wangwalton;;1503714333;1503714375
-135090062;wangwalton/mouse-movement-detection;wangwalton;;1527465266;1577075958
-87722555;wangwalton/sumoRobotArduino;wangwalton;;1491755361;1491755620
-223665132;wangwalton/game-of-life;wangwalton;;1574550447;1575403449
-221088330;wangwalton/hashmap-thread-profile;wangwalton;;1573514681;1575404046
-181967366;wangwalton/wangwalton.github.io;wangwalton;:ramen: Minimalist Jekyll Template;1555534775;1585514174
-163107570;wangwalton/goblin.io;wangwalton;;1545767045;1555189927
-251445462;wangwalton/golimiter;wangwalton;A rate limiter Go package;1585608352;1585689582
-104582912;wangwalton/OrbisChallenge2017;wangwalton;;1506185070;1507099706
-112815323;wangwalton/cnn-text-classification-tf;wangwalton;Convolutional Neural Network for Text Classification in Tensorflow;1512192215;1512192217
-109587488;wangwalton/smartGroceries;wangwalton;;1509892828;1509893700
-78784359;wangwalton/WizRPG;wangwalton;;1484253084;1484253231
-250142705;wangwalton/gocrawler;wangwalton;Web crawler;1585190040;1585945007
-116994364;wangwalton/FPGA-Mnist;wangwalton;;1515608433;1515608436
-220119510;AttwellBrian/helm-charts;AttwellBrian;You know, for Kubernetes;1573087763;1573087765
-38277643;AttwellBrian/Android-StaticLauncher;AttwellBrian;An example project of Android annotation processing using Gradle.;1435622399;1435622399
-181704388;AttwellBrian/onelogin-oidc-java;AttwellBrian;OpenId Connect client examples for Java apps;1555424385;1555424387
-105116156;AttwellBrian/erlang-atrace-flamegraphs;AttwellBrian;Generate flamegraphs from Android method trace files;1506583608;1506583610
-168479763;AttwellBrian/contrib;AttwellBrian;This is a place for various components in the Kubernetes ecosystem that aren't part of the Kubernetes core. Consider creating a new repo instead.;1548918534;1555470271
-141934330;AttwellBrian/CarND-Behavioral-Cloning-P3;AttwellBrian;Starting files for the Udacity CarND Behavioral Cloning Project;1532297498;1532905502
-94790683;AttwellBrian/parse_androiddex;AttwellBrian;解析Android中的dex文件格式;1497885332;1497885334
-143644676;AttwellBrian/CarND-Advanced-Lane-Lines;AttwellBrian;;1533500160;1534779177
-146212420;AttwellBrian/CarND-Vehicle-Detection;AttwellBrian;Vehicle Detection Project;1535313799;1535313801
-124595585;AttwellBrian/LinearAlloc-Samples;AttwellBrian;LinearAlloc sample code;1520631142;1520631144
-94557072;AttwellBrian/dexClassSizeAnalyzer;AttwellBrian;Tool for analyzing size of classes in dex files;1497626751;1541786794
-151014764;AttwellBrian/CarND-Extended-Kalman-Filter-Project;AttwellBrian;Self-Driving Car Nanodegree Program Starter Code for the Extended Kalman Filter Project;1538348763;1538860066
-181577534;AttwellBrian/onelogin-oidc-node;AttwellBrian;OpenId Connect client examples for SPA or Node apps;1555369349;1555369354
-168031381;AttwellBrian/k8s-stackdriver;AttwellBrian;;1548707140;1551470522
-230031073;AttwellBrian/nico;AttwellBrian;A web game written with family over Chistmas.;1577242115;1578541641
-38709574;AttwellBrian/loglifecycle;AttwellBrian;Logs all lifecycle methods of annotated Activities, Fragments, Services, Views, etc.;1436296862;1436296863
-94792272;AttwellBrian/decompiling-android;AttwellBrian;Source code for 'Decompiling Android' by Godfrey Nolan;1497886209;1497886211
-141069594;AttwellBrian/CarND-Traffic-Sign-Classifier-Project;AttwellBrian;Classify Traffic Signs.;1531702460;1532291594
-158718410;AttwellBrian/agario;AttwellBrian;Realtime multiplayer game, in spirit of agar.io;1542900447;1544023770
-94794976;AttwellBrian/oatdump_plus;AttwellBrian;Extended oatdump from Android ART repo, to support class & method level dumps;1497887904;1497887911
-153022776;AttwellBrian/CarND-Unscented-Kalman-Filter-Project;AttwellBrian;Self-Driving Car Nanodegree Program Starter Code for the Unscented Kalman Filter Project;1539554276;1539554504
-106746787;AttwellBrian/angularjs-Quizzler;AttwellBrian;The AngularJS Challenge: Create an online Quiz builder & testing application.;1507843413;1507843415
-63472004;AttwellBrian/phab-username-highlighter-plugin;AttwellBrian;Highlights specified usernames in the reviewer line under diffs. Helps you determine if you have been directly added as a reviewer, or if you have been added as a part of a group. Also deletes diffs that you have approved from your queue.;1468655515;1491190598
-136832719;AttwellBrian/CarND-LaneLines-P1;AttwellBrian;Lane Finding Project for Self-Driving Car ND;1528653899;1528685419
-44362207;AttwellBrian/android-ramping-noise;AttwellBrian;Android app that gradually starts generating white noise after you fall asleep.;1444969617;1482816441
-7884405;AttwellBrian/face-access-control;AttwellBrian;Face Unlock;1359429496;1538224093
-37763815;AttwellBrian/JCenter;AttwellBrian;;1434790315;1456960812
-19453835;deedy/jekyll;deedy;Jekyll is a blog-aware, static site generator in Ruby;1399290001;1493625808
-6321237;deedy/FacebookFun;deedy;A few shell scripts which shows you some fun facts about your Facebook profile.;1350829554;1556696225
-19401726;deedy/Apache-License;deedy;How to add Apache license to a project;1399116921;1522040275
-9263704;deedy/CS5625Interactive;deedy;;1365269141;1493625840
-6316823;deedy/LabelStuffDataAnalysis;deedy;Some tools to analyze the .xml data of LabelStuff, http://labelstuff.cs.cornell.edu/;1350792924;1392556391
-13280168;deedy/elasticsearch;deedy;Open Source, Distributed, RESTful Search Engine;1380740771;1493625824
-6321434;deedy/2x2x2CubeSolver;deedy;A text-based 2x2x2 Rubix Cube Solver, built in OCaml.;1350830804;1399610502
-125965936;deedy/cisce_schools_data;deedy;Cleaned, scraped data of all 2,341 CISCE schools, primarily in India, in 2018. Data scraped from: http://www.cisce.org/locate-search.aspx?country=0&state=0&dist=0&city=0&location=&schooltype=&cve=&isc=&icse=&schoolclassi=&school=&search=locate;1521524165;1569397692
-19309965;deedy/Latex-Templates;deedy;A concise set of Latex templates that serves a small set of needs - CV, Essays, Articles and Problem Sets;1398853284;1585747651
-37183170;deedy/HiddenMarkovModelRandomWalk;deedy;;1433922613;1556466871
-13894101;deedy/Connect4AI;deedy;A web-based Connect Four game built on the Java/Scala framework, Play. Intended to backed by an AI based on Minimax Trees, Heuristic Search and Alpha-Beta Pruning.;1382838159;1493625819
-13281376;deedy/javaee7-samples;deedy;Java EE 7 Samples;1380744294;1493625826
-6316757;deedy/3DGrapherJava;deedy;A 3D Graphing tool in Java;1350792265;1396149170
-6516997;deedy/eBayBay;deedy;A Chrome Extension that finds better prices for books on eBay if you're about to buy it on Amazon.;1351923534;1493625851
-18821079;deedy/FantasyIPL-Moneyball;deedy;;1397608100;1493625803
-6316784;deedy/Breakout;deedy;A full implementation of the classic game Breakout on Java;1350792527;1381444364
-10893725;deedy/FindPasture;deedy;Submission for the Stanford Hack/Meat 2013 Hackathon;1372028316;1493625838
-125902755;deedy/cbse_schools_data;deedy;Cleaned, scraped data of all 20,367 CBSE schools, primarily in India, in 2018. Data scraped from: cbseaff.nic.in/cbse_aff/schdir_Report/userview.aspx;1521484057;1580686203
-91134166;deedy/india-nfhs4;deedy;;1494628197;1558110529
-6316992;deedy/HotelManagement;deedy;A text-based Hotel Management application built on C++.;1350794417;1422801444
-57976664;deedy/cricket-predictor;deedy;;1462286593;1538231878
-6321385;deedy/Custom-Scheme-Interpreter;deedy;A custom Scheme Interpreter designed in OCaml.;1350830555;1579223670
-11231006;deedy/CheerPeer;deedy;Submission for the Human API hackathon;1373187593;1493625836
-12631876;deedy/Compilers;deedy;Compilers Repo;1378425809;1493625816
-46354495;deedy/gradcafe_data;deedy;;1447772675;1580777405
-24302594;deedy/dotfiles;deedy;My dotfiles;1411330858;1493625801
-6317833;deedy/AudioGrab;deedy;A script that fetches the top 100 songs of iTunes off the web, albeit unreliably.;1350801958;1386595599
-6321769;deedy/Explorer-Navigational-Website;deedy;A file explorer like navigational website which allows adding, storing and viewing of images, other webpages and other file formats.;1350832687;1383639491
-19312540;deedy/Deedy-Resume;deedy;A one page , two asymmetric column resume template in XeTeX that caters to an undergraduate Computer Science student;1398860075;1586015402
-81912991;Jspsun/Jonathan.solar;Jspsun;My personal site! Animated with 100% Css animations :^);1487053744;1526875385
-93118962;Jspsun/AthenaServer;Jspsun;;1496370660;1496370713
-111463442;Jspsun/Extend;Jspsun;Chrome browser extension that bridges Ethereum blockhain with reddit;1511212386;1511212388
-115597392;Jspsun/bettertouchtool-crypto;Jspsun;Crypto stock market prices for your Macbook Pro touch bar! (Bitcoin, Ethereum, Litecoin, Neo, and Civic);1514446015;1514333159
-129928931;Jspsun/MinimalReactBoilerPlate;Jspsun;A super minimal react boilerplate that uses webpack, react router and babel.;1523980187;1526878831
-100656436;Jspsun/AllisonLeagueSite;Jspsun;A little joke site I put together for my GF that uses League's stylesheets;1503016030;1503116719
-77751207;Jspsun/Athena2.0;Jspsun;An IOT voice assistant with natural language processing, smart home integration and talk-back functionality.;1483207850;1496435318
-76283956;Jspsun/FirstYearProgrammingPractice;Jspsun;Just a few practice problems that I'm guessing may show up on my first year programming exam;1481567390;1481567673
-77416994;Jspsun/DataStructures;Jspsun;Some implementation of data structures;1482802882;1482803050
-230214370;Jspsun/js.js;Jspsun;All the UI components I've made, baked into a nice library;1577344186;1578294582
+139205660;SunnyNagam/sunnynagam.github.io;SunnyNagam;Personal site;1530316429;1574322013
+45417526;SunnyNagam/BattleField;SunnyNagam;Comp Sci 2015 ;1446493225;1556932270
+28123005;SunnyNagam/sokasuki.github.io;SunnyNagam;;1418794829;1562267386
+89771856;SunnyNagam/DigitRecognition;SunnyNagam;Neural network in Java to read simple writing;1493452700;1497409961
+29414547;SunnyNagam/Sweet-Tooth;SunnyNagam;;1421552011;1574138627
+134113811;SunnyNagam/site;SunnyNagam;;1526783676;1526785334
+233317550;3b1b/moderngl;3b1b;Modern OpenGL binding for python;1578789394;1585825738
+32689863;3b1b/manim;3b1b;Animation engine for explanatory math videos;1427050258;1586042033
+52317610;3b1b/perseus;3b1b;Perseus is Khan Academy's new exercise question editor and renderer.;1456188280;1585997182
+80201860;Jspsun/DuoToneMaterial;Jspsun;A custom Atom IDE theme! My personal theme with matching colors and material ui;1485516138;1485516364
+73437357;Jspsun/Origin;Jspsun;A small game that I put together in Java;1478829820;1487485125
+89434519;Jspsun/EvolutionSimulator;Jspsun;Visualize evolution in a really pretty way!;1493177931;1495260563
+107169589;Jspsun/CtCI-6th-Edition-Python;Jspsun;Cracking the Coding Interview 6th Ed. Python Solutions;1508179884;1583890665
+222792746;Jspsun/298Lab;Jspsun;;1574198765;1575414135
+154734361;Jspsun/FranzNotionSupport;Jspsun;;1540499854;1540507784
+230006633;Jspsun/home-assistant;Jspsun;:house_with_garden: Open source home automation that puts local control and privacy first;1577223989;1577223992
 111613484;Jspsun/godash;Jspsun;Lodash utility functions for Go;1511307298;1511307063
-70969048;Jspsun/LEETCodePractice;Jspsun;All the code I've written in preparation for coding interviews;1476510179;1579936923
+100656436;Jspsun/AllisonLeagueSite;Jspsun;A little joke site I put together for my GF that uses League's stylesheets;1503016030;1503116719
+114039580;Jspsun/ece124;Jspsun;;1513113064;1513113066
+72916775;Jspsun/Athena1.0;Jspsun;A Voice assistant that lets you control your computer hands free;1478338382;1566993660
+75024800;Jspsun/employHer;Jspsun;;1480377292;1480377294
+77416994;Jspsun/DataStructures;Jspsun;Some implementation of data structures;1482802882;1482803050
+76283956;Jspsun/FirstYearProgrammingPractice;Jspsun;Just a few practice problems that I'm guessing may show up on my first year programming exam;1481567390;1481567673
+93198404;Jspsun/Athena;Jspsun;Master repository for AthenaAI: an all purpose voice assistant: Think Iron Man's Jarvis but real :D;1496432466;1496439412
+230214370;Jspsun/js.js;Jspsun;All the UI components I've made, baked into a nice library;1577344186;1578294582
 103425238;Jspsun/express-frisk;Jspsun;Express middleware to validate incoming requests;1505321041;1505321042
 104016995;Jspsun/hypernova;Jspsun;A service for server-side rendering your JavaScript views;1505788773;1505788775
-93198404;Jspsun/Athena;Jspsun;Master repository for AthenaAI: an all purpose voice assistant: Think Iron Man's Jarvis but real :D;1496432466;1496439412
-107169589;Jspsun/CtCI-6th-Edition-Python;Jspsun;Cracking the Coding Interview 6th Ed. Python Solutions;1508179884;1583890665
-73437357;Jspsun/Origin;Jspsun;A small game that I put together in Java;1478829820;1487485125
-222792746;Jspsun/298Lab;Jspsun;;1574198765;1575414135
-73438209;Jspsun/CompetitiveCoding;Jspsun;Just me doing some easy-medium contest problems. The key was to do it in O(fast enough);1478830667;1478830706
-93438503;Jspsun/markov-messenger-bot;Jspsun;A Fb Messanger autoresponder that mimics the way you speak;1496690656;1524889626
-154734361;Jspsun/FranzNotionSupport;Jspsun;;1540499854;1540507784
 135783804;Jspsun/DotFiles;Jspsun;Cause setting up my macros each time I get a new computer is a pain;1527909891;1578905808
-230006633;Jspsun/home-assistant;Jspsun;:house_with_garden: Open source home automation that puts local control and privacy first;1577223989;1577223992
-75024800;Jspsun/employHer;Jspsun;;1480377292;1480377294
-114039580;Jspsun/ece124;Jspsun;;1513113064;1513113066
+73438209;Jspsun/CompetitiveCoding;Jspsun;Just me doing some easy-medium contest problems. The key was to do it in O(fast enough);1478830667;1478830706
 93197690;Jspsun/AthenaSmartWatchFace;Jspsun;;1496431858;1496431922
-72916775;Jspsun/Athena1.0;Jspsun;A Voice assistant that lets you control your computer hands free;1478338382;1566993660
+93118962;Jspsun/AthenaServer;Jspsun;;1496370660;1496370713
+93438503;Jspsun/markov-messenger-bot;Jspsun;A Fb Messanger autoresponder that mimics the way you speak;1496690656;1524889626
+77751207;Jspsun/Athena2.0;Jspsun;An IOT voice assistant with natural language processing, smart home integration and talk-back functionality.;1483207850;1496435318
+115597392;Jspsun/bettertouchtool-crypto;Jspsun;Crypto stock market prices for your Macbook Pro touch bar! (Bitcoin, Ethereum, Litecoin, Neo, and Civic);1514446015;1514333159
+81912991;Jspsun/Jonathan.solar;Jspsun;My personal site! Animated with 100% Css animations :^);1487053744;1526875385
+70969048;Jspsun/LEETCodePractice;Jspsun;All the code I've written in preparation for coding interviews;1476510179;1579936923
+111463442;Jspsun/Extend;Jspsun;Chrome browser extension that bridges Ethereum blockhain with reddit;1511212386;1511212388
+129928931;Jspsun/MinimalReactBoilerPlate;Jspsun;A super minimal react boilerplate that uses webpack, react router and babel.;1523980187;1526878831
 103724819;Jspsun/HackTheNorth2017;Jspsun;;1505536342;1505634778
-89434519;Jspsun/EvolutionSimulator;Jspsun;Visualize evolution in a really pretty way!;1493177931;1495260563
-80201860;Jspsun/DuoToneMaterial;Jspsun;A custom Atom IDE theme! My personal theme with matching colors and material ui;1485516138;1485516364
+105412104;pranavjain97/react-native-chatApp;pranavjain97;;1506821671;1506822018
+84905835;pranavjain97/SyncUp;pranavjain97;;1489466079;1489610986
 64547535;pranavjain97/myWebBrowser;pranavjain97;A simple Web Browser made with Java;1469888313;1487962798
 68175385;pranavjain97/JavaScript-Gists;pranavjain97;Snippets for Phone Library, Rock Paper Scissors, Cash Register;1473830088;1487962877
-82507584;pranavjain97/Bouncy;pranavjain97;A Java Arcade Game ;1487557284;1560142292
-86000881;pranavjain97/gradSchool-analyser;pranavjain97;;1490305772;1490306047
-84905835;pranavjain97/SyncUp;pranavjain97;;1489466079;1489610986
-84906457;pranavjain97/LeetcodePractice;pranavjain97;My solutions which I've written in preparation for the coding interviews in Java and Python;1489466727;1490979369
-69145219;pranavjain97/pranavjain97.github.io;pranavjain97;;1474780539;1557518235
-68174105;pranavjain97/Billing-System;pranavjain97;A desktop application which allows admins and customers to Search, Modify, Copy, Add and Delete records separately. Flexible to be used by Hotels/Supermarkets and similar.  ;1473828438;1490363001
-64088734;pranavjain97/myPages--SPRING-MVC;pranavjain97;On Local Host;1469399905;1469400205
-105412104;pranavjain97/react-native-chatApp;pranavjain97;;1506821671;1506822018
-89183362;pranavjain97/WeatherForMe;pranavjain97;;1492995577;1492995841
-68173352;pranavjain97/Messenger-Pro;pranavjain97;Exchanges messages on the same computer between Client and Server. Implemented using GUI libraries, server sockets and streams;1473827395;1558453076
 145333484;pranavjain97/ChessAI;pranavjain97;;1534708687;1558453948
-72500403;pranavjain97/Marquee;pranavjain97;Scrolling text;1477970714;1477970842
+84906457;pranavjain97/LeetcodePractice;pranavjain97;My solutions which I've written in preparation for the coding interviews in Java and Python;1489466727;1490979369
+82507584;pranavjain97/Bouncy;pranavjain97;A Java Arcade Game ;1487557284;1560142292
+89183362;pranavjain97/WeatherForMe;pranavjain97;;1492995577;1492995841
+68174105;pranavjain97/Billing-System;pranavjain97;A desktop application which allows admins and customers to Search, Modify, Copy, Add and Delete records separately. Flexible to be used by Hotels/Supermarkets and similar.  ;1473828438;1490363001
+69145219;pranavjain97/pranavjain97.github.io;pranavjain97;;1474780539;1557518235
 67922314;pranavjain97/ScoreBored;pranavjain97;An Android App developed at Penn Apps Hackathon, where 2 users can communicate to rate a 3rd person by on-spot tapping. ;1473587294;1490766557
+64088734;pranavjain97/myPages--SPRING-MVC;pranavjain97;On Local Host;1469399905;1469400205
+72500403;pranavjain97/Marquee;pranavjain97;Scrolling text;1477970714;1477970842
+68173352;pranavjain97/Messenger-Pro;pranavjain97;Exchanges messages on the same computer between Client and Server. Implemented using GUI libraries, server sockets and streams;1473827395;1558453076
+86000881;pranavjain97/gradSchool-analyser;pranavjain97;;1490305772;1490306047
+134916417;zahin-mohammad/RuHacks18;zahin-mohammad;RuHacks 2018. An app that utilizes your phones location and the Toronto AC locations API to find you the nearest publicly accessible air conditioned area.;1527294449;1527558689
+240529808;zahin-mohammad/gh-analytics;zahin-mohammad;Playing around with the github API.;1581691457;1581722071
