@@ -47,9 +47,34 @@ app.get('/', function (req, res) {
 
 // GET Requests
 
-app.get('/feed', (req, res) => (
-    res.send("feed")
-))
+app.get('/feed', function (req, res) {
+    var user_name = req.query.user_name
+
+    if (!user_name) {
+        throw ("No username supplied")
+    }
+
+    var query = `
+    select Post.*, User.*
+    FROM Post
+    INNER JOIN User ON User.username = Post.username
+    INNER JOIN FollowsUser on FollowsUser.followee = Post.username
+    WHERE FollowsUser.follower = '${user_name}'
+    UNION
+    select Post.*, User.*
+    FROM Post
+    INNER JOIN User ON User.username = Post.username
+    INNER JOIN Repository ON Repository.name = Post.repository_name
+    INNER JOIN FollowsRepository ON FollowsRepository.repository_name = Post.repository_name
+    WHERE FollowsRepository.follower = '${user_name}'; 
+    `
+    postsFromUsersWeFollow = []
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(rows)
+    })
+});
 
 app.get('/comments', (req, res) => (
     res.send("comments")

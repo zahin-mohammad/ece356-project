@@ -1,55 +1,302 @@
 id;repository_name;title;username
-464977589;atulbipin/dev-env-setup;Add operating system specific flags;zahin-mohammad
-464977554;atulbipin/dev-env-setup;Add npm;zahin-mohammad
 573408419;zahin-mohammad/dev-env-setup;Add flutter;zahin-mohammad
 549249843;zahin-mohammad/dev-env-setup;Incorrect zsh paths in ~/.zshrc;zahin-mohammad
 545331007;zahin-mohammad/dev-env-setup;Add xclip;zahin-mohammad
-510116274;atulbipin/spotify-slackbot;Bump urllib3 from 1.23 to 1.24.2;dependabot[bot]
-581340665;AttwellBrian/nico;Bump acorn from 5.7.3 to 5.7.4 in /frontend;dependabot[bot]
-11843860;AttwellBrian/face-access-control;Slow operatings on the UI thread;AttwellBrian
-517043197;deedy/Deedy-Resume;How to specify the vertical limit in the document.?;anil-goudar
-481923312;deedy/Deedy-Resume;Update deedy_resume.xtx;tanyachawla412
-478103608;deedy/Deedy-Resume;removing hanging indent in tightitemize;margarineHound
-448359411;deedy/Deedy-Resume;fixed hacky space;hengdashi
-412694458;deedy/Deedy-Resume;Fix Publications section overlap;voidstarstar
-409262011;deedy/Deedy-Resume;Serbian accented c;utkuturk
-350898657;deedy/Deedy-Resume;textbf not working in conjunction with this;yadavabhinav16
-318642291;deedy/Deedy-Resume;Modifying Colors;prateekiiest
-307608049;deedy/Deedy-Resume;Solved the overflow issue, albeit temporarily.;DeeprajPandey
-298012184;deedy/Deedy-Resume;Suggestion on design;srdg
-291973577;deedy/Deedy-Resume;Publications: overlap between section name and body;niranjantdesai
-277975364;deedy/Deedy-Resume;Added Cover Letter Templates;anthonyattard
-273544317;deedy/Deedy-Resume;Extending to two Pages;naveenT1010
-265499138;deedy/Deedy-Resume;adapting to 2 pages? ;csaund
-261485044;deedy/Deedy-Resume;Cover Letters;anthonyattard
-254465607;deedy/Deedy-Resume;Remove more "//"s;wrmacrae
-254465081;deedy/Deedy-Resume;Change links to not have "://";wrmacrae
-208788231;deedy/Deedy-Resume;Column 2 Causes Overflow When Aligned at Same Depth as Column 1;joshjacobson
-190428237;deedy/Deedy-Resume;Wrong accents with scshape;kfeine
-183199388;deedy/Deedy-Resume;I am not able to install or use the fonts on ubuntu 16.04 can anyone assist?;Data-drone
-175121549;deedy/Deedy-Resume;update fonts;jck
-145788671;deedy/Deedy-Resume;Update Overleaf;alanyee
-142323881;deedy/Deedy-Resume;To fulfill the requirements in Chinese jobsearching;kirkang
-127175342;deedy/Deedy-Resume;Suggestion on typography;isometric
-123607701;deedy/Deedy-Resume;Everyone loves Makefiles!;nickyr
-123607114;deedy/Deedy-Resume;Fix alignment of employer and position;nickyr
-92031907;deedy/Deedy-Resume;\sectionspace e \begin{tightitemize} undefined control sequence;SquaredPi
-62188066;deedy/Deedy-Resume;No way to italicize;rrshaban
-57681975;deedy/Deedy-Resume;Large Institution names;Void2258
-57410171;deedy/Deedy-Resume;Merge pull request #1 from deedydas/master;EmmanueleSalvati
-383727930;deedy/gradcafe_data;Any plan on updates?;li-boxuan
+585591514;zahin-mohammad/ece356-project;Title;brian-norman
+585583679;zahin-mohammad/ece356-project;Test Issue;zahin-mohammad
+464977589;atulbipin/dev-env-setup;Add operating system specific flags;zahin-mohammad
+464977554;atulbipin/dev-env-setup;Add npm;zahin-mohammad
 451217561;brian-norman/sPam-Beesly;New PRs should notify the reviewers on discord;brian-norman
 356879856;brian-norman/sPam-Beesly;Report's new commits made every week in Cobresun;brian-norman
 355453005;brian-norman/sPam-Beesly;Add ability to google and pull up first search result;brian-norman
 355452779;brian-norman/sPam-Beesly;Ability to add issues to a repo;brian-norman
-585591514;zahin-mohammad/ece356-project;Title;brian-norman
-585583679;zahin-mohammad/ece356-project;Test Issue;zahin-mohammad
 355811190;brian-norman/CubicPolynomial;Change barrier colour each level;brian-norman
 357461207;brian-norman/TrumpBot;Host and Auto-Run This;brian-norman
-536209332;SunnyNagam/StockMarketSimulator;Add and plot change data (percentage change from previous day);SunnyNagam
-383953069;SunnyNagam/ENSF480Project1;TODO: connect registered buyer updateData to DB with handler (assign observers);keenangaudio
-383948347;SunnyNagam/ENSF480Project1;TODO: create catolog and open it at startup - connect checkDocument function in DB to search and display on gui;keenangaudio
-383948004;SunnyNagam/ENSF480Project1;Creating a catlog object that is an arraylist of Documents following abstract factory pattern;louisj381
+510116274;atulbipin/spotify-slackbot;Bump urllib3 from 1.23 to 1.24.2;dependabot[bot]
+591902543;chrisbanes/tivi;Update show details to Compose;chrisbanes
+589574534;chrisbanes/tivi;Re-enable Crashlytics;chrisbanes
+587192945;chrisbanes/tivi;Unknown destination during deep link;PHELAT
+572162855;chrisbanes/tivi;Application graph. ;AbhiAndroidManiac
+570889853;chrisbanes/tivi;Enable detekt code checking;chrisbanes
+503069560;chrisbanes/tivi;Cannot keep the scroll position of horizontal nested RecyclerView in DiscoverFragment;Nghicv
+485724539;chrisbanes/tivi;Search sometimes fails;Kernald
+484991716;chrisbanes/tivi;Create onboarding setup flow when user opens apps for first time;chrisbanes
+484913828;chrisbanes/tivi;Details screen not properly binding while loading the image;Kernald
+484790964;chrisbanes/tivi;Better show stats;chrisbanes
+481854403;chrisbanes/tivi;There is significant delay when item is click and shared element transition run.;shakil807g
+481416449;chrisbanes/tivi;Image Preloading;akdeveloper-android
+456612447;chrisbanes/tivi;Add ability to add episode watch date in past;chrisbanes
+456612397;chrisbanes/tivi;Add ability to "watch previous episodes" from season list;chrisbanes
+456612137;chrisbanes/tivi;Display if show has ended;chrisbanes
+456611943;chrisbanes/tivi;Persist selected sorting option per screen;chrisbanes
+456611755;chrisbanes/tivi;Display progress bar in search when network request in flight;chrisbanes
+456611705;chrisbanes/tivi;Treat images in dark theme;chrisbanes
+407974702;chrisbanes/tivi;Please Provide some design flow or how app works with some diagram or blog;TheReprator
+343870175;chrisbanes/tivi;Add nightly sync for followed shows;chrisbanes
+343870078;chrisbanes/tivi;Change default page to 'Library' if logged in;chrisbanes
+322770660;chrisbanes/tivi;A documentation/blog to understand this advanced code;vipulasri
+320527748;chrisbanes/tivi;New Logo Proposal;chimzycash
+309962197;chrisbanes/tivi;Enable 'StringFormatMatches' lint rule;chrisbanes
+291018150;chrisbanes/tivi;Add fallback if TMDb does not contain image;chrisbanes
+282881743;chrisbanes/tivi;TmdbImageUrlProvider should be more intelligent;chrisbanes
+322757700;JakeWharton/byteunits;Change KB unit string to kB according to SI standard;erikghonyan
+164696089;JakeWharton/byteunits;Add a value type that represents both amount and unit.;JakeWharton
+163030454;JakeWharton/byteunits;Inclusion in JDK;krisskross
+584071493;JakeWharton/docker-gphotos-sync;Migration to offical action;JakeWharton
+568960683;JakeWharton/docker-gphotos-sync;Writes files as root;JakeWharton
+565848598;JakeWharton/docker-gphotos-sync;Do something about hangs;JakeWharton
+562307441;JakeWharton/docker-gphotos-sync;Testing?;JakeWharton
+562306284;JakeWharton/docker-gphotos-sync;Docker image versioning;JakeWharton
+562302071;JakeWharton/docker-gphotos-sync;Fix up DockerHub listing;JakeWharton
+584071423;JakeWharton/docker-mbsync;Migrate to official action;JakeWharton
+568960845;JakeWharton/docker-mbsync;Writes files as root;JakeWharton
+573990440;JakeWharton/DiskLruCache;add: cache entry creation time param to Snapshot;feivur
+276889668;JakeWharton/DiskLruCache;Avoid IOExceptions in delete() when the cache dir is deleted externally.;sjudd
+266765606;JakeWharton/DiskLruCache;Key length is 64 for dependencies resolved via maven/jcenter;rahul-a
+233252243;JakeWharton/DiskLruCache;Get entry count/iterator;miguelvillasenor
+232661565;JakeWharton/DiskLruCache;Request for new release 2.0.3;vagrawal13
+198650533;JakeWharton/DiskLruCache;what can cause cache is closed;iloveaman
+119093421;JakeWharton/DiskLruCache;max size doesn't take in consideration minimum 4kb block size.;hjudez
+80229040;JakeWharton/DiskLruCache;Add method to evict all entries from the cache.;Cellena
+76703967;JakeWharton/DiskLruCache;Multi-thread: Infinite loop in trimToSize;la-urre
+50406569;JakeWharton/DiskLruCache;Total number of files limit of FAT filesystem;yuwentw
+42308562;JakeWharton/DiskLruCache;A resource was acquired at attached stack trace but never released.;caxton
+41017656;JakeWharton/DiskLruCache;Silent commit failure due to ignore renameTo return value;TWiStErRob
+27461304;JakeWharton/DiskLruCache;Add public method to request the disk cache to cleanup;daj
+27167034;JakeWharton/DiskLruCache;Add a lightweight contains( key ) method for quickly checking if a key exists in the cache;Wavesonics
+25756099;JakeWharton/DiskLruCache;Journal READ Corruption Issue;doapp-nick
+22819205;JakeWharton/DiskLruCache;I get this error: "Caused by: java.io.IOException: failed to delete file: /mnt/sdcard/Android/data/mypackage/cache/media/361bd6dab3696905ef0139a9e9969820a98218 83b4b8d0d014bdf3f7f313eede.0";cutler
+14159588;JakeWharton/DiskLruCache;IllegalStateException in Editor#newOutputStream();bergstr11
+12150565;JakeWharton/DiskLruCache;Add call to force immediate reduction in cache size;jwoolston
+7028532;JakeWharton/DiskLruCache;Concurrent edit experience is cumbersome;swankjesse
+6953889;JakeWharton/DiskLruCache;Lost cache in some condition;teoking
+5597396;JakeWharton/DiskLruCache;Editor edit(String key, long expectedSequenceNumber) should throw ConcurrentModificationException;wischweh
+590609528;JakeWharton/butterknife;java.lang.BootstrapMethodError: Exception from call site #1 bootstrap method;wwwjiandan
+588257917;JakeWharton/butterknife;R2 not found in my library module;Jafar396
+559697400;JakeWharton/butterknife;How handle key press on views?;SIARAY
+552295498;JakeWharton/butterknife;Update version of libs;Kolyall
+551721648;JakeWharton/butterknife;Version 10.2.1 always failed since it was added;Primer1889
+551442497;JakeWharton/butterknife;Need your help;ChenXi1995
+519075265;JakeWharton/butterknife;When migrating to Androidx, giving few issues, Hope you can help me with that;dharmeshrathore
+515304508;JakeWharton/butterknife;R2 file generation;nyjsl
+508560135;JakeWharton/butterknife;How do I get butterknife to recognize R2 in a library test class?;Txagg1992
+508327585;JakeWharton/butterknife;Build project cannot generate xxxActivity_ViewBinding;aojiaoqiang
+498079081;JakeWharton/butterknife;组件化时，R2中生产了许多系统组件的常量，运行脚本打包组件aar，报错提醒， 错误: 已在类 styleable中定义了变量 ActionBarLayout_android_layout_gravity     public static final int ActionBarLayout_android_layout_gravity = 1;;yunxingyu
+487671358;JakeWharton/butterknife;Binding Not Found;Oliver-Binns
+477417526;JakeWharton/butterknife;Error in Android X;PartapSBimrah
+473653220;JakeWharton/butterknife;Fix #1498: kotlin lib missing resource ID for OnClick annotation ;JantHsueh
+464152012;JakeWharton/butterknife;Strange behaviour of `ButterKnife.bind(this, rootView)`;miPlodder
+464016133;JakeWharton/butterknife;No getting started documentation;bomberm
+457849093;JakeWharton/butterknife;@BindView and @org.jetbrains.annotations.Nullable fails when field is of type android.view.View;ntherning
+456240346;JakeWharton/butterknife; Required view (...) with ID (...) for method (..) was not found.;mateuszkwiecinski
+450259308;JakeWharton/butterknife;is it bug ;lianchengtong
+444294398;JakeWharton/butterknife;R8 produces the following warnings on build;ber4444
+444028367;JakeWharton/butterknife;Inclusivity Issue: No contributing documentation;willdarnell
+442916021;JakeWharton/butterknife;OnClick Stops Working After sometime - DebouncingOnClickListener Design?;LucioC
+441759983;JakeWharton/butterknife;Inclusivity Issue: Standardize Labels in Issues and PRs (for first time users);abi-edmondem-osu464
+440169313;JakeWharton/butterknife;my gradle verion=5.1.1 plugin=3.4.0;themass
+439194889;JakeWharton/butterknife;ButterKnife R2 generated file not seen in my project;amiraelsayed
+438039898;JakeWharton/butterknife;r2 id repeat;vjHuang
+437734912;JakeWharton/butterknife;How to obfiscate variable name in @Bindview when using progaurd ?;TechRova
+433056209;JakeWharton/butterknife;Missing resource ID for OnClick annotation;cooperkong
+424788008;JakeWharton/butterknife;Issue with R2 in library module;iamdeveloper-lopez
+422053932;JakeWharton/butterknife;how can i successful build the source project ?;HoldMyOwn
+473375842;JakeWharton/decorp;Update to Slack client 5.0;JakeWharton
+458873050;JakeWharton/decorp;Messages in threads are not replied to in-thread;JakeWharton
+455900925;JakeWharton/decorp;Backfill public links from the last few minutes when added to channel;JakeWharton
+578187235;JakeWharton/confundus;Investigate multiplatform;JakeWharton
+591018490;JakeWharton/diffuse;Update README.md with some building/usage steps;marcin-kozinski
+524270933;JakeWharton/diffuse;Lightweight input type;blipinsk
+522449436;JakeWharton/diffuse;Replace embedded picnic with released version;JakeWharton
+509703560;JakeWharton/diffuse;Produce Graal-compiled binaries;JakeWharton
+478769856;JakeWharton/diffuse;Run R8 over the binaries to make them smaller;JakeWharton
+369823222;JakeWharton/diffuse;Expose type objects which contain a collection of members;JakeWharton
+181551535;JakeWharton/diffuse;Request for method annotation in the method signature;andersjanmyr
+30834792;JakeWharton/ActionBarSherlock-Gradle-Sample;to the latest 0.9;paulvi
+223169222;JakeWharton/ActionBarSherlock;Tab size issue with Android 7.0;JMHaro
+122788499;JakeWharton/ActionBarSherlock;Added a fix for android 6+;AlfredoBejarano
+115766952;JakeWharton/ActionBarSherlock;Watson.java;YuyQuan
+114242111;JakeWharton/ActionBarSherlock;Update README.md;Catalystical
+93549280;JakeWharton/ActionBarSherlock;Alert Dialogue and Pop up menu theme ;ravipradeep89
+69558044;JakeWharton/ActionBarSherlock;Compile with API level 22 error: Error:In <declare-styleable> SherlockSpinner, unable to find attribute android:popupPromptView;Morteza-Rastgoo
+47704768;JakeWharton/ActionBarSherlock;ActionBar Height is double in landscape on GT-S5360 2.3.6;Loda
+36155918;JakeWharton/ActionBarSherlock;Black area is showing at left side in Action Bar Sherlock;williams-sgvu
+34556375;JakeWharton/ActionBarSherlock;Searchview results are overlaping the keyboard;androidoutput
+33023559;JakeWharton/ActionBarSherlock;Indeterminate progress spinner is visible by default @ non-native action bar;Tobiaqs
+29735404;JakeWharton/ActionBarSherlock;DarkActionBar Theme not set in 2.3.3 ;balasaheb143
+28104107;JakeWharton/ActionBarSherlock;java.lang.NumberFormatException;ricardobocchi
+27384922;JakeWharton/ActionBarSherlock;Launcher icon not found bug?;Rolf-Smit
+24245187;JakeWharton/ActionBarSherlock;SearchView not working in multiple fragments;bhavikmandalia
+23609472;JakeWharton/ActionBarSherlock;Second time custom layout for actionbar is added, actionbar didn't update itself on 4.2.x and higher;arsalan-mehmood
+22753086;JakeWharton/ActionBarSherlock;ActionMode causes problems in api-8;rothschild86
+22659677;JakeWharton/ActionBarSherlock;Probably fix intermittent irreproducible NPE;sleekweasel
+22269064;JakeWharton/ActionBarSherlock;ShareActionProvider not working with ActionBarSherlock types, when used with custom theme. ;FireAndIce
+21906236;JakeWharton/ActionBarSherlock;Content Descriptions not showing up;jmieleiii
+21754093;JakeWharton/ActionBarSherlock;Overlapping tab navigation and ActionMode;giuseppe83ac
+20836803;JakeWharton/ActionBarSherlock;Could not find method android.widget.FrameLayout.getTranslationY, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout.getTranslationY;devilmac
+20794302;JakeWharton/ActionBarSherlock;ABS causes an IllegalStateException on some devices;Don-Doudou
+20746199;JakeWharton/ActionBarSherlock;android:showAsAction="ifRoom" not working for Sony Xperia E Dual (OS 4.1.1);rosamerinoclaros
+20160589;JakeWharton/ActionBarSherlock;setSupportProgressBarIndeterminateVisibility;aloneblood
+18879738;JakeWharton/ActionBarSherlock;Hardware Menu Button Causing Problems With Child Fragments Menus;jay8ee
+18875609;JakeWharton/ActionBarSherlock;SearchView setQuery, other customizations not possible?;inmyth
+18587195;JakeWharton/ActionBarSherlock;Menu Item is unable to press in the first visible when use 2 fragment have option Menu in Viewpager;hungnguyenvan
+18331401;JakeWharton/ActionBarSherlock;Removing unused declared attributes;jonasfa
+18039519;JakeWharton/ActionBarSherlock;Disappearing ActionBar after finishing ActionMode;KamilLelonek
+17957293;JakeWharton/ActionBarSherlock;ActionBar tabs are overflowing on pre-ICS devices ;josemando
+545447674;AlecStrong/sql-psi;Fix quoting;angusholder
+541202733;AlecStrong/sql-psi;Add support for ALTER TABLE foo RENAME COLUMN;angusholder
+417546244;AlecStrong/sql-psi;Exception during compilation;AlecStrong
+253240968;romainguy/ViewServer;How to deal with the question that "unable to get view server version form device ***"?;weizhizhanghao
+211263957;romainguy/ViewServer;support  dialog view hierarchy;JaceHo
+210001456;romainguy/ViewServer;允许app运行在任何手机上都可以用HierarchyViewer查看;faith-hb
+205764302;romainguy/ViewServer;check if activity.getTitle==null;mas-wang
+114096598;romainguy/ViewServer;Add a little overview in README.md;LouisCAD
+103470578;romainguy/ViewServer;Measure/layout/draw value doesn't show;vliux
+14500538;romainguy/ViewServer;Unable to debug device: lge-nexus;gsingh93
+592978529;JakeWharton/dagger-reflect;reflect-lint: Support Kotlin annotations with default retention;PhilGlass
+583645852;JakeWharton/dagger-reflect;Cumbersome injection with generics;emartynov
+569373440;JakeWharton/dagger-reflect;Issue with proguard;ivazhnov
+558013195;JakeWharton/dagger-reflect;dagger-reflect more strict than dagger-compiler (scopes);plnice
+557662934;JakeWharton/dagger-reflect;Add support for new Dagger Kotlin features;JakeWharton
+550751227;JakeWharton/dagger-reflect;Dagger-reflect fails to inject classes with Android-dependent methods;molokoka
+503304545;JakeWharton/dagger-reflect;dagger-reflect does not resolve Provider/Lazy indirection based dependency cycles;matejdro
+501536772;JakeWharton/dagger-reflect;ContributesAndroidInjector doesn't work for Fragment inside an Activity;kokeroulis
+491003061;JakeWharton/dagger-reflect;Verbose android injection does not actually perform any injection;matejdro
+490936608;JakeWharton/dagger-reflect;Verbose android Injection fails with missing binding;matejdro
+477841813;JakeWharton/dagger-reflect;IllegalArgumentException: No provider available for V when injecting a field in a generic subclass;amatkovsky
+477837767;JakeWharton/dagger-reflect;Fix looking up generics when injecting fields in generic subclasses.;amatkovsky
+477148865;JakeWharton/dagger-reflect;Move access checking to link-time;JakeWharton
+476460086;JakeWharton/dagger-reflect;Add messages to replaced explicit bindings;TWiStErRob
+476399746;JakeWharton/dagger-reflect;Add Linker and Scope toString + tests;TWiStErRob
+470289507;JakeWharton/dagger-reflect;Add check for nullability mismatch.;runningcode
+470042981;JakeWharton/dagger-reflect;Adding support for generic builder interface.;Laimiux
+470032382;JakeWharton/dagger-reflect;Adding module generic support. (WIP);Laimiux
+469459790;JakeWharton/dagger-reflect;Reflect compiler not generating default builder class.;Laimiux
+467887952;JakeWharton/dagger-reflect;Add R8/ProGuard rules to the codegen artifact;JakeWharton
+465339936;JakeWharton/dagger-reflect;Module with generic fails to find the target;kokeroulis
+464232896;JakeWharton/dagger-reflect;Crashes with "apply changes" (SIGABRT);PaulWoitaschek
+462907569;JakeWharton/dagger-reflect;Allow nested generic types;runningcode
+408354560;JakeWharton/dagger-reflect;Enable parallel build;TWiStErRob
+408354475;JakeWharton/dagger-reflect;Clean up build warnings;TWiStErRob
+406158629;JakeWharton/dagger-reflect;Fill in README.md;TWiStErRob
+405091528;JakeWharton/dagger-reflect;Start Kotlin runtime;JakeWharton
+405088583;JakeWharton/dagger-reflect;Kotlin extension runtime and annotation processor for extension specialization;JakeWharton
+216617388;JakeWharton/DrawerBehavior;Add behavior name resource;heinrichreimer
+175434116;JakeWharton/DrawerBehavior;update AndroidStudio to 2.2.0-rc1;linuxbelletian
+162473378;JakeWharton/DrawerBehavior;Fix peak persisting when it shouldn't;ISatya
+158945492;JakeWharton/DrawerBehavior;Save and restore state;rubensousa
+158942427;JakeWharton/DrawerBehavior;Add Open/close/query;rubensousa
+158782030;JakeWharton/DrawerBehavior;Fix peek persisting;rubensousa
+158491962;JakeWharton/DrawerBehavior;Add back key listener functionality;charbgr
+158298185;JakeWharton/DrawerBehavior;Add travisci;jaredsburrows
+158297399;JakeWharton/DrawerBehavior;Add travis ci;jaredsburrows
+158295626;JakeWharton/DrawerBehavior;Peek persisting when it shouldn't;JakeWharton
+158295548;JakeWharton/DrawerBehavior;Back press;JakeWharton
+158295542;JakeWharton/DrawerBehavior;Focus;JakeWharton
+158295533;JakeWharton/DrawerBehavior;Accessibility;JakeWharton
+158295520;JakeWharton/DrawerBehavior;Listeners;JakeWharton
+158295513;JakeWharton/DrawerBehavior;State Save & Restore;JakeWharton
+158295498;JakeWharton/DrawerBehavior;Shadow / Elevation;JakeWharton
+158295481;JakeWharton/DrawerBehavior;Public API for open/close/query;JakeWharton
+158295463;JakeWharton/DrawerBehavior;Insets dim;JakeWharton
+158295455;JakeWharton/DrawerBehavior;Content dim;JakeWharton
+158295436;JakeWharton/DrawerBehavior;Locking;JakeWharton
+427499958;JakeWharton/flip-tables;Strange characters for the table border;albert-kam
+288309156;JakeWharton/flip-tables;Introducing Google Java Format;tomasbjerre
+287695706;JakeWharton/flip-tables;Fixed column-width;tomasbjerre
+231113614;JakeWharton/flip-tables;add TableFormat support;bitsofinfo
+231058885;JakeWharton/flip-tables;Provide way to customize divider characters, should be basic ascii;bitsofinfo
+199409106;JakeWharton/flip-tables;Support variable length data;MarounMaroun
+63459908;sergiandreplace/appunta;Dynamic loading of point images from server;GoogleCodeExporter
+63459907;sergiandreplace/appunta;Point caching issue;GoogleCodeExporter
+63459906;sergiandreplace/appunta;Font issue in Samsung phones.;GoogleCodeExporter
+63459904;sergiandreplace/appunta;Problems in Camera Orientation for samsung devices;GoogleCodeExporter
+63459903;sergiandreplace/appunta;how to add a button?;GoogleCodeExporter
+63459902;sergiandreplace/appunta;Id not set in the constructor of point.impl.SimplePoint;GoogleCodeExporter
+63459901;sergiandreplace/appunta;Problems in CameraView in older versions than ICS;GoogleCodeExporter
+583642947;sergiandreplace/cyf_ecommerce_api;Bump minimist from 1.2.1 to 1.2.5;dependabot[bot]
+332375588;sergiandreplace/flutter_bcn_challenges;Required to run on ios device;sebasbad
+385053834;sergiandreplace/flutter_animations;Replace PI with pi.;jwmuchow
+14570819;sergiandreplace/AndroidFontInflaterFactory;Error: A factory has already been set on this LayoutInflater;cesards
+56996886;ctuong/Rotten-Tomatoes;Please Review;ctuong
+52487337;ctuong/TipCalculator;CodePath Bootcamp application - Tip Calculator;ctuong
+57687321;ctuong/Yelp;Please Review;ctuong
+59436843;ctuong/Twitter;Please Review;ctuong
+58546016;ctuong/Twitter;Please Review;ctuong
+586921503;jschr/electron-react-redux-boilerplate;Bump lodash from 4.17.11 to 4.17.15;dependabot[bot]
+586921481;jschr/electron-react-redux-boilerplate;Bump mixin-deep from 1.3.1 to 1.3.2;dependabot[bot]
+581002784;jschr/electron-react-redux-boilerplate;Update Electron / React / Redux;roscoevanderboom
+500974133;jschr/electron-react-redux-boilerplate;Run Develop never starts;ImBeCiliC
+510324337;jschr/form-provider;Bump stringstream from 0.0.5 to 0.0.6 in /examples/basic;dependabot[bot]
+215585233;jschr/form-provider;Composable forms;jschr
+215584331;jschr/form-provider;set form state from on props update;jschr
+213562291;jschr/form-provider;Support validating on blur and on change;jschr
+174105453;jschr/form-provider;Add isValidating form state ;jschr
+168702759;jschr/form-provider;Document API ;jschr
+168698244;jschr/form-provider;Add more tests;jschr
+168698216;jschr/form-provider;Add CRUD example;jschr
+430187417;jschr/bootstrap-modal;Activating Open Collective;monkeywithacupcake
+383859473;jschr/bootstrap-modal;event listener for complete loading;ghost
+311946973;jschr/bootstrap-modal;Will you upgrade to Bootstrap 4?;lucivaldo
+284425044;jschr/bootstrap-modal;Fix padding issue when show/hide modal;ptcong
+268974869;jschr/bootstrap-modal;Stackable: Close modal when clicked outside ;nasfathr
+253573216;jschr/bootstrap-modal;when using this with bootbox.js ,the bootbox dialog style was confused;jellybins
+206099279;jschr/bootstrap-modal;Publish as NPM package;Invis1ble
+199380023;jschr/bootstrap-modal;How to relocate modal inside into a div;cyberzilla
+134874447;jschr/bootstrap-modal;make collapsable?;JamesRamm
+134778353;jschr/bootstrap-modal;The bootstrap dependency is different between github repo and bower repo.;edwardmeng
+132732698;jschr/bootstrap-modal;Modal don't scroll when closing top modal;malcomxcia
+131863849;jschr/bootstrap-modal;body class="modal-open" style="padding-right: 15px";ParentsPal
+121754650;jschr/bootstrap-modal;Modal opens with a delay compared to standard BS3 modal;iadj
+111382364;jschr/bootstrap-modal;Show Modal Without overlay.;mitul69
+110636586;jschr/bootstrap-modal;angular 1.2.* ng-include used inside ui-bootstrap - modal opening page scrolls to top;brianmyler
+110410243;jschr/bootstrap-modal;can i use this without bootstrap;ckrad
+107324494;jschr/bootstrap-modal;Construct ajax query (ie. ajax Contact form);ezersky
+106482498;jschr/bootstrap-modal;is there any compatibility issues with select2.js?;Misakic
+106023835;jschr/bootstrap-modal;Modal crops content;aricca
+102351087;jschr/bootstrap-modal;How to explicitly call sidebar show/hide by javascript function call;anemdhana
+101149595;jschr/bootstrap-modal;body having background image with fixed position responsive modal does not scroll in small screen devices;rishisc
+90368810;jschr/bootstrap-modal;dropdown-menu in modal-footer cannot popup correctly;madlee
+87139304;jschr/bootstrap-modal;Remove moot `version` property from bower.json;kkirsche
+56268287;jschr/bootstrap-modal;Second level and above stackable modals issue;gunjanvarshney
+52359254;jschr/bootstrap-modal;iPhone no scrolling when the finger is over input box;jehogo
+46611505;jschr/bootstrap-modal;Scrolling on Chrome;cuongtallcat
+43343965;jschr/bootstrap-modal;Bootstrap Modal JS conflicting with ASP.NET button postback;1parkplace
+42769956;jschr/bootstrap-modal;create modal and hide and show all script listener lost.;lxbzmy
+39233545;jschr/bootstrap-modal;AJAX broke in IE10;ryanjohnsond
+35996743;jschr/bootstrap-modal;Fixed height breaks due to !important in responsive rule;nealeu
+510324349;jschr/docker-typescript-koa;Bump underscore.string from 3.3.4 to 3.3.5;dependabot[bot]
+14766314;alfaiyma/PythonRemote;Save connection settings ;alfaiyma
+14766306;alfaiyma/PythonRemote;Automatic MAC address retrieval;alfaiyma
+14766278;alfaiyma/PythonRemote;Conform to PEP8 Standards;alfaiyma
+14766275;alfaiyma/PythonRemote;GUI for application ;alfaiyma
+14766273;alfaiyma/PythonRemote;Error Checking for Class Constructor ;alfaiyma
+582984290;saket/Better-Link-Movement-Method;Auto switch keyboard Japanese to QWERTY;oLeVanLong
+559642779;saket/Better-Link-Movement-Method;Sometimes onLinkLongClickListener called before the onTextViewLongClickListener;tarik-git
+550152529;saket/Better-Link-Movement-Method;Link not working if the description of the link (the part between the tags) itself is not a link.;mparyani445
+538398247;saket/Better-Link-Movement-Method;Other click view not clickable;nAkhmedov
+298108748;saket/Better-Link-Movement-Method;Add Ui tests to ensure correctness of Better-Link-Movement-Method;saket
+25596120;saket/Bunk-o-Meter;Switching away and back during entry;RoundSparrow
+433757975;saket/Dank;Allow opening YouTube URLs in third-party clients and MODs.;SubhrajyotiSen
+430167692;saket/Dank;Support for third party YouTube client;SubhrajyotiSen
+411638503;saket/Dank;F-droid release;ghost
+407330248;saket/Dank;Long click options menu for in-text links;Tunous
+407329283;saket/Dank;Thumbnails on the left side of submission;Tunous
+407324118;saket/Dank;Do not display submission subreddit if it's same as viewed subreddit;Tunous
+399176635;saket/Dank;Add codestyle for contributions;saket
+399176594;saket/Dank;Document contribution guidelines;saket
+398866234;saket/Dank;Improve detection of markdown sent by Reddit;saket
+398681535;saket/Dank;Compose a new post;saket
+523946752;saket/FluidKeyboardResize;Library availability through jcenter or maven;vipulasri
+507375613;saket/FluidKeyboardResize;Does not work with translucent status bar Activities.;iamBedant
+440066854;saket/FluidKeyboardResize;Fragments are not destroyed while using the lib;kakai248
+383708777;saket/FluidKeyboardResize;How do use with coordinatorlayout;dev-juyoung
+367598564;saket/FluidKeyboardResize;Replace ObjectAnimator with Transitions API;kaeawc
+478169777;saket/InboxRecyclerView;Convert ExpandablePageLayout into a FrameLayout;saket
+393751073;saket/InboxRecyclerView;Fix for NestedScrollView issues;andb3
+384523619;saket/InboxRecyclerView;Issues with InboxRecyclerView inside NestedScrollView;andb3
+360497368;saket/InboxRecyclerView;Support nested scrolling in ExpandablePageLayout;saket
+555246359;saket/Flick;Flick does not seems to replace the View where it was after image was swipped out;christophehenry
 593996872;3b1b/manim;Exception: Latex error converting to dvi and other errors during implementing transformation;arpon113
 592977009;3b1b/manim;Can I find the slope of a function and plot it?;lewis-cooper
 591643321;3b1b/manim;"Type Error: run() missing 1 required positional argument: 'self' "Fix a bug in extract_scene.py;chenxijun
@@ -80,5 +327,492 @@ id;repository_name;title;username
 581411761;3b1b/manim;manim numpy error;emanueldias242
 580929459;3b1b/manim;Updated Graph Scale factor at 10:29;iGeek098
 580052922;3b1b/manim;Trouble Downloading Requirements File;luketimmerman314
+592688672;oneHamidreza/MeowBottomNavigationJava;Adding text below the menu image;roselight
+575687689;oneHamidreza/MeowBottomNavigation;input keyboard opens and suddenly closes dramatically ;mohammedelnady
+569031738;oneHamidreza/MeowBottomNavigation;Clicked on view multiple times;imankhorshidi
+561234722;oneHamidreza/MeowBottomNavigation;Set count;rezaghahremani77
+560766931;oneHamidreza/MeowBottomNavigation;keyboard does not open, when i using this library;rezaghahremani77
+466186292;oneHamidreza/MeowBottomNavigation;How set the icon size?;samuelhalim1
+449393480;oneHamidreza/MeowBottomNavigation;show method error;drvafa
+416683839;oneHamidreza/MeowBottomNavigation;Add text;Marcosmaliki
+486366330;oneHamidreza/MeowDateTimePicker;how to convert persian date to gregorian date??;cloner7575
+217561901;virgillee97/hello-world;version 2.0;virgillee97
+374033366;erikterwiel/OnceUponATime;Added DOCS for Once Upon a Time project;djoksimo
+582252345;yigit/ArtifactFinder;Flatten nested popups after clicking `Add`;rcd27
+582250520;yigit/ArtifactFinder;Indexing extension fields;rcd27
+581469367;yigit/ArtifactFinder;Handle errors when adding dependencies;yigit
+545159257;yigit/ArtifactFinder;Trying to add an already existing dependency fails silently;rock3r
+534110215;yigit/ArtifactFinder;Support `gradle.kts` files;rcd27
+525730590;yigit/ArtifactFinder;Publish GitHub releases;LouisCAD
+522573273;yigit/ArtifactFinder;Handle DataBinding / ViewBinding;yigit
+522573108;yigit/ArtifactFinder;Handle annotation processors;yigit
+12113142;yigit/Put.io-Chrome-Plugin-and-JS-Library;API v1 is dead, plugin needs API v2;darkvertex
+281209887;yigit/dev-summit-architecture-demo;Update rails to avoid security problems;fedegratti
+178753262;yigit/dev-summit-architecture-demo;server can not run ,deep on your step;bravekingzhang
+176541109;yigit/dev-summit-architecture-demo;Required SQLiteDatabase, got DatabaseWrapper Error;Dreamystify
+169918455;yigit/dev-summit-architecture-demo;Does FeedActivity set 'mPendingRefresh' as true ?;leucosian
+166879888;yigit/dev-summit-architecture-demo;Server needs to accept at least one post to allow offline capabilities;tindli
+150660808;yigit/dev-summit-architecture-demo;Missing two modules ;waqary705
+139965670;yigit/dev-summit-architecture-demo;mPendingRefresh in FeedActivity is alway false;tihomirleka
+135018370;yigit/dev-summit-architecture-demo;Observable Objects;AlokBansal8
+130298763;yigit/dev-summit-architecture-demo;fix 'rails s' not work;rhettor
+129981948;yigit/dev-summit-architecture-demo;Missing modules argument in ActivityComponent;AlokBansal8
+126817689;yigit/dev-summit-architecture-demo;Rails server not running with commands rails s;i-khan
+124729165;yigit/dev-summit-architecture-demo;Missing ActivityFeedBinding;farmazon3000
+217187343;yigit/android-livecode-demo; update to new version of Gradle;MahdiPishguy
+26755509;yigit/android-livecode-demo;testapi;yigit
+26755507;yigit/android-livecode-demo;testapi;yigit
+26755477;yigit/android-livecode-demo;testapi;yigit
+26755475;yigit/android-livecode-demo;testapi;yigit
+26755472;yigit/android-livecode-demo;testapi;yigit
+26755463;yigit/android-livecode-demo;testapi;yigit
+26755449;yigit/android-livecode-demo;testapi;yigit
+26755447;yigit/android-livecode-demo;testapi;yigit
+26755438;yigit/android-livecode-demo;testapi;yigit
+26755437;yigit/android-livecode-demo;testapi;yigit
+26755343;yigit/android-livecode-demo;testapi;yigit
+26755341;yigit/android-livecode-demo;testapi;yigit
+26753430;yigit/android-livecode-demo;test issue 1;yigit
+472744098;yigit/android-priority-jobqueue;Retry jobs are not sequential;anthony3444
+426442661;yigit/android-priority-jobqueue;WorkManager;JEuler
+398111810;yigit/android-priority-jobqueue;how to get job Thread;chshp1234
+393984515;yigit/android-priority-jobqueue;can i add a job to queue by specifying the delay after which it has to scheduled ??;kpradeepkumarreddy
+393751287;yigit/android-priority-jobqueue;what is the default job queue size ?;kpradeepkumarreddy
+384264324;yigit/android-priority-jobqueue;cannot save job to disk  at com.birbit.android.jobqueue.persistentQueue.sqlite.SqliteJobQueue.persistJobToDisk;rajextreme9476
+376689109;yigit/android-priority-jobqueue;java.lang.IllegalAccessError;jettimadhu
+370628335;yigit/android-priority-jobqueue;how to update custom view from onRun() method;harryharihar
+367084578;yigit/android-priority-jobqueue;IllegalArgumentException in SqliteJobQueue;TusharSri
+364310121;yigit/android-priority-jobqueue;Job not running when the app is closed, even after Integrating with Job scheduler;kpradeepkumarreddy
+352850242;yigit/android-priority-jobqueue;Periodic tasks;debjitk
+349904164;yigit/android-priority-jobqueue; android.database.sqlite.SQLiteDatabaseLockedException;MichaelJokAr
+349411646;yigit/android-priority-jobqueue;android.database.sqlite.SQLiteCantOpenDatabaseException: unable to open database file (Sqlite code 14), (OS error - 24:Too many open files);BigBrother2018
+333283324;yigit/android-priority-jobqueue;Error Code : 787 (SQLITE_CONSTRAINT_FOEIGNKEY);pavlejoksovicesteh
+330069936;yigit/android-priority-jobqueue;Curious on your take of the new Android Work Manager;akm0012
+325216356;yigit/android-priority-jobqueue;android.database.sqlite.SQLiteDatabaseLockedException  database is locked (code 5);MichaelJokAr
+324451431;yigit/android-priority-jobqueue;Job not running;debjitk
+317765060;yigit/android-priority-jobqueue;Database problems;pavlejoksovicesteh
+317340303;yigit/android-priority-jobqueue;Dispatch network change onCapabilitiesChanged;jdholdren
+314483216;yigit/android-priority-jobqueue;Persistent jobs not run after device loses power;xTheITx
+312328174;yigit/android-priority-jobqueue;Incompatibility with appcompat support library v7:27;damms005
+311363389;yigit/android-priority-jobqueue;android.database.sqlite.SQLiteDatabaseLockedException: database is locked ;angebagui
+306119914;yigit/android-priority-jobqueue;Better utilization of threads;cipson
+304819652;yigit/android-priority-jobqueue;Question. How to recall onAdded() after reboot application;iandreyshev
+302069746;yigit/android-priority-jobqueue;android.database.sqlite.SQLiteCantOpenDatabaseException;anthony3444
+294681705;yigit/android-priority-jobqueue;Job priority queue not working with platform scheduler;nycodes9
+293967347;yigit/android-priority-jobqueue;forcing the queue to flush immediately;qbait
+287686988;yigit/android-priority-jobqueue;Cannot save job to disk too;zhujin001032
+287130432;yigit/android-priority-jobqueue;How to get correct jobs count from JobQueue if set same group id;shinjikao
+287099041;yigit/android-priority-jobqueue;START mistaken for STOP?;edudobay
+457381451;swankjesse/http-benchmarking;Results from a custom build i7 4790K @ 4.6Ghz;ppamorim
+451824353;jlfwong/dedistract;What software license?;joshdance
+47251542;jlfwong/flask_debugtoolbar_lineprofilerpanel;install_requires= 'line-profiler>=1.0b3'  vs name = 'line_profiler'  ?;matkor
+8400363;jlfwong/flask_debugtoolbar_lineprofilerpanel;Can't profile inner functions;jlfwong
+186424700;jlfwong/chrome2calltree;Cannot read property 'hitCount' of undefined;abritinthebay
+56346157;jlfwong/chrome2calltree;Unable to pipe the output to another tool;fabpot
+101332477;jlfwong/1rt;enable full-screen and custom icon when saving to homescreen on iOS;kevinbarabash
+198106133;jlfwong/brunch-with-caffeine;Update Mocha link;mortonfox
+225292915;chrisbanes/philm;Busted;Terrence1987
+194271438;chrisbanes/philm;i like the art;systemChina
+158093896;chrisbanes/philm;fail to run;AllenVork
+105546875;chrisbanes/philm;upgrade to sdk 23;suzp1984
+95158540;chrisbanes/philm;login failed;airwpv19
+94355936;chrisbanes/philm;controller package;xuefengyang
+60315228;chrisbanes/philm;About Task(Runnable);frodoking
+53460412;chrisbanes/philm;Add Portuguese language support for Philm.;monxalo
+51439056;chrisbanes/philm;v21 transparent statusbar;andhie
+36249171;chrisbanes/philm;Native Crash "android.os.DeadObjectException";nhachicha
+561643910;chrisbanes/insetter;Add keyboard padding and margin feature;percula
+559214220;chrisbanes/insetter;Request: MotionLayout scenes support;Skyyo
+551393957;chrisbanes/insetter;Missing requestLayout() after setting new margin;hrach
+534370777;chrisbanes/insetter;Request: please explain more about the attribute "app:layout_edgeToEdge";AndroidDeveloperLB
+519759289;chrisbanes/insetter;Improve the KTX APIs for applying insets;chrisbanes
+516695197;chrisbanes/insetter;Request: add alternative to data-binding, in code;AndroidDeveloperLB
+515922802;chrisbanes/insetter;Add working tests for dbx extensions DO NOT MERGE;chrisbanes
+514361824;chrisbanes/insetter;Add way to consume inset dimensions ;chrisbanes
+505708063;chrisbanes/insetter;FR: RTL support: Add start/end parameters to binding adapter;JoseAlcerreca
+302178892;chrisbanes/Android-BitmapCache;Encoding/encryption processing;msureshmewara
+134808867;chrisbanes/Android-BitmapCache;Current Repo not maintained - new suggested 'head' until chris returns;arberg
+126873097;chrisbanes/Android-BitmapCache;CacheableBitmapDrawable sets null in detach, should probably just set unused;arberg
+121679954;chrisbanes/Android-BitmapCache;Gradle build includes ancient support-lib-v4;arberg
+74780887;chrisbanes/Android-BitmapCache;CacheableBitmapDrawable cannot be previewed in Android Studio debugger;hy9be
+30521422;chrisbanes/Android-BitmapCache;added purgeMemoryCache;farfromrefug
+29922484;chrisbanes/Android-BitmapCache;Get bitmap from removed;farfromrefug
+29922388;chrisbanes/Android-BitmapCache;method to allow user to use the bitmap pool feature;farfromrefug
+29922352;chrisbanes/Android-BitmapCache;purgeDiskCache method;farfromrefug
+29918860;chrisbanes/Android-BitmapCache;Tryrecycle;farfromrefug
+29901510;chrisbanes/Android-BitmapCache;new accessor methods;farfromrefug
+28391087;chrisbanes/Android-BitmapCache;NoClassDefFoundError;bytebeats
+27883313;chrisbanes/Android-BitmapCache;RecyclePolicy not interpreted as expected;elroid
+26307773;chrisbanes/Android-BitmapCache;Removed bitmaps on LruCache is not checked if it is being used;sigelinde
+24793839;chrisbanes/Android-BitmapCache;NullpointerException. mRecyclePolicy is null;dit-j
+19793310;chrisbanes/Android-BitmapCache;After I updated to BitmapCache 2.3 version, OutOfMemoryError happens frequently;zhuofengli
+18478188;chrisbanes/Android-BitmapCache;TransitionDrawable and Recycled Bitmap Exception;mandrachek
+18378188;chrisbanes/Android-BitmapCache;Need a way to purge the DiskCache.;bkhall
+17894100;chrisbanes/Android-BitmapCache;i test the simple app,IllegalArgumentException;yaming116
+16870190;chrisbanes/Android-BitmapCache;Frequently getting the error of "java.lang.OutOfMemoryError" exception;linxingyun
+16215733;chrisbanes/Android-BitmapCache;Running sample app in Android Studio;alexsilva
+15885903;chrisbanes/Android-BitmapCache;Recycled Bitmap Method Stack;Glurt
+14865151;chrisbanes/Android-BitmapCache;Images sometimes don't render in listview;takn
+13660522;chrisbanes/Android-BitmapCache;Readme link doesn't contain latest jar;ashughes
+12002613;chrisbanes/Android-BitmapCache;OutOfMemoryError in sample;sealskej
+573595030;chrisbanes/gradle-mvn-push;403 in android studio;lipangit
+506502863;chrisbanes/gradle-mvn-push;feat: Add support for non-android modules;feelschaotic
+418930784;chrisbanes/gradle-mvn-push;Leaks credentials in error log;skjolber
+417595322;chrisbanes/gradle-mvn-push;build SNAPSHOT version ,Is the logic wrong?;zhangwenhao2013
+234335718;chrisbanes/gradle-mvn-push;optional dependency when uploading to maven;EvangelosG
+223721135;chrisbanes/gradle-mvn-push;Where should I put the thing which is preparing to upload？;laufly
+175692001;chrisbanes/gradle-mvn-push;androidJavadocs ;MerlinYu
+143664327;chrisbanes/gradle-mvn-push;添加doc文档打包编码问题;Sopage
+121397589;chrisbanes/gradle-mvn-push;secring.gpg;angcyo
+103217389;chrisbanes/gradle-mvn-push;Adding developer metadata to pom;SeanZoR
+93532433;chrisbanes/gradle-mvn-push;Add properties getters to use gradle.build values;nartex
+65293601;chrisbanes/gradle-mvn-push;signArchives key file path is appended to user.dir regardless of home symbol;Doctoror
+59138130;chrisbanes/gradle-mvn-push;Add lookup to set uniqueVersion.;TonicArtos
+53424746;chrisbanes/gradle-mvn-push;Add provided dependencies to classpath of androidJavadocs;jfresen
+52324453;chrisbanes/gradle-mvn-push;Missing Signature: '****.asc' ?  I have configured the GPG;sdaduanbilei
+43220192;chrisbanes/gradle-mvn-push;Add installArchives task which installs jars/aars in local repo;chalup
+42709896;chrisbanes/gradle-mvn-push;Javadoc generation fails w/ dependency on android support library;jacobtabak
+39749609;chrisbanes/gradle-mvn-push;Fixing javadoc artifact generation;SebastianEngel
+37509789;chrisbanes/gradle-mvn-push;Error:Could not find property 'allJava' on source set main;jpardogo
+36814577;chrisbanes/gradle-mvn-push;Publish to my local maven repo.;yogurtearl
+36761488;chrisbanes/gradle-mvn-push;Error:Could not find property 'allJava' on source set main.;jpardogo
+35472714;chrisbanes/gradle-mvn-push;Fixed issue #28;ok3141
+35352640;chrisbanes/gradle-mvn-push;Gradle 0.11 complains about allJava from android.sourceSets.main;alopix
+34835914;chrisbanes/gradle-mvn-push;Task androidJavadocs seems has a bug...;daimajia
+32763959;chrisbanes/gradle-mvn-push;Turn Off Doclint on Javadoc Tasks;JakeWharton
+32661114;chrisbanes/gradle-mvn-push;android.plugin.getRuntimeJarList() is not longer available with gradle plugin 0.10;gabrielemariotti
+32474237;chrisbanes/gradle-mvn-push;Support both android and java projects.;SimonVT
+28279953;chrisbanes/gradle-mvn-push;I have a problem to push my lib to sonatype.;kulik
+27323581;chrisbanes/gradle-mvn-push;Fix for weird "package android.app does not exist" and "cannot find symbol" error messages.;paulpv
+25926626;chrisbanes/gradle-mvn-push;Javadoc charset;SemonCat
+591968772;chrisbanes/PhotoView;Include license in pom;andrew8er
+586882882;chrisbanes/PhotoView;License not included in pom file;andrew8er
+586036765;chrisbanes/PhotoView;It seems to come out a problem when you set the imageview's parent wrap_content-size.;951AB159BA
+578354401;chrisbanes/PhotoView;can we drag the photo up down left right??;Introid
+572794855;chrisbanes/PhotoView;How to get x, y coordinate in terms of the photo's dimensions for what is displayed;AdityaAnand1
+567530312;chrisbanes/PhotoView;OnPhotoTapListener not called when setZoomable(false);Murded
+567322980;chrisbanes/PhotoView;Save the zoomed Image;manojkumar0408
+566169774;chrisbanes/PhotoView;not support disable medium scale ??;JSBDeveloper
+563883678;chrisbanes/PhotoView;Allow parent to intercept touch events in case vertical scroll edge flags are set;ksenchy
+562258592;chrisbanes/PhotoView;How to zoom a PhotoView with its background;ishomam
+562224377;chrisbanes/PhotoView;Failed to resolve: com.github.chrisbanes:PhotoView:2.3.0;masterholdy
+551910503;chrisbanes/PhotoView;How to close dialog on click outside the image;yaugenka
+549722932;chrisbanes/PhotoView;How to set full screen? ;YroslavFox
+542591626;chrisbanes/PhotoView;How to pinch and scale image size simultaneously?;BigGitWorld
+535920875;chrisbanes/PhotoView;Error inflating class com.github.chrisbanes.photoview.PhotoView;bmrbehnam
+515538931;chrisbanes/PhotoView;How can I get Action_UP when i drag the photo slowly?;luckysmg
+515146280;chrisbanes/PhotoView;when will the version 2.3.0 released?;LittleWindSXF
+511731708;chrisbanes/PhotoView;Android 10 must loadImage by Uri !;AricGuo
+510248624;chrisbanes/PhotoView;Is there any way to "overscroll" a PhotoView?;jeffreyfjohnson
+505161062;chrisbanes/PhotoView;FaceAware Imageview;charlizesmith
+487325317;chrisbanes/PhotoView;setDisplayMatrix() does not match previous state after  zoom scale and translate;wuheng19a05
+486707814;chrisbanes/PhotoView;variable 'pendingScaleType'  always be null;techinsight
+478717518;chrisbanes/PhotoView;Zooming limited by imageview dimensions;kevinlinxc
+472768644;chrisbanes/PhotoView;Can page sharing animation be supported;shaodong2528
+471468575;chrisbanes/PhotoView;How To Overlay pan zoom image like instagram;yudikarma
+463757443;chrisbanes/PhotoView;No method to retain zoom level when image is changed;usmanrana07
+463588937;chrisbanes/PhotoView;IllegalArgumentException: pointerIndex out of range photoview inside relativelayout;androidheight
+460139576;chrisbanes/PhotoView;Zoom in to provide more detail;KCcode
+459478328;chrisbanes/PhotoView;PhotoView detect touch outside it's view;arsalankhan994
+456196646;chrisbanes/PhotoView;Can we detect when is the image completely scrolled in vertical direction?;raviyadav5951
+356566863;gaearon/babel-plugin-react-transform;Babel 7 Support;fameoflight
+324266097;gaearon/babel-plugin-react-transform;`addImport()` is deprecated in Babel 7;joshparolin
+314515289;gaearon/babel-plugin-react-transform;Added react-transform-display-names;nickdeis
+262390068;gaearon/babel-plugin-react-transform;no release info or changelog for 3.0.0;iamstarkov
+254545903;gaearon/babel-plugin-react-transform;Deprecated with no alternative?;0rvar
+202902819;gaearon/babel-plugin-react-transform;Template is not a function;ngoyal16
+194344759;gaearon/babel-plugin-react-transform;Doesn't work with React.PureComponent;davegri
+191854972;gaearon/babel-plugin-react-transform;Modify the contents of the function will not be updated.;ghost
+163871026;gaearon/babel-plugin-react-transform;Local path as an argument to "transform" does not resolve the path.;tokenvolt
+161760034;gaearon/babel-plugin-react-transform;Guard access to node.key when finding displayName;stephen
+105348805;gaearon/babel-plugin-react-transform;static class property displayName not taken into account for displayName;nikgraf
+518607422;gaearon/base16-js;Bump eslint from 0.23.0 to 6.6.0;dependabot[bot]
+261787988;gaearon/base16-js;Publish updated package;andytompkins
+587673596;gaearon/ama;Building performant forms in React over a hundred fields;devarsh
+421357925;gaearon/ama;Single source of truth and Redux;gunnarsireus
+396622435;gaearon/ama;What does "gaeron" means?;zaguiini
+355720567;gaearon/ama;How did you get a UK Work Visa without a degree.;richwednesday
+322394845;gaearon/ama;What Computer Science concepts do you know?;MartinMikusat
+319473895;gaearon/ama;react-testing-library Integration Tests;bishwenduk029
+304033075;gaearon/ama;Curious what keyboard and mouse you use;lonelydatum
+301292525;gaearon/ama;Help me to find a right way;pavinthan
+283124402;gaearon/ama;React-Native support in 2018 later;roth1002
+268560791;gaearon/ama;Google Analytics && extending setState in the class;WillowHQ
+237030621;gaearon/ama;What skills have made the biggest impact on your programming?;titoesteves
+228831520;gaearon/ama;Which product metrics does React have?;vitkarpov
+228810884;gaearon/ama;What are the most popular IDEs among React developers at Facebook?;miklosme
+216007087;gaearon/ama;Do you keep any messengers or twitter open while working? Do they distract you?;riseremi
+208296140;gaearon/ama;How do you find the hot open source projects that you star?;mohebifar
+206659438;gaearon/ama;Using CRA for rapid prototyping, and then redux to connect everything;WillowHQ
+202716069;gaearon/ama;Is redux being used in Facebook products?;juangl
+199424384;gaearon/ama;Importance of data structures and algorithms?;cynx
+198409243;gaearon/ama;Physics or astrology?;konstantin24121
+196255056;gaearon/ama;Writing a library for react;renshenhe
+191853651;gaearon/ama;When to use redux;blocka
+175120729;gaearon/ama;Do you want raise kids?;Whoaa512
+171846849;gaearon/ama;Debugging states;PepijnSenders
+169421906;gaearon/ama;wanna to know what laptop you used;stephenkingsley
+169007870;gaearon/ama;How do you start tackling a new project?;jkup
+169007613;gaearon/ama;How do you stay so productive?;jkup
+168455162;gaearon/ama;What is your astrological sign? ;damassi
+166407939;gaearon/ama;Custom Drag Preview in React DnD;jtrezza
+166364898;gaearon/ama;On React's async setState;tp
+166314237;gaearon/ama;Testing PropTypes;zwhitchcox
+459461514;ncase/anxiety-demo;Feedback - screaming sound at start ;fromasterisk
+369671934;ncase/coming-out-simulator-2014;meow;Dogbone0714
+308373002;ncase/coming-out-simulator-2014;Start game with a button to enable audio on mobile;stardust66
+308368601;ncase/coming-out-simulator-2014;No audio on iOS devices;stardust66
+199025392;ncase/coming-out-simulator-2014;Simplified Chinese translation;mm615657
+38377879;ncase/coming-out-simulator-2014;Create master branch;KraigWalker
+37583573;ncase/coming-out-simulator-2014;Analytics;KraigWalker
+37228680;ncase/coming-out-simulator-2014;I cried also;KraigWalker
+36630830;ncase/coming-out-simulator-2014;I cried.;anubiann00b
+348950882;ncase/bees;"Flying" bees appear below nonflying bees;tesseralis
+348125502;ncase/bees;Inside-Outside interaction;bellabie
+348125304;ncase/bees;Inside-Outside view (only);bellabie
+348124899;ncase/bees;Notes and Instructions;bellabie
+347789125;ncase/bees;CSS tweaks;bellabie
+347788382;ncase/bees;Credits;bellabie
+345617391;ncase/bees;Bee Donation Link;bellabie
+345593449;ncase/bees;Bee Watch;bellabie
+345592663;ncase/bees;Mobile interaction??;bellabie
+345592279;ncase/bees;Citations Needed;bellabie
+345591348;ncase/bees;Walking bee jitter asymmetry: normalize?;bellabie
+345591065;ncase/bees;Hex window frame doesn't scale correctly with the page;bellabie
+345502167;ncase/bees;Bee Dance variables;bellabie
+496330456;ncase/crowds;make translation to japanese better;minddrop
+495348641;ncase/crowds;FI - Finnish translation;villekol
+485334266;ncase/crowds;BN - Bengali Translation;tukykarmakar
+437648010;ncase/crowds;NL - Dutch Translation;SvdStappen
+411583955;ncase/crowds;DA - Danish translation;gaardhus
+386764444;ncase/crowds;Tamil (ta) translation;RishiKeerthi
+372228616;ncase/crowds;TR - Turkish translation;matakanfoca
+362704021;ncase/crowds;HU - Hungarian translation;RadioactivesoulHUN
+351903736;ncase/crowds;HR - Croatian translation;hrvojesimic
+351554627;ncase/crowds;layout issue with titlepage of German translation;silberzwiebel
+345752413;ncase/crowds;add abrevation period to et al.;silberzwiebel
+330921460;ncase/crowds;Updated texts, added missing things;toby3d
+330106037;ncase/crowds;Polish (pl) translation;sin
+328270858;ncase/crowds;EL - Greek translation;Renalyxx
+319802240;ncase/crowds;Hindi (hi) Translation;iashris
+319661479;ncase/crowds;Skipping on chapter 3 doesn't erase text;riuri
+319014204;ncase/crowds;Grey background color at complex contagions;rugk
+319011074;ncase/crowds;Should display correct solution when skipping;rugk
+318792871;ncase/crowds;Persian (fa) translation;hamed
+318724452;ncase/crowds;Indonesian (ID) translation;rumanti
+318680245;ncase/crowds;Ukrainian (uk_UA) Translation;onix
+318672467;ncase/crowds;WIP: Translation de;brasilikum
+318640602;ncase/crowds;Slovak translation;miluoshi
+318638416;ncase/crowds;Georgian (ka) translation;razmikb
+318620779;ncase/crowds;Catalan (ca) translation;mmoracantallops
+318590711;ncase/crowds;Spanish (es-ES) translation | Castellano;Swyter
+318510040;ncase/crowds;Spanish (es-MX) translation;gemga
+318465550;ncase/crowds;"WIN" message makes text unreadable in section 2;nanaian
+318464415;ncase/crowds;Portuguese (pt-BR) translation;tmergulhao
+116835965;ncase/emoji-prototype; 🖥 💻 📱;SomeHats
+554623183;ncase/anxiety;Vietnamese translation;huy226
+545422938;ncase/anxiety;Swedish Translation;RumblingLump
+541500567;ncase/anxiety;Traditional Chinese Translation;miyakelly
+520666451;ncase/anxiety;Flowchart for playtesters!;JorgeyGari
+516593070;ncase/anxiety;European Spanish translation [COMPLETE!];JorgeyGari
+514920542;ncase/anxiety;Catalan translation;darmng
+509400784;ncase/anxiety;Latin Spanish translation -Complete-;fantasmashy
+505950585;ncase/anxiety;Czech translation;LuckyBastardo
+501558848;ncase/anxiety;Japanese Translation;araki2410
+499568101;ncase/anxiety;RTL problems;CatworldMusic
+499151563;ncase/anxiety;German Translation;JonasReich
+497373202;ncase/anxiety;Polish translation 🧅;zyor
+496805540;ncase/anxiety;Hebrew translation started!;CatworldMusic
+496805510;ncase/anxiety;Persian Translation ;Mohi75
+496649276;ncase/anxiety;Started Chinese Translation!!!;zym35
+496461185;ncase/anxiety;Arabic Translation;RaadAldakhil
+495769226;ncase/anxiety;Bug on mobile devices!;pollyndrom
+495493861;ncase/anxiety;thumb.png Cleared/Ready to Use;gokdumano
+495414660;ncase/anxiety;Debug mode;tezzutezzu
+495386799;ncase/anxiety;Slovak translation;ghost
+495369220;ncase/anxiety;Gender-neutral "they";tezzutezzu
+495339237;ncase/anxiety;Italian Translation;tezzutezzu
+494977107;ncase/anxiety;Dutch (NL) translation;gamesaucer
+494886658;ncase/anxiety;Korean translation;KyleHeren
+494797575;ncase/anxiety;Started Spanish Translation!;ghost
+494790425;ncase/anxiety;Started French Translation, help is also appreciated!;NathSoM
+494710512;ncase/anxiety;Turkish Translation;gokdumano
+407209055;ncase/fireflies;no more than one rule?;cauerego
+560861465;ncase/ballot;Prepare public translations;aunwin
+512878373;ncase/ballot;Refresh makes "candidates" disappear in firefox;martin-t
+393317725;ncase/ballot;add #anchors;endolith
+364729022;ncase/ballot;IRV non-monotonicity number is a lower bound;endolith
+281787720;ncase/ballot;Glitch with Approval Voting model;gname23
+275951169;ncase/ballot;[add a voting system] STAR voting;wolftune
+261376948;ncase/ballot;[adding vote system] Scating system;vlisivka
+232573100;ncase/ballot;Gh pages;jamesonquinn
+217664957;ncase/ballot;Justin Trudeau & the Liberal Party of Canada lied;dflock
+211620934;ncase/ballot;Clarify that Score works on voting machines also;Erudition
+195688909;ncase/ballot;Part 2, How are the alternatives, IRV section;trevorhobson
+195492113;ncase/ballot;[add a voting system] Majority judgement;jibe-b
+576156270;ncase/door;Google+ is no longer available;VukAnd
+370471770;ncase/door;汉化v1.0;SuperLiuYinXin
+296210122;ncase/door;Bug fix;ghost
+103392764;ncase/door;logo is linked to website now;BurungHantu1605
+57710511;ncase/door;The hack that ensures you always go around the heart clockwise breaks in some cases;hikari-no-yume
+560862167;ncase/attractors;German layout has issues;aunwin
+216728522;romainguy/road-trip;Update gradle/compile/tools versions;jonathan-caryl
+56653056;romainguy/road-trip;How do I improve the tracing of drawing the path ??;LiYaHX
+55360608;romainguy/road-trip;Fatal signal 11 (SIGSEGV) at 0x00000000 (code=1), thread 2124 (SVG Loader);mradzinski
+51702708;romainguy/road-trip;Example usage of Lollipop's PathParser;gyulavoros
+50294155;romainguy/road-trip;Working till Android Studio 1 rc2;Aexyn
+550507650;romainguy/kotlin-math;PI conflicts with kotlin.math;prideout
+393016664;romainguy/kotlin-math;Distinguish immutable from mutable;andrasferenczi
+284365596;romainguy/kotlin-math;Vectors as views?;romainguy
+284323945;romainguy/kotlin-math;Add tests;romainguy
+284323938;romainguy/kotlin-math;Write documentation on classes/methods/functions;romainguy
+559886802;romainguy/markdeep-rasterizer;XML code blocks are formatted wrong;Skylark13
+387675201;romainguy/google-io-2014;How to avoid the action items from blending too much with what's behind?;AndroidDeveloperLB
+48240965;romainguy/google-io-2014;Project updates;friederbluemle
+164743352;romainguy/elegant-underline;No underline for the `Region`-based implementation?;oldergod
+325846107;benasher44/CocoaPodsLibExample;Crash when running on device;bchenindeed
+562335325;benasher44/benasher.co;Add a timestamp in the footer;benasher44
+555339386;benasher44/benasher.co;Missing README;benasher44
+148767365;cassidoo/cassidoo-v4;Popup doesn't work on large mobile screens;cassidoo
+148767109;cassidoo/cassidoo-v4;Icons don't render in Safari;cassidoo
+468379256;cassidoo/call-it-what-it-is;Added "racially motivated" to the list of strings to be replaced;arjun-g
+395048725;cassidoo/flapjack-fwop;Add Javascript Solver;samschlegel
+557779996;cassidoo/getting-a-gig;Portfolio guidance? ;msurguy
+511281960;cassidoo/getting-a-gig;Update Explore program link. Added IBM;barnesdc
+357901523;cassidoo/cassidoo-v5;Fixes #6;edunicastro
+357900786;cassidoo/cassidoo-v5;Console error "Uncaught TypeError: event.preventDefault is not a function";edunicastro
+179740694;cassidoo/clarifai-javascript-starter;Clarifaid keys.js usage;lekoaf
+403367206;AlecStrong/projectDependencyGraph;Possibly missing license?;tir38
+510613074;AlecStrong/kotlin-native-cocoapods;Any way to combine multiple frameworks into one?;kerry
+474140131;AlecStrong/kotlin-native-cocoapods;Support Kotlin 1.3.41;drampelt
+472712882;AlecStrong/kotlin-native-cocoapods;Compatibility with Kotlin 1.3.40;romanandreyvich
+465529621;AlecStrong/kotlin-native-cocoapods;Could not find com.alecstrong:cocoapods-gradle-plugin:0.3.3. Searched in the following locations:;charlieporth1
+455802694;AlecStrong/kotlin-native-cocoapods;Simulator build fix;Archinamon
+422265043;AlecStrong/kotlin-native-cocoapods;[Question] Publish kotlin native library for iOS;IlyaEremin
+420835335;AlecStrong/kotlin-native-cocoapods;Gradle task not found;galex
+403850583;AlecStrong/kotlin-native-cocoapods;Directories with a dash in their name generate a framework file with an underscore which fails;jrocharodrigues
+403750269;AlecStrong/kotlin-native-cocoapods;Example project using that plugin;Marchuck
+36230414;elihart/picdora-backend;Do Material ruby scripts as rake tasks;elihart
+37128187;elihart/picdora-android;Drop support for gingerbread;elihart
+36946540;elihart/picdora-android;Image preloading;elihart
+36536726;elihart/picdora-android;Info button in satellite menu;elihart
+36211651;elihart/picdora-android;Memory cache for image loader;elihart
+36133724;elihart/picdora-android;Setting to disable preloading ;elihart
+35717782;elihart/picdora-android;Show user that navigation drawer is there.;elihart
+35717765;elihart/picdora-android;Gif processing on 100%;elihart
+35717758;elihart/picdora-android;Large gifs never load;elihart
+35716312;elihart/picdora-android;Better layout for channel detail page;elihart
+35716299;elihart/picdora-android;Real logo;elihart
+35716290;elihart/picdora-android;Browse option;elihart
+35716267;elihart/picdora-android;Premade channels;elihart
+35716211;elihart/picdora-android;Link to get full version;elihart
+35716188;elihart/picdora-android;Help section;elihart
+35716178;elihart/picdora-android;Tutorials;elihart
+35716168;elihart/picdora-android;Category names and descriptions;elihart
+35715968;elihart/picdora-android;Channel creation;elihart
+415027817;florina-muntenescu/MVPvsMVVM;Ｗhy do you put IDataModel in Application class;Kevin1466
+174751111;florina-muntenescu/MVPvsMVVM;MVC;florina-muntenescu
+375291944;florina-muntenescu/DroidconMVVM;Update activity_main.xml;j-kon
+332471129;florina-muntenescu/DroidconMVVM;The unit tests are broken since RxJava2 has been applied;rayworks
+238491795;florina-muntenescu/DroidconMVVM;Survive orientation changes;rom4ek
+267393723;florina-muntenescu/FiltermusicRadio;Version 1.3.0 (13) branch ?;iotY
+187535010;florina-muntenescu/BottomNavigationPlayground;Navigation locked with the `selectMenuItem` navigation.;oldergod
+163559856;florina-muntenescu/Playground;Vector drawables;florina-muntenescu
+562485044;andyzg/gallery;Inconsistent image rotation;simplymathematics
+555304410;andyzg/gallery;Trying to run this on apache2 webserver;dallasgroot
+299960189;andyzg/gallery;Add cleanup script;andyzg
+210348838;andyzg/gallery;Share your gallery;andyzg
+593073900;andyzg/doif;Bump acorn from 6.4.0 to 6.4.1;dependabot[bot]
+581895567;andyzg/faker;Bump acorn from 6.4.0 to 6.4.1;dependabot[bot]
+570298907;norvig/pytudes;console problems;GavinDavis16
+570234076;norvig/pytudes;I understand about 1% of this, but I won a primary stock game with Trump ;hapolley
+569556747;norvig/pytudes;fix some typos in tools.md;KazMalhotra
+569330918;norvig/pytudes;Pin matplotlib version in requirements.txt or drop usage of hold to avoid AttributeError;jhadjar
+559985904;norvig/pytudes;Write Moby Dick approximately;dabos
+558696954;norvig/pytudes;Just fixing some typos;elavallee
+544749197;norvig/pytudes;Change 'Randall Monroe' to 'Randall Munroe';treszkai
+503014930;norvig/pytudes;add random population member to percentile plot;howtodowtle
+455381055;norvig/pytudes;"Can you get your hand of cards into a nice order with just one move?" for Trump;matkoniecz
+451589373;norvig/pytudes;incorrect comment on Advent of Code 2018 Day 6 Part 1;SabriAl-Safi
+450180058;norvig/pytudes;missing data/advent2018 input folder ;alessiomargan
+408035036;norvig/pytudes;Loading function for loading files "count_1w.txt" is not working;pallavi-xtage
+294071861;norvig/pytudes;broken view on norvig.com;maxerickson
+279075854;norvig/pytudes;time_solve() nested in sudoku.html;sandyy08
+565698605;norvig/paip-lisp;Errata in chapter 4;marcellowoods
+559494577;norvig/paip-lisp;Errata for chapter 3;marcellowoods
+557001292;norvig/paip-lisp;typo in chapter 6;GaloisNeko
+546717870;norvig/paip-lisp;error in code of chapter one in github pages book;marcellowoods
+479332718;norvig/paip-lisp;Is PDF file recently generated?;rkawala
+478480457;norvig/paip-lisp;Fix Macsyma integrate;gregr
+455854247;norvig/paip-lisp;Errata for chapter 8;gregr
+416498895;norvig/paip-lisp;Linton naik chapter6;LintonNaik
+416487998;norvig/paip-lisp;Linton naik chapter8;LintonNaik
+381965454;norvig/paip-lisp;Chapter 4 Typos and other;LintonNaik
+346017101;norvig/paip-lisp;epub issues;eshellman
+341266693;norvig/paip-lisp;Code indentation;pronoiac
+339776155;norvig/paip-lisp;use common-lisp instead of lisp in code blocks;casouri
+333027238;norvig/paip-lisp;Convert cleaner version to markdown;pronoiac
+310449550;norvig/paip-lisp;(debug :search) wrong display of results;wpasieka
+306197499;norvig/paip-lisp;*PACKAGES-FOR-WARN-ON-REDEFINITION*;lispm
+306197011;norvig/paip-lisp;paip.asd  works around ANSI CL compatibility problems, doesn't document it and creates new problems;lispm
+306195248;norvig/paip-lisp;asdf definition for paip in paip.asd : serial option should move to the module definition;lispm
+306193215;norvig/paip-lisp;the file loop.lisp has a package USER in the modeline;lispm
+306192936;norvig/paip-lisp;REQUIRES does not compile a file;lispm
+306191666;norvig/paip-lisp;ignoring ignore and other non-referenced variables;lispm
+306189335;norvig/paip-lisp;compiled file pathname type;lispm
+301532472;norvig/paip-lisp;Run Common Lisp in Browser?;norvig
+300395241;norvig/paip-lisp;Clean up .txt version; port to md or some other format;norvig
+292309533;digitalbuddha/FeatureDagger;Subcomponents will grow app module;kirussell
+57151653;digitalbuddha/AndroidStarter;Multiple Job issue;ravenet
+501702038;LouisCAD/hello-github-actions;Congratulations;github-learning-lab[bot]
+453800938;LouisCAD/GoogleDevelopersColorScheme;Actually not a issue;trulymittal
+290396606;LouisCAD/GoogleDevelopersColorScheme;Fix README titles formatting;LouisCAD
+290396374;LouisCAD/GoogleDevelopersColorScheme;Publish the Kotlin update;LouisCAD
+130026610;LouisCAD/GoogleDevelopersColorScheme;Write a Sublime Text version of the scheme;bobuntu
+453197800;kevintpeng/dev-environment-as-code;Slow Install Apps Task for idempotent behaviour;kevintpeng
+359939937;kevintpeng/kevintpeng.com;domain expired? ;biskit1
+456696827;kevintpeng/Learn-Something-Every-Day;ToC not sorted anymore;kevintpeng
+360665412;kevintpeng/Learn-Something-Every-Day;Render README files as a special case;kevintpeng
+359702010;kevintpeng/Learn-Something-Every-Day;Add medium-style reading time at the top of each note;kevintpeng
+358318153;kevintpeng/Learn-Something-Every-Day;Remove Links from table of contents;kevintpeng
+142074976;WilliamY97/WatSat;Tidy html and minor improvements;rjoleary
+383953069;SunnyNagam/ENSF480Project1;TODO: connect registered buyer updateData to DB with handler (assign observers);keenangaudio
+383948347;SunnyNagam/ENSF480Project1;TODO: create catolog and open it at startup - connect checkDocument function in DB to search and display on gui;keenangaudio
+383948004;SunnyNagam/ENSF480Project1;Creating a catlog object that is an arraylist of Documents following abstract factory pattern;louisj381
+536209332;SunnyNagam/StockMarketSimulator;Add and plot change data (percentage change from previous day);SunnyNagam
+593021230;wangwalton/gocrawler;Dev;yanisakham
+581340665;AttwellBrian/nico;Bump acorn from 5.7.3 to 5.7.4 in /frontend;dependabot[bot]
+11843860;AttwellBrian/face-access-control;Slow operatings on the UI thread;AttwellBrian
+383727930;deedy/gradcafe_data;Any plan on updates?;li-boxuan
+517043197;deedy/Deedy-Resume;How to specify the vertical limit in the document.?;anil-goudar
+481923312;deedy/Deedy-Resume;Update deedy_resume.xtx;tanyachawla412
+478103608;deedy/Deedy-Resume;removing hanging indent in tightitemize;margarineHound
+448359411;deedy/Deedy-Resume;fixed hacky space;hengdashi
+412694458;deedy/Deedy-Resume;Fix Publications section overlap;voidstarstar
+409262011;deedy/Deedy-Resume;Serbian accented c;utkuturk
+350898657;deedy/Deedy-Resume;textbf not working in conjunction with this;yadavabhinav16
+318642291;deedy/Deedy-Resume;Modifying Colors;prateekiiest
+307608049;deedy/Deedy-Resume;Solved the overflow issue, albeit temporarily.;DeeprajPandey
+298012184;deedy/Deedy-Resume;Suggestion on design;srdg
+291973577;deedy/Deedy-Resume;Publications: overlap between section name and body;niranjantdesai
+277975364;deedy/Deedy-Resume;Added Cover Letter Templates;anthonyattard
+273544317;deedy/Deedy-Resume;Extending to two Pages;naveenT1010
+265499138;deedy/Deedy-Resume;adapting to 2 pages? ;csaund
+261485044;deedy/Deedy-Resume;Cover Letters;anthonyattard
+254465607;deedy/Deedy-Resume;Remove more "//"s;wrmacrae
+254465081;deedy/Deedy-Resume;Change links to not have "://";wrmacrae
+208788231;deedy/Deedy-Resume;Column 2 Causes Overflow When Aligned at Same Depth as Column 1;joshjacobson
+190428237;deedy/Deedy-Resume;Wrong accents with scshape;kfeine
+183199388;deedy/Deedy-Resume;I am not able to install or use the fonts on ubuntu 16.04 can anyone assist?;Data-drone
+175121549;deedy/Deedy-Resume;update fonts;jck
+145788671;deedy/Deedy-Resume;Update Overleaf;alanyee
+142323881;deedy/Deedy-Resume;To fulfill the requirements in Chinese jobsearching;kirkang
+127175342;deedy/Deedy-Resume;Suggestion on typography;isometric
+123607701;deedy/Deedy-Resume;Everyone loves Makefiles!;nickyr
+123607114;deedy/Deedy-Resume;Fix alignment of employer and position;nickyr
+92031907;deedy/Deedy-Resume;\sectionspace e \begin{tightitemize} undefined control sequence;SquaredPi
+62188066;deedy/Deedy-Resume;No way to italicize;rrshaban
+57681975;deedy/Deedy-Resume;Large Institution names;Void2258
+57410171;deedy/Deedy-Resume;Merge pull request #1 from deedydas/master;EmmanueleSalvati
 318514926;Jspsun/MinimalReactBoilerPlate;Webpack;Jli0423
 198259639;Jspsun/Athena2.0;Error when handling non-words using Google API;Jspsun
