@@ -177,6 +177,11 @@ app.post('/create/repository', function (req, res) {
     var user_name = req.body.user_name;
     var repository_name = req.body.repository_name;
     var description = req.body.description;
+    if (user_name == "" || repository_name == "") {
+        res.status(400)
+        res.send(`Invalid user_name ${user_name} or invalid repository_name ${repository_name}`)
+        next()
+    }
     var created_at = Date.now()
     var updated_at = Date.now()
 
