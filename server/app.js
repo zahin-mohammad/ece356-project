@@ -91,7 +91,7 @@ app.get('/users', function (req, res) {
 
 app.get('/following/user', function (req, res) {
     var user_name = req.query.user_name
-    var query = `SELECT User.* FROM FollowsUser INNER JOIN User ON FollowsUser.followee = User.username WHERE FollowsUser.follower = '${user_name}'`
+    var query = `SELECT User.username, User.name, User.avatar_url, User.email, User.last_login_time FROM FollowsUser INNER JOIN User ON FollowsUser.followee = User.username WHERE FollowsUser.follower = '${user_name}'`
 
     connection.query(query, function (err, rows, fields) {
         if (err) throw err
