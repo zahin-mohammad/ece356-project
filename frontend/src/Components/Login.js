@@ -1,9 +1,12 @@
 import React, { useContext, useState } from "react"
 import { AuthContext } from "../App"
+import Form from "react-bootstrap/Form"
+import Button from "react-bootstrap/Button"
+
 
 export default function Login() {
     const initialState = {
-        email: "",
+        username: "",
         password: "",
         isSubmitting: false,
         errorMessage: null
@@ -64,39 +67,44 @@ export default function Login() {
         })
     }
 
-    // TODO: https://react-bootstrap.github.io/components/forms/
 
     return (
-        <form onSubmit={handleFormSubmit}>
-            <h1>Login</h1>
-
-            <label htmlFor="username">
-                username
-                <input 
-                    type="text"
-                    value={data.username}
-                    onChange={handleInputChange}
+        <Form 
+            style = {{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", minHeight: "80vh" }}
+            onSubmit= {handleFormSubmit}
+        >
+            <Form.Group controlId="formBasicUsername">
+                <Form.Control 
                     name="username"
                     id="username"
+                    type= "username" 
+                    placeholder= "Enter username" 
+                    value= {data.username}
+                    onChange= {handleInputChange}
                 />
-            </label>
+            </Form.Group>
 
-            <label htmlFor="password">
-                password
-                <input 
-                    type="password"
-                    value={data.password}
-                    onChange={handleInputChange}
+            <Form.Group controlId="formBasicPassword">
+                <Form.Control 
                     name="password"
                     id="password"
+                    type= "password" 
+                    placeholder= "Password" 
+                    value= {data.password}
+                    onChange= {handleInputChange}
                 />
-            </label>
+            </Form.Group>
 
             {data.errorMessage}
 
-            <button disabled={data.isSubmitting}>
+            <Button 
+                variant="primary"
+                type="submit"
+                disabled={data.isSubmitting}
+            >
                 {data.isSubmitting ? "Loading..." : "Login"}
-            </button>
-        </form>
+            </Button>
+        </Form>
+        
     )
 }
