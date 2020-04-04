@@ -10,6 +10,7 @@ export default function People() {
     const [search, setSearch] = useState("")
     const [users, setUsers] = useState([])
     const [addNew, setAddNew] = useState(false)
+    const [followUnfollow, setFollowUnfollow] = useState(false)
 
     useEffect(() => {
         if (!addNew) {
@@ -48,13 +49,21 @@ export default function People() {
             })
         }
         
-    }, [addNew]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
+    }, [addNew, followUnfollow]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
 
     const usersToDisplay = users
                             .filter(user => user.name.toLowerCase().includes(search.toLowerCase()))
-                            .map(user => <UserCard key={user.username} name={user.name} avatar_url={user.avatar_url} email={user.email} following={!addNew}/>)
+                            .map(user => <UserCard 
+                                            key={user.username} 
+                                            username={user.username} 
+                                            name={user.name} 
+                                            avatar_url={user.avatar_url} 
+                                            email={user.email} 
+                                            following={!addNew} 
+                                            followUnfollowCallback={() => setFollowUnfollow(!followUnfollow)}
+                                        />)
 
     return (
         <div>
