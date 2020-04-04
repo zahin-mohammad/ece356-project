@@ -14,8 +14,11 @@ connection.connect()
 // Test if database works
 connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
     if (err) throw err
-
-    console.log(rows[0].solution)
+    if (rows[0].solution == 2) {
+        console.log("MYSQL connection works")
+    } else {
+        console.log("MYSQL connection doesn't work")
+    }
 })
 
 const app = express()
