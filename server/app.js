@@ -174,7 +174,7 @@ app.get('/following/repository', function (req, res) {
 
 app.post('/create/repository', function (req, res) {
 
-    var user_name = req.body.follower;
+    var user_name = req.body.user_name;
     var repository_name = req.body.repository_name;
     var description = req.body.description;
     var created_at = Date.now()
