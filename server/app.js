@@ -126,10 +126,6 @@ app.post('/login', function (req, res) {
     })
 });
 
-app.post('/logout', (req, res) => (
-    res.send("logout")
-));
-
 
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
