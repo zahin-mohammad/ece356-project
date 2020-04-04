@@ -116,9 +116,9 @@ app.post('/login', function (req, res) {
 
     connection.query(`SELECT * from User where username='${user_name}' and password='${password}'`, function (err, rows, fields) {
         if (err) throw err
-        if (rows.length > 1) {
+        if (rows.length != 1) {
             res.status(502);
-            res.send('Auth error, multiple users.');
+            res.send('Auth error.');
         } else {
             res.status(200)
             res.send(rows[0])
