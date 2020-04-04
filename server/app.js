@@ -181,16 +181,28 @@ app.delete('/unfollow/user', function (req, res) {
     AND followee = '${followee}'
     `
 
-    connection.query(`SELECT * from User where username='${user_name}' and password='${password}'`, function (err, rows, fields) {
+    connection.query(query, function (err, rows, fields) {
         if (err) throw err
         res.status(200)
         res.send(`${follower} unfollowed ${followee}`)
     })
 });
 
-app.delete('/unfollow/repo', (req, res) => (
-    res.send("unfollow repo")
-))
+app.delete('/unfollow/repo', function (req, res) {
+    var follower = req.body.follower;
+    var repository_name = req.body.followee;
+    query = `
+    DELETE FROM FollowsRepository
+    WHERE follower = '${follower}'
+    AND repository_name = '${repository_name}'
+    `
+
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(`${follower} unfollowed ${repository_name}`)
+    })
+});
 
 app.post('/login', function (req, res) {
     const user_name = req.body.user;
