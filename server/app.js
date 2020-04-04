@@ -77,9 +77,15 @@ app.get('/repos', (req, res) => (
     res.send("repos")
 ))
 
-app.get('/following/repos', (req, res) => (
-    res.send("following repos")
-))
+app.get('/following/repository', function (req, res) {
+    user_name = req.query.user_name
+
+    connection.query(`SELECT * from FollowsRepository where follower='${user_name}'`, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(rows)
+    })
+});
 
 // Post
 app.post('/create/issue', (req, res) => (
