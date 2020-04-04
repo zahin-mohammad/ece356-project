@@ -23,6 +23,16 @@ connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
 
 const app = express()
 const port = 3001
+var allowCrossDomain = function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+}
+app.configure(function () {
+    app.use(allowCrossDomain);
+    //some other code
+});
 
 app.get('/', function (req, res) {
     connection.query(`SELECT * from User where username='${"zahin-mohammad"}'`, function (err, rows, fields) {
