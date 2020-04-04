@@ -11,6 +11,7 @@ var connection = mysql.createConnection({
 
 connection.connect()
 
+// Test if database works
 connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
     if (err) throw err
 
@@ -18,19 +19,11 @@ connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
 })
 
 const app = express()
-const port = 3000
+const port = 3001
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
 // GET Requests
-
-app.get('/login', (req, res) => (
-    res.send("login")
-))
-
-app.get('/logout', (req, res) => (
-    res.send("logout")
-))
 
 app.get('/feed', (req, res) => (
     res.send("feed")
@@ -93,6 +86,14 @@ app.delete('/unfollow/user', (req, res) => (
 
 app.delete('/unfollow/repo', (req, res) => (
     res.send("unfollow repo")
+))
+
+app.post('/login', (req, res) => (
+    res.send("login")
+))
+
+app.post('/logout', (req, res) => (
+    res.send("logout")
 ))
 
 
