@@ -162,17 +162,42 @@ app.post('/create/comment', (req, res) => (
     res.send("create comment")
 ))
 
-app.post('/follow/user', (req, res) => (
-    res.send("follow user")
-))
+app.post('/follow/user', function (req, res) {
+    // stored procedure to avoid following someone we already follow?
+    var follower = req.body.follower;
+    var followee = req.body.repository_name;
+    query = `
+        INSERT INTO FollowsUser (follower, followee)
+        VALUES ('${follower}', '${followee}')
+        `
 
-app.post('/follow/repo', (req, res) => (
-    res.send("follow user")
-))
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(`${follower} followed ${followee}`)
+    })
+});
+
+app.post('/follow/repo', function (req, res) {
+    // stored procedure to avoid following a repo we already follow?
+    var follower = req.body.follower;
+    var repository_name = req.body.repository_name;
+    query = `
+    INSERT INTO FollowsRepository (follower, repository_name)
+    VALUES ('${follower}', '${repository_name}')
+    `
+
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(`${follower} followed ${repository_name}`)
+    })
+});
 
 // Delete 
 
 app.delete('/unfollow/user', function (req, res) {
+    // stored procedure to avoid unfollowing someone we don't followed?
     var follower = req.body.follower;
     var followee = req.body.followee;
     query = `
@@ -189,6 +214,7 @@ app.delete('/unfollow/user', function (req, res) {
 });
 
 app.delete('/unfollow/repo', function (req, res) {
+    // stored procedure to avoid unfollowing a repo we don't followed?
     var follower = req.body.follower;
     var repository_name = req.body.followee;
     query = `
