@@ -25,7 +25,7 @@
 - with mycli run `mycli -u root  --password password --port 3308 --host localhost`
 
 ## Database script
-- run `init-db.sql` to load up data and create the `express` user for the express server
+- run `init-db.sql` to create an empty github database and create the `express` user for the express server
 
 # Running the server
 - run `npm i && npm start`
