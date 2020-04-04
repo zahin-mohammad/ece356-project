@@ -62,14 +62,14 @@ app.get('/comments/reactions', (req, res) => (
 app.get('/users', function (req, res) {
     user_name = req.query.user_name
 
-    if (user_name) {
+    if (user_name) { // get all users that user_name doesn't follow
         var query = `
         SELECT User.username, User.name, User.avatar_url, User.email, User.last_login_time 
         FROM User
         WHERE ('${user_name}', User.username)
         NOT IN (
             SELECT * FROM FollowsUser WHERE FollowsUser.follower = '${user_name}'
-        )
+            )
         `;
 
         connection.query(query, function (err, rows, fields) {
@@ -78,7 +78,7 @@ app.get('/users', function (req, res) {
             res.send(rows)
         })
 
-    } else {
+    } else {  // get all users
         var query = `SELECT username, name, avatar_url, email, last_login_time FROM User`
         connection.query(query, function (err, rows, fields) {
             if (err) throw err
@@ -91,7 +91,13 @@ app.get('/users', function (req, res) {
 
 app.get('/following/user', function (req, res) {
     var user_name = req.query.user_name
-    var query = `SELECT User.username, User.name, User.avatar_url, User.email, User.last_login_time FROM FollowsUser INNER JOIN User ON FollowsUser.followee = User.username WHERE FollowsUser.follower = '${user_name}'`
+    var query = `
+    SELECT User.username, User.name, User.avatar_url, User.email, User.last_login_time 
+    FROM FollowsUser 
+    INNER JOIN User 
+    ON FollowsUser.followee = User.username 
+    WHERE FollowsUser.follower = '${user_name}'
+    `;
 
     connection.query(query, function (err, rows, fields) {
         if (err) throw err
@@ -100,9 +106,34 @@ app.get('/following/user', function (req, res) {
     })
 });
 
-app.get('/repos', (req, res) => (
-    res.send("repos")
-))
+app.get('/repository', function (req, res) {
+    user_name = req.query.user_name
+
+    if (user_name) { // get all repo's that user_name doesn't follow
+        var query = `
+        SELECT Repository.* 
+        FROM Repository
+        WHERE ('${user_name}', Repository.name)
+        NOT IN (
+            SELECT * FROM FollowsRepository WHERE FollowsRepository.follower = '${user_name}'
+            )
+        `;
+
+        connection.query(query, function (err, rows, fields) {
+            if (err) throw err
+            res.status(200)
+            res.send(rows)
+        })
+
+    } else {  // get all repos
+        var query = `SELECT Repository.* FROM Repository`
+        connection.query(query, function (err, rows, fields) {
+            if (err) throw err
+            res.status(200)
+            res.send(rows)
+        })
+    }
+});
 
 app.get('/following/repository', function (req, res) {
     user_name = req.query.user_name
