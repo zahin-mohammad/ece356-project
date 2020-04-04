@@ -33,6 +33,8 @@ CREATE TABLE Post (
     repository_name VARCHAR(255) NOT NULL,
     title VARCHAR(255) NOT NULL,
     username VARCHAR(255) NOT NULL,
+    created_at INT NOT NULL,
+    updated_at INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (username) REFERENCES User(username),
     FOREIGN KEY (repository_name) REFERENCES Repository(name)

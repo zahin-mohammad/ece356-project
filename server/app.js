@@ -55,13 +55,13 @@ app.get('/feed', function (req, res) {
     }
 
     var query = `
-    select Post.*, User.*
+    select Post.*, User.username, User.name, User.avatar_url, User.email, User.last_login_time
     FROM Post
     INNER JOIN User ON User.username = Post.username
     INNER JOIN FollowsUser on FollowsUser.followee = Post.username
     WHERE FollowsUser.follower = '${user_name}'
     UNION
-    select Post.*, User.*
+    select Post.*, User.username, User.name, User.avatar_url, User.email, User.last_login_time
     FROM Post
     INNER JOIN User ON User.username = Post.username
     INNER JOIN Repository ON Repository.name = Post.repository_name
@@ -273,6 +273,12 @@ app.post('/login', function (req, res) {
             res.status(401);
             res.send('Auth error.');
         } else {
+            var query2 = `UPDATE User SET last_login_time =${Date.now()} where username='${user_name}'`
+            connection.query(query2, function (err2, rows2, fields2) {
+                if (err2) throw err2
+
+            })
+
             res.status(200)
             res.send(rows[0])
         }

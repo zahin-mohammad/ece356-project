@@ -240,6 +240,8 @@ def getIssues(repo):
             issueInfo[id]["repository_name"] = repo
             issueInfo[id]["title"] = issue["title"]
             issueInfo[id]["username"] = issue["user"]["login"]
+            issueInfo["created_at"] = getEpochSecondTime(issue["created_at"])
+            issueInfo["updated_at"] = getEpochSecondTime(issue["updated_at"])
             getUserInfo(issue["user"]["login"])
             issueNumber = issue["number"]
 
@@ -339,10 +341,10 @@ def createCSVFiles():
                 traceback.print_exc()
 
     with open('./data/issueInfo.csv', 'w') as fp:
-        fp.write("id;repository_name;title;username\n")
+        fp.write("id;repository_name;title;username;created_at;updated_at\n")
         for issue in issueInfo.values():
-            fp.write("%s;%s;%s;%s\n" %
-                     (issue["id"], issue["repository_name"], issue["title"], issue["username"]))
+            fp.write("%s;%s;%s;%s;%s;%s\n" %
+                     (issue["id"], issue["repository_name"], issue["title"], issue["username"], issue["created_at"], issue["updated_at"]))
 
     with open('./data/commentInfo.csv', 'w') as fp:
         fp.write("id;post_id;username;body;created_at;updated_at\n")
