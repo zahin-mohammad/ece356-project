@@ -16,7 +16,7 @@ export default function People() {
             {"username": "brian-norman", "name": "Brian Norman", "avatar_url": "https://avatars0.githubusercontent.com/u/9154202?v=4", "email": "briankn8@gmail.com", "last_login_time": 1585952466},
             {"username": "atulbipin", "name": "Atul Bipin", "avatar_url": "https://avatars2.githubusercontent.com/u/19649216?v=4", "email": "atulbipin@gmail.com", "last_login_time": 1585952112}
         ])
-    }, [])
+    }, []) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
     const usersToDisplay = users
@@ -30,7 +30,7 @@ export default function People() {
                 name="search"
                 value={search}
                 onChange={(event) => setSearch(event.target.value)}
-                placeholder="Search.."
+                placeholder="Search"
             />
             <CardColumns>
                 {usersToDisplay}
