@@ -72,6 +72,7 @@ export default function Repos() {
                     <InputGroup.Text id="basic-addon1">🔍</InputGroup.Text>
                 </InputGroup.Prepend>
                 <FormControl
+                    value={search}
                     onChange={(event) => setSearch(event.target.value)}
                     placeholder="Search"
                     aria-label="search"
@@ -80,7 +81,10 @@ export default function Repos() {
                 <Button 
                     variant="outline-dark" 
                     style={{ marginLeft: "1rem" }}
-                    onClick={(event) => setAddNew(!addNew)}
+                    onClick={(event) => {
+                        setAddNew(!addNew)
+                        setSearch("")
+                    }}
                 >{addNew ? "← Back" : "Follow New"}</Button>
                 <Button
                     variant="outline-dark"  
