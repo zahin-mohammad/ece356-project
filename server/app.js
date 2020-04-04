@@ -1,6 +1,8 @@
 const express = require('express')
 const mysql = require('mysql')
 const cors = require('cors')
+const bodyParser = require('body-parser');
+
 
 
 var connection = mysql.createConnection({
@@ -25,6 +27,9 @@ connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
 
 const app = express()
 app.use(cors())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
 const port = 3001
 
 // Test
@@ -106,23 +111,19 @@ app.delete('/unfollow/repo', (req, res) => (
 ))
 
 app.post('/login', function (req, res) {
-
-
-    console.log(req.body)
     const user_name = req.body.user;
     const password = req.body.password;
 
-    connection.query(`SELECT * from User where username=${user_name} and password=${password}`, function (err, rows, fields) {
+    connection.query(`SELECT * from User where username='${user_name}' and password='${password}'`, function (err, rows, fields) {
         if (err) throw err
         if (rows.length > 1) {
             res.status(502);
             res.send('Auth error, multiple users.');
         } else {
+            res.status(200)
             res.send(rows[0])
         }
     })
-
-    res.send("login")
 });
 
 app.post('/logout', (req, res) => (

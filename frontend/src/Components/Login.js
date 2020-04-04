@@ -15,7 +15,7 @@ export default function Login() {
     const { dispatch } = useContext(AuthContext)
 
     const [data, setData] = useState(initialState)
-    
+
     const handleInputChange = event => {
         setData({
             ...data,
@@ -41,61 +41,61 @@ export default function Login() {
                 password: data.password
             })
         })
-        .then(res => {
-            if (res.ok) {
-                return res.json()
-            } else {
-                throw res
-            }
-        })
-        .then(resJson => {
-            dispatch({
-                type: "LOGIN",
-                payload: {
-                    username: data.username
+            .then(res => {
+                if (res.ok) {
+                    return res.json()
+                } else {
+                    throw res
                 }
             })
-        })
-        .catch(error => {
-            setData({
-                ...data,
-                isSubmitting: false,
-                errorMessage: error.message || error.statusText
+            .then(resJson => {
+                dispatch({
+                    type: "LOGIN",
+                    payload: {
+                        username: data.username
+                    }
+                })
             })
-        })
+            .catch(error => {
+                setData({
+                    ...data,
+                    isSubmitting: false,
+                    errorMessage: error.message || error.statusText
+                })
+            })
     }
 
 
     return (
-        <Form 
-            style = {{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", minHeight: "80vh" }}
-            onSubmit= {handleFormSubmit}
+        <Form
+            style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", minHeight: "80vh" }}
+            onSubmit={handleFormSubmit}
         >
             <Form.Group controlId="formBasicUsername">
-                <Form.Control 
+                <Form.Control
                     name="username"
                     id="username"
-                    type= "username" 
-                    placeholder= "Enter username" 
-                    value= {data.username}
-                    onChange= {handleInputChange}
+                    type="username"
+                    placeholder="Enter username"
+                    value={data.username}
+                    onChange={handleInputChange}
                 />
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">
-                <Form.Control 
+                <Form.Control
                     name="password"
                     id="password"
-                    type= "password" 
-                    placeholder= "Password" 
-                    value= {data.password}
-                    onChange= {handleInputChange}
+                    type="password"
+                    placeholder="Password"
+                    value={data.password}
+                    onChange={handleInputChange}
                 />
             </Form.Group>
 
             {data.errorMessage}
 
-            <Button 
+            <Button
                 variant="primary"
                 type="submit"
                 disabled={data.isSubmitting}
@@ -103,6 +103,6 @@ export default function Login() {
                 {data.isSubmitting ? "Loading..." : "Login"}
             </Button>
         </Form>
-        
+
     )
 }
