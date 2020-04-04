@@ -1,23 +1,42 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import IssueCard from "./IssueCard.js"
+import { AuthContext } from "../App.js"
 
 
 export default function Feed() {
     const [issues, setIssues] = useState([])
+    const { state } = useContext(AuthContext)
 
     useEffect(() => {
-        // TODO: Fetch from server here
-
-        setIssues([
-            {"id": 573408419, "title": "Add flutter", "username": "zahin-mohammad"},
-            {"id": 549249843, "title": "Incorrect zsh paths in ~/.zshrc", "username": "zahin-mohammad"},
-            {"id": 490936608, "title": "Verbose android Injection fails with missing binding", "username": "matejdro"},
-            {"id": 568960683, "title": "Writes files as root", "username": "JakeWharton"}
-        ])
+        fetch(`http://localhost:3001/feed?user_name=${state.username}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        .then(res => {
+            if (res.ok) {
+                return res.json()
+            } else {
+                throw res
+            }
+        })
+        .then(resJson => {
+            setIssues(resJson)
+        })
     }, [])
 
     // Notification logic will need to be more ... logical :) Should do it in SQL!
-    const issuesToDisplay = issues.map(issue => <IssueCard key={issue.id} title={issue.title} user={issue.username} date={"Unknown Date"} notif={true} />)
+    const issuesToDisplay = issues
+                                .map(issue => <IssueCard 
+                                                    key={issue.id} 
+                                                    title={issue.title} 
+                                                    repository_name={issue.repository_name}
+                                                    user={issue.username} 
+                                                    date={"Unknown Date"} 
+                                                    notif={true} 
+                                                />
+                                    )
 
     return (
         <div>
