@@ -34,7 +34,6 @@ CREATE TABLE Post (
     repository_id VARCHAR(255) NOT NULL,
     title VARCHAR(255) NOT NULL,
     username VARCHAR(255) NOT NULL,
-    comment_id VARCHAR(255) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (username) REFERENCES User(username),
     FOREIGN KEY (repository_id) REFERENCES Repository(id)
