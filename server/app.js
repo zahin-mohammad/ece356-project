@@ -64,7 +64,12 @@ app.get('/users', function (req, res) {
 
     if (user_name) {
         var query = `
-        SELECT username, name, avatar_url, email, last_login_time FROM User
+        SELECT User.username, User.name, User.avatar_url, User.email, User.last_login_time 
+        FROM User
+        WHERE ('${user_name}', User.username)
+        NOT IN (
+            SELECT * FROM FollowsUser WHERE FollowsUser.follower = '${user_name}'
+        )
         `;
 
         connection.query(query, function (err, rows, fields) {
