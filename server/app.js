@@ -70,9 +70,21 @@ app.get('/feed', function (req, res) {
     })
 });
 
-app.get('/comments', (req, res) => (
-    res.send("comments")
-))
+app.get('/comments', function(req, res){
+    var post_id = req.query.post_id;
+
+    var query = `
+    SELECT * From Comment
+    WHERE post_id='${post_id}'
+    ORDER BY created_at ASC
+    `
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(rows)
+    })
+
+});
 
 app.get('/comments/reactions', (req, res) => (
     res.send("reactions")
