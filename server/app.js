@@ -36,15 +36,7 @@ const port = 3001
 
 // Test
 app.get('/', function (req, res) {
-    connection.query(`SELECT * from User where username='${"zahin-mohammad"}'`, function (err, rows, fields) {
-        if (err) throw err
-        if (rows.length > 1) {
-            res.status(502);
-            res.send('Auth error, multiple users.');
-        } else {
-            res.send(rows[0])
-        }
-    })
+    res.send("Hello World!")
 });
 
 // GET Requests
@@ -78,9 +70,21 @@ app.get('/feed', function (req, res) {
     })
 });
 
-app.get('/comments', (req, res) => (
-    res.send("comments")
-))
+app.get('/comments', function (req, res) {
+    var post_id = req.query.post_id;
+
+    var query = `
+    SELECT * From Comment
+    WHERE post_id='${post_id}'
+    ORDER BY created_at ASC
+    `
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(rows)
+    })
+
+});
 
 app.get('/comments/reactions', (req, res) => (
     res.send("reactions")
@@ -187,34 +191,100 @@ app.post('/create/repository', function (req, res) {
     var updated_at = Date.now()
 
     // TODO: follow the repo
-    query = `
-    INSERT INTO Repository (name, description, username, created_at, updated_at)
-    VALUES('${repository_name}', '${description}', '${user_name}', ${created_at}, ${updated_at})
-    `
+    async.series([
+        function (callback) {
+            query = `
+            INSERT INTO Repository (name, description, username, created_at, updated_at)
+            VALUES('${repository_name}', '${description}', '${user_name}', ${created_at}, ${updated_at})
+            `
+            connection.query(query, function (err, rows, fields) {
+                if (err) {
+                    throw err
+                } else {
+                    res.status(200)
+                    res.send(`${user_name} created ${repository_name}`)
+                    callback();
+                }
+            })
+        },
+        function (callback) {
+            query = `
+            INSERT INTO FollowsRepository(follower, repository_name)
+            VALUES('${user_name}','${repository_name}')
+            `
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err
+                callback();
+            })
 
-    connection.query(query, function (err, rows, fields) {
-        if (err) throw err
-        res.status(200)
-        res.send(`${user_name} created ${repository_name}`)
-    })
+        }
+    ])
+
 
 });
 
 app.post('/create/issue', function (req, res) {
-    var user_name = req.body.follower;
+    var post_id = Math.round(Math.random() * 10000000)
+    var user_name = req.body.user_name;
     var repository_name = req.body.repository_name;
-    var issue_body = req.body.repository_name;
-    if (!issue_body) {
-        issue_body = ""
-    }
-    // TODO:
+    var title = req.body.title;
+    var post_body = req.body.post_body;
 
-    res.send("Not implemented")
+    if (title == "") {
+        res.status(400)
+        res.send(`Invalid title ${title}`)
+        return
+    }
+    if (!post_body) {
+        post_body = ""
+    }
+    async.series([
+        function (callback) {
+            query = `
+            INSERT INTO Post (id, repository_name, title, username, created_at, updated_at)
+            VALUES (${post_id}, ${repository_name}, '${title}', '${user_name}', ${created_at}, ${updated_at})
+            `
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err
+                callback()
+            })
+        },
+        function (callback) { // TODO: Make this a function, being called twice?
+            var id = Math.round(Math.random() * 10000000)
+            query = `
+                INSERT INTO Comment (id, post_id, username, body, created_at, updated_at)
+                VALUES (${id}, ${post_id}, '${user_name}', '${post_body}', ${created_at}, ${updated_at})
+                `
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err
+                res.status(200)
+                res.send(`${user_name} created an issue`)
+                callback()
+            })
+        },
+    ])
 });
 
-app.post('/create/comment', (req, res) => (
-    res.send("create comment")
-))
+app.post('/create/comment', function (req, res) {
+    var user_name = req.body.follower;
+    var id = Math.round(Math.random() * 10000000)
+    var post_id = req.body.post_id;
+    var comment_body = req.body.comment_body;
+    var created_at = Date.now()
+    var updated_at = Date.now()
+
+    query = `
+        INSERT INTO Comment (id, post_id, username, body, created_at, updated_at)
+        VALUES (${id}, ${post_id}, '${user_name}', '${comment_body}', ${created_at}, ${updated_at})
+        `
+
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(`${user_name} created a comment`)
+    })
+});
 
 app.post('/create/reaction', (req, res) => (
     res.send("create reaction")
@@ -297,7 +367,7 @@ app.post('/login', function (req, res) {
     const password = req.body.password;
 
     async.series([
-        function(callback){
+        function (callback) {
             var query = `SELECT * from User where username='${user_name}' and password='${password}'`
             console.log(`Logging in ${user_name}`)
             connection.query(query, function (err, rows, fields) {
@@ -305,14 +375,14 @@ app.post('/login', function (req, res) {
                 if (rows.length != 1) {
                     res.status(401);
                     res.send('Auth error.');
-                } else {        
+                } else {
                     res.status(200)
                     res.send(rows[0])
                 }
                 callback();
             })
         },
-        function(callback){
+        function (callback) {
             console.log(`Updating time to ${Date.now()}`)
             var query = `UPDATE User SET last_login_time=${Date.now()} WHERE username='${user_name}'`
             connection.query(query, function (err, rows, fields) {
@@ -322,16 +392,16 @@ app.post('/login', function (req, res) {
     ]);
 
 
-    
+
 });
 
 
 app.on('uncaughtException', function (req, res, route, err) {
     log.info('******* Begin Error *******\n%s\n*******\n%s\n******* End Error *******', route, err.stack);
     if (!res.headersSent) {
-      return res.send(500, {ok: false});
+        return res.send(500, { ok: false });
     }
     res.write('\n');
     res.end();
-  });
+});
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
