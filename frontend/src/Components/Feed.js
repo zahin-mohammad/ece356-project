@@ -6,7 +6,6 @@ import { AuthContext } from "../App.js"
 
 export default function Feed() {
     const [issues, setIssues] = useState([])
-    const [chosenIssue, setChosenIssue] = useState()
     const { state } = useContext(AuthContext)
 
     useEffect(() => {
@@ -24,7 +23,6 @@ export default function Feed() {
             }
         })
         .then(resJson => {
-            console.log(resJson)
             setIssues(resJson)
         })
     }, [])
@@ -33,26 +31,18 @@ export default function Feed() {
     const issuesToDisplay = issues
                                 .map(issue => <IssueCard 
                                                     key={issue.id} 
-                                                    issueObj={issue}
                                                     id={issue.id}
                                                     title={issue.title} 
                                                     repository_name={issue.repository_name}
                                                     user={issue.username} 
                                                     date={new Date(issue.created_at * 1000).toISOString().split('T')[0]}
                                                     notif={issue.updated_at > state.lastLogin} 
-                                                    chooseIssueCallback={(issue) => setChosenIssue(issue)}
                                                 />
                                     )
 
     return (
         <div>
             {issuesToDisplay}
-            <IssueView
-                showIssueView={chosenIssue != null}
-                setChosenIssue={() => setChosenIssue(null)}
-                id={chosenIssue != null ? chosenIssue.id : null}
-                title={chosenIssue != null ? chosenIssue.title : null}
-            />
         </div>
     )
 }

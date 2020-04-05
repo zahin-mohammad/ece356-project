@@ -28,7 +28,7 @@ export default function IssueView(props) {
     return (
         <Modal 
             show={props.showIssueView} 
-            onHide={() => props.setChosenIssue(null)}
+            onHide={() => props.setShowIssue(false)}
             size="lg"
         >
 

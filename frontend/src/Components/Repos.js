@@ -93,6 +93,7 @@ export default function Repos() {
         .filter(issue => issue.title.toLowerCase().includes(search.toLowerCase()))
         .map(issue => <IssueCard
             key={issue.id}
+            id={issue.id}
             title={issue.title}
             repository_name={issue.repository_name}
             user={issue.username}

@@ -1,12 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Badge from 'react-bootstrap/Badge'
+import IssueView from "./IssueView"
 
 
 export default function IssueCard(props) {
     // TODO: Get user who posted profile photo to display
-    // TODO: Notification should be based on date last updated and date last logged in
+
+    const [showIssue, setShowIssue] = useState(false)
+
     return (
         <div>
             <Badge pill variant="light">{props.notif ? "🔔" : ""}</Badge>
@@ -18,10 +21,17 @@ export default function IssueCard(props) {
                     <Button 
                         variant="outline-primary" 
                         style={{position: "absolute", right: "0.5rem", bottom: "0.5rem"}}
-                        onClick={() => props.chooseIssueCallback(props.issueObj)}
+                        onClick={() => setShowIssue(true)}
                     >Open</Button>
                 </Card.Body>
             </Card>
+
+            <IssueView
+                showIssueView={showIssue}
+                setShowIssue={() => setShowIssue(false)}
+                id={props.id}
+                title={props.title}
+            />
         </div>
     )
 }
