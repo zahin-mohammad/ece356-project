@@ -151,7 +151,7 @@ export default function Repos() {
                             setAddNew(!addNew)
                             setSearch("")
                         }}
-                    >{addNew ? "    " : "Follow New"}</Button>
+                    >{addNew ? "← Back" : "Follow New"}</Button>
                     <Button
                         variant="outline-dark"
                         style={{ marginLeft: "1rem" }}
