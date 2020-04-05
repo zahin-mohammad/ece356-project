@@ -180,7 +180,7 @@ app.post('/create/repository', function (req, res) {
     if (user_name == "" || repository_name == "") {
         res.status(400)
         res.send(`Invalid user_name ${user_name} or invalid repository_name ${repository_name}`)
-        next()
+        return
     }
     var created_at = Date.now()
     var updated_at = Date.now()
