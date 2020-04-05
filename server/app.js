@@ -286,13 +286,22 @@ app.post('/create/comment', function (req, res) {
     })
 });
 
-app.post('/create/reaction', (req, res) => (
-    res.send("create reaction")
-))
+app.post('/create/reaction', function (req, res) {
+    var user_name = req.body.user_name;
+    var comment_id = req.body.comment_id;
+    var reaction = req.body.reaction;
 
-app.post('/create/comment', (req, res) => (
-    res.send("create comment")
-))
+    query = `
+        INSERT INTO Reaction (comment_id, emoji, username)
+        VALUES (${comment_id}, '${reaction}', '${user_name}')
+        `
+
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(`${user_name} reacted ${reaction}`)
+    })
+})
 
 app.post('/follow/user', function (req, res) {
     // stored procedure to avoid following someone we already follow?
@@ -395,7 +404,6 @@ app.post('/login', function (req, res) {
 
 });
 
-
 app.on('uncaughtException', function (req, res, route, err) {
     log.info('******* Begin Error *******\n%s\n*******\n%s\n******* End Error *******', route, err.stack);
     if (!res.headersSent) {
@@ -404,4 +412,5 @@ app.on('uncaughtException', function (req, res, route, err) {
     res.write('\n');
     res.end();
 });
+
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
