@@ -34,8 +34,8 @@ export default function Feed() {
                                                     title={issue.title} 
                                                     repository_name={issue.repository_name}
                                                     user={issue.username} 
-                                                    date={"Unknown Date"} 
-                                                    notif={true} 
+                                                    date={new Date(issue.created_at * 1000).toISOString().split('T')[0]}
+                                                    notif={issue.updated_at > state.lastLogin} 
                                                 />
                                     )
 
