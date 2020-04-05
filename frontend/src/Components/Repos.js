@@ -6,6 +6,7 @@ import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import IssueCard from "./IssueCard.js"
+import CreateNewIssue from "./CreateNewIssue"
 
 export default function Repos() {
     const { state } = useContext(AuthContext)
@@ -15,8 +16,10 @@ export default function Repos() {
     const [addNew, setAddNew] = useState(false)
     const [followUnfollow, setFollowUnfollow] = useState(false)
     const [showNewRepo, setShowNewRepo] = useState(false)
+    const [showNewIssue, setShowNewIssue] = useState(false)
     const [createdNewRepo, setCreatedNewRepo] = useState(false)
-    const [shouldViewIssues, setShouldViewIssues] = useState(false)
+    const [createdNewIssue, setcreatedNewIssue] = useState(false)
+    const [issuesRepo, setIssuesRepo] = useState("")
 
     useEffect(() => {
         if (!addNew) {
@@ -54,31 +57,25 @@ export default function Repos() {
                     setRepos(resJson)
                 })
         }
-    }, [addNew, followUnfollow, createdNewRepo]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
-
-
-
-    function viewRepo(repo) {
-        console.log(repo)
-        setShouldViewIssues(true)
-        fetch(`http://localhost:3001/repository/posts?repository_name=${repo}`, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-            .then(res => {
-                if (res.ok) {
-                    return res.json()
-                } else {
-                    throw res
+        if (issuesRepo != "") {
+            fetch(`http://localhost:3001/repository/posts?repository_name=${issuesRepo}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
                 }
             })
-            .then(resJson => {
-                setIssues(resJson)
-            })
-    }
-
+                .then(res => {
+                    if (res.ok) {
+                        return res.json()
+                    } else {
+                        throw res
+                    }
+                })
+                .then(resJson => {
+                    setIssues(resJson)
+                })
+        }
+    }, [addNew, followUnfollow, createdNewRepo, issuesRepo, createdNewIssue]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
     const reposToDisplay = repos
@@ -86,7 +83,7 @@ export default function Repos() {
         .map(repo => <RepoCard
             key={repo.name}
             name={repo.name}
-            viewRepoCallback={() => viewRepo(repo.name)}
+            viewRepoCallback={() => setIssuesRepo(repo.name)}
             description={repo.description}
             following={!addNew}
             followUnfollowCallback={() => setFollowUnfollow(!followUnfollow)}
@@ -103,7 +100,7 @@ export default function Repos() {
         />
         )
 
-    return (shouldViewIssues ?
+    return (issuesRepo != "" ?
         (<div>
             {
                 // TODO: Filter Posts by Title
@@ -113,7 +110,7 @@ export default function Repos() {
                     variant="outline-dark"
                     style={{ marginRight: "0.5rem" }}
                     onClick={(event) => {
-                        setShouldViewIssues(false)
+                        setIssuesRepo(false)
                     }}
                 >← Back</Button>
                 <InputGroup.Prepend>
@@ -126,9 +123,20 @@ export default function Repos() {
                     aria-label="search"
                     aria-describedby="basic-addon1"
                 />
-
+                <Button
+                    variant="outline-dark"
+                    style={{ marginLeft: "1rem" }}
+                    onClick={() => setShowNewIssue(true)}
+                >➕ Issue</Button>
             </InputGroup>
             {issuesToDisplay}
+
+            <CreateNewIssue
+                repository_name={issuesRepo}
+                showNewIssue={showNewIssue}
+                setShowNewIssue={() => setShowNewIssue()}
+                createdNewIssueCallback={() => setcreatedNewIssue(!createdNewIssue)}
+            />
         </div>)
         :
         (
@@ -156,7 +164,7 @@ export default function Repos() {
                         variant="outline-dark"
                         style={{ marginLeft: "1rem" }}
                         onClick={() => setShowNewRepo(true)}
-                    >Create New </Button>
+                    >➕ Repo </Button>
                 </InputGroup>
 
                 {reposToDisplay}

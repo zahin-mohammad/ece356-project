@@ -262,6 +262,8 @@ app.post('/create/post', function (req, res) {
     var repository_name = req.body.repository_name;
     var title = req.body.title;
     var post_body = req.body.post_body;
+    var created_at = Date.now()
+    var updated_at = Date.now()
 
     if (title == "") {
         res.status(400)
@@ -275,7 +277,7 @@ app.post('/create/post', function (req, res) {
         function (callback) {
             query = `
             INSERT INTO Post (id, repository_name, title, username, created_at, updated_at)
-            VALUES (${post_id}, ${repository_name}, '${title}', '${user_name}', ${created_at}, ${updated_at})
+            VALUES (${post_id}, '${repository_name}', '${title}', '${user_name}', ${created_at}, ${updated_at})
             `
             connection.query(query, function (err, rows, fields) {
                 if (err) throw err
