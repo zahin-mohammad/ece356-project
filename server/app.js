@@ -174,6 +174,30 @@ app.get('/repository', function (req, res) {
     }
 });
 
+app.get('/repository/posts', function (req, res) {
+    var repository_name = req.query.repository_name
+
+    if (repository_name) { // get all repo's that user_name doesn't follow
+        var query = `
+        SELECT Post.* 
+        FROM Post
+        INNER JOIN Repository
+        ON Post.repository_name = Repository.name
+        `;
+
+        connection.query(query, function (err, rows, fields) {
+            if (err) throw err
+            res.status(200)
+            res.send(rows)
+        })
+
+    } else {
+        if (err) throw err
+        res.status(400)
+        res.send("No repository name provided")
+    }
+});
+
 app.get('/following/repository', function (req, res) {
     var user_name = req.query.user_name
     var query = `SELECT Repository.* FROM FollowsRepository INNER JOIN Repository ON Repository.name = FollowsRepository.repository_name WHERE FollowsRepository.follower='${user_name}'`
@@ -231,7 +255,7 @@ app.post('/create/repository', function (req, res) {
 
 });
 
-app.post('/create/issue', function (req, res) {
+app.post('/create/post', function (req, res) {
     var post_id = Math.round(Math.random() * 10000000)
     var user_name = req.body.user_name;
     var repository_name = req.body.repository_name;
@@ -267,7 +291,7 @@ app.post('/create/issue', function (req, res) {
             connection.query(query, function (err, rows, fields) {
                 if (err) throw err
                 res.status(200)
-                res.send(`${user_name} created an issue`)
+                res.send(`${user_name} created a post`)
                 callback()
             })
         },
