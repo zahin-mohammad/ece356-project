@@ -14,6 +14,7 @@ export default function Repos() {
     const [addNew, setAddNew] = useState(false)
     const [followUnfollow, setFollowUnfollow] = useState(false)
     const [showNewRepo, setShowNewRepo] = useState(false)
+    const [createdNewRepo, setCreatedNewRepo] = useState(false)
 
     useEffect(() => {
         if (!addNew) {
@@ -51,7 +52,7 @@ export default function Repos() {
                 setRepos(resJson)
             })
         }
-    }, [addNew, followUnfollow]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
+    }, [addNew, followUnfollow, createdNewRepo]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
     const reposToDisplay = repos
@@ -97,7 +98,11 @@ export default function Repos() {
 
             {reposToDisplay}
 
-            <CreateNewRepo showNewRepo={showNewRepo} setShowNewRepo={() => setShowNewRepo()} />
+            <CreateNewRepo 
+                showNewRepo={showNewRepo} 
+                setShowNewRepo={() => setShowNewRepo()} 
+                createdNewRepoCallback={() => setCreatedNewRepo(!createdNewRepo)}
+            />
 
         </div>
     )

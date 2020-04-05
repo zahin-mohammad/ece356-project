@@ -22,6 +22,7 @@ export default function Feed() {
             }
         })
         .then(resJson => {
+            console.log(state.lastLogin)
             setIssues(resJson)
         })
     }, [])
