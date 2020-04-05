@@ -2,6 +2,8 @@ const express = require('express')
 const mysql = require('mysql')
 const cors = require('cors')
 const bodyParser = require('body-parser');
+var async = require("async");
+
 
 
 
@@ -294,25 +296,42 @@ app.post('/login', function (req, res) {
     const user_name = req.body.user;
     const password = req.body.password;
 
-    connection.query(`SELECT * from User where username='${user_name}' and password='${password}'`, function (err, rows, fields) {
-        if (err) throw err
-        if (rows.length != 1) {
-            res.status(401);
-            res.send('Auth error.');
-        } else {
-            // var query2 = `UPDATE User SET last_login_time =${Date.now()} where username='${user_name}'`
-            // connection.query(query2, function (err2, rows2, fields2) {
-            //     if (err2) throw err2
-
-            // })
-
-            res.status(200)
-            res.send(rows[0])
+    async.series([
+        function(callback){
+            var query = `SELECT * from User where username='${user_name}' and password='${password}'`
+            console.log(`Logging in ${user_name}`)
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err
+                if (rows.length != 1) {
+                    res.status(401);
+                    res.send('Auth error.');
+                } else {        
+                    res.status(200)
+                    res.send(rows[0])
+                }
+                callback();
+            })
+        },
+        function(callback){
+            console.log(`Updating time to ${Date.now()}`)
+            var query = `UPDATE User SET last_login_time=${Date.now()} WHERE username='${user_name}'`
+            connection.query(query, function (err, rows, fields) {
+                callback();
+            })
         }
-    })
+    ]);
+
+
+    
 });
 
 
-
-
+app.on('uncaughtException', function (req, res, route, err) {
+    log.info('******* Begin Error *******\n%s\n*******\n%s\n******* End Error *******', route, err.stack);
+    if (!res.headersSent) {
+      return res.send(500, {ok: false});
+    }
+    res.write('\n');
+    res.end();
+  });
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
