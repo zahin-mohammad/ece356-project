@@ -41,28 +41,29 @@ export default function Login() {
                 password: data.password
             })
         })
-            .then(res => {
-                if (res.ok) {
-                    return res.json()
-                } else {
-                    throw res
+        .then(res => {
+            if (res.ok) {
+                return res.json()
+            } else {
+                throw res
+            }
+        })
+        .then(resJson => {
+            dispatch({
+                type: "LOGIN",
+                payload: {
+                    username: data.username,
+                    lastLogin: resJson.last_login_time
                 }
             })
-            .then(resJson => {
-                dispatch({
-                    type: "LOGIN",
-                    payload: {
-                        username: data.username
-                    }
-                })
+        })
+        .catch(error => {
+            setData({
+                ...data,
+                isSubmitting: false,
+                errorMessage: error.message || error.statusText
             })
-            .catch(error => {
-                setData({
-                    ...data,
-                    isSubmitting: false,
-                    errorMessage: error.message || error.statusText
-                })
-            })
+        })
     }
 
 

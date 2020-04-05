@@ -8,7 +8,8 @@ export const AuthContext = React.createContext()
 
 const initialState = {
   isAuthenticated: false,
-  username: null
+  username: null,
+  lastLogin: null
 }
 
 const reducer = (state, action) => {
@@ -18,14 +19,16 @@ const reducer = (state, action) => {
       return {
         ...state,
         isAuthenticated: true,
-        username: action.payload.username
+        username: action.payload.username,
+        lastLogin: action.payload.lastLogin
       }
     case "LOGOUT":
       localStorage.clear()
       return {
         ...state,
         isAuthenticated: false,
-        username: null
+        username: null,
+        lastLogin: null
       }
     default:
       return state
@@ -37,12 +40,14 @@ export default function App() {
 
   useEffect(() => {
     const username = JSON.parse(localStorage.getItem("username") || null)
+    const lastLogin = JSON.parse(localStorage.getItem("lastLogin") || null)
 
     if (username) {
       dispatch({
         type: "LOGIN",
         payload: {
-          username
+          username,
+          lastLogin
         }
       })
     }
