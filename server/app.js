@@ -187,16 +187,35 @@ app.post('/create/repository', function (req, res) {
     var updated_at = Date.now()
 
     // TODO: follow the repo
-    query = `
-    INSERT INTO Repository (name, description, username, created_at, updated_at)
-    VALUES('${repository_name}', '${description}', '${user_name}', ${created_at}, ${updated_at})
-    `
+    async.series([
+        function(callback){
+            query = `
+            INSERT INTO Repository (name, description, username, created_at, updated_at)
+            VALUES('${repository_name}', '${description}', '${user_name}', ${created_at}, ${updated_at})
+            `
+            connection.query(query, function (err, rows, fields) {
+                if (err){
+                    throw err
+                } else {
+                    res.status(200)
+                    res.send(`${user_name} created ${repository_name}`)
+                    callback();
+                }
+            })
+        },
+        function(callback){
+            query = `
+            INSERT INTO FollowsRepository(follower, repository_name)
+            VALUES('${user_name}','${repository_name}')
+            `
+            connection.query(query, function (err, rows, fields) {
+                if (err)throw err
+                callback();
+            })
 
-    connection.query(query, function (err, rows, fields) {
-        if (err) throw err
-        res.status(200)
-        res.send(`${user_name} created ${repository_name}`)
-    })
+        }
+    ])
+
 
 });
 
