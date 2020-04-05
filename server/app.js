@@ -36,15 +36,7 @@ const port = 3001
 
 // Test
 app.get('/', function (req, res) {
-    connection.query(`SELECT * from User where username='${"zahin-mohammad"}'`, function (err, rows, fields) {
-        if (err) throw err
-        if (rows.length > 1) {
-            res.status(502);
-            res.send('Auth error, multiple users.');
-        } else {
-            res.send(rows[0])
-        }
-    })
+    res.send("Hello World!")
 });
 
 // GET Requests
