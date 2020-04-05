@@ -57,7 +57,7 @@ export default function Repos() {
     const reposToDisplay = repos
                             .filter(repo => repo.name.toLowerCase().includes(search.toLowerCase()))
                             .map(repo => <RepoCard 
-                                            key={repo.id} 
+                                            key={repo.name} 
                                             name={repo.name} 
                                             description={repo.description} 
                                             following={!addNew} 
