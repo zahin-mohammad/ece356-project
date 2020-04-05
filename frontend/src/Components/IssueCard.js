@@ -15,7 +15,11 @@ export default function IssueCard(props) {
                     <Card.Title>{props.title}</Card.Title>
                     <Card.Text>{props.repository_name}</Card.Text>
                     <Card.Text> {props.date} - {props.user}</Card.Text>
-                    <Button variant="outline-primary" style={{position: "absolute", right: "0.5rem", bottom: "0.5rem"}}>Open</Button>
+                    <Button 
+                        variant="outline-primary" 
+                        style={{position: "absolute", right: "0.5rem", bottom: "0.5rem"}}
+                        onClick={() => props.chooseIssueCallback(props.issueObj)}
+                    >Open</Button>
                 </Card.Body>
             </Card>
         </div>
