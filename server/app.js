@@ -224,15 +224,46 @@ app.post('/create/repository', function (req, res) {
 });
 
 app.post('/create/issue', function (req, res) {
-    var user_name = req.body.follower;
+    var post_id = Math.round(Math.random() * 10000000)
+    var user_name = req.body.user_name;
     var repository_name = req.body.repository_name;
-    var issue_body = req.body.repository_name;
-    if (!issue_body) {
-        issue_body = ""
-    }
-    // TODO:
+    var title = req.body.title;
+    var post_body = req.body.post_body;
 
-    res.send("Not implemented")
+    if (title == "") {
+        res.status(400)
+        res.send(`Invalid title ${title}`)
+        return
+    }
+    if (!post_body) {
+        post_body = ""
+    }
+    async.series([
+        function (callback) {
+            query = `
+            INSERT INTO Post (id, repository_name, title, username, created_at, updated_at)
+            VALUES (${post_id}, ${repository_name}, '${title}', '${user_name}', ${created_at}, ${updated_at})
+            `
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err
+                callback()
+            })
+        },
+        function (callback) { // TODO: Make this a function, being called twice?
+            var id = Math.round(Math.random() * 10000000)
+            query = `
+                INSERT INTO Comment (id, post_id, username, body, created_at, updated_at)
+                VALUES (${id}, ${post_id}, '${user_name}', '${post_body}', ${created_at}, ${updated_at})
+                `
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err
+                res.status(200)
+                res.send(`${user_name} created an issue`)
+                callback()
+            })
+        },
+    ])
 });
 
 app.post('/create/comment', function (req, res) {
@@ -253,7 +284,6 @@ app.post('/create/comment', function (req, res) {
         res.status(200)
         res.send(`${user_name} created a comment`)
     })
-
 });
 
 app.post('/create/reaction', (req, res) => (
