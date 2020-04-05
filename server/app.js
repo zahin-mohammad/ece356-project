@@ -86,9 +86,17 @@ app.get('/comments', function (req, res) {
 
 });
 
-app.get('/comments/reactions', (req, res) => (
-    res.send("reactions")
-))
+app.get('/comments/reactions', function (req, res) {
+    var comment_id = req.query.comment_id;
+
+    query = `SELECT * FROM Reaction WHERE comment_id='${comment_id}'`
+
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(rows)
+    })
+})
 
 app.get('/users', function (req, res) {
     user_name = req.query.user_name
