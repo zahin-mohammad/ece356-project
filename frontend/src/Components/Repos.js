@@ -90,6 +90,7 @@ export default function Repos() {
         />
         )
     const issuesToDisplay = issues
+        .filter(issue => issue.title.toLowerCase().includes(search.toLowerCase()))
         .map(issue => <IssueCard
             key={issue.id}
             title={issue.title}
@@ -102,15 +103,13 @@ export default function Repos() {
 
     return (issuesRepo != "" ?
         (<div>
-            {
-                // TODO: Filter Posts by Title
-            }
             <InputGroup className="mb-3" style={{ width: "40rem", margin: "1rem" }}>
                 <Button
                     variant="outline-dark"
                     style={{ marginRight: "0.5rem" }}
                     onClick={(event) => {
                         setIssuesRepo(false)
+                        setSearch("")
                     }}
                 >← Back</Button>
                 <InputGroup.Prepend>
@@ -118,7 +117,7 @@ export default function Repos() {
                 </InputGroup.Prepend>
                 <FormControl
                     value={search}
-                    // onChange={(event) => setSearch(event.target.value)}
+                    onChange={(event) => setSearch(event.target.value)}
                     placeholder="Search"
                     aria-label="search"
                     aria-describedby="basic-addon1"
