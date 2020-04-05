@@ -183,6 +183,7 @@ app.get('/repository/posts', function (req, res) {
         FROM Post
         INNER JOIN Repository
         ON Post.repository_name = Repository.name
+        WHERE Repository.repository_name = '${repository_name}'
         `;
 
         connection.query(query, function (err, rows, fields) {

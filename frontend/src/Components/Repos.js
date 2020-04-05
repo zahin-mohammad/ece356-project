@@ -7,11 +7,6 @@ import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import IssueCard from "./IssueCard.js"
 
-
-
-
-
-
 export default function Repos() {
     const { state } = useContext(AuthContext)
     const [search, setSearch] = useState("")
@@ -156,7 +151,7 @@ export default function Repos() {
                             setAddNew(!addNew)
                             setSearch("")
                         }}
-                    >{addNew ? "← Back" : "Follow New"}</Button>
+                    >{addNew ? "    " : "Follow New"}</Button>
                     <Button
                         variant="outline-dark"
                         style={{ marginLeft: "1rem" }}
