@@ -3,6 +3,8 @@ const mysql = require('mysql')
 const cors = require('cors')
 const bodyParser = require('body-parser');
 var async = require("async");
+var SqlString = require('sqlstring');
+
 
 
 
@@ -311,14 +313,12 @@ app.post('/create/post', function (req, res) {
         res.send(`Invalid title ${title}`)
         return
     }
-    if (!post_body) {
-        post_body = ""
-    }
+
     async.series([
         function (callback) {
             query = `
             INSERT INTO Post (id, repository_name, title, username, created_at, updated_at)
-            VALUES (${post_id}, '${repository_name}', '${title}', '${user_name}', ${created_at}, ${updated_at})
+            VALUES (${post_id}, '${repository_name}', ${SqlString.escape(title)}, '${user_name}', ${created_at}, ${updated_at})
             `
             connection.query(query, function (err, rows, fields) {
                 if (err) throw err
@@ -329,7 +329,7 @@ app.post('/create/post', function (req, res) {
             var id = Math.round(Math.random() * 10000000)
             query = `
                 INSERT INTO Comment (id, post_id, username, body, created_at, updated_at)
-                VALUES (${id}, ${post_id}, '${user_name}', '${post_body}', ${created_at}, ${updated_at})
+                VALUES (${id}, ${post_id}, '${user_name}', ${SqlString.escape(post_body)}, ${created_at}, ${updated_at})
                 `
 
             connection.query(query, function (err, rows, fields) {
