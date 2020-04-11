@@ -1,0 +1,24 @@
+{
+  "name": "ece356-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "client": "cd frontend && npm i && npm start",
+    "server": "cd server && npm i && npm start",
+    "database": "cd server && docker-compose up -d",
+    "dev": "concurrently \"npm run database\" \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zahin-mohammad/ece356-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zahin-mohammad/ece356-project/issues"
+  },
+  "homepage": "https://github.com/zahin-mohammad/ece356-project#readme",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}

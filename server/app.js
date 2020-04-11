@@ -6,6 +6,9 @@ var async = require("async");
 
 
 
+//////////////////////////////////////////////////////////////////////
+// Database Setup
+//////////////////////////////////////////////////////////////////////
 
 var connection = mysql.createConnection({
     host: 'localhost',
@@ -15,24 +18,61 @@ var connection = mysql.createConnection({
     database: 'github'
 })
 
-connection.connect()
+function connect() {
+    return new Promise((resolve, reject) => {
+        connection = mysql.createConnection({
+            host: 'localhost',
+            port: '3308',
+            user: 'express',
+            password: 'password',
+            database: 'github'
+        })
 
-// Test if database works
-connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
-    if (err) throw err
-    if (rows[0].solution == 2) {
-        console.log("MYSQL connection works")
-    } else {
-        console.log("MYSQL connection doesn't work")
-    }
-})
+        connection.connect(function (err) {
+            if (err) {
+                console.error('error connecting: ' + err.stack);
+                reject(err);
+                return;
+            }
+            resolve('connected as id ' + connection.threadId);
+        })
+    });
+}
 
+function establishConnection() {
+    var a = connect();
+    a.then(a => console.log("Database connection: success"))
+        .catch(err => {
+            console.error(err);
+            console.error("Database connection: retrying");
+            setTimeout(establishConnection, 2000);
+        });
+};
+
+establishConnection();
+
+//////////////////////////////////////////////////////////////////////
+// Express Setup
+//////////////////////////////////////////////////////////////////////
 const app = express()
+const port = 3001
+
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-const port = 3001
+app.on('uncaughtException', function (req, res, route, err) {
+    log.info('******* Begin Error *******\n%s\n*******\n%s\n******* End Error *******', route, err.stack);
+    if (!res.headersSent) {
+        return res.send(500, { ok: false });
+    }
+    res.write('\n');
+    res.end();
+});
+
+//////////////////////////////////////////////////////////////////////
+// Endpoints
+//////////////////////////////////////////////////////////////////////
 
 // Test
 app.get('/', function (req, res) {
@@ -209,7 +249,7 @@ app.get('/following/repository', function (req, res) {
     })
 });
 
-// Post
+// POST Requests
 
 app.post('/create/repository', function (req, res) {
 
@@ -370,7 +410,7 @@ app.post('/follow/repo', function (req, res) {
     })
 });
 
-// Delete 
+// DELETE Requests
 
 app.delete('/unfollow/user', function (req, res) {
     // stored procedure to avoid unfollowing someone we don't followed?
@@ -439,13 +479,6 @@ app.post('/login', function (req, res) {
 
 });
 
-app.on('uncaughtException', function (req, res, route, err) {
-    log.info('******* Begin Error *******\n%s\n*******\n%s\n******* End Error *******', route, err.stack);
-    if (!res.headersSent) {
-        return res.send(500, { ok: false });
-    }
-    res.write('\n');
-    res.end();
-});
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+
+app.listen(port, () => console.log(`Social Network Server listening at http://localhost:${port}`))
