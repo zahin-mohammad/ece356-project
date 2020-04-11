@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react"
 import Modal from "react-bootstrap/Modal";
 import ReactMarkdown from "react-markdown";
-import Form from "react-bootstrap/Form";
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
 import { Button, Container, Row, Col } from 'react-bootstrap';
@@ -25,16 +24,16 @@ export default function IssueView(props) {
                 "Content-Type": "application/json"
             },
         })
-            .then(res => {
-                if (res.ok) {
-                    return res.json()
-                } else {
-                    throw res
-                }
-            })
-            .then(resJson => {
-                setComments(resJson)
-            })
+        .then(res => {
+            if (res.ok) {
+                return res.json()
+            } else {
+                throw res
+            }
+        })
+        .then(resJson => {
+            setComments(resJson)
+        })
 
         fetch(`http://localhost:3001/post/replies?post_id=${props.id}`, {
             method: "GET",
@@ -42,18 +41,18 @@ export default function IssueView(props) {
                 "Content-Type": "application/json"
             },
         })
-            .then(res => {
-                if (res.ok) {
-                    return res.json()
-                } else {
-                    throw res
-                }
-            })
-            .then(resJson => {
-                var replyMap = {}
-                resJson.forEach(element => replyMap[element.reply_id] = element)
-                setReplies(replyMap)
-            })
+        .then(res => {
+            if (res.ok) {
+                return res.json()
+            } else {
+                throw res
+            }
+        })
+        .then(resJson => {
+            var replyMap = {}
+            resJson.forEach(element => replyMap[element.reply_id] = element)
+            setReplies(replyMap)
+        })
 
     }, [isSubmitting])
 
@@ -70,28 +69,24 @@ export default function IssueView(props) {
                 replying_to: replyingTo
             }),
         })
-            .then(res => {
-                if (res.ok) {
-                    return res.text()
-                } else {
-                    throw res
-                }
-            })
-            .then(resJson => {
-                setIsSubmitting(false)
-            })
+        .then(res => {
+            if (res.ok) {
+                return res.text()
+            } else {
+                throw res
+            }
+        })
+        .then(resJson => {
+            setIsSubmitting(false)
+        })
     };
 
     const renderComment = (level, body, commentId) => {
+        var renderReplies = Object
+                            .values(replies)
+                            .filter(reply => reply.comment_id == commentId)
+                            .map(reply => renderComment(level + 1, reply.body, reply.reply_id))
 
-        var myReplies = []
-        Object.keys(replies).forEach(function (replyId) {
-            if (replies[replyId].comment_id == commentId) {
-                myReplies.push(replies[replyId]);
-            }
-        });
-        var renderReplies = myReplies.map((reply) => renderComment(level + 1, reply.body, reply.reply_id))
-        console.log(myReplies)
         return (
             <Container
                 key={commentId}>
@@ -121,16 +116,9 @@ export default function IssueView(props) {
         )
     }
 
-    const commentsToShow = comments.filter(comment => {
-        if (comment.id in replies) {
-            return false;
-        }
-        return true;
-    }).map(comment => {
-        return (
-            renderComment(1, comment.body, comment.id)
-        )
-    });
+    const commentsToShow = comments
+                            .filter(comment => !(comment.id in replies) )
+                            .map(comment => renderComment(1, comment.body, comment.id))
 
     return (
         <Modal
@@ -153,13 +141,11 @@ export default function IssueView(props) {
                     : <Button
                         variant="outline-dark"
                         style={{ marginRight: "0.5rem" }}
-                        onClick={(event) => {
-                            setReplyingTo("")
-                        }}
+                        onClick={() => setReplyingTo("")}
                     >← Back</Button>}
                 <FormControl
                     value={postBody}
-                    onChange={(event) => setPostBody(event.target.value)}
+                    onChange={event => setPostBody(event.target.value)}
                     placeholder={replyingTo == "" ? "Comment" : "Reply"}
                     aria-label="text"
                     aria-describedby="basic-addon1"
