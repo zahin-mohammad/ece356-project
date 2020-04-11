@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react"
 import IssueCard from "./IssueCard.js"
-import IssueView from "./IssueView.js"
 import { AuthContext } from "../App.js"
 
 
@@ -25,7 +24,7 @@ export default function Feed() {
             .then(resJson => {
                 setIssues(resJson)
             })
-    }, [])
+    })
 
     // Notification logic will need to be more ... logical :) Should do it in SQL!
     const issuesToDisplay = issues

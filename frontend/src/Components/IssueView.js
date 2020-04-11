@@ -54,7 +54,7 @@ export default function IssueView(props) {
             setReplies(replyMap)
         })
 
-    }, [isSubmitting])
+    }, [isSubmitting, props.id])
 
     const submitPost = () => {
         fetch(`http://localhost:3001/create/comment`, {
@@ -81,22 +81,26 @@ export default function IssueView(props) {
         })
     };
 
-    const renderComment = (level, body, commentId) => {
+    const renderComment = (level, username, body, commentId) => {
         var renderReplies = Object
                             .values(replies)
                             .filter(reply => reply.comment_id == commentId)
-                            .map(reply => renderComment(level + 1, reply.body, reply.reply_id))
+                            .map(reply => renderComment(level + 1, reply.username, reply.body, reply.reply_id))
+
 
         return (
             <Container
+                style={{ margin: 0, padding: 0 }}
                 key={commentId}>
                 <Row
-                    style={{ marginLeft: `${0.5 * level}rem` }}
+                    style={{ marginLeft: `${0.5 * level}rem`, borderLeft: '3px solid red' }}
                     className="align-items-center"
                 >
                     <Col xs={10}>
+                        <span style={{ backgroundColor: "#FDD7E4", backgroundImage: "linear-gradient(to right, #ffe359 0 %, #fff2ac 100 %)" }}
+                        >{username}</span>
                         <ReactMarkdown
-                            style={{ marginRight: "0.5rem" }}
+                            // style={{ marginRight: "0.5rem" }}
                             source={body}
                             escapeHtml={false}
                         />
@@ -104,7 +108,7 @@ export default function IssueView(props) {
                     <Col>
                         <span
                             style={{ right: "0.5rem", bottom: "0.5rem", cursor: "pointer" }}
-                            role="image"
+                            role="img" aria-label="curved arrow pointing left"
                             onClick={(event) => { setReplyingTo(commentId) }}
                         >
                             ↩️
@@ -118,7 +122,7 @@ export default function IssueView(props) {
 
     const commentsToShow = comments
                             .filter(comment => !(comment.id in replies) )
-                            .map(comment => renderComment(1, comment.body, comment.id))
+                            .map(comment => renderComment(0, comment.username, comment.body, comment.id))
 
     return (
         <Modal
@@ -136,7 +140,7 @@ export default function IssueView(props) {
             </Modal.Body>
 
             <InputGroup className="mb-3" style={{ width: "40rem", margin: "1rem" }}>
-                {replyingTo == "" ?
+                {replyingTo === "" ?
                     null
                     : <Button
                         variant="outline-dark"
@@ -159,7 +163,7 @@ export default function IssueView(props) {
                         setReplyingTo("")
                         submitPost()
                     }}
-                >➕ Post</Button>
+                ><span role="img" aria-label="plus sign">➕</span> Post</Button>
             </InputGroup>
         </Modal>
     )
