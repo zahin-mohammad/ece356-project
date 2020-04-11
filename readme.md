@@ -5,4 +5,4 @@
 
 # Running the Application
 - Follow the `Getting Started` steps in `./server`
-- In the root folder run `npm run dev` (this will both start docker, server and web application)
+- In the root folder run `npm install` and then `npm run dev` (this will both start docker, server and web application)
