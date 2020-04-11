@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
-import Modal from "react-bootstrap/Modal"
+import Modal from "react-bootstrap/Modal";
+import ReactMarkdown from "react-markdown";
 
 export default function IssueView(props) {
     const [comments, setComments] = useState([])
@@ -11,23 +12,30 @@ export default function IssueView(props) {
                 "Content-Type": "application/json"
             },
         })
-        .then(res => {
-            if (res.ok) {
-                return res.json()
-            } else {
-                throw res
-            }
-        })
-        .then(resJson => {
-            setComments(resJson)
-        })
+            .then(res => {
+                if (res.ok) {
+                    return res.json()
+                } else {
+                    throw res
+                }
+            })
+            .then(resJson => {
+                setComments(resJson)
+            })
     })
 
-    const commentsToShow = comments.map(comment => <p>{comment.body}</p>)
+    const commentsToShow = comments.map(comment => {
+        console.log(comment.Body)
+        console.log(comment)
+        return <ReactMarkdown
+            source={comment.body}
+            escapeHtml={false}
+        />
+    });
 
     return (
-        <Modal 
-            show={props.showIssueView} 
+        <Modal
+            show={props.showIssueView}
             onHide={() => props.setShowIssue(false)}
             size="lg"
         >

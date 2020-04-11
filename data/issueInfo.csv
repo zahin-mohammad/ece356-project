@@ -1,84 +1,86 @@
 id;repository_name;title;username;created_at;updated_at
-573408419;zahin-mohammad/dev-env-setup;Add flutter;zahin-mohammad;1583009138;1583009138
-549249843;zahin-mohammad/dev-env-setup;Incorrect zsh paths in ~/.zshrc;zahin-mohammad;1578959548;1578959574
-545331007;zahin-mohammad/dev-env-setup;Add xclip;zahin-mohammad;1578170967;1578170967
-464977589;atulbipin/dev-env-setup;Add operating system specific flags;zahin-mohammad;1562522669;1562522669
-464977554;atulbipin/dev-env-setup;Add npm;zahin-mohammad;1562522649;1562522649
-510116274;atulbipin/spotify-slackbot;Bump urllib3 from 1.23 to 1.24.2;dependabot[bot];1571676788;1571676789
-581340665;AttwellBrian/nico;Bump acorn from 5.7.3 to 5.7.4 in /frontend;dependabot[bot];1584214355;1584214356
-11843860;AttwellBrian/face-access-control;Slow operatings on the UI thread;AttwellBrian;1362861825;1362861827
-383727930;deedy/gradcafe_data;Any plan on updates?;li-boxuan;1542959386;1542959386
-517043197;deedy/Deedy-Resume;How to specify the vertical limit in the document.?;anil-goudar;1572860880;1572860880
-481923312;deedy/Deedy-Resume;Update deedy_resume.xtx;tanyachawla412;1566073628;1566073628
-478103608;deedy/Deedy-Resume;removing hanging indent in tightitemize;margarineHound;1565206562;1565206562
-448359411;deedy/Deedy-Resume;fixed hacky space;hengdashi;1558733291;1564500122
-412694458;deedy/Deedy-Resume;Fix Publications section overlap;voidstarstar;1550709335;1550709335
-409262011;deedy/Deedy-Resume;Serbian accented c;utkuturk;1549972576;1555174481
-350898657;deedy/Deedy-Resume;textbf not working in conjunction with this;yadavabhinav16;1534354650;1540838043
-318642291;deedy/Deedy-Resume;Modifying Colors;prateekiiest;1524926755;1527195519
-307608049;deedy/Deedy-Resume;Solved the overflow issue, albeit temporarily.;DeeprajPandey;1521718822;1521718989
-298012184;deedy/Deedy-Resume;Suggestion on design;srdg;1518881029;1518881029
-291973577;deedy/Deedy-Resume;Publications: overlap between section name and body;niranjantdesai;1516987547;1550709802
-277975364;deedy/Deedy-Resume;Added Cover Letter Templates;anthonyattard;1512008341;1512008341
-273544317;deedy/Deedy-Resume;Extending to two Pages;naveenT1010;1510600425;1522068507
-265499138;deedy/Deedy-Resume;adapting to 2 pages? ;csaund;1507994894;1545691926
-261485044;deedy/Deedy-Resume;Cover Letters;anthonyattard;1506639220;1518661793
-254465607;deedy/Deedy-Resume;Remove more "//"s;wrmacrae;1504212998;1504212998
-254465081;deedy/Deedy-Resume;Change links to not have "://";wrmacrae;1504212879;1504212879
-208788231;deedy/Deedy-Resume;Column 2 Causes Overflow When Aligned at Same Depth as Column 1;joshjacobson;1487569123;1487569123
-190428237;deedy/Deedy-Resume;Wrong accents with scshape;kfeine;1479505223;1508523798
-183199388;deedy/Deedy-Resume;I am not able to install or use the fonts on ubuntu 16.04 can anyone assist?;Data-drone;1476523529;1476523529
-175121549;deedy/Deedy-Resume;update fonts;jck;1473105017;1473143416
-145788671;deedy/Deedy-Resume;Update Overleaf;alanyee;1459800099;1459800099
-142323881;deedy/Deedy-Resume;To fulfill the requirements in Chinese jobsearching;kirkang;1458560666;1458560666
-127175342;deedy/Deedy-Resume;Suggestion on typography;isometric;1453105203;1479081239
-123607701;deedy/Deedy-Resume;Everyone loves Makefiles!;nickyr;1450851263;1450851470
-123607114;deedy/Deedy-Resume;Fix alignment of employer and position;nickyr;1450850711;1487568984
-92031907;deedy/Deedy-Resume;\sectionspace e \begin{tightitemize} undefined control sequence;SquaredPi;1435655287;1495940774
-62188066;deedy/Deedy-Resume;No way to italicize;rrshaban;1426534802;1447765627
-57681975;deedy/Deedy-Resume;Large Institution names;Void2258;1423891489;1426913614
-57410171;deedy/Deedy-Resume;Merge pull request #1 from deedydas/master;EmmanueleSalvati;1423709272;1423709272
-357461207;brian-norman/TrumpBot;Host and Auto-Run This;brian-norman;1536197030;1536197030
-355811190;brian-norman/CubicPolynomial;Change barrier colour each level;brian-norman;1535680080;1535994770
-585591514;zahin-mohammad/ece356-project;Title;brian-norman;1584827209;1584828545
-585583679;zahin-mohammad/ece356-project;Test Issue;zahin-mohammad;1584824397;1585023151
-451217561;brian-norman/sPam-Beesly;New PRs should notify the reviewers on discord;brian-norman;1559498415;1559498415
-356879856;brian-norman/sPam-Beesly;Report's new commits made every week in Cobresun;brian-norman;1536077319;1554088072
-355453005;brian-norman/sPam-Beesly;Add ability to google and pull up first search result;brian-norman;1535613056;1535613570
-355452779;brian-norman/sPam-Beesly;Ability to add issues to a repo;brian-norman;1535613006;1535613570
-536209332;SunnyNagam/StockMarketSimulator;Add and plot change data (percentage change from previous day);SunnyNagam;1576052051;1576052051
-383953069;SunnyNagam/ENSF480Project1;TODO: connect registered buyer updateData to DB with handler (assign observers);keenangaudio;1543027545;1543027545
-383948347;SunnyNagam/ENSF480Project1;TODO: create catolog and open it at startup - connect checkDocument function in DB to search and display on gui;keenangaudio;1543022138;1543022138
-383948004;SunnyNagam/ENSF480Project1;Creating a catlog object that is an arraylist of Documents following abstract factory pattern;louisj381;1543021796;1543021796
-592977009;3b1b/manim;Can I find the slope of a function and plot it?;lewis-cooper;1585869816;1585869816
-591643321;3b1b/manim;"Type Error: run() missing 1 required positional argument: 'self' "Fix a bug in extract_scene.py;chenxijun;1585719943;1585895530
-591325292;3b1b/manim;Better pycairo installation instructions in docs;applemonkey496;1585679292;1585690103
-590532375;3b1b/manim;Generate some missing ressources for generate all scenes in from_3b1b/old/spirals;badele;1585596199;1585596199
-590505279;3b1b/manim;Can I change the axis font on graphs?;lewis-cooper;1585593463;1585593463
-590498714;3b1b/manim;Changed -1 to -1.0 for broader GPU suppot.;kolibril13;1585592813;1585706686
-590497153;3b1b/manim;doc;azarzadavila;1585592666;1585592666
-590320691;3b1b/manim;Unexpected error when plotting data points;lewis-cooper;1585577246;1585577283
-590102894;3b1b/manim;LinearTransformationScene not working;Micoael;1585557770;1585706050
-589883404;3b1b/manim;add death state to SIR model;timalive;1585515300;1585517129
-589661219;3b1b/manim;Fixed execution of counting.py;Lalourche;1585430123;1585430123
-589568867;3b1b/manim;error that it is an `int` not `float`;edasubert;1585398815;1585398815
-589400887;3b1b/manim;Using braces;mvfs314;1585341539;1585400402
-589007446;3b1b/manim;How to add a new line when using TextMobject like arrays;nosnakeob;1585302056;1585304979
-588937811;3b1b/manim;Update cairo versions in README.md;Ranoiaetep;1585293672;1585293811
-588714915;3b1b/manim;When trying to run the example_scenes.py from the console nothing happens;MatejVe;1585255317;1585256023
-588606969;3b1b/manim;New Manim version that supports GPU;qo4on;1585244760;1585593681
-588343035;3b1b/manim;Added virtual machine to install manim;girishgargcool;1585221453;1585221453
-587571726;3b1b/manim;Unable to run manim from Spyder;Enempie;1585129861;1585154891
-585766275;3b1b/manim;Help to install manim;Steff-san;1584896980;1585257497
-584628633;3b1b/manim;Trouble rendering an SVG Image correctly ;luketimmerman314;1584644123;1585291678
-584556456;3b1b/manim;Unable to run scenes with pi creatures;Haffi112;1584636834;1584639752
-583833153;3b1b/manim;Reconsidering TEX_USE_CTEX / using XeLaTeX;hanwenzhu;1584547113;1584585223
-583286873;3b1b/manim;Trouble using SVG images in the newest form of manim;luketimmerman314;1584477819;1584637040
-583202077;3b1b/manim;Set the axis tick label numbers to be the same color as the axis.;rpadams;1584468538;1584468538
-581833854;3b1b/manim;Update graph_scene.py;daniel-lara-ec;1584307869;1584307869
-581411761;3b1b/manim;manim numpy error;emanueldias242;1584227402;1584325665
-580929459;3b1b/manim;Updated Graph Scale factor at 10:29;iGeek098;1584142091;1584142091
-580052922;3b1b/manim;Trouble Downloading Requirements File;luketimmerman314;1584029801;1584208615
-579660639;3b1b/manim;Better discontinuity detecting and implicit function graphing;ddxtanx;1583982162;1583982181
-318514926;Jspsun/MinimalReactBoilerPlate;Webpack;Jli0423;1524855493;1524855493
-198259639;Jspsun/Athena2.0;Error when handling non-words using Google API;Jspsun;1483256595;1483256595
+510116274;atulbipin/spotify-slackbot;Bump urllib3 from 1.23 to 1.24.2;dependabot[bot];1571676788000;1571676789000
+464977589;atulbipin/dev-env-setup;Add operating system specific flags;zahin-mohammad;1562522669000;1562522669000
+464977554;atulbipin/dev-env-setup;Add npm;zahin-mohammad;1562522649000;1562522649000
+596177318;zahin-mohammad/dev-env-setup;Add git setup;zahin-mohammad;1586296819000;1586296819000
+596168866;zahin-mohammad/dev-env-setup;Add Docker and Docker Compose;zahin-mohammad;1586295661000;1586295661000
+573408419;zahin-mohammad/dev-env-setup;Add flutter;zahin-mohammad;1583009138000;1583009138000
+549249843;zahin-mohammad/dev-env-setup;Incorrect zsh paths in ~/.zshrc;zahin-mohammad;1578959548000;1578959574000
+545331007;zahin-mohammad/dev-env-setup;Add xclip;zahin-mohammad;1578170967000;1578170967000
+11843860;AttwellBrian/face-access-control;Slow operatings on the UI thread;AttwellBrian;1362861825000;1362861827000
+581340665;AttwellBrian/nico;Bump acorn from 5.7.3 to 5.7.4 in /frontend;dependabot[bot];1584214355000;1584214356000
+383727930;deedy/gradcafe_data;Any plan on updates?;li-boxuan;1542959386000;1542959386000
+517043197;deedy/Deedy-Resume;How to specify the vertical limit in the document.?;anil-goudar;1572860880000;1572860880000
+481923312;deedy/Deedy-Resume;Update deedy_resume.xtx;tanyachawla412;1566073628000;1566073628000
+478103608;deedy/Deedy-Resume;removing hanging indent in tightitemize;margarineHound;1565206562000;1565206562000
+448359411;deedy/Deedy-Resume;fixed hacky space;hengdashi;1558733291000;1564500122000
+412694458;deedy/Deedy-Resume;Fix Publications section overlap;voidstarstar;1550709335000;1550709335000
+409262011;deedy/Deedy-Resume;Serbian accented c;utkuturk;1549972576000;1555174481000
+350898657;deedy/Deedy-Resume;textbf not working in conjunction with this;yadavabhinav16;1534354650000;1540838043000
+318642291;deedy/Deedy-Resume;Modifying Colors;prateekiiest;1524926755000;1527195519000
+307608049;deedy/Deedy-Resume;Solved the overflow issue, albeit temporarily.;DeeprajPandey;1521718822000;1521718989000
+298012184;deedy/Deedy-Resume;Suggestion on design;srdg;1518881029000;1518881029000
+291973577;deedy/Deedy-Resume;Publications: overlap between section name and body;niranjantdesai;1516987547000;1550709802000
+277975364;deedy/Deedy-Resume;Added Cover Letter Templates;anthonyattard;1512008341000;1512008341000
+273544317;deedy/Deedy-Resume;Extending to two Pages;naveenT1010;1510600425000;1522068507000
+265499138;deedy/Deedy-Resume;adapting to 2 pages? ;csaund;1507994894000;1545691926000
+261485044;deedy/Deedy-Resume;Cover Letters;anthonyattard;1506639220000;1518661793000
+254465607;deedy/Deedy-Resume;Remove more "//"s;wrmacrae;1504212998000;1504212998000
+254465081;deedy/Deedy-Resume;Change links to not have "://";wrmacrae;1504212879000;1504212879000
+208788231;deedy/Deedy-Resume;Column 2 Causes Overflow When Aligned at Same Depth as Column 1;joshjacobson;1487569123000;1487569123000
+190428237;deedy/Deedy-Resume;Wrong accents with scshape;kfeine;1479505223000;1508523798000
+183199388;deedy/Deedy-Resume;I am not able to install or use the fonts on ubuntu 16.04 can anyone assist?;Data-drone;1476523529000;1476523529000
+175121549;deedy/Deedy-Resume;update fonts;jck;1473105017000;1473143416000
+145788671;deedy/Deedy-Resume;Update Overleaf;alanyee;1459800099000;1459800099000
+142323881;deedy/Deedy-Resume;To fulfill the requirements in Chinese jobsearching;kirkang;1458560666000;1458560666000
+127175342;deedy/Deedy-Resume;Suggestion on typography;isometric;1453105203000;1479081239000
+123607701;deedy/Deedy-Resume;Everyone loves Makefiles!;nickyr;1450851263000;1450851470000
+123607114;deedy/Deedy-Resume;Fix alignment of employer and position;nickyr;1450850711000;1487568984000
+92031907;deedy/Deedy-Resume;\sectionspace e \begin{tightitemize} undefined control sequence;SquaredPi;1435655287000;1495940774000
+62188066;deedy/Deedy-Resume;No way to italicize;rrshaban;1426534802000;1447765627000
+57681975;deedy/Deedy-Resume;Large Institution names;Void2258;1423891489000;1426913614000
+57410171;deedy/Deedy-Resume;Merge pull request #1 from deedydas/master;EmmanueleSalvati;1423709272000;1423709272000
+355811190;brian-norman/CubicPolynomial;Change barrier colour each level;brian-norman;1535680080000;1535994770000
+585591514;zahin-mohammad/ece356-project;Title;brian-norman;1584827209000;1584828545000
+585583679;zahin-mohammad/ece356-project;Test Issue;zahin-mohammad;1584824397000;1585023151000
+357461207;brian-norman/TrumpBot;Host and Auto-Run This;brian-norman;1536197030000;1536197030000
+451217561;brian-norman/sPam-Beesly;New PRs should notify the reviewers on discord;brian-norman;1559498415000;1559498415000
+356879856;brian-norman/sPam-Beesly;Report's new commits made every week in Cobresun;brian-norman;1536077319000;1554088072000
+355453005;brian-norman/sPam-Beesly;Add ability to google and pull up first search result;brian-norman;1535613056000;1535613570000
+355452779;brian-norman/sPam-Beesly;Ability to add issues to a repo;brian-norman;1535613006000;1535613570000
+383953069;SunnyNagam/ENSF480Project1;TODO: connect registered buyer updateData to DB with handler (assign observers);keenangaudio;1543027545000;1543027545000
+383948347;SunnyNagam/ENSF480Project1;TODO: create catolog and open it at startup - connect checkDocument function in DB to search and display on gui;keenangaudio;1543022138000;1543022138000
+383948004;SunnyNagam/ENSF480Project1;Creating a catlog object that is an arraylist of Documents following abstract factory pattern;louisj381;1543021796000;1543021796000
+536209332;SunnyNagam/StockMarketSimulator;Add and plot change data (percentage change from previous day);SunnyNagam;1576052051000;1576052051000
+598240001;3b1b/manim;Exception: Latex error converting to dvi. See log output above or the log file: ./media\Tex\4475e3a270ecfb06.log;nakulkhambhati;1586601615000;1586601955000
+597818092;3b1b/manim;Getting Error While running pip3 install -r requirment.txt ;Mathoholic;1586514250000;1586514250000
+596764319;3b1b/manim;Exception: Latex error converting to dvi.;xvetisky;1586369563000;1586391992000
+596128505;3b1b/manim;No file matching in image directory;Yoannson;1586290894000;1586505836000
+595963657;3b1b/manim;Move the slope along a function;emailtowa;1586273973000;1586570728000
+595268372;3b1b/manim;How to fix:"ImportError: DLL load failed while importing _fblas: The specified module could not be found";ashish453;1586191800000;1586191800000
+595237885;3b1b/manim;Why can't i render old 3b1b files ;yutharsan;1586189026000;1586189177000
+595082889;3b1b/manim;TextMobject/TexMobject does not allow properly override of template_tex_file_body;GregoryMorse;1586176871000;1586186957000
+594781736;3b1b/manim;Update sir.py;shagmwp;1586144763000;1586144763000
+594344570;3b1b/manim;How to Fix ERROR: Could not find a version that satisfies the requirement opencv-python==3.4.2.17 (from manimlib) (from versions: 3.4.8.29, 3.4.9.31, 3.4.9.33, 4.1.2.30, 4.2.0.32, 4.2.0.34) ERROR: No matching distribution found for opencv-python==3.4.2.17 (from manimlib);yutharsan;1586077811000;1586079820000
+592977009;3b1b/manim;Can I find the slope of a function and plot it?;lewis-cooper;1585869816000;1585869816000
+591643321;3b1b/manim;"Type Error: run() missing 1 required positional argument: 'self' "Fix a bug in extract_scene.py;chenxijun;1585719943000;1585895530000
+591325292;3b1b/manim;Better pycairo installation instructions in docs;applemonkey496;1585679292000;1585690103000
+590532375;3b1b/manim;Generate some missing ressources for generate all scenes in from_3b1b/old/spirals;badele;1585596199000;1585596199000
+590505279;3b1b/manim;Can I change the axis font on graphs?;lewis-cooper;1585593463000;1585593463000
+590498714;3b1b/manim;Changed -1 to -1.0 for broader GPU suppot.;kolibril13;1585592813000;1585706686000
+590497153;3b1b/manim;doc;azarzadavila;1585592666000;1585592666000
+590320691;3b1b/manim;Unexpected error when plotting data points;lewis-cooper;1585577246000;1585577283000
+590102894;3b1b/manim;LinearTransformationScene not working;Micoael;1585557770000;1585706050000
+589883404;3b1b/manim;add death state to SIR model;timalive;1585515300000;1585517129000
+589661219;3b1b/manim;Fixed execution of counting.py;Lalourche;1585430123000;1585430123000
+589568867;3b1b/manim;error that it is an `int` not `float`;edasubert;1585398815000;1585398815000
+589400887;3b1b/manim;Using braces;mvfs314;1585341539000;1585400402000
+589007446;3b1b/manim;How to add a new line when using TextMobject like arrays;nosnakeob;1585302056000;1585304979000
+588937811;3b1b/manim;Update cairo versions in README.md;Ranoiaetep;1585293672000;1585293811000
+588714915;3b1b/manim;When trying to run the example_scenes.py from the console nothing happens;MatejVe;1585255317000;1585256023000
+588606969;3b1b/manim;New Manim version that supports GPU;qo4on;1585244760000;1585593681000
+588343035;3b1b/manim;Added virtual machine to install manim;girishgargcool;1585221453000;1585221453000
+587571726;3b1b/manim;Unable to run manim from Spyder;Enempie;1585129861000;1585154891000
+585766275;3b1b/manim;Help to install manim;Steff-san;1584896980000;1585257497000
+198259639;Jspsun/Athena2.0;Error when handling non-words using Google API;Jspsun;1483256595000;1483256595000
+318514926;Jspsun/MinimalReactBoilerPlate;Webpack;Jli0423;1524855493000;1524855493000

@@ -97,7 +97,7 @@ export default function Repos() {
             title={issue.title}
             repository_name={issue.repository_name}
             user={issue.username}
-            date={new Date(issue.created_at * 1000).toISOString().split('T')[0]}
+            date={new Date(issue.created_at).toISOString().split('T')[0]}
             notif={false}
         />
         )

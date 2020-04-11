@@ -304,6 +304,7 @@ app.post('/create/post', function (req, res) {
     var post_body = req.body.post_body;
     var created_at = Date.now()
     var updated_at = Date.now()
+    console.log(created_at);
 
     if (title == "") {
         res.status(400)

@@ -1,20 +1,4 @@
 id;post_id;username;body;created_at;updated_at
-573408419;573408419;zahin-mohammad;;1583009138;1583009138
-549249843;549249843;zahin-mohammad;<p>If the script is run within a folder that is not at <code>~/</code> then the wrong path will be assigned from the following lines 
-```
-    echo "\e[45m Installing zsh-autosuggestions \e[0m"
-    # Install zsh-autosuggestions (not via oh-my-zsh)
-    git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-    echo "source ${(q-)PWD}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" &gtSEMICOLON&gtSEMICOLON ${ZDOTDIR:-$HOME}/.zshrc</p>
-<pre><code>echo "\e[45m Installing zsh-syntax-highlighting \e[0m"
-# Install zsh-syntax-highlighting (not via oh-my-zsh)
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
-echo "source ${(q-)PWD}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" &gtSEMICOLON&gtSEMICOLON ${ZDOTDIR:-$HOME}/.zshrc
-</code></pre>
-<p>```</p>;1578959548;1578959574
-545331007;545331007;zahin-mohammad;;1578170967;1578170967
-464977589;464977589;zahin-mohammad;;1562522669;1562522669
-464977554;464977554;zahin-mohammad;;1562522649;1562522649
 510116274;510116274;dependabot[bot];<p>Bumps <a href="https://github.com/urllib3/urllib3">urllib3</a> from 1.23 to 1.24.2.
 <details>
 <summary>Changelog</summary></p>
@@ -119,7 +103,26 @@ You can trigger Dependabot actions by commenting on this PR:
 
 You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/atulbipin/spotify-slackbot/network/alerts).
 
-</details>;1571676788;1571676789
+</details>;1571676788000;1571676789000
+464977589;464977589;zahin-mohammad;;1562522669000;1562522669000
+464977554;464977554;zahin-mohammad;;1562522649000;1562522649000
+596177318;596177318;zahin-mohammad;;1586296819000;1586296819000
+596168866;596168866;zahin-mohammad;;1586295661000;1586295661000
+573408419;573408419;zahin-mohammad;;1583009138000;1583009138000
+549249843;549249843;zahin-mohammad;<p>If the script is run within a folder that is not at <code>~/</code> then the wrong path will be assigned from the following lines 
+```
+    echo "\e[45m Installing zsh-autosuggestions \e[0m"
+    # Install zsh-autosuggestions (not via oh-my-zsh)
+    git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+    echo "source ${(q-)PWD}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" &gtSEMICOLON&gtSEMICOLON ${ZDOTDIR:-$HOME}/.zshrc</p>
+<pre><code>echo "\e[45m Installing zsh-syntax-highlighting \e[0m"
+# Install zsh-syntax-highlighting (not via oh-my-zsh)
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+echo "source ${(q-)PWD}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" &gtSEMICOLON&gtSEMICOLON ${ZDOTDIR:-$HOME}/.zshrc
+</code></pre>
+<p>```</p>;1578959548000;1578959574000
+545331007;545331007;zahin-mohammad;;1578170967000;1578170967000
+11843860;11843860;AttwellBrian;<p>Clean this up some time. And follow this: Read http://opencv.org/platforms/android/android-best-practices.html before making modifications.</p>;1362861825000;1362861827000
 581340665;581340665;dependabot[bot];<p>Bumps <a href="https://github.com/acornjs/acorn">acorn</a> from 5.7.3 to 5.7.4.
 <details>
 <summary>Commits</summary>
@@ -155,12 +158,11 @@ You can trigger Dependabot actions by commenting on this PR:
 
 You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/AttwellBrian/nico/network/alerts).
 
-</details>;1584214355;1584214356
-11843860;11843860;AttwellBrian;<p>Clean this up some time. And follow this: Read http://opencv.org/platforms/android/android-best-practices.html before making modifications.</p>;1362861825;1362861827
+</details>;1584214355000;1584214356000
 383727930;383727930;li-boxuan;<p>Hi, this dataset seems interesting, but the latest update is 3 years ago.</p>
-<p>Just wondering if there is any plan on updates.</p>;1542959386;1542959386
-517043197;517043197;anil-goudar;<p>How to specify the vertical limit so that the column contents can be modified accordingly.</p>;1572860880;1572860880
-481923312;481923312;tanyachawla412;;1566073628;1566073628
+<p>Just wondering if there is any plan on updates.</p>;1542959386000;1542959386000
+517043197;517043197;anil-goudar;<p>How to specify the vertical limit so that the column contents can be modified accordingly.</p>;1572860880000;1572860880000
+481923312;481923312;tanyachawla412;;1566073628000;1566073628000
 478103608;478103608;margarineHound;<p>I want the bullet points for each position to line up with the position title and employer. I have modified the \tightitemize command as follows: </p>
 <p><code>\newenvironment{tightitemize} % Defines the tightitemize environment which modifies the itemize environment to be more compact
 {\vspace{-\topsep}\begin{itemize} \leftmargin-25pt \itemsep0pt \parskip0pt \parsep0pt \itemindent-20pt \labelsep1pt \parindent0pt
@@ -169,29 +171,29 @@ You can disable automated security fix PRs for this repo from the [Security Aler
 <p>However, it seems that this is causing a hanging indent: ie. I want the second line of each bullet point to line up vertically with the first word in the first line, if not the bullet. </p>
 <p><img alt="Rishabh CV_v3 - Online LaTeX Editor Overleaf - Mozilla Firefox 8_7_2019 01_02_38_LI_Moment" src="https://user-images.githubusercontent.com/7854019/62652271-00385400-b929-11e9-961a-42df41e9a32a.jpg" /></p>
 <p>I have tried playing around with the values, and parameters, to no avail. I would appreciate any and all help. 
-Thank you in advance. </p>;1565206562;1565206562
-448359411;448359411;hengdashi;;1558733291;1564500122
-516467450;448359411;AngelOnFira;<p>Thanks for this :100:</p>;1564500122;1564500122
+Thank you in advance. </p>;1565206562000;1565206562000
+448359411;448359411;hengdashi;;1558733291000;1564500122000
+516467450;448359411;AngelOnFira;<p>Thanks for this :100:</p>;1564500122000;1564500122000
 412694458;412694458;voidstarstar;<p>Fixes the overlap between the section name and body.
-Fixes #42</p>;1550709335;1550709335
+Fixes #42</p>;1550709335000;1550709335000
 409262011;409262011;utkuturk;<p>Hello, thank you for your work. It is awesome! Is there a way to write č this character? I could not did it. When I try writing <code>\v{c}</code> it gives a question mark in the place of the character.</p>
-<p>Thank you for your work.</p>;1549972576;1555174481
+<p>Thank you for your work.</p>;1549972576000;1555174481000
 482838797;409262011;spilehchiha;<p>For an initial ad-hoc solution, you can try including this command to your preamble:
 <code>\usepackage[T1]{fontenc}</code>
-Unfortunately, it changes the default font, but it gets the job done and recognizes the upper <code>v</code> above the <code>c</code> character.</p>;1555174481;1555174481
+Unfortunately, it changes the default font, but it gets the job done and recognizes the upper <code>v</code> above the <code>c</code> character.</p>;1555174481000;1555174481000
 350898657;350898657;yadavabhinav16;<p>I tried using this template in both overleaf and shareLaTeX. 
-\textbf{ sample text } doesn't seem to work. Anything that I might be missing on?</p>;1534354650;1540838043
+\textbf{ sample text } doesn't seem to work. Anything that I might be missing on?</p>;1534354650000;1540838043000
 434028919;350898657;peey;<p>See https://tex.stackexchange.com/a/274901/144456</p>
-<p>The solution is to use <code>\custombold{ ... }</code> instead.</p>;1540838043;1540838043
+<p>The solution is to use <code>\custombold{ ... }</code> instead.</p>;1540838043000;1540838043000
 318642291;318642291;prateekiiest;<p>Is there any way of modification of colors ?
-Since in some areas it kind of gets faded out</p>;1524926755;1527195519
+Since in some areas it kind of gets faded out</p>;1524926755000;1527195519000
 391859522;318642291;tonystonee;<p>I agree with this question, I try to change the color of the \section and get error:
 <code>Package xcolor Error: Undefined color</code>RED'.`</p>
-<p>I can't seem to find a work around, anyone know of one?</p>;1527195519;1527195519
+<p>I can't seem to find a work around, anyone know of one?</p>;1527195519000;1527195519000
 307608049;307608049;DeeprajPandey;<p>Added a height argument to \begin{minipage}. When the contents are more than the vertical limit, the extra contents will run into the page instead of overflowing to the next page.
 This can be a solution till we figure out a way to smoothly transition to the next page.</p>
-<p>Also added a % after the first \end{minipage} which removes the little bit of horizontal space that is automatically inserted by the <code>minipage</code> environment. <a href="https://tex.stackexchange.com/questions/157222/putting-figures-side-by-side-using-minipage">Reference</a></p>;1521718822;1521718989
-298012184;298012184;srdg;<p>I used this template and while making my CV, I felt it would be a cleaner design if we could separate the two columns with a single <code>vline</code>, with width, say, <code>0.4 pts</code>. Can that be included anywhere?</p>;1518881029;1518881029
+<p>Also added a % after the first \end{minipage} which removes the little bit of horizontal space that is automatically inserted by the <code>minipage</code> environment. <a href="https://tex.stackexchange.com/questions/157222/putting-figures-side-by-side-using-minipage">Reference</a></p>;1521718822000;1521718989000
+298012184;298012184;srdg;<p>I used this template and while making my CV, I felt it would be a cleaner design if we could separate the two columns with a single <code>vline</code>, with width, say, <code>0.4 pts</code>. Can that be included anywhere?</p>;1518881029000;1518881029000
 291973577;291973577;niranjantdesai;<p>I'm using the OpenFonts template on Windows with TeXworks for compilation. There's a problem with the "Publications" section --- the body and the section name are overlapping.</p>
 <p><img alt="capture" src="https://user-images.githubusercontent.com/15803433/35452041-45161af8-02eb-11e8-92bb-a6b6f105370d.PNG" /></p>
 <p>A better fix seems to be using this:
@@ -199,16 +201,16 @@ This can be a solution till we figure out a way to smoothly transition to the ne
 instead of the current code, which is
 <code>\section{Publications}</code>
 <code>\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file</code></p>
-<p><img alt="capture1" src="https://user-images.githubusercontent.com/15803433/35452188-bcd015c6-02eb-11e8-8d83-c1517ba7d5fd.PNG" /></p>;1516987547;1550709802
-465815005;291973577;voidstarstar;<p>I didn't see any pull request for this issue, so I created #50.  Thanks for providing the solution.</p>;1550709802;1550709802
-277975364;277975364;anthonyattard;<p>If you believe this belongs in a separate repo let me know.</p>;1512008341;1512008341
+<p><img alt="capture1" src="https://user-images.githubusercontent.com/15803433/35452188-bcd015c6-02eb-11e8-8d83-c1517ba7d5fd.PNG" /></p>;1516987547000;1550709802000
+465815005;291973577;voidstarstar;<p>I didn't see any pull request for this issue, so I created #50.  Thanks for providing the solution.</p>;1550709802000;1550709802000
+277975364;277975364;anthonyattard;<p>If you believe this belongs in a separate repo let me know.</p>;1512008341000;1512008341000
 273544317;273544317;naveenT1010;<p>Hi,
 How can I enable the format to extend into two pages, without first one being blank?
-Thanks</p>;1510600425;1522068507
+Thanks</p>;1510600425000;1522068507000
 376153699;273544317;rohit-upadhya;<p>You can follow what I have done with my CV. I have taken it from this repo only and edited it. 
-https://github.com/nocturnalnocturnal/ROHIT_UPADHYA_CV</p>;1522068507;1522068507
+https://github.com/nocturnalnocturnal/ROHIT_UPADHYA_CV</p>;1522068507000;1522068507000
 265499138;265499138;csaund;<p>Right now without any special formatting, any overflow onto a second page is poorly formatted. A version of this which allows experience to take up the full column on the first page and awards, leadership, etc to fully occupy the second would keep the clean style and continue to emphasize work experience. </p>
-<p>Have you thought about adapting this to look good on 2 pages? </p>;1507994894;1545691926
+<p>Have you thought about adapting this to look good on 2 pages? </p>;1507994894000;1545691926000
 339554756;265499138;juliocesar-io;<p>Hi @csaund, you can create any pages you want like this (just keep the same <code>textwidth</code>  for the correspondent column)
 ```
 \begin{document}</p>
@@ -229,8 +231,8 @@ https://github.com/nocturnalnocturnal/ROHIT_UPADHYA_CV</p>;1522068507;1522068507
 \end{minipage}</p>
 <p>% PAGE N ...</p>
 <p>\end{document}
-```</p>;1508995406;1509310942
-404833506;265499138;arp1561;<p>The above-mentioned way and adding \hfill between mini pages makes the deedy resume work with 2 pages perfectly</p>;1531488523;1531488523
+```</p>;1508995406000;1509310942000
+404833506;265499138;arp1561;<p>The above-mentioned way and adding \hfill between mini pages makes the deedy resume work with 2 pages perfectly</p>;1531488523000;1531488523000
 449776182;265499138;trenta3;<p>I would also like to suggest the paracol package with which the splitting is much more easy to do without having to adjust the minipages each time you modify the CV. The document would look something like:
 ```
 \begin{document}</p>
@@ -240,20 +242,20 @@ https://github.com/nocturnalnocturnal/ROHIT_UPADHYA_CV</p>;1522068507;1522068507
 \switchcolumn
 % CENTRAL CONTENT
 \end{paracol}
-```</p>;1545691926;1545691926
-261485044;261485044;anthonyattard;<p>Does anyone know of any templates that are stylistically similar to Deedy? </p>;1506639220;1518661793
+```</p>;1545691926000;1545691926000
+261485044;261485044;anthonyattard;<p>Does anyone know of any templates that are stylistically similar to Deedy? </p>;1506639220000;1518661793000
 343696950;261485044;wilfredom;<p>Yes-ish: <a href="https://www.sharelatex.com/templates/cover-letters/awesome-cv-cover-letter">AwesomeCV Cover letter</a>.</p>
 <p>All instances of red can be changed to black near the beginning of the document: look for the line <code>\colorlet{awesome}{awesome-red}</code> and change <code>red</code> to <code>darknight</code>.</p>
-<p>I also tried getting the name displayed in the same font by copying over deedy fonts and changing them in the .cls, but for some reason the last name comes out much bolder. </p>;1510437538;1510437538
-346216956;261485044;anthonyattard;<p>Thanks for the response.</p>;1511314834;1511314834
-347975932;261485044;wilfredom;<p>No problem! Another strategy (which I'm testing out right now) is to adapt the <a href="https://www.overleaf.com/latex/templates/single-column-deedy-cv-slash-resume-template/zwyxmkbrfgtz">single-column version</a> of Deedy, by Overleaf.</p>;1511985058;1511985058
-348061332;261485044;anthonyattard;<p>Checkout my cover letter template https://github.com/anthonyattard/Deedy-Resume</p>;1512008220;1512008220
-348062553;261485044;wilfredom;<p>Wow, fantastic. Thanks so much, Anthony!</p>;1512008676;1512008676
-365809119;261485044;anthonyattard;<p>Any chance this can be merged?</p>;1518661793;1518661793
-254465607;254465607;wrmacrae;<p>See other PR.</p>;1504212998;1504212998
-254465081;254465081;wrmacrae;<p>I don't think anyone uses "Github://" outside of these resumes. If I'm wrong and this is a real thing, feel free to decline. But it seems weird.</p>;1504212879;1504212879
+<p>I also tried getting the name displayed in the same font by copying over deedy fonts and changing them in the .cls, but for some reason the last name comes out much bolder. </p>;1510437538000;1510437538000
+346216956;261485044;anthonyattard;<p>Thanks for the response.</p>;1511314834000;1511314834000
+347975932;261485044;wilfredom;<p>No problem! Another strategy (which I'm testing out right now) is to adapt the <a href="https://www.overleaf.com/latex/templates/single-column-deedy-cv-slash-resume-template/zwyxmkbrfgtz">single-column version</a> of Deedy, by Overleaf.</p>;1511985058000;1511985058000
+348061332;261485044;anthonyattard;<p>Checkout my cover letter template https://github.com/anthonyattard/Deedy-Resume</p>;1512008220000;1512008220000
+348062553;261485044;wilfredom;<p>Wow, fantastic. Thanks so much, Anthony!</p>;1512008676000;1512008676000
+365809119;261485044;anthonyattard;<p>Any chance this can be merged?</p>;1518661793000;1518661793000
+254465607;254465607;wrmacrae;<p>See other PR.</p>;1504212998000;1504212998000
+254465081;254465081;wrmacrae;<p>I don't think anyone uses "Github://" outside of these resumes. If I'm wrong and this is a real thing, feel free to decline. But it seems weird.</p>;1504212879000;1504212879000
 208788231;208788231;joshjacobson;<p>When column 2 and column 1 are the same length (or so they appear, perhaps there is a very small length difference causing this), column 2 causes overflow to the next page, while column 1 does not. </p>
-<p>Basically, I am able to have 1 additional line on column 1 than I am on column 2. I would like to adjust it so this last line is allowed in column 2 as well.</p>;1487569123;1487569123
+<p>Basically, I am able to have 1 additional line on column 1 than I am on column 2. I would like to adjust it so this last line is allowed in column 2 as well.</p>;1487569123000;1487569123000
 190428237;190428237;kfeine;<p>Hi,</p>
 <p>It seems there is an issue with small caps in <code>\descript{}</code>: some letters with accents are turned to lowercase instead.</p>
 <p><a href="http://hpics.li/5672503">Here is an example</a> with:</p>
@@ -261,36 +263,36 @@ https://github.com/nocturnalnocturnal/ROHIT_UPADHYA_CV</p>;1522068507;1522068507
 </code></pre>
 <p>I don't think it's directly related with Relaway font, since it supports small caps with accents. Maybe it's more an <a href="https://tex.stackexchange.com/questions/286047/tex4ht-getting-accented-letters-in-small-capitals-through-selectfont">issue with selectfont</a>?</p>
 <p>Thanks,
-Kind regards,</p>;1479505223;1508523798
+Kind regards,</p>;1479505223000;1508523798000
 333130640;190428237;reyhanhgh;<p>Hi, 
 I have the same problem. Does anybody know how to fix it?</p>
 <p>here is the source code: 
 https://www.overleaf.com/latex/templates/deedy-resume/sqdbztjjghvz#.Wc4HfBOCzVp</p>
-<p>Many thanks!</p>;1506692796;1506692893
+<p>Many thanks!</p>;1506692796000;1506692893000
 338285717;190428237;remidebette;<p>Hi everyone,</p>
 <p>The problem seems indeed to be due to the Raleway font.
 I opened a ticket there a while back detailing the issue: <a href="https://github.com/impallari/Raleway/issues/21">Support for accented small caps</a></p>
-<p>Rémi</p>;1508523798;1508523798
+<p>Rémi</p>;1508523798000;1508523798000
 183199388;183199388;Data-drone;<p>I have tried putting the files in:
 <code>~/.fonts/</code>
 <code>/usr/local/share/fonts</code>
 '/usr/share/fonts/truetype'</p>
 <p>I have refreshed the <code>fc-cache</code>.</p>
 <p>and <code>fc-list|grep</code> returns the files</p>
-<p>but fontspec and kpathea can't find them?</p>;1476523529;1476523529
-175121549;175121549;jck;;1473105017;1473143416
-244861096;175121549;nirmitgoyal;<p>@deedy : nice changes. Deedy please merge this pull request</p>;1473143416;1473143416
-145788671;145788671;alanyee;<p>Under "Availability" in the README.md, the Overleaf link links to a source template that is Version 1.1 (30/4/2014). I think this link should be updated to Version 1.2.</p>;1459800099;1459800099
+<p>but fontspec and kpathea can't find them?</p>;1476523529000;1476523529000
+175121549;175121549;jck;;1473105017000;1473143416000
+244861096;175121549;nirmitgoyal;<p>@deedy : nice changes. Deedy please merge this pull request</p>;1473143416000;1473143416000
+145788671;145788671;alanyee;<p>Under "Availability" in the README.md, the Overleaf link links to a source template that is Version 1.1 (30/4/2014). I think this link should be updated to Version 1.2.</p>;1459800099000;1459800099000
 142323881;142323881;kirkang;<p>1)Add xeCJK, it is supported to type Chinese character. Korean and Japanese are also supported theoretical, but it has not been tested.
-2)Add new command "the position applied"</p>;1458560666;1458560666
+2)Add new command "the position applied"</p>;1458560666000;1458560666000
 127175342;127175342;isometric;<p>I did a spin on your design to simplify the topography and alignment. </p>
 <p>See if you like it :)</p>
 <p>https://drive.google.com/file/d/0B1mMiFxu14yFdzJIaGtUYlJhUm8/view?usp=docslist_api</p>
 <p>Sadly I'm not familiar enough with LaTeX to so it was made it in InDesign but you can find the project file here: </p>
-<p>https://drive.google.com/file/d/0B1mMiFxu14yFV0paNVdIaHliaVU/view?usp=docslist_api</p>;1453105203;1479081239
-172885081;127175342;deedy;<p>I quite like it. I'm no designer, but I think the lowercase headings for each section look nice, although the bold date ranges and location lines seem a little overbearing. The slightly bigger name section looks a bit cleaner but the margins seem a little large around it. I also think the descriptions would look better with bullets so the reader doesnt get lost in a wall of text (even though its paragraphed). Cool stuff though!</p>;1453216743;1453216743
-260222929;127175342;pratnala;<p>@isometric Your files don't exist anymore?</p>;1479081239;1479081239
-123607701;123607701;nickyr;<p>This file would go in the OpenFonts directory also I guess.</p>;1450851263;1450851470
+<p>https://drive.google.com/file/d/0B1mMiFxu14yFV0paNVdIaHliaVU/view?usp=docslist_api</p>;1453105203000;1479081239000
+172885081;127175342;deedy;<p>I quite like it. I'm no designer, but I think the lowercase headings for each section look nice, although the bold date ranges and location lines seem a little overbearing. The slightly bigger name section looks a bit cleaner but the margins seem a little large around it. I also think the descriptions would look better with bullets so the reader doesnt get lost in a wall of text (even though its paragraphed). Cool stuff though!</p>;1453216743000;1453216743000
+260222929;127175342;pratnala;<p>@isometric Your files don't exist anymore?</p>;1479081239000;1479081239000
+123607701;123607701;nickyr;<p>This file would go in the OpenFonts directory also I guess.</p>;1450851263000;1450851470000
 123607114;123607114;nickyr;<p>Right now, the alignment of employers and positions is a little off. There's an extra space before the "|".</p>
 <p>By changing</p>
 <p><code>tex
@@ -304,36 +306,35 @@ I opened a ticket there a while back detailing the issue: <a href="https://githu
 <p>Before, with underscores for spaces: 
 <code>EMPLOYER__|_Position</code>
 After: 
-<code>EMPLOYER_|_Position</code></p>;1450850711;1487568984
-280992272;123607114;joshjacobson;<p>I think I actually prefer the two spaces. Perhaps this was an intentional design decision?</p>;1487568984;1487568984
+<code>EMPLOYER_|_Position</code></p>;1450850711000;1487568984000
+280992272;123607114;joshjacobson;<p>I think I actually prefer the two spaces. Perhaps this was an intentional design decision?</p>;1487568984000;1487568984000
 92031907;92031907;SquaredPi;<p>I get the following errors:
 - Undefined control sequence. [\sectionspace]
 - LaTeX Error: Environment tightitemize undefined. [\begin{tightitemize}]</p>
 <p>Also, when I try to redefine the tightitemize environment into the document, I get an "already defined environment".</p>
 <p>Please advice.
-Thank you</p>;1435655287;1495940774
-131224023;92031907;rhuddles;<p>Having the same issue</p>;1439582798;1439582798
-143951244;92031907;CorbanR;<p>same issue</p>;1443505429;1443505429
-276460102;92031907;hawkins;<p>Have any of you tried <code>\sectionsep</code>?</p>;1485889744;1485889744
-304489671;92031907;MarcoGiancarli;<p>Replace all instances of <code>\sectionspace</code> with <code>\sectionsep</code> and all instances of <code>\tightitemize</code> with <code>\tightemize</code></p>;1495940774;1495940774
-62188066;62188066;rrshaban;<p>\emph and \textit do nothing within any part of the template, and I haven't been able to figure out why. </p>;1426534802;1447765627
-157365714;62188066;JanetMatsen;<p>Adding \setmainfont{Lato Light} to the preamble made \textit{} work in the Overleaf Version.  https://www.overleaf.com/latex/templates/deedy-resume/sqdbztjjghvz#.VksmZmQrJcw </p>;1447765616;1447765616
-57681975;57681975;Void2258;<p>I did my undergrad at the Rochester Institute of Technology. The template puts the name on 2 lines, which is fine, but does so with atrocious spacing, as it spaces out the first three words to occupy the same space as University of Pittsburgh (my grad school). The end result looks horrible, no matter what I do.</p>;1423891489;1426913614
+Thank you</p>;1435655287000;1495940774000
+131224023;92031907;rhuddles;<p>Having the same issue</p>;1439582798000;1439582798000
+143951244;92031907;CorbanR;<p>same issue</p>;1443505429000;1443505429000
+276460102;92031907;hawkins;<p>Have any of you tried <code>\sectionsep</code>?</p>;1485889744000;1485889744000
+304489671;92031907;MarcoGiancarli;<p>Replace all instances of <code>\sectionspace</code> with <code>\sectionsep</code> and all instances of <code>\tightitemize</code> with <code>\tightemize</code></p>;1495940774000;1495940774000
+62188066;62188066;rrshaban;<p>\emph and \textit do nothing within any part of the template, and I haven't been able to figure out why. </p>;1426534802000;1447765627000
+157365714;62188066;JanetMatsen;<p>Adding \setmainfont{Lato Light} to the preamble made \textit{} work in the Overleaf Version.  https://www.overleaf.com/latex/templates/deedy-resume/sqdbztjjghvz#.VksmZmQrJcw </p>;1447765616000;1447765616000
+57681975;57681975;Void2258;<p>I did my undergrad at the Rochester Institute of Technology. The template puts the name on 2 lines, which is fine, but does so with atrocious spacing, as it spaces out the first three words to occupy the same space as University of Pittsburgh (my grad school). The end result looks horrible, no matter what I do.</p>;1423891489000;1426913614000
 84255137;57681975;Travis-S;<p>I had the same problem with my institution, and ended up simply breaking the name apart by hand. Admittedly not an elegant solution, but the alternative is probably a little complicated to code...</p>
-<p>It would appear a relevant <code>LaTeX</code> command is the <code>\titlespacing{\subsection}</code> command in the <code>.cls</code> files.</p>;1426913614;1426913614
-57410171;57410171;EmmanueleSalvati;<p>Update from original</p>;1423709272;1423709272
-357461207;357461207;brian-norman;<p>Brian this would be significantly cooler if it auto-ran on a fixed time-period as you originally imagined... Learn how to do that! Heroku maybe?</p>;1536197030;1536197030
-355811190;355811190;brian-norman;<p>Glen requests this visual cue that the level has indeed changes, a good idea!</p>;1535680080;1535994770
-585591514;585591514;brian-norman;;1584827209;1584828545
-602111660;585591514;brian-norman;<p>lol</p>;1584828544;1584828544
-585583679;585583679;zahin-mohammad;;1584824397;1585023151
-603003326;585583679;zahin-mohammad;<p>Test</p>;1585023084;1585023084
+<p>It would appear a relevant <code>LaTeX</code> command is the <code>\titlespacing{\subsection}</code> command in the <code>.cls</code> files.</p>;1426913614000;1426913614000
+57410171;57410171;EmmanueleSalvati;<p>Update from original</p>;1423709272000;1423709272000
+355811190;355811190;brian-norman;<p>Glen requests this visual cue that the level has indeed changes, a good idea!</p>;1535680080000;1535994770000
+585591514;585591514;brian-norman;;1584827209000;1584828545000
+602111660;585591514;brian-norman;<p>lol</p>;1584828544000;1584828544000
+585583679;585583679;zahin-mohammad;;1584824397000;1585023151000
+603003326;585583679;zahin-mohammad;<p>Test</p>;1585023084000;1585023084000
 603003391;585583679;zahin-mohammad;<blockquote>
 <p>Test</p>
 </blockquote>
-<p>Yo this is a reply</p>;1585023100;1585023100
-603003447;585583679;zahin-mohammad;<p>Comment 1</p>;1585023113;1585023113
-603003468;585583679;zahin-mohammad;<p>Comment 2</p>;1585023118;1585023118
+<p>Yo this is a reply</p>;1585023100000;1585023100000
+603003447;585583679;zahin-mohammad;<p>Comment 1</p>;1585023113000;1585023113000
+603003468;585583679;zahin-mohammad;<p>Comment 2</p>;1585023118000;1585023118000
 603003551;585583679;zahin-mohammad;<blockquote>
 <p>Comment 1</p>
 </blockquote>
@@ -341,18 +342,671 @@ Thank you</p>;1435655287;1495940774
 <blockquote>
 <p>Comment 2</p>
 </blockquote>
-<p>Reply to comment 2</p>;1585023137;1585023137
+<p>Reply to comment 2</p>;1585023137000;1585023137000
 603003605;585583679;zahin-mohammad;<p>Multiline
-Comment</p>;1585023151;1585023151
-451217561;451217561;brian-norman;;1559498415;1559498415
-356879856;356879856;brian-norman;<p>Or any user's commits that week.</p>;1536077319;1554088072
-355453005;355453005;brian-norman;<p>!google “anything”</p>;1535613056;1535613570
-355452779;355452779;brian-norman;<p>!git issues user repo add "Issue title" "Issue description"</p>;1535613006;1535613570
-536209332;536209332;SunnyNagam;;1576052051;1576052051
-383953069;383953069;keenangaudio;;1543027545;1543027545
-383948347;383948347;keenangaudio;;1543022138;1543022138
-383948004;383948004;louisj381;<p>fudge</p>;1543021796;1543021796
-592977009;592977009;lewis-cooper;<p>Is there anyway to take a graph thats already been plotted and find the gradient at each point of the graph and plot the values for the gradient on the graph?</p>;1585869816;1585869816
+Comment</p>;1585023151000;1585023151000
+357461207;357461207;brian-norman;<p>Brian this would be significantly cooler if it auto-ran on a fixed time-period as you originally imagined... Learn how to do that! Heroku maybe?</p>;1536197030000;1536197030000
+451217561;451217561;brian-norman;;1559498415000;1559498415000
+356879856;356879856;brian-norman;<p>Or any user's commits that week.</p>;1536077319000;1554088072000
+355453005;355453005;brian-norman;<p>!google “anything”</p>;1535613056000;1535613570000
+355452779;355452779;brian-norman;<p>!git issues user repo add "Issue title" "Issue description"</p>;1535613006000;1535613570000
+383953069;383953069;keenangaudio;;1543027545000;1543027545000
+383948347;383948347;keenangaudio;;1543022138000;1543022138000
+383948004;383948004;louisj381;<p>fudge</p>;1543021796000;1543021796000
+536209332;536209332;SunnyNagam;;1576052051000;1576052051000
+598240001;598240001;nakulkhambhati;<p>I tried to open the example scene WriteStuff, following the youtube tutorial (https://www.youtube.com/watch?time_continue=492&ampSEMICOLONv=ZltiKHFWmv8&ampSEMICOLONfeature=emb_logo)
+it worked for SquareToCircle but not for WriteStuff which tells me that latex is not working. I think it may have something to do with my path variables but im not too sure how they work. I have installed miktex only for my user, so i only changed user variables and not system variables. This is my path variable: C:\Users\Nakul Khambhati\AppData\Local\Programs\Python\Python37\Scripts\SEMICOLONC:\Users\Nakul Khambhati\AppData\Local\Programs\Python\Python37\SEMICOLONC:\MiKTeX 2.9\miktex\bin\x64\SEMICOLONC:\FFmpeg\binSEMICOLONC:\sox-14-4-2SEMICOLON</p>
+<p>I tried reinstalling Miktex too but nothing seems to work. Can someone please help? I am interested in coding math videos. </p>;1586601615000;1586601955000
+612390966;598240001;Elteoremadebeethoven;<p>There are a lot of problems like yours, both here on <a href="https://github.com/3b1b/manim/issues?q=latex+error">Github</a> and <a href="https://stackoverflow.com/search?q=%5Bmanim%5D+latex">Stackoverflow</a>, check them out.</p>;1586601955000;1586601955000
+597818092;597818092;Mathoholic;<p>`Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.</p>
+<p>c:\manim&gtSEMICOLONpython -m pip install -r requirements.txt
+Ignoring pycairo: markers 'sys_platform == "linux"' don't match your environment</p>
+<p>Requirement already satisfied: argparse==1.4.0 in c:\program files\python37-32\l
+ib\site-packages (from -r requirements.txt (line 1)) (1.4.0)
+Requirement already satisfied: colour==0.1.5 in c:\program files\python37-32\lib
+\site-packages (from -r requirements.txt (line 2)) (0.1.5)
+Requirement already satisfied: numpy==1.16.4 in c:\program files\python37-32\lib
+\site-packages (from -r requirements.txt (line 3)) (1.16.4)
+Requirement already satisfied: Pillow==5.2.0 in c:\program files\python37-32\lib
+\site-packages (from -r requirements.txt (line 4)) (5.2.0)
+Requirement already satisfied: progressbar==2.5 in c:\program files\python37-32\
+lib\site-packages (from -r requirements.txt (line 5)) (2.5)
+Requirement already satisfied: scipy==1.3.0 in c:\program files\python37-32\lib\
+site-packages (from -r requirements.txt (line 6)) (1.3.0)
+Requirement already satisfied: tqdm==4.24.0 in c:\program files\python37-32\lib\
+site-packages (from -r requirements.txt (line 7)) (4.24.0)
+Requirement already satisfied: opencv-python==3.4.2.17 in c:\program files\pytho
+n37-32\lib\site-packages (from -r requirements.txt (line 8)) (3.4.2.17)
+Collecting pycairo&gtSEMICOLON=1.18.1
+  Using cached pycairo-1.19.1.tar.gz (205 kB)
+Collecting pydub==0.23.0
+  Using cached pydub-0.23.0-py2.py3-none-any.whl (28 kB)
+Processing c:\users\wayne tower\appdata\local\pip\cache\wheels\00\6e\d4\7c4b7bc2
+2c090baf4f470e7f35c4f22206277229bdb6607df6\pyreadline-2.1-py3-none-any.whl
+Building wheels for collected packages: pycairo
+  Building wheel for pycairo (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: 'C:\Program Files\Python37-32\python.exe' -u -c 'import sys, setupto
+ols, tokenizeSEMICOLON sys.argv[0] = '"'"'C:\Users\WAYNET~1\AppData\Local\Temp\pip
+-install-172ou340\pycairo\setup.py'"'"'SEMICOLON <strong>file</strong>='"'"'C:\Users\WAYNET~1\Ap
+pData\Local\Temp\pip-install-172ou340\pycairo\setup.py'"'"'SEMICOLONf=getattr(token
+ize, '"'"'open'"'"', open)(<strong>file</strong>)SEMICOLONcode=f.read().replace('"'"'\r\n'"'"', '"'"'
+\n'"'"')SEMICOLONf.close()SEMICOLONexec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' bdist_wheel -d
+ 'C:\Users\WAYNET~1\AppData\Local\Temp\pip-wheel-0yqjrek4'
+       cwd: C:\Users\WAYNET~1\AppData\Local\Temp\pip-install-172ou340\pycairo\
+  Complete output (18 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build\lib.win32-3.7
+  creating build\lib.win32-3.7\cairo
+  copying cairo__init__.py -&gtSEMICOLON build\lib.win32-3.7\cairo
+  copying cairo__init__.pyi -&gtSEMICOLON build\lib.win32-3.7\cairo
+  copying cairo\py.typed -&gtSEMICOLON build\lib.win32-3.7\cairo
+  running build_ext
+  building 'cairo._cairo' extension
+  creating build\temp.win32-3.7
+  creating build\temp.win32-3.7\Release
+  creating build\temp.win32-3.7\Release\cairo
+  C:\Program Files\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /W3
+ /GL /DNDEBUG /MD -DPYCAIRO_VERSION_MAJOR=1 -DPYCAIRO_VERSION_MINOR=19 -DPYCAIRO
+_VERSION_MICRO=1 "-IC:\Program Files\Python37-32\include" "-IC:\Program Files\Py
+thon37-32\include" "-IC:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE"
+"-IC:\Program Files\Windows Kits\10\include\10.0.10240.0\ucrt" "-IC:\Program Fil
+es\Windows Kits\8.1\include\shared" "-IC:\Program Files\Windows Kits\8.1\include
+\um" "-IC:\Program Files\Windows Kits\8.1\include\winrt" /Tccairo/device.c /Fobu
+ild\temp.win32-3.7\Release\cairo/device.obj
+  device.c
+  c:\users\wayne tower\appdata\local\temp\pip-install-172ou340\pycairo\cairo\pyc
+airo.h(37): fatal error C1083: Cannot open include file: 'cairo.h': No such file
+ or directory
+  error: command 'C:\Program Files\Microsoft Visual Studio 14.0\VC\BIN\cl.e
+xe' failed with exit status 2</p>
+<hr />
+<p>ERROR: Failed building wheel for pycairo
+  Running setup.py clean for pycairo
+Failed to build pycairo
+Installing collected packages: pycairo, pydub, pyreadline
+    Running setup.py install for pycairo ... error
+    ERROR: Command errored out with exit status 1:
+     command: 'C:\Program Files\Python37-32\python.exe' -u -c 'import sys, setup
+tools, tokenizeSEMICOLON sys.argv[0] = '"'"'C:\Users\WAYNET~1\AppData\Local\Temp\p
+ip-install-172ou340\pycairo\setup.py'"'"'SEMICOLON <strong>file</strong>='"'"'C:\Users\WAYNET~1\
+AppData\Local\Temp\pip-install-172ou340\pycairo\setup.py'"'"'SEMICOLONf=getattr(tok
+enize, '"'"'open'"'"', open)(<strong>file</strong>)SEMICOLONcode=f.read().replace('"'"'\r\n'"'"', '"'
+"'\n'"'"')SEMICOLONf.close()SEMICOLONexec(compile(code, <strong>file</strong>, '"'"'exec'"'"'))' install --re
+cord 'C:\Users\WAYNET~1\AppData\Local\Temp\pip-record-wa2qfl0f\install-record.tx
+t' --single-version-externally-managed --compile --install-headers 'C:\Program F
+iles\Python37-32\Include\pycairo'
+         cwd: C:\Users\WAYNET~1\AppData\Local\Temp\pip-install-172ou340\pycairo\</p>
+<pre><code>Complete output (18 lines):
+running install
+running build
+running build_py
+creating build
+creating build\lib.win32-3.7
+creating build\lib.win32-3.7\cairo
+copying cairo\__init__.py -&gtSEMICOLON build\lib.win32-3.7\cairo
+copying cairo\__init__.pyi -&gtSEMICOLON build\lib.win32-3.7\cairo
+copying cairo\py.typed -&gtSEMICOLON build\lib.win32-3.7\cairo
+running build_ext
+building 'cairo._cairo' extension
+creating build\temp.win32-3.7
+creating build\temp.win32-3.7\Release
+creating build\temp.win32-3.7\Release\cairo
+C:\Program Files\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /
+</code></pre>
+<p>W3 /GL /DNDEBUG /MD -DPYCAIRO_VERSION_MAJOR=1 -DPYCAIRO_VERSION_MINOR=19 -DPYCAI
+RO_VERSION_MICRO=1 "-IC:\Program Files\Python37-32\include" "-IC:\Program Files\
+Python37-32\include" "-IC:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE
+" "-IC:\Program Files\Windows Kits\10\include\10.0.10240.0\ucrt" "-IC:\Program F
+iles\Windows Kits\8.1\include\shared" "-IC:\Program Files\Windows Kits\8.1\inclu
+de\um" "-IC:\Program Files\Windows Kits\8.1\include\winrt" /Tccairo/device.c /Fo
+build\temp.win32-3.7\Release\cairo/device.obj
+    device.c
+    c:\users\wayne tower\appdata\local\temp\pip-install-172ou340\pycairo\cairo\p
+ycairo.h(37): fatal error C1083: Cannot open include file: 'cairo.h': No such fi
+le or directory
+    error: command 'C:\Program Files\Microsoft Visual Studio 14.0\VC\BIN\cl
+.exe' failed with exit status 2
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'C:\Program Files\Python37-32\pyt
+hon.exe' -u -c 'import sys, setuptools, tokenizeSEMICOLON sys.argv[0] = '"'"'C:\Users\
+WAYNET~1\AppData\Local\Temp\pip-install-172ou340\pycairo\setup.py'"'"'SEMICOLON <strong>
+file</strong>='"'"'C:\Users\WAYNET~1\AppData\Local\Temp\pip-install-172ou340\pyc
+airo\setup.py'"'"'SEMICOLONf=getattr(tokenize, '"'"'open'"'"', open)(<strong>file</strong>)SEMICOLONcode=f.r
+ead().replace('"'"'\r\n'"'"', '"'"'\n'"'"')SEMICOLONf.close()SEMICOLONexec(compile(code, __file_
+_, '"'"'exec'"'"'))' install --record 'C:\Users\WAYNET~1\AppData\Local\Temp\pip-
+record-wa2qfl0f\install-record.txt' --single-version-externally-managed --compil
+e --install-headers 'C:\Program Files\Python37-32\Include\pycairo' Check the log
+s for full command output.</p>
+<p>c:\manim&gtSEMICOLON`</p>;1586514250000;1586514250000
+596764319;596764319;xvetisky;<p>Hi. When I installed Manim, I first tried to render an animation to see if it works. I first issued the command below to render the <em>Square to Circle</em> example, and it did well.
+<code>python3 ./manim.py example_scenes.py SquareToCircle -pl</code>
+But, whenever I try to render the other examples provided, it always makes the same error.
+<code>Exception: Latex error converting to dvi. See log output above or the log file: media/Tex/664e80e8d8d98482.log</code>
+Command issued : <code>sudo -H python3 -m manim example_scenes.py OpeningManimExample -pl</code>
+This is the complete console log : 
+```
+Media will be written to ./media/. You can change this behavior with the --media_dir flag.
+latex: warning: running with administrator privileges</p>
+<p>Sorry, but latex did not succeed.</p>
+<p>The log file hopefully contains the information to get MiKTeX going again:</p>
+<p>/var/root/Library/Application Support/MiKTeX/texmfs/data/miktex/log/latex.log</p>
+<p>Traceback (most recent call last):
+  File "/Users/mac/Downloads/manim-master/manimlib/extract_scene.py", line 155, in main
+    scene = SceneClass(**scene_kwargs)
+  File "/Users/mac/Downloads/manim-master/manimlib/scene/scene.py", line 53, in <strong>init</strong>
+    self.construct()
+  File "example_scenes.py", line 20, in construct
+    title = TextMobject("This is some \LaTeX")
+  File "/Users/mac/Downloads/manim-master/manimlib/mobject/svg/tex_mobject.py", line 147, in <strong>init</strong>
+    SingleStringTexMobject.<strong>init</strong>(
+  File "/Users/mac/Downloads/manim-master/manimlib/mobject/svg/tex_mobject.py", line 42, in <strong>init</strong>
+    file_name = tex_to_svg_file(
+  File "/Users/mac/Downloads/manim-master/manimlib/utils/tex_file_writing.py", line 20, in tex_to_svg_file
+    dvi_file = tex_to_dvi(tex_file)
+  File "/Users/mac/Downloads/manim-master/manimlib/utils/tex_file_writing.py", line 70, in tex_to_dvi
+    raise Exception(
+Exception: Latex error converting to dvi. See log output above or the log file: media/Tex/664e80e8d8d98482.log
+```
+I tried to search on google for any help, but all the that I read was about the same issue but on Windows, and I'm on mac. However, I continued searching and found this on StackOverflow : </p>
+<blockquote>
+<p>That answer is no longer useful now because Manim has already solved that problem. So this may be due to two things: To give us a hint of what is wrong, go to the manimlib folder with the terminal and run the following:</p>
+<p><code>latex tex_template.tex</code>
+We distinguish the two possible errors:</p>
+<p>Recognized the latex command but the compilation could not be completed because you are missing libraries, to solve this you can install the missing packages indicated by the terminal.</p>
+<p>That LaTeX is not recognized as a command, in this case surely the PATH variable is not set correctly, here is the solution.</p>
+</blockquote>
+<p>So I went to the manimlib folder and issued the following : <code>latex tex_template.tex</code>. And judging by the console log, it doesn't seem like its the second option because the latex command was recognized, but there is no further information about what's missing. This is the complete console log : 
+```
+MacBook-Pro-de-MAC:manimlib mac$ latex tex_template.tex
+log4cxx: setFile(/Users/mac/Library/Application Support/MiKTeX/texmfs/data/miktex/log/latex.log,true) call failed.
+log4cxx: IO Exception : status code = 13
+log4cxx: No output stream or file set for the appender named [RollingLogFile].
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250)</p>
+<p>Sorry, but latex did not succeed.</p>
+<p>The log file hopefully contains the information to get MiKTeX going again:</p>
+<p>/Users/mac/Library/Application Support/MiKTeX/texmfs/data/miktex/log/latex.log
+MacBook-Pro-de-MAC:manimlib mac$ latex tex_template.tex
+log4cxx: setFile(/Users/mac/Library/Application Support/MiKTeX/texmfs/data/miktex/log/latex.log,true) call failed.
+log4cxx: IO Exception : status code = 13
+log4cxx: No output stream or file set for the appender named [RollingLogFile].
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250)</p>
+<p>Sorry, but latex did not succeed.</p>
+<p>The log file hopefully contains the information to get MiKTeX going again:</p>
+<p>/Users/mac/Library/Application Support/MiKTeX/texmfs/data/miktex/log/latex.log
+MacBook-Pro-de-MAC:manimlib mac$ latex tex_template.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250)</p>
+<p>Sorry, but latex did not succeed.</p>
+<p>The log file hopefully contains the information to get MiKTeX going again:</p>
+<p>/Users/mac/Library/Application Support/MiKTeX/texmfs/data/miktex/log/latex.log
+```</p>
+<p>So I went to see what's on the <code>latex.log</code> file, and found this : </p>
+<p>```
+2020-01-28 21:28:52,077+0100 INFO  texworks - starting: MiKTeX TeXworks 0.6.3 (MiKTeX 2.9.7250)
+2020-04-08 17:31:28,130+0100 INFO  latex - starting with command line: latex tex_template.tex
+2020-04-08 17:31:28,135+0100 INFO  latex - allowing known shell commands
+2020-04-08 17:31:28,135+0100 INFO  latex - enabling input (output) from (to) processes
+2020-04-08 17:31:28,151+0100 INFO  latex - going to create file: latex.fmt
+2020-04-08 17:31:29,772+0100 ERROR latex - /usr/local/bin/initexmf did not succeedSEMICOLON exitCode: 1
+2020-04-08 17:31:29,772+0100 ERROR latex - output:
+2020-04-08 17:31:29,772+0100 ERROR latex - log4cxx: setFile(/Users/mac/Library/Application Support/MiKTeX/texmfs/data/miktex/log/initexmf.log,true) call failed.
+log4cxx: IO Exception : status code = 13
+log4cxx: No output stream or file set for the appender named [RollingLogFile].</p>
+<p>Sorry, but "MiKTeX Configuration Utility" did not succeed.</p>
+<p>The log file hopefully contains the information to get MiKTeX going again:</p>
+<p>/Users/mac/Library/Application Support/MiKTeX/texmfs/data/miktex/log/initexmf.log</p>
+<p>2020-04-08 17:31:29,774+0100 FATAL latex - The memory dump file could not be found.
+2020-04-08 17:31:29,774+0100 INFO  latex - finishing with exit code 1
+```</p>
+<p>But I have no clue what to do. So please Help me. And also, I'm sorry for my probably bad english, I'm french so, be kind ^^</p>;1586369563000;1586391992000
+611119595;596764319;xvetisky;<p>Got some other information on the <code>initexmf.log</code>file :
+```
+020-04-08 19:28:22,695+0100 INFO  initexmf - starting: MiKTeX Configuration Utility 2.9.7259 (MiKTeX 2.9.7250)
+2020-04-08 19:28:22,697+0100 INFO  initexmf - Operating on the private (per-user) MiKTeX setup
+2020-04-08 19:28:22,697+0100 INFO  initexmf - starting with command line: initexmf --dump-by-name=latex --engine=pdftex
+2020-04-08 19:28:22,699+0100 INFO  initexmf - running: miktex-makefmt --engine=pdftex --dest-name=latex --no-dump latex.ini --engine-option=-tcx=cp227.tcx --miktex-disable-maintenance
+2020-04-08 19:28:23,144+0100 FATAL initexmf - Permission denied: path="/Users/mac/Library/Application Support/MiKTeX/texmfs/data/miktex/log/miktex-makefmt_2020-04-08-192823.out"</p>
+<p>```</p>;1586370628000;1586370628000
+611261350;596764319;liyiliuxingyu;<p>只需要对texlive进行更新即可
+tlmgr update --self --all --reinstall-forcibly-removed</p>;1586391992000;1586391992000
+596128505;596128505;Yoannson;<p>Hello,
+I manage to install almost everything with a manim tutorial by "theorem of Beethoven" on Windows 10
+https://www.youtube.com/watch?v=ZltiKHFWmv8
+Everything went fine, and at the end, the first test "transform square in circle" works fine, but the LaTeX test went wrong. 
+<img alt="Capture1" src="https://user-images.githubusercontent.com/63317875/78715518-ce471980-791d-11ea-8330-e9d7b63da791.PNG" />
+I don't know what to do, I don't understand what's going on.
+If anyone can help, I would really appreciate.
+Thanks for all,
+Yoann</p>;1586290894000;1586505836000
+610685650;596128505;Elteoremadebeethoven;<p>Please read what your terminal says, it is understood that the <code>dvisvgm</code> command is not recognized as an internal command, that is, it was not included when you installed LaTeX, that could happen for two things, or you only installed the basic version or there was an error in the installation, investigate how to install that dependency in some forum.</p>;1586305753000;1586305753000
+611009540;596128505;Yoannson;<p>I use LaTeX on a daily basis, I had probably an old version of MikTex. I unsinstalled and reinstalled it, everything works fine now. Problem solved.
+Thanks for the help !</p>;1586357986000;1586358018000
+611927523;596128505;Elteoremadebeethoven;<p>Ok, please close the issue</p>;1586505836000;1586505836000
+595963657;595963657;emailtowa;<p>Hello,</p>
+<p>I was looking for a way to plot the tangent (small sectant) at a point and then move it along the graph.
+I could succeed with the first part but could not move it (and I tried to find it in the old projects of eoc).</p>
+<p>Maybe there is a better way to plot the tangent - not via sectant as below.</p>
+<p>Many thanks,
+Thomas</p>
+<p>from manimlib.imports import *</p>
+<p>NEW_BLUE = "#68a8e1"</p>
+<p>class v(GraphScene):
+    CONFIG = {
+        "y_max": 8,
+        "y_axis_height": 5,
+    }</p>
+<pre><code>def construct(self):
+    self.show_function_graph()
+
+def show_function_graph(self):
+    self.setup_axes(animate=False)
+    def func(x):
+        return 0.1 * (x + 3-5) * (x - 3-5) * (x-5) + 5
+
+    def rect(x):
+        return 2.775*(x-1.5)+3.862
+    recta = self.get_graph(rect,x_min=-1,x_max=5)
+    graph = self.get_graph(func,x_min=0.2,x_max=9)
+    graph.set_color(NEW_BLUE)
+    input_tracker_p1 = ValueTracker(1.5)
+    input_tracker_p2 = ValueTracker(2.5) #3.5 was original coordinate
+
+    def get_x_value(input_tracker):
+        return input_tracker.get_value()
+
+    def get_y_value(input_tracker):
+        return graph.underlying_function(get_x_value(input_tracker))
+
+    def get_x_point(input_tracker):
+        return self.coords_to_point(get_x_value(input_tracker), 0)
+
+    def get_y_point(input_tracker):
+        return self.coords_to_point(0, get_y_value(input_tracker))
+
+    def get_graph_point(input_tracker):
+        return self.coords_to_point(get_x_value(input_tracker), get_y_value(input_tracker))
+
+    def get_v_line(input_tracker):
+        return DashedLine(get_x_point(input_tracker), get_graph_point(input_tracker), stroke_width=2)
+
+    def get_h_line(input_tracker):
+        return DashedLine(get_graph_point(input_tracker), get_y_point(input_tracker), stroke_width=2)
+    # 
+    input_triangle_p1 = RegularPolygon(n=3, start_angle=TAU / 4)
+    output_triangle_p1 = RegularPolygon(n=3, start_angle=0)
+    for triangle in input_triangle_p1, output_triangle_p1:
+        triangle.set_fill(WHITE, 1)
+        triangle.set_stroke(width=0)
+        triangle.scale(0.1)
+    # 
+    input_triangle_p2 = RegularPolygon(n=3, start_angle=TAU / 4)
+    output_triangle_p2 = RegularPolygon(n=3, start_angle=0)
+    for triangle in input_triangle_p2, output_triangle_p2:
+        triangle.set_fill(WHITE, 1)
+        triangle.set_stroke(width=0)
+        triangle.scale(0.1)
+
+    # 
+    x_label_p1 = TexMobject("a")
+    output_label_p1 = TexMobject("f(a)")
+    x_label_p2 = TexMobject("b")
+    output_label_p2 = TexMobject("f(b)")
+    v_line_p1 = get_v_line(input_tracker_p1)
+    v_line_p2 = get_v_line(input_tracker_p2)
+    h_line_p1 = get_h_line(input_tracker_p1)
+    h_line_p2 = get_h_line(input_tracker_p2)
+    graph_dot_p1 = Dot(color=WHITE)
+    graph_dot_p2 = Dot(color=WHITE)
+
+    # reposition mobjects
+    x_label_p1.next_to(v_line_p1, DOWN)
+    x_label_p2.next_to(v_line_p2, DOWN)
+    output_label_p1.next_to(h_line_p1, LEFT)
+    output_label_p2.next_to(h_line_p2, LEFT)
+    input_triangle_p1.next_to(v_line_p1, DOWN, buff=0)
+    input_triangle_p2.next_to(v_line_p2, DOWN, buff=0)
+    output_triangle_p1.next_to(h_line_p1, LEFT, buff=0)
+    output_triangle_p2.next_to(h_line_p2, LEFT, buff=0)
+    graph_dot_p1.move_to(get_graph_point(input_tracker_p1))
+    graph_dot_p2.move_to(get_graph_point(input_tracker_p2))
+
+
+    #
+    self.play(
+        ShowCreation(graph),
+    )
+    # Animacion del punto a
+    self.add_foreground_mobject(graph_dot_p1)
+    self.add_foreground_mobject(graph_dot_p2)
+    self.play(
+        DrawBorderThenFill(input_triangle_p1),
+        Write(x_label_p1),
+        ShowCreation(v_line_p1),
+        GrowFromCenter(graph_dot_p1),
+        ShowCreation(h_line_p1),
+        Write(output_label_p1),
+        DrawBorderThenFill(output_triangle_p1),
+        DrawBorderThenFill(input_triangle_p2),
+        Write(x_label_p2),
+        ShowCreation(v_line_p2),
+        GrowFromCenter(graph_dot_p2),
+        ShowCreation(h_line_p2),
+        Write(output_label_p2),
+        DrawBorderThenFill(output_triangle_p2),
+        run_time=0.5
+    )
+    self.add(
+        input_triangle_p2,
+        x_label_p2,
+        graph_dot_p2,
+        v_line_p2,
+        h_line_p2,
+        output_triangle_p2,
+        output_label_p2,
+    )
+    ###################
+    pendiente_recta = self.get_secant_slope_group(
+        1.9, recta, dx = 1.4,
+        df_label = None,
+        dx_label = None,
+        dx_line_color = PURPLE,
+        df_line_color= ORANGE,
+        )
+    grupo_secante = self.get_secant_slope_group(
+        1.5, graph, dx = 0.001,
+        df_label = None,
+        dx_label = None,
+        dx_line_color = "#942357",
+        df_line_color= "#3f7d5c",
+        secant_line_color = RED,
+    )
+
+
+    self.add(
+        input_triangle_p2,
+        graph_dot_p2,
+        v_line_p2,
+        h_line_p2,
+        output_triangle_p2,
+    )
+    self.play(FadeIn(grupo_secante))
+
+
+
+
+
+    grupo_secante2 = self.get_secant_slope_group(
+        3.5, graph, dx = 0.001,
+        df_label = None,
+        dx_label = None,
+        dx_line_color = "#942357",
+        df_line_color= "#3f7d5c",
+        secant_line_color = RED,
+    )
+    self.add(
+        input_triangle_p2,
+        graph_dot_p2,
+        v_line_p2,
+        h_line_p2,
+        output_triangle_p2,
+    )
+    self.play(FadeIn(grupo_secante2))
+
+
+    kwargs = {
+        "x_min" : 4,
+        "x_max" : 9,
+        "fill_opacity" : 0.75,
+        "stroke_width" : 0.25,
+    }
+    self.graph=graph
+    iteraciones=6
+
+
+    self.rect_list = self.get_riemann_rectangles_list(
+        graph, iteraciones,start_color=PURPLE,end_color=ORANGE, **kwargs
+    )
+    flat_rects = self.get_riemann_rectangles(
+        self.get_graph(lambda x : 0), dx = 0.5,start_color=invert_color(PURPLE),end_color=invert_color(ORANGE),**kwargs
+    )
+    rects = self.rect_list[0]
+    self.transform_between_riemann_rects(
+        flat_rects, rects, 
+        replace_mobject_with_target_in_scene = True,
+        run_time=0.9
+    )
+
+    # adding manim
+    picture = Group(*self.mobjects)
+    picture.scale(0.6).to_edge(LEFT, buff=SMALL_BUFF)
+    manim = TextMobject("Manim").set_height(1.5) \
+                                .next_to(picture, RIGHT) \
+                                .shift(DOWN * 0.7)
+    self.add(manim)
+</code></pre>;1586273973000;1586570728000
+610647329;595963657;zavden;<p>That scene is easy to do if you understand the update functions, you have to see <a href="https://www.youtube.com/watch?v=l4B7IH1D1uI&ampSEMICOLONlist=PL2B6OzTsMUrwo4hA3BBfS7ZR34K361Z8F&ampSEMICOLONindex=28">8.1</a> and <a href="https://www.youtube.com/watch?v=DnWMwkcZGkM&ampSEMICOLONlist=PL2B6OzTsMUrwo4hA3BBfS7ZR34K361Z8F&ampSEMICOLONindex=29">8.2</a> until the end, and the <a href="https://www.youtube.com/watch?v=-KYMrwhLiV8&ampSEMICOLONlist=PL2B6OzTsMUrwo4hA3BBfS7ZR34K361Z8F&ampSEMICOLONindex=34">examples</a>.</p>;1586297766000;1586297766000
+610955310;595963657;emailtowa;<p>zavden, many thanks, very useful tutorials of you.</p>
+<p>After watching some of them I had the following idea, it is a quick win approximation to the moving slope. Actually it looks kind of rolling - compare code below:</p>
+<p>from manimlib.imports import *</p>
+<p>NEW_BLUE = "#68a8e1"</p>
+<p>class Play(GraphScene):
+    CONFIG = {
+        "y_max": 8,
+        "y_axis_height": 5,
+    }</p>
+<pre><code>def construct(self):
+    self.show_function_graph()
+
+def show_function_graph(self):
+    self.setup_axes(animate=False)
+    def func(x):
+        return 0.1 * (x + 3-5) * (x - 3-5) * (x-5) + 5
+
+    def rect(x):
+        return 2.775*(x-1.5)+3.862
+    recta = self.get_graph(rect,x_min=-1,x_max=5)
+    graph = self.get_graph(func,x_min=0.2,x_max=9)
+    graph.set_color(NEW_BLUE)
+    input_tracker_p1 = ValueTracker(1.5)
+    input_tracker_p2 = ValueTracker(2.5) #3.5 was original coordinate
+
+    def get_x_value(input_tracker):
+        return input_tracker.get_value()
+
+    def get_y_value(input_tracker):
+        return graph.underlying_function(get_x_value(input_tracker))
+
+    def get_x_point(input_tracker):
+        return self.coords_to_point(get_x_value(input_tracker), 0)
+
+    def get_y_point(input_tracker):
+        return self.coords_to_point(0, get_y_value(input_tracker))
+
+    def get_graph_point(input_tracker):
+        return self.coords_to_point(get_x_value(input_tracker), get_y_value(input_tracker))
+
+    def get_v_line(input_tracker):
+        return DashedLine(get_x_point(input_tracker), get_graph_point(input_tracker), stroke_width=2)
+
+    def get_h_line(input_tracker):
+        return DashedLine(get_graph_point(input_tracker), get_y_point(input_tracker), stroke_width=2)
+    # 
+    input_triangle_p1 = RegularPolygon(n=3, start_angle=TAU / 4)
+    output_triangle_p1 = RegularPolygon(n=3, start_angle=0)
+    for triangle in input_triangle_p1, output_triangle_p1:
+        triangle.set_fill(WHITE, 1)
+        triangle.set_stroke(width=0)
+        triangle.scale(0.1)
+    # 
+    input_triangle_p2 = RegularPolygon(n=3, start_angle=TAU / 4)
+    output_triangle_p2 = RegularPolygon(n=3, start_angle=0)
+    for triangle in input_triangle_p2, output_triangle_p2:
+        triangle.set_fill(WHITE, 1)
+        triangle.set_stroke(width=0)
+        triangle.scale(0.1)
+
+    # 
+    x_label_p1 = TexMobject("a")
+    output_label_p1 = TexMobject("f(a)")
+    x_label_p2 = TexMobject("b")
+    output_label_p2 = TexMobject("f(b)")
+    v_line_p1 = get_v_line(input_tracker_p1)
+    v_line_p2 = get_v_line(input_tracker_p2)
+    h_line_p1 = get_h_line(input_tracker_p1)
+    h_line_p2 = get_h_line(input_tracker_p2)
+    graph_dot_p1 = Dot(color=WHITE)
+    graph_dot_p2 = Dot(color=WHITE)
+
+    # reposition mobjects
+    x_label_p1.next_to(v_line_p1, DOWN)
+    x_label_p2.next_to(v_line_p2, DOWN)
+    output_label_p1.next_to(h_line_p1, LEFT)
+    output_label_p2.next_to(h_line_p2, LEFT)
+    input_triangle_p1.next_to(v_line_p1, DOWN, buff=0)
+    input_triangle_p2.next_to(v_line_p2, DOWN, buff=0)
+    output_triangle_p1.next_to(h_line_p1, LEFT, buff=0)
+    output_triangle_p2.next_to(h_line_p2, LEFT, buff=0)
+    graph_dot_p1.move_to(get_graph_point(input_tracker_p1))
+    graph_dot_p2.move_to(get_graph_point(input_tracker_p2))
+
+    self.play(
+        ShowCreation(graph),
+    )
+
+
+    n = 25
+    list1 = [None] * (n+1)
+    for i in range(0,n+1):
+        list1[i] = self.get_secant_slope_group(
+            3.5-2*i/n, graph, dx = 0.001,
+            df_label = None,
+            dx_label = None,
+            dx_line_color = "#942357",
+            df_line_color= "#3f7d5c",
+            secant_line_color = RED,
+        )
+
+    for j in range(n-1):
+        self.remove(list1[j])
+        self.add(list1[j+1])
+        self.wait(0.1)
+</code></pre>;1586352024000;1586352024000
+612297570;595963657;zhuzihao-hz;<p>I have similar problems, the update functions help me a lot, Thank you very much. 👍 @zavden </p>;1586570728000;1586570728000
+595268372;595268372;ashish453;<p>i did this and get this :</p>
+<p>C:\Manim\manim-master&gtSEMICOLONpython -m manim example_scenes.py SquareToCircle -pl
+Traceback (most recent call last):
+  File "C:\Python38-32\lib\runpy.py", line 193, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Python38-32\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Manim\manim-master\manim.py", line 2, in <module>
+    import manimlib
+  File "C:\Manim\manim-master\manimlib__init__.py", line 4, in <module>
+    import manimlib.extract_scene
+  File "C:\Manim\manim-master\manimlib\extract_scene.py", line 9, in <module>
+    from manimlib.scene.scene import Scene
+  File "C:\Manim\manim-master\manimlib\scene\scene.py", line 9, in <module>
+    from manimlib.animation.animation import Animation
+  File "C:\Manim\manim-master\manimlib\animation\animation.py", line 5, in <module>
+    from manimlib.mobject.mobject import Mobject
+  File "C:\Manim\manim-master\manimlib\mobject\mobject.py", line 15, in <module>
+    from manimlib.utils.color import color_gradient
+  File "C:\Manim\manim-master\manimlib\utils\color.py", line 8, in <module>
+    from manimlib.utils.bezier import interpolate
+  File "C:\Manim\manim-master\manimlib\utils\bezier.py", line 1, in <module>
+    from scipy import linalg
+  File "C:\Python38-32\lib\site-packages\scipy\linalg__init__.py", line 195, in <module>
+    from .misc import *
+  File "C:\Python38-32\lib\site-packages\scipy\linalg\misc.py", line 5, in <module>
+    from .blas import get_blas_funcs
+  File "C:\Python38-32\lib\site-packages\scipy\linalg\blas.py", line 215, in <module>
+    from scipy.linalg import _fblas
+ImportError: DLL load failed while importing _fblas: The specified module could not be found.</p>;1586191800000;1586191800000
+595237885;595237885;yutharsan;<h3>If this is a support request:</h3>
+<p><strong>Please attempt to solve the problem on your own before opening an issue.</strong>
+Between old issues, StackOverflow, and Google, you should be able to find
+solutions to most of the common problems.</p>
+<p>Include at least:
+1. Steps to reproduce the issue (e.g. the command you ran)
+2. The unexpected behavior that occurred (e.g. error messages or screenshots)
+3. The environment (e.g. operating system and version of manim)</p>
+<h3>If this is a feature request:</h3>
+<p>Include the motivation for making this change.</p>;1586189026000;1586189177000
+609886736;595237885;yutharsan;<p>C:\Manim&gtSEMICOLONpython -m manim from_3b1b\old\basel\basel.py LightIndicator -pm
+Traceback (most recent call last):
+  File "C:\Python37\lib\runpy.py", line 193, in _run_module_as_main
+    "<strong>main</strong>", mod_spec)
+  File "C:\Python37\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\Manim\manim.py", line 5, in <module>
+    manimlib.main()
+  File "C:\Manim\manimlib__init__.py", line 11, in main
+    config = manimlib.config.get_configuration(args)
+  File "C:\Manim\manimlib\config.py", line 185, in get_configuration
+    module = get_module(args.file)
+  File "C:\Manim\manimlib\config.py", line 180, in get_module
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "from_3b1b\old\basel\basel.py", line 6, in <module>
+    from once_useful_constructs.light import *
+ModuleNotFoundError: No module named 'once_useful_constructs'</p>;1586189177000;1586189177000
+595082889;595082889;GregoryMorse;<p><code>TEMPLATE_TEXT_FILE_BODY_TABULAR = TEMPLATE_TEXT_FILE_BODY.replace("\\usepackage[english]{babel}\n", "\\usepackage[english]{babel}\n\\usepackage{caption}\n\\usepackage{multicol}\n\\usepackage{multirow}\n")
+tblBitwiseAnd = r"""
+\begin{table}
+    \centering
+    \begin{tabular}{|c|l|c|l|c|}
+         \hline
+         \textbf{$a$} &ampSEMICOLON \multirow{5}{*}{$\&ampSEMICOLON$} &ampSEMICOLON \textbf{$b$} &ampSEMICOLON \multirow{5}{*}{$=$} &ampSEMICOLON \textbf{$a\&ampSEMICOLON b$} \\ \cline{1-1} \cline{3-3} \cline{5-5}
+         0 &ampSEMICOLON &ampSEMICOLON 0 &ampSEMICOLON &ampSEMICOLON 0 \\ \cline{1-1} \cline{3-3} \cline{5-5}
+         0 &ampSEMICOLON &ampSEMICOLON 1 &ampSEMICOLON &ampSEMICOLON 0 \\ \cline{1-1} \cline{3-3} \cline{5-5}
+         1 &ampSEMICOLON &ampSEMICOLON 0 &ampSEMICOLON &ampSEMICOLON 0 \\ \cline{1-1} \cline{3-3} \cline{5-5}
+         1 &ampSEMICOLON &ampSEMICOLON 1 &ampSEMICOLON &ampSEMICOLON 1 \\ \hline
+    \end{tabular}
+    \caption*{Bitwise And/Multiplication\\($a\&ampSEMICOLON b\equiv a*b$)}
+\end{table}
+"""
+tbl = TextMobject(tblBitwiseAnd, template_tex_file_body=TEMPLATE_TEXT_FILE_BODY_TABULAR)</code></p>
+<p>However since TextMobject defines CONFIG as does its base class TexMobject, and the further base class SingleStringTexMobject also defines it, TexMobject digest_config does not cause it to load into self.CONFIG and then when TexMobject calls break_up_by_substrings which uses self.CONFIG to initialize further SingleStringTexMobject objects, they will not use the correct template.  </p>
+<p>It looks like any reference to self.CONFIG would be less than ideal because the object dictionary is updated based on a combination of things, and self.CONFIG is basically only supposed to be used in the constructor.</p>
+<p>The fact that break_up_by_substrings references certainly looks like a bug.</p>
+<p>Workaround:
+```
+      o = TextMobject.CONFIG.copy()
+      o['template_tex_file_body']=TEMPLATE_TEXT_FILE_BODY_TABULAR
+      tbl = TextMobject(tblBitwiseAnd, CONFIG=o, template_tex_file_body=TEMPLATE_TEXT_FILE_BODY_TABULAR)</p>
+<p><code></code></p>;1586176871000;1586186957000
+594781736;594781736;shagmwp;<p>Hi, I loved your Youtube video and thank you for your code. I updated the code to include Hospitalizations as well as Deceased.  This way you can see how scary a virus truly it. The common cold could have lots of infections, but no hospitalizations or deceased.  This way you can apply percentages of infected get hospitalized, and percentage of hospitalized pass away. With this you could add a "IF hospitals are over crowded death rate increase" condition (not added yet).</p>
+<p>I also added an "at risk" attribute to model the percentage of population that are at higher risk to get hospitalized.</p>
+<p>And lastly I added a healthy exposure simulation, where people not at risk can purposely expose themselves (think chicken pox parties) and then quarantine. You would be surprised.</p>
+<p>I played with the models to increase infections time to 14 days, as well as increase time to symptomatic to 4 days, this would be more realistic  to Covid.</p>
+<p>And lastly, I have one bug fix. Your last checking broke the multi city models.</p>
+<p>Thanks for contributing to manim!</p>
+<p><strong>Please ensure that your pull request works with the latest version of manim.</strong>
+You should also include:</p>
+<ol>
+<li>The motivation for making this change (or link the relevant issues)</li>
+<li>How you tested the new behavior (e.g. a minimal working example, before/after
+screenshots, gifs, commands, etc.) This is rather informal at the moment, but
+the goal is to show us how you know the pull request works as intended.</li>
+</ol>;1586144763000;1586144763000
+594344570;594344570;yutharsan;<h3>If this is a support request:</h3>
+<p><strong>Please attempt to solve the problem on your own before opening an issue.</strong>
+Between old issues, StackOverflow, and Google, you should be able to find
+solutions to most of the common problems.</p>
+<p>Include at least:
+1. Steps to reproduce the issue (e.g. the command you ran)
+2. The unexpected behavior that occurred (e.g. error messages or screenshots)
+3. The environment (e.g. operating system and version of manim)</p>
+<h3>If this is a feature request:</h3>
+<p>Include the motivation for making this change.</p>;1586077811000;1586079820000
+609388427;594344570;einarf;<p>You can manually upgrade each pacakge to the latest version. I'm guessing you are using python 3.8 and will need newver versions for it to work.</p>
+<p>There are also some missing deps if you are in the shaders branch. moderngl-window, ipython and mapbox-earcut I think.</p>;1586079736000;1586079820000
+592977009;592977009;lewis-cooper;<p>Is there anyway to take a graph thats already been plotted and find the gradient at each point of the graph and plot the values for the gradient on the graph?</p>;1585869816000;1585869816000
 591643321;591643321;chenxijun;<p>To fix the bug that causes <code>Type Error: run() missing 1 required positional argument: 'self'</code></p>
 <p>Thanks for contributing to manim!</p>
 <p><strong>Please ensure that your pull request works with the latest version of manim.</strong>
@@ -362,20 +1016,20 @@ You should also include:</p>
 <li>How you tested the new behavior (e.g. a minimal working example, before/after
 screenshots, gifs, commands, etc.) This is rather informal at the moment, but
 the goal is to show us how you know the pull request works as intended.</li>
-</ol>;1585719943;1585895530
+</ol>;1585719943000;1585895530000
 591325292;591325292;applemonkey496;<p>I just wanted to point out that pycairo can be found in <a href="https://github.com/pygobject/pycairo">this GitHub repo</a>, and that there it says installing it is as simple as <code>pip install pycairo</code>. Am I missing something or should this information be included in the docs? It would be much easier than locating and installing the appropriate version from <a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo">here</a> as the docs say. </p>
-<p>** Also, this is my first issue, so please tell me if I'm doing something wrong.</p>;1585679292;1585690103
+<p>** Also, this is my first issue, so please tell me if I'm doing something wrong.</p>;1585679292000;1585690103000
 606804397;591325292;einarf;<p>There is more to it:
 https://pycairo.readthedocs.io/en/latest/getting_started.html</p>
 <blockquote>
 <p>Installing Pycairo requires pkg-config and cairo including its headers</p>
 </blockquote>
-<p>The pre-compiled versions LFD is providing is probably the easiest option on windows.</p>;1585680274;1585680274
-606809639;591325292;applemonkey496;<p>@einarf, so does that mean that if I'm on MacOS (with Homebrew), to install pycairo, I would do <code>brew install cairo pkg-config</code> and then <code>pip3 install pycairo</code>? That would still be helpful to have that added to the docs, because right now I'd say the instructions for MacOS installation are quite vague.</p>;1585680871;1585684511
-606886388;591325292;einarf;<p>Yeah they are. Could be good to PR doc changes in the pycairo project and link to that from Manim.</p>;1585690103;1585690103
+<p>The pre-compiled versions LFD is providing is probably the easiest option on windows.</p>;1585680274000;1585680274000
+606809639;591325292;applemonkey496;<p>@einarf, so does that mean that if I'm on MacOS (with Homebrew), to install pycairo, I would do <code>brew install cairo pkg-config</code> and then <code>pip3 install pycairo</code>? That would still be helpful to have that added to the docs, because right now I'd say the instructions for MacOS installation are quite vague.</p>;1585680871000;1585684511000
+606886388;591325292;einarf;<p>Yeah they are. Could be good to PR doc changes in the pycairo project and link to that from Manim.</p>;1585690103000;1585690103000
 590532375;590532375;badele;<p>Create some missing ressources for generation the all the scenes of "from_3b1b/old/spirals" </p>
-<p>This can be used as a tutorials base :)</p>;1585596199;1585596199
-590505279;590505279;lewis-cooper;<p>Is it possible to change the font that the axis values and the axis titles have?</p>;1585593463;1585593463
+<p>This can be used as a tutorials base :)</p>;1585596199000;1585596199000
+590505279;590505279;lewis-cooper;<p>Is it possible to change the font that the axis values and the axis titles have?</p>;1585593463000;1585593463000
 590498714;590498714;kolibril13;<p>Some GLSL compilers are more sensitive to types than others. With this fix, my Intel HD Graphics 5500 (Broadwell GT2) gives no error on this script anymore.</p>
 <p>Thanks for contributing to manim!</p>
 <p><strong>Please ensure that your pull request works with the latest version of manim.</strong>
@@ -385,15 +1039,15 @@ You should also include:</p>
 <li>How you tested the new behavior (e.g. a minimal working example, before/after
 screenshots, gifs, commands, etc.) This is rather informal at the moment, but
 the goal is to show us how you know the pull request works as intended.</li>
-</ol>;1585592813;1585706686
+</ol>;1585592813000;1585706686000
 606171037;590498714;einarf;<p>Input from a moderngl maintainer:</p>
 <p>There might be more of this around in the glsl code. I think where floats should be expected it's typically a good idea to use <code>1.</code> or <code>1.0</code> instead of <code>1</code> as it could lead to strange behaviour with some drivers and in this case actually a compiler error.</p>
 <p>This fix however makes Manim run at least!</p>
-<p>EDIT: Just saw this is also fixed in #943</p>;1585593508;1585607539
-606251721;590498714;zavden;<p>It works! thanks.</p>;1585602640;1585602640
+<p>EDIT: Just saw this is also fixed in #943</p>;1585593508000;1585607539000
+606251721;590498714;zavden;<p>It works! thanks.</p>;1585602640000;1585602640000
 590497153;590497153;azarzadavila;<p>I added some examples and explanations about the content of the file geometry.py and animation.
 I tried to be exhaustive about the files I have inspected to write these modifications.
-I hosted this branch on readthedocs with links <a href="https://azarzadavila-manim.readthedocs.io/en/latest/animation.html">animation</a>, <a href="https://azarzadavila-manim.readthedocs.io/en/latest/geometry.html">geometry</a>.</p>;1585592666;1585592666
+I hosted this branch on readthedocs with links <a href="https://azarzadavila-manim.readthedocs.io/en/latest/animation.html">animation</a>, <a href="https://azarzadavila-manim.readthedocs.io/en/latest/geometry.html">geometry</a>.</p>;1585592666000;1585592666000
 590320691;590320691;lewis-cooper;<p>Trying to plot some data points using sublime text and I get this error. Any help would be appreciated.</p>
 <p>Command ran:
 ```
@@ -452,7 +1106,7 @@ Traceback (most recent call last):
   File "coronavirus.py", line 13, in get_coords_from_csv
     coord = [float(x),float(y)]
 ValueError: could not convert string to float: '\ufeff1'</p>
-<p>Many thanks :)</p>;1585577246;1585577283
+<p>Many thanks :)</p>;1585577246000;1585577283000
 590102894;590102894;Micoael;<p>I was trying to render a Linear transform scene to have a try at the animations.
 When I enter the from3b1b folder and eola series and began rendering files, when the following errors are shown:</p>
 <p>```
@@ -469,7 +1123,7 @@ Media will be written to D:\3b1b\manim\media. You can change this behavior with 
     super.<strong>init</strong>(**kwargs)
 TypeError: descriptor '<strong>init</strong>' of 'super' object needs an argument
 ```
-Lots of thanks!</p>;1585557770;1585706050
+Lots of thanks!</p>;1585557770000;1585706050000
 589883404;589883404;timalive;<p>Added a "Death" state to the SIR model, that depends on a recovery/death probability.  I have also modelled a dependency on healthcare capacity. I would appreciate permission to put a video together describing the changes made and to publish it as a supplement to your excellent SIR model video.</p>
 <p>I havent yet tested it on all the scenes, but have added it to a few key scenes. </p>
 <p>Thanks for contributing to manim!</p>
@@ -480,7 +1134,7 @@ You should also include:</p>
 <li>How you tested the new behavior (e.g. a minimal working example, before/after
 screenshots, gifs, commands, etc.) This is rather informal at the moment, but
 the goal is to show us how you know the pull request works as intended.</li>
-</ol>;1585515300;1585517129
+</ol>;1585515300000;1585517129000
 589661219;589661219;Lalourche;<p>Hi,
 This is my first attempt at a pull request for manim.</p>
 <p>It fixes some runtime errors when generating counting.py (no issue found on the subject).</p>
@@ -494,7 +1148,7 @@ TypeError: get_template_configuration() takes 1 positional argument but 2 were g
 <p>These errors do not appear anymore after fix.
 <a href="https://travis-ci.org/Lalourche/manim"><img alt="Build Status" src="https://travis-ci.org/Lalourche/manim.svg?branch=fix-counting" /></a></p>
 <p>Cheers
-Lalourche</p>;1585430123;1585430123
+Lalourche</p>;1585430123000;1585430123000
 589568867;589568867;edasubert;<p><code>fragment_shader
 ===============
 0:179(24): error: `return' with wrong type int, in function `sdf' returning float</code></p>
@@ -506,7 +1160,7 @@ You should also include:</p>
 <li>How you tested the new behavior (e.g. a minimal working example, before/after
 screenshots, gifs, commands, etc.) This is rather informal at the moment, but
 the goal is to show us how you know the pull request works as intended.</li>
-</ol>;1585398815;1585398815
+</ol>;1585398815000;1585398815000
 589400887;589400887;mvfs314;<p>I'd like to run the code:
 <code>numeros4 = TexMobject(
             "\\mathbb{N}",
@@ -524,9 +1178,9 @@ the goal is to show us how you know the pull request works as intended.</li>
 cause I wish I could change the color of the braces separately. But I got this error:
 <code>Exception: Latex error converting to dvi.</code>
 I've already tried using the command <code>Brace()</code> or the ideas found at reddit, but it didn't work at all. Is there a way to make it possible?</p>
-<p>Thanks!</p>;1585341539;1585400402
+<p>Thanks!</p>;1585341539000;1585400402000
 605434438;589400887;Aathish04;<p>Have you installed LaTeX? You also need quite a few LaTeX packages with it as well.
-Please post the full traceback and we may be able to help you better.</p>;1585395192;1585395192
+Please post the full traceback and we may be able to help you better.</p>;1585395192000;1585395192000
 605440295;589400887;mvfs314;<p>I certainly have. This is the basic LaTeX code, I just wanna write the braces separately. </p>
 <p>Here the traceback:
 <code>Traceback (most recent call last):
@@ -549,7 +1203,7 @@ Please post the full traceback and we may be able to help you better.</p>;158539
   File "C:\Manim\manim-master\manimlib\utils\tex_file_writing.py", line 67, in tex_to_dvi
     "See log output above or the log file: %s" % log_file)
 Exception: Latex error converting to dvi. See log output above or the log file: ./media\Tex\0447ed74899f41fb.log</code></p>
-<p>Thanks!</p>;1585398194;1585398194
+<p>Thanks!</p>;1585398194000;1585398194000
 605440741;589400887;Aathish04;<p>Hmm, the traceback points to a log file in <code>./media\Tex\0447ed74899f41fb.log</code>. Could you please post the contents of that as well?</p>
 <p>Also, I've heard people saying that it isn't possible to write a single brace in LaTeX. You use Brace() for that, but you say you have tried that as well.</p>
 <p>In any case, the contents of the log file would be mighty helpful.</p>
@@ -563,7 +1217,7 @@ Traceback (most recent call last): File "C:\Manim\manim-master\manimlib\extract_
 You are receiving this because you commented.
 Reply to this email directly, view it on GitHub <a href="https://github.com/3b1b/manim/issues/941#issuecomment-605440295">https://github.com/3b1b/manim/issues/941#issuecomment-605440295</a>, or unsubscribe <a href="https://github.com/notifications/unsubscribe-auth/AH5H6JBA2UIU6JM4LV7UW6TRJXT35ANCNFSM4LVIZ2FA">https://github.com/notifications/unsubscribe-auth/AH5H6JBA2UIU6JM4LV7UW6TRJXT35ANCNFSM4LVIZ2FA</a>.
 </p>
-</blockquote>;1585398468;1585398468
+</blockquote>;1585398468000;1585398468000
 605441286;589400887;mvfs314;<p>Here all the log file:
 `This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=latex 2020.2.25)  28 MAR 2020 09:20
 entering extended mode
@@ -931,13 +1585,13 @@ l.27 {}</p>
  1141 hyphenation exceptions out of 8191
  43i,3n,60p,354b,212s stack positions out of 5000i,500n,10000p,200000b,50000s</p>
 <p>No pages of output.
-`</p>;1585398777;1585398777
-605441345;589400887;mvfs314;<p>And, about the <code>Braces()</code> it's not very useful when I want to use in a single text line :/</p>;1585398807;1585398807
+`</p>;1585398777000;1585398777000
+605441345;589400887;mvfs314;<p>And, about the <code>Braces()</code> it's not very useful when I want to use in a single text line :/</p>;1585398807000;1585398807000
 605444417;589400887;Aathish04;<p>This appears to be a LaTeX specific problem. </p>
 <p>You simply cannot use a single brace separately in LaTeX, and the way manim renders LaTeX (it uses \align a lot), the parser keeps thinking it is seeing a single brace.</p>
 <p>For the time being, i suggest you use two Brace()es, which is tedious, but perhaps someone more experienced with LaTeX can help you out.</p>
 <p>If you feel like probing the problem deeper, you can modify tex_template.tex, and see if you can get it to work.</p>
-<p>All the best SEMICOLON)</p>;1585400402;1585400402
+<p>All the best SEMICOLON)</p>;1585400402000;1585400402000
 589007446;589007446;nosnakeob;<p>When I use:
 ```
 t = TextMobject('aaaaa', '''a</p>
@@ -953,18 +1607,18 @@ t = TextMobject('aaaaa', '''</p>
 </code></pre>
 <p>```
 <img alt="批注 2020-03-27 173932" src="https://user-images.githubusercontent.com/47769817/77742786-fdbe7200-7051-11ea-8470-cbc7933e64e9.png" /></p>
-<p>It's not what I want. Are there other ways to add a new line when using <code>TextMobject</code> like arrays?</p>;1585302056;1585304979
+<p>It's not what I want. Are there other ways to add a new line when using <code>TextMobject</code> like arrays?</p>;1585302056000;1585304979000
 604925408;589007446;qo4on;<p><code>'\n'.join(['First_line', 'Second_line', 'Third_line'])
-TextMobject('First_line\nSecond_line\nThird_line')</code></p>;1585304793;1585304979
+TextMobject('First_line\nSecond_line\nThird_line')</code></p>;1585304793000;1585304979000
 588937811;588937811;Ranoiaetep;<p>Removed pycairo section on Directly (Windows), as its included in requirements.txt
-Removed changing pycairo version number in the same section, version number included in requirements.txt is &gtSEMICOLON= 1.18.1</p>;1585293672;1585293811
-588714915;588714915;MatejVe;<p>I have succesfully installed all the packages required for working in manim. Problem arrises when trying to run the example_scenes.py from the console. Console reports no errors and it seems like everything went smoothly, however no video windows pop up and actually show the animation. I am working on windows 10, python 3.7.3 32bit</p>;1585255317;1585256023
+Removed changing pycairo version number in the same section, version number included in requirements.txt is &gtSEMICOLON= 1.18.1</p>;1585293672000;1585293811000
+588714915;588714915;MatejVe;<p>I have succesfully installed all the packages required for working in manim. Problem arrises when trying to run the example_scenes.py from the console. Console reports no errors and it seems like everything went smoothly, however no video windows pop up and actually show the animation. I am working on windows 10, python 3.7.3 32bit</p>;1585255317000;1585256023000
 604680067;588714915;MatejVe;<p>Figured it out. Intead of doing 
 python3 manim.py example_scenes.py SquareToCircle -pl
 in the console, I have done
 manim example_scenes.py SquareToCircle -pl
 and it works like it should now.
-Still not sure why the first thing didn't work though</p>;1585256023;1585256023
+Still not sure why the first thing didn't work though</p>;1585256023000;1585256023000
 588606969;588606969;qo4on;<p>I get an error in Colab trying to run Manim from "shaders" branch. I see <code>tqdm</code> for each animation, that means they are successful. But then it gets into a loop and I have to stop it with the error:
 <code>Traceback (most recent call last):
   File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
@@ -995,11 +1649,11 @@ Still not sure why the first thing didn't work though</p>;1585256023;1585256023
     fc = getattr(self, 'set_' + label)
 KeyboardInterrupt</code>
 <strong>UPDATE:
-If you want to try it in Colab, <a href="https://github.com/moderngl/moderngl/issues/392#issuecomment-605913255">the code is here</a>.</strong></p>;1585244760;1585593681
-605602579;588606969;timalive;<p>I am getting the same issue when running in docker. Something to do with the fact that pyglet needs a display to run. There may be a solution using Xvfb</p>;1585470217;1585470217
+If you want to try it in Colab, <a href="https://github.com/moderngl/moderngl/issues/392#issuecomment-605913255">the code is here</a>.</strong></p>;1585244760000;1585593681000
+605602579;588606969;timalive;<p>I am getting the same issue when running in docker. Something to do with the fact that pyglet needs a display to run. There may be a solution using Xvfb</p>;1585470217000;1585470217000
 605608314;588606969;qo4on;<p>xvfb doesn't work either. We need to change manim <code>window.py</code> backend from <code>pyglet</code> to <code>headless</code>.
 <code>from moderngl_window.context.headless.window import Window as HeadlessWindow</code>
-But I didn't managed to make it work.</p>;1585473755;1585473797
+But I didn't managed to make it work.</p>;1585473755000;1585473797000
 605677632;588606969;t-wolfeadam;<p>Running Win10, I couldn't get it to work when using the preview setting (-p) due to no configs for the window:
 <code>Traceback (most recent call last):
   File "C:\Users\Tyler Wolfe-Adam\Documents\Python\manim-shaders\manim.py", line 5, in &ltSEMICOLONmodule&gtSEMICOLON
@@ -1023,8 +1677,8 @@ But I didn't managed to make it work.</p>;1585473755;1585473797
   File "C:\Program Files\Python37\lib\site-packages\pyglet\canvas\base.py", line 194, in get_best_config
     raise window.NoSuchConfigException()
 pyglet.window.NoSuchConfigException</code>
-It <em>does</em> work when just writing to a file (-w). However, just for the shape examples. Anything with text doesn't work due to (unrelated) issues with dvisvgm not converting the dvi to svg.</p>;1585505829;1585505829
-605678964;588606969;qo4on;<p>What text doesn't work? <code>tex_mobject</code> or <code>text_mobject</code>?</p>;1585506426;1585506426
+It <em>does</em> work when just writing to a file (-w). However, just for the shape examples. Anything with text doesn't work due to (unrelated) issues with dvisvgm not converting the dvi to svg.</p>;1585505829000;1585505829000
+605678964;588606969;qo4on;<p>What text doesn't work? <code>tex_mobject</code> or <code>text_mobject</code>?</p>;1585506426000;1585506426000
 605719004;588606969;t-wolfeadam;<blockquote>
 <p>What text doesn't work? <code>tex_mobject</code> or <code>text_mobject</code>?</p>
 </blockquote>
@@ -1033,7 +1687,7 @@ It <em>does</em> work when just writing to a file (-w). However, just for the sh
 <p>I'm currently getting it setup to try on WSL. Hopefully that works better. No luck on googling the problem either. I'll probably open a new thread somewhere if it doesn't work with WSL :/</p>
 <p>Edit: The problem with dvisvgm seems to be a Windows thing. I found out it's returning exit code -1073740791, which is apparently a stack buffer overflow. dvisvgm works fine on WSL, so for now I've implemented a hacky solution where Windows waits until Ubuntu has converted the necessary files. </p>
 <p>Edit 2: <strong>Found the fix!</strong> For future readers: Running <code>dvisvgm --version</code> reported 2.7. I ran <code>where dvisvgm</code> and it reported two versions: the v2.7 (installed in Program Files) showed before the other, which was part of MikTex and version 2.8.2. Removing the v2.7 copy fixed this issue. 
-I am now able to render videos in this branch, as long as I'm writing to file (<code>w</code> flag) and not showing preview (<code>p</code> flag). </p>;1585524740;1585588715
+I am now able to render videos in this branch, as long as I'm writing to file (<code>w</code> flag) and not showing preview (<code>p</code> flag). </p>;1585524740000;1585588715000
 605728064;588606969;t-wolfeadam;<p>Update: Ran into the same problems with the display. Tried using xvfb like so:
 <code>xvfb-run -s "-screen 0 640x360x24" python3.7 -m manim example_scenes.py SquareToCircle -ql</code>
 That returned the same error for me as when I tried to use the <code>q</code> flag on Windows:
@@ -1096,24 +1750,24 @@ Traceback (most recent call last):
 moderngl.error.Error: GLSL Compiler failed</p>
 <h1>fragment_shader</h1>
 <p>0:179(24): error: <code>return' with wrong type int, in function</code>sdf' returning float
-``</p>;1585528748;1585528748
-605798041;588606969;qo4on;<p>You can't get hardware acceleration with virtual displays such as xvfb. Can you render <code>SquareToCircle</code> in <code>shaders</code> version correctly?</p>;1585547883;1585547883
-605830554;588606969;timalive;<p>I was able to do it on mac - not in docker </p>;1585553299;1585553299
-605846659;588606969;qo4on;<p>Can you try to run it in Colab? I had no success there.</p>;1585555532;1585555532
+``</p>;1585528748000;1585528748000
+605798041;588606969;qo4on;<p>You can't get hardware acceleration with virtual displays such as xvfb. Can you render <code>SquareToCircle</code> in <code>shaders</code> version correctly?</p>;1585547883000;1585547883000
+605830554;588606969;timalive;<p>I was able to do it on mac - not in docker </p>;1585553299000;1585553299000
+605846659;588606969;qo4on;<p>Can you try to run it in Colab? I had no success there.</p>;1585555532000;1585555532000
 605947824;588606969;einarf;<p>Lengthy issue about this in the modengl project: https://github.com/moderngl/moderngl/issues/392
 We do actually get it running in Google Colab with EGL, but it gets stuck in an infinite loop. That I think is a flow issue in the Manim code itself.. or at least it needs to be debugged properly to make a conclusion.</p>
 <p>Manim is using moderngl and moderngl-window. I think the main issues is that it extends the pyglet window backend directly. If headless rendering is needed it should use the <code>headless.Window</code> instead.</p>
 <p>The <code>BaseWindow.init_mgl_context</code> should be probably also be overridden to create the correct context type or I can add some features for this in the moderngl-window project if we figure out what is needed. Right now it tries to <strong>detect</strong> the context pyglet creates**, but in headless we just need to make our own context with no window (X11 or EGL).</p>
 <p>It's not that complicated to fix thankfully.</p>
-<p>I am willing to help out giving pointers for the moderngl specific things, but I don't really know much about Manim (at least yet).</p>;1585568204;1585569436
+<p>I am willing to help out giving pointers for the moderngl specific things, but I don't really know much about Manim (at least yet).</p>;1585568204000;1585569436000
 606115199;588606969;t-wolfeadam;<blockquote>
 <p>You can't get hardware acceleration with virtual displays such as xvfb. Can you render <code>SquareToCircle</code> in <code>shaders</code> version correctly?</p>
 </blockquote>
-<p>Good to know! I can in Windows, but not in the Ubuntu subsystem. For both the <code>q</code> and <code>w</code> flags I get the <code>pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"</code> exception.</p>;1585587005;1585587005
+<p>Good to know! I can in Windows, but not in the Ubuntu subsystem. For both the <code>q</code> and <code>w</code> flags I get the <code>pyglet.canvas.xlib.NoSuchDisplayException: Cannot connect to "None"</code> exception.</p>;1585587005000;1585587005000
 606136266;588606969;einarf;<p>I released a new version of moderngl-window what should at least solve the <code>NoSuchConfig</code> for a lot of people. You maye also have to go into the <code>window.py</code> module and set <code>samples = 0</code>.</p>
 <p>@t-wolfeadam The shader error you are getting is an error in the glsl code here : https://github.com/3b1b/manim/blob/2ce0b72c440fadbfba990bdac8bc9c2ea8bff4e7/manimlib/shaders/quadratic_bezier_fill_frag.glsl#L41</p>
 <p>It should return a <code>float</code>, not an <code>int</code>. Not all GLSL compilers are nice and convert constants for you automatically. I would fix that line and test it again. Make a PR as well while you are at it (if it works) 😄 </p>
-<p>You may see more of those, but they are quick and easy to fix if you search for the variable or function names reported by the GLSL compiler.</p>;1585589418;1585589554
+<p>You may see more of those, but they are quick and easy to fix if you search for the variable or function names reported by the GLSL compiler.</p>;1585589418000;1585589554000
 606164014;588606969;t-wolfeadam;<blockquote>
 <p>I released a new version of moderngl-window what should at least solve the <code>NoSuchConfig</code> for a lot of people. You may also have to go into the <code>window.py</code> module and set <code>samples = 0</code>.
 </p>
@@ -1125,13 +1779,13 @@ We do actually get it running in Google Colab with EGL, but it gets stuck in an 
 <p>It should return a <code>float</code>, not an <code>int</code>. Not all GLSL compilers are nice and convert constants for you automatically. I would fix that line and test it again. Make a PR as well while you are at it (if it works) 😄</p>
 </blockquote>
 <p>Ahh, so that's what sdf was referring to. That also did the trick, so thank you for that as well! (and fortunately, it was the only instance).</p>
-<p>Edit: looks like someone already made the PR for that issue</p>;1585592705;1585592791
-606171934;588606969;einarf;<p>@t-wolfeadam Yep. We just sorted out a PR after discussing the issue on the manim discord server 👍 </p>;1585593620;1585593620
+<p>Edit: looks like someone already made the PR for that issue</p>;1585592705000;1585592791000
+606171934;588606969;einarf;<p>@t-wolfeadam Yep. We just sorted out a PR after discussing the issue on the manim discord server 👍 </p>;1585593620000;1585593620000
 606172498;588606969;kolibril13;<p>And here it is:
-https://github.com/3b1b/manim/pull/950</p>;1585593681;1585593681
+https://github.com/3b1b/manim/pull/950</p>;1585593681000;1585593681000
 588343035;588343035;girishgargcool;<p>Many people face problems while installing manim. This is partly due to the fact that is isn't well documented. I myself had come across so many problems setting up manim. </p>
 <p>So I have added a .ova file which will help to install manim in a virtual Ubuntu os on the host os. All the requirements and dependencies are pre-installed and the user can directly start making beautiful animations.</p>
-<p>Credits: This .ova file was made by <a href="https://github.com/purusharths">Purusharth Saxena</a></p>;1585221453;1585221453
+<p>Credits: This .ova file was made by <a href="https://github.com/purusharths">Purusharth Saxena</a></p>;1585221453000;1585221453000
 587571726;587571726;Enempie;<p>Hello everyone,
 I'm pretty new to Python and neither had to set up different environments nor install a package (or something for it) outside of Anaconda or without the simple conda install <package> command.
 As stated, I use Anaconda 3 and usually work with Spyder 4 on Windows 10 Pro 64 Bit. 
@@ -1140,10 +1794,10 @@ I have the following problems:
 1. I can't setup a terminal in Spyder with my manim env. I guess Spyder can't find my virtualenv?
 2. I can choose the manim env in VSCode and successfully render the example_scenes but only if I go to my manim directory from the terminal first which is okay but I don't know if that's the only way or if I set up something wrong (I'm not used to be forced to do that, is there a way to import manim and call the methods like I'm used to independent of the directory of my terminal)? I'm just a simple engineer and I honestly have no clue how complex software works in the background, I only know how to run my math stuff..As I said it's currently working (just from VSCode) but I'm wondering if it is possible to get it to my usual workflow (running the manim env in Spyder and especially calling manim methods without going to the directory with cd .. commands first).
 I'd appreciate a helping hand a lot and thanks a lot to this amazing community in advance.</p>
-<p>Sincerely </p>;1585129861;1585154891
+<p>Sincerely </p>;1585129861000;1585154891000
 603954587;587571726;Enempie;<p>Okay, 
 I managed to pin it down a bit. I got Anaconda to recognize my manim env and got it to the Spyder terminal. What's now still bothering me is, that I don't seem to be able to change directory in the IPython console of Spyder and therefore can't run the extraction. Again, it works perfectly in VSCode but I'd love to have the Spyder variable explorer for my purposes.
-I'll post the console log asap. </p>;1585154891;1585154891
+I'll post the console log asap. </p>;1585154891000;1585154891000
 585766275;585766275;Steff-san;<p>I tried to install manin for linux but i get this error:
 Building wheels for collected packages: pycairo
   Building wheel for pycairo (setup.py) ... error
@@ -1177,425 +1831,16 @@ Installing collected packages: pycairo
     Found existing installation: pycairo 1.16.2
 ERROR: Cannot uninstall 'pycairo'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.</p>
 <p>Note: 
-In windous i have got a similar errror.</p>;1584896980;1585257497
+In windous i have got a similar errror.</p>;1584896980000;1585257497000
 603367609;585766275;Aathish04;<p>I think you're new to Github.
 It's considered bad practice to have an uninformative title and issue.
-We need a bit more info from you. What OS are you using, and what were you trying to do?</p>;1585068985;1585068985
+We need a bit more info from you. What OS are you using, and what were you trying to do?</p>;1585068985000;1585068985000
 604357553;585766275;Nikhil0504;<blockquote>
 <p>I think you're new to Github.
 It's considered bad practice to have an uninformative title and issue.
 We need a bit more info from you. What OS are you using, and what were you trying to do?</p>
 </blockquote>
-<p>he is using linux and was trying download the repo requirements </p>;1585219508;1585219508
-584628633;584628633;luketimmerman314;<p>So, I have my own little creature that I made (it is an SVG file) using InkScape. However, it was not rendering correctly when I ran my python code. For reference, I have attached the error message that I am receiving when I try and run my code:</p>
-<p>Media will be written to ./media/. You can change this behavior with the --media_dir flag.
-conversation.py:39: UserWarning: No PsiCreatures design with mode happy
-  (self.file_name_prefix, mode))</p>
-<p>Traceback (most recent call last):
-  File "conversation.py", line 36, in <strong>init</strong>
-    SVGMobject.<strong>init</strong>(self, file_name=svg_file, <strong>kwargs)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 46, in <strong>init</strong>
-    VMobject.<strong>init</strong>(self, </strong>kwargs)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/mobject.py", line 48, in <strong>init</strong>
-    self.generate_points()
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 69, in generate_points
-    mobjects = self.get_mobjects_from(svg)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 87, in get_mobjects_from
-    for child in element.childNodes
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 87, in <listcomp>
-    for child in element.childNodes
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 87, in get_mobjects_from
-    for child in element.childNodes
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 87, in <listcomp>
-    for child in element.childNodes
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 91, in get_mobjects_from
-    element.getAttribute('d')
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 119, in path_string_to_mobject
-    return VMobjectFromSVGPathstring(path_string)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 322, in <strong>init</strong>
-    VMobject.<strong>init</strong>(self, **kwargs)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/mobject.py", line 48, in <strong>init</strong>
-    self.generate_points()
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 349, in generate_points
-    self.handle_command(command, coord_string)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 359, in handle_command
-    new_points = self.string_to_points(coord_string)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 422, in string_to_points
-    numbers = string_to_numbers(coord_string)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 24, in string_to_numbers
-    for s in re.split("[ ,]", num_string)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 25, in <listcomp>
-    if s != ""
-ValueError: could not convert string to float: '6.39.22'</p>
-<p>During handling of the above exception, another exception occurred:</p>
-<p>Traceback (most recent call last):
-  File "/Users/luketimmerman/Animation/manim/manimlib/extract_scene.py", line 155, in main
-    scene = SceneClass(<strong>scene_kwargs)
-  File "/Users/luketimmerman/Animation/manim/manimlib/scene/scene.py", line 53, in <strong>init</strong>
-    self.construct()
-  File "conversation.py", line 70, in construct
-    psi_creature = PsiCreature()
-  File "conversation.py", line 44, in <strong>init</strong>
-    SVGMobject.<strong>init</strong>(self, mode="happy", file_name=svg_file, </strong>kwargs)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 45, in <strong>init</strong>
-    self.ensure_valid_file()
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 63, in ensure_valid_file
-    self.file_name)
-OSError: No file matching assets/PsiCreatures_happy.svg in image directory</p>
-<p>Thanks for any help y'all can give!</p>;1584644123;1585291678
-602088618;584628633;luketimmerman314;<p>Hello?</p>;1584817584;1584817584
-602088666;584628633;luketimmerman314;<p>Do y'all need more information?</p>;1584817602;1584817602
-602119164;584628633;luketimmerman314;<p>So, I've been experimenting today, and I was able to get some of the simple .svg files I created in InkScape to render correctly when I ran my code. But, as the images got more complex, the images rendered completely terribly. I don't understand why this would be. I'm using the same application, and I was even able to get Grant's PiCreatures_plain.svg to run through InkScape. Any suggestions?</p>;1584833447;1584833447
-603591323;584628633;raghavg123;<p>The default directory for manim to look for svg images is <code>assets/svg_images</code> (outside the manimlib folder) so try putting your file <code>PsiCreatures_happy.svg</code> in that folder (if it doesn't exist, create it), so that should solve your second problem.</p>;1585100099;1585100099
-604842764;584628633;chiraagChakravarthy;<p>Hey. I'm having a similar issue, where my ellipses and rectangles render fine, but the lines just don't show up. Do you have any insight into why that may happen?</p>;1585291678;1585291678
-584556456;584556456;Haffi112;<p>Hi everyone,</p>
-<p>I am new to manim so please bear with me. I am trying to run older scenes and for them I am unable to run scenes which involve pi creatures. Is there a standard workaround for this?</p>
-<p>In particular I get the following error:</p>
-<pre><code>UserWarning: No PiCreatures design with mode plain (self.file_name_prefix, mode))
-</code></pre>
-<p>when running the following command from the manim directory:</p>
-<pre><code>python manim.py from_3b1b/old/nn/part1.py -pl
-</code></pre>
-<p>As an example I chose scene number 28.</p>
-<p>Any help would be appreciated. In case the images are not available I would be happy with a placeholder just to see and confirm that things work.</p>;1584636834;1584639752
-601320562;584556456;Haffi112;<p>I tried fixing it myself and noticed a couple of problems.</p>
-<p>Image assets for creatures were missing. I found some <a href="https://www.dropbox.com/sh/fybvhyyr2mls40v/AABv9hQPuS_dJUhdKYdMJ3LWa/designs/PiCreature?dl=0&ampSEMICOLONlst=&ampSEMICOLONsubfolder_nav_tracking=1">here</a> after reading <a href="https://www.reddit.com/r/3Blue1Brown/comments/8v247s/i_have_been_inspired_by_3blue1brown_for_a_while/">this</a> Reddit thread. Note that these are not the standard creatures from the 3b1b youtube channel but it was never my goal to replicate that anyway.</p>
-<p>The next hurdle is the MEDIA_DIR variable. It is by default set by the constants.py file but in the pi_creature.py file it shows up as an empty string. For the sake of making things work I decided to change it locally in the pi_creature.py file but I assume that is not the intended solution.</p>
-<p>It would be great if there were some default assets to replace the normal pi_creatures and a fix for the above problem. Besides these issues I am really happy with manim ^^</p>;1584639736;1584639752
-583833153;583833153;hanwenzhu;<p>I worked on manim back in 2018. I added the function for using CTeX (XeLaTeX package for Chinese) and XeLaTeX instead of LaTeX using the flag <code>TEX_USE_CTEX</code> in constants.py (#315).</p>
-<p>I have stopped working on manim since 2019, but over the months there are apparently more and more people who want to use LaTeX rendering in non-English languages, and even on very old issues I still occasionally see people asking how to do that... Looking back at my change I really should have <strong>decoupled using CTeX (TeX template) from XeLaTeX (rendering tool)</strong>. This has caused a <em>lot</em> of confusions and made weird hacks/fixes necessary for only using XeLaTeX, especially for a language that is not Chinese or English, with the most recent #858 and #840. It really should have been a flag <code>TEX_USE_XELATEX</code> and another flag <code>TEMPLATE_TEX_NAME</code>, and the flag <code>TEX_USE_CTEX</code> is such that when it is <code>True</code>, <code>TEX_USE_XELATEX</code> is <code>True</code> and <code>TEMPLATE_TEX_NAME</code> is <code>"ctex_template.tex"</code>SEMICOLON otherwise <code>TEX_USE_XELATEX</code> is <code>False</code> and <code>TEMPLATE_TEX_NAME</code> is <code>"tex_template.tex"</code>. Then set <code>TEMPLATE_TEX_FILE</code> to <code>os.path.join(os.path.dirname(os.path.realpath(__file__)), TEMPLATE_TEX_NAME)</code>. Corresponding logic: constants.py lines 74–79.</p>
-<p>It might be even better to set it dynamically using a function or as a parameter of <code>TexMobject()</code>, (see issues like #891). I looked at the source code and this is definitely possible. The options I can think of are
-1. Use the current <code>TEX_USE_CTEX</code>
-2. Add flags <code>TEX_USE_XELATEX</code> and <code>TEMPLATE_TEX_NAME</code>, and rework <code>TEX_USE_CTEX</code>
-3. Add parameters for <code>TexMobject()</code> like <code>use_xelatex=False</code> and <code>tex_template="tex_template.tex"</code>
-4. Use the flags of 2. as a default, and make it possible to change the default using 3.</p>
-<p>Not really sure if this is the right place to raise this issue.</p>;1584547113;1584585223
-600722090;583833153;hanwenzhu;<p>I can do a PR for the change if needed</p>;1584547879;1584547879
-600955502;583833153;hanwenzhu;<h1>723 is also a pretty good idea and there is a similar pr #745 although it doesn't decouple CTeX from XeLaTeX</h1>;1584585223;1584585223
-583286873;583286873;luketimmerman314;<p>Hello, I am having trouble getting an .svg image to work in the newest version of manim. Any help would be appreciated. I have attached a screen shot of the code I am using, and the error messages that I am getting. In making my own code, I tried to mimic the PiCreatures code as close as possible to get it to run but to no avail.</p>
-<p><img alt="Screen Shot 2020-03-17 at 3 41 03 PM" src="https://user-images.githubusercontent.com/62107786/76899643-f6cf7c80-6865-11ea-87ac-aaeebb6d7539.png" />
-<img alt="Screen Shot 2020-03-17 at 3 41 21 PM" src="https://user-images.githubusercontent.com/62107786/76899650-fa630380-6865-11ea-92e5-ed16b4a34b80.png" />
-<img alt="Screen Shot 2020-03-17 at 3 41 42 PM" src="https://user-images.githubusercontent.com/62107786/76899659-fd5df400-6865-11ea-8759-2c515fc4a91a.png" />
-<img alt="Screen Shot 2020-03-17 at 3 41 58 PM" src="https://user-images.githubusercontent.com/62107786/76899663-ff27b780-6865-11ea-8376-c738552b8231.png" /></p>;1584477819;1584637040
-600451490;583286873;mental32;<p>This doesn't appear to be an issue with the library, at a guess you're missing a <code>FILE_DIR</code> that appears to be either <code>PSI_CREATURE_DIR</code> or <code>MEDIA_DIR</code>.</p>
-<p>Also for future refrence it's better to attach a link to a <a href="https://gist.github.com/">gist</a> or <a href="https://hastebin.com">hastebin</a> with the relevant code and tracebacks instead of screenshots.</p>;1584513733;1584515438
-600646029;583286873;luketimmerman314;<p>So how would I remedy this situation? How do I create a PSI_CREATURE_DIR or a MEDIA_DIR?</p>;1584540748;1584540748
-600705024;583286873;luketimmerman314;<p>Also, where is the image directory?</p>;1584546533;1584546533
-600773437;583286873;mental32;<blockquote>
-<p>So how would I remedy this situation? How do I create a PSI_CREATURE_DIR or a MEDIA_DIR?</p>
-</blockquote>
-<p>Both of those names are defined already at the top of the file so it's as simple as replacing the undefined name with either one of those.</p>
-<p>Also for getting started with Python I'd recommend the <a href="https://docs.python.org/3/tutorial/">official tutorial</a> or the <a href="https://realpython.com/">realpython blog</a> and for asking questions there's <a href="https://www.reddit.com/r/learnpython/">r/learnpython</a>, one of the <a href="https://discordapp.com/invite/python">many</a> <a href="https://discord.gg/RAKc3HF">discord</a> <a href="https://discordapp.com/invite/code">guilds</a> or the #python channel on the <a href="https://freenode.net/">freenode IRC</a>.</p>;1584553694;1584553694
-600825398;583286873;luketimmerman314;<p>Ok, so I changed the FILE_DIR to PSI_CREATURE_DIR, and that got rid of the FILE_DIR Not Defined Error. Thank you for that.</p>
-<p>But it still says 
-OSError: No file matching assets/PsiCreatures_happy.svg in image directory</p>
-<p>Does this have something to do with where I have placed the svg file? Currently, I have placed the svg file in manim/manimlib/files, as this is where the PiCreatures_plain.svg also resides. I tried moving the svg to the assets file to see if that would work, but it still returns the same error message. Any advice for this?</p>;1584560807;1584560807
-600948199;583286873;hanwenzhu;<p><code>FILE_DIR</code> was defined way back to be os.path.join(".", "files") and is removed in commit caa4577cd161e5c8bd4f2f57b9d6c3295672d2a3. Add this line to the top of your script
-<code>py
-FILE_DIR = os.path.join(".", "files")</code>
-after the <code>import *</code> if your SVG files are placed in ./files</p>
-<p>It seems that the FILE_DIR reference is part of the error handling block. Check if the SVG files are in ./media/assets or ./assets first</p>;1584583536;1584584006
-600960816;583286873;luketimmerman314;<p>Ok, so I moved the file PsiCreatures_happy.svg back to the files folder in the library and then added the code you provided. However, it is still giving me this error when I am trying to run it in Terminal:</p>
-<p>Media will be written to ./media/. You can change this behavior with the --media_dir flag.
-conversation.py:39: UserWarning: No PsiCreatures design with mode happy
-  (self.file_name_prefix, mode))</p>
-<p>Traceback (most recent call last):
-  File "conversation.py", line 36, in <strong>init</strong>
-    SVGMobject.<strong>init</strong>(self, file_name=svg_file, **kwargs)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 45, in <strong>init</strong>
-    self.ensure_valid_file()
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 63, in ensure_valid_file
-    self.file_name)
-OSError: No file matching files/PsiCreatures_happy.svg in image directory</p>
-<p>During handling of the above exception, another exception occurred:</p>
-<p>Traceback (most recent call last):
-  File "/Users/luketimmerman/Animation/manim/manimlib/extract_scene.py", line 155, in main
-    scene = SceneClass(<strong>scene_kwargs)
-  File "/Users/luketimmerman/Animation/manim/manimlib/scene/scene.py", line 53, in <strong>init</strong>
-    self.construct()
-  File "conversation.py", line 70, in construct
-    psi_creature = PsiCreature()
-  File "conversation.py", line 44, in <strong>init</strong>
-    SVGMobject.<strong>init</strong>(self, mode="happy", file_name=svg_file, </strong>kwargs)
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 45, in <strong>init</strong>
-    self.ensure_valid_file()
-  File "/Users/luketimmerman/Animation/manim/manimlib/mobject/svg/svg_mobject.py", line 63, in ensure_valid_file
-    self.file_name)
-OSError: No file matching assets/PsiCreatures_happy.svg in image directory</p>
-<p>Any ideas? Does it have something to do with the fact that it is trying to work with the assets folder? Because this folder is no longer where those svg images are stored.</p>
-<p>Thanks!</p>;1584586521;1584586521
-600976923;583286873;hanwenzhu;<p>The <code>files</code> folder is meant to be in the directory that you called your python program (presumably the same directory as <code>conversation.py</code></p>;1584590586;1584590586
-600979597;583286873;luketimmerman314;<p>Ok, thank you so much! That got it to play, but now there is a different issue: it looks nothing like the image that I made using the InkScape program. Any suggestions on how to fix that? I tried using it with Grant's Pi Creatures, and that worked perfectly, so it must be something with my file or code, maybe?</p>
-<p>Thanks!</p>;1584591345;1584591345
-600989330;583286873;hanwenzhu;<p>I'm not sure, but my guess is that it's manim's problem working with SVG files, since if I remember correctly manim uses its own SVG parsing code. This works fine on LaTeX-generated SVG but most likely not on any SVG.</p>;1584593969;1584594156
-600994069;583286873;luketimmerman314;<p>Ok thanks for the clarification. Is there somewhere you could point me that would show me how to generate my svg file using LaTex? Or perhaps somehow convert my .svg to be compatible with the manim code?</p>
-<p>Thanks again for all of your help! I really appreciate it!</p>;1584595246;1584595246
-601005602;583286873;hanwenzhu;<p>The .tex file generates a .dvi file using the <code>latex</code> command, which is used to generate the .svg file using <code>dvisvgm</code>. This is in <a href="https://github.com/3b1b/manim/blob/master/manimlib/utils/tex_file_writing.py">tex_file_writing.py</a>. The SVG parsing part is at the definition of SVGMobject <a href="https://github.com/3b1b/manim/blob/master/manimlib/mobject/svg/svg_mobject.py#L76">here</a>. It only handles <code>&ltSEMICOLONdefs&gtSEMICOLON</code>, <code>&ltSEMICOLONg&gtSEMICOLON/&ltSEMICOLONsvg&gtSEMICOLON/&ltSEMICOLONsymbol&gtSEMICOLON</code>, <code>&ltSEMICOLONpath&gtSEMICOLON</code>, <code>&ltSEMICOLONuse&gtSEMICOLON</code>, <code>&ltSEMICOLONrect&gtSEMICOLON</code>, <code>&ltSEMICOLONcircle&gtSEMICOLON</code>, <code>&ltSEMICOLONellipse&gtSEMICOLON</code>, and <code>&ltSEMICOLONpolygon&gtSEMICOLON/&ltSEMICOLONpolyline&gtSEMICOLON</code>.</p>;1584598118;1584598118
-601012984;583286873;luketimmerman314;<p>All that my PsiCreature is built from are paths and ellipses, so I'm not sure if that's the problem. So I found the image that Grant uses (PiCreatures_plain.svg) and opened it with just the standard TextEdit Program. It looks as if Grant used Adobe Illustrator to construct the image, and then used an SVG Export plug In to export the file. Do you think that if I rebuilt the image using Illustrator instead of InkScape that it would render correctly? For reference, I have attached the code I received from PiCreatures_plain.svg</p>
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 480 480" style="enable-background:new 0 0 480 480SEMICOLON" xml:space="preserve">
-<style type="text/css">
-    .st0{fill:#FFFFFFSEMICOLON}
-    .st1{fill:#0C7F99SEMICOLON}
-</style>
-<path class="st0" d="M251.6,114.7c0,4.2-1.4,8.2-3.7,11.3l-30.4,0.3c-2.6-3.1-4-7.3-4-11.6c0-10.5,8.5-19,19-19
-    C243.1,95.6,251.6,104.2,251.6,114.7z"/>
-<path class="st0" d="M306.6,114.7c0,4.2-1.4,8.2-3.7,11.3l-30.4,0.3c-2.6-3.1-4-7.3-4-11.6c0-10.5,8.5-19,19-19
-    C298.1,95.6,306.6,104.2,306.6,114.7z"/>
-<path d="M238,99.8c-1.3,0.1-2.3,1.1-2.3,2.4c0,1.3,1.1,2.4,2.4,2.4c1.3,0,2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4
-    C238.1,99.8,238,99.8,238,99.8l2.9-1c4.3,0,7.7,3.5,7.7,7.7s-3.5,7.7-7.7,7.7s-7.7-3.5-7.7-7.7s3.5-7.7,7.7-7.7"/>
-<path d="M293,99.8c-1.3,0.1-2.3,1.1-2.3,2.4c0,1.3,1.1,2.4,2.4,2.4s2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4
-    C293.1,99.8,293,99.8,293,99.8l2.9-1c4.3,0,7.7,3.5,7.7,7.7s-3.5,7.7-7.7,7.7s-7.7-3.5-7.7-7.7s3.5-7.7,7.7-7.7"/>
-<path class="st1" d="M228.4,157.1h64.4c-15.4,63.8-25.1,105.4-25.1,151c0,8,0,69.5,23.4,69.5c12,0,22.2-10.8,22.2-20.5
-    c0-2.8,0-4-4-12.5c-15.4-39.3-15.4-88.3-15.4-92.3c0-3.4,0-43.9,12-95.1h63.8c7.4,0,26.2,0,26.2-18.2c0-12.5-10.8-12.5-21.1-12.5
-    H187.4c-13.1,0-32.5,0-58.7,27.9c-14.8,16.5-33,46.7-33,50.1s2.8,4.6,6.3,4.6c4,0,4.6-1.7,7.4-5.1c29.6-46.7,59.2-46.7,73.5-46.7
-    h32.5c-12.5,42.7-26.8,92.3-73.5,192c-4.6,9.1-4.6,10.3-4.6,13.7c0,12,10.3,14.8,15.4,14.8c16.5,0,21.1-14.8,27.9-38.7
-    c9.1-29.1,9.1-30.2,14.8-53L228.4,157.1"/>
-<path d="M246.3,149.1c5.5,0,1.9,0.1,13.5,0c10.3-0.1,12.4-0.1,15.7-0.2c0,0-0.3-3.1-0.3-3.1c-3.7,0.1-9.3,0.2-14.7,0.2
-    c-3.9,0-8.5,0-14.6,0"/>
-</svg>
-
-<p>Here is my code that I get for my PsiCreatures_happy.svg also:</p>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
-   version="1.1"
-   id="svg8"
-   inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
-   sodipodi:docname="psi_creature_happy.svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.63261527"
-     inkscape:cx="213.73446"
-     inkscape:cy="398.71679"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="805"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       style="fill:#05d5faSEMICOLONstroke:#000000SEMICOLONstroke-width:0.965SEMICOLONstroke-linecap:buttSEMICOLONstroke-linejoin:miterSEMICOLONstroke-opacity:1SEMICOLONfill-opacity:1SEMICOLONstroke-miterlimit:4SEMICOLONstroke-dasharray:none"
-       d="m 86.543101,117.34948 -6.674715,-0.28525 -9.470109,-1.14097 -6.50357,-1.48327 -6.560616,-2.6813 -4.792104,-2.39605 -3.47998,-2.6813 -3.137686,-2.62424 -2.90949,-3.87933 L 41.189267,96.925991 38.507971,89.053248 37.823386,84.831636 37.1388,77.301187 36.796506,70.113032 36.62536,64.065856 36.454212,58.931457 35.65553,53.797062 34.457502,51.115766 32.746037,49.461351 31.20572,48.49152 28.296227,47.863982 h -0.627536 l 0.02889,-3.672229 2.253062,0.07815 3.765222,0.285244 2.795394,0.627536 2.567199,0.51344 3.594077,1.312124 2.738344,1.597367 2.681296,2.4531 2.396053,3.251785 2.224905,4.221614 0.855732,1.825565 1.140975,3.93637 0.798685,5.533736 0.45639,4.906201 0.228196,4.278664 0.171148,3.47998 0.285245,3.93637 0.741635,4.050469 0.741635,3.708175 1.312121,3.651126 1.54032,2.453101 1.711465,2.11081 1.93966,1.82556 2.05376,1.48327 2.90949,1.76852 2.738345,1.02688 3.137686,1.02687 3.993419,0.68459 3.02359,0.2282 3.93637,0.11409 0.114099,-46.437761 -0.399343,-3.87932 -0.399341,-3.308834 -1.198026,-2.567197 -2.167858,-2.224905 -2.96654,-1.711465 -3.308831,-0.684586 -3.308835,-0.399343 -3.87932,-0.285245 -1.198026,0.114099 -0.05705,-3.651126 55.679681,0.114097 0.17114,3.42293 -2.73834,0.114099 -3.19474,0.114096 -3.25178,0.570489 -3.19474,1.02688 -2.85244,1.768515 -1.65442,1.654416 -0.96983,1.825564 -0.68458,2.738345 -0.28525,3.194735 -0.22819,4.335711 -0.0571,5.248494 v 6.560617 l 0.0571,32.232605 h 3.99342 l 3.70817,-0.3423 3.99342,-0.74163 3.30883,-1.08393 3.53703,-1.65442 2.339,-1.65441 2.51015,-2.28196 2.4531,-2.96654 1.14098,-2.167856 1.59737,-4.050469 0.74163,-4.050466 0.57049,-5.077349 0.39934,-4.96325 0.3423,-6.674715 0.68458,-4.506857 0.62754,-4.164565 1.65442,-4.96325 1.25507,-2.852444 1.54032,-2.738345 1.99671,-2.624246 3.08064,-2.4531 3.13768,-1.711465 5.1344,-1.825564 3.47998,-0.399341 4.16457,-0.342294 1.59736,0.114099 -0.057,3.36588 -2.5672,0.51344 -2.51015,1.255075 -1.76852,2.053759 -0.79868,1.99671 -0.74164,3.137686 -0.28524,2.738345 -0.2282,3.194735 -0.057,2.624246 -0.57049,13.691724 -0.28525,3.651126 -0.62753,2.738345 -0.62754,4.107516 -1.65442,5.761934 -1.31212,2.795395 -1.71147,2.852441 -2.2249,2.62425 -2.5672,2.6813 -2.39605,1.76851 -3.25179,2.16786 -3.70817,1.93966 -4.56391,1.65441 -3.59408,1.08393 -3.82227,0.85573 -5.64783,1.02688 -5.41964,0.45639 -4.10752,0.39935 -1.82556,-0.17115 -0.17115,16.14482 0.34229,20.82283 0.3423,3.53703 0.51344,3.02359 0.85573,1.59737 1.48327,1.65441 1.93966,1.31213 1.71146,0.91278 1.99671,0.62753 2.51015,0.62754 3.30884,0.28525 3.99342,0.057 v 3.59407 l -55.736731,-0.11409 0.05705,-3.47998 4.735054,-0.17115 3.936371,-0.51344 3.365881,-1.08393 2.339004,-1.14098 1.312124,-0.96983 0.96983,-1.31212 0.96983,-1.48327 0.627536,-2.22491 0.57049,-3.99341 v -4.79211 l 0.171145,-14.88975 z"
-       id="path24"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:noneSEMICOLONstroke:#000000SEMICOLONstroke-width:0.748SEMICOLONstroke-linecap:buttSEMICOLONstroke-linejoin:miterSEMICOLONstroke-opacity:1SEMICOLONstroke-miterlimit:4SEMICOLONstroke-dasharray:none"
-       d="m 100.74351,45.639074 h 22.5961 c 0,0 -1.32918,-13.54538 -11.96264,-14.28422 -10.63346,-0.73884 -10.63346,14.28422 -10.63346,14.28422 z"
-       id="path50"
-       inkscape:connector-curvature="0" />
-    <ellipse
-       style="fill:#050000SEMICOLONfill-opacity:1SEMICOLONfill-rule:evenoddSEMICOLONstroke-width:0.145492"
-       id="path52"
-       cx="111.24973"
-       cy="39.960098"
-       rx="3.1074717"
-       ry="2.957778" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path50-5"
-       d="m 67.636488,45.513256 h 22.596103 c 0,0 -1.32918,-13.54538 -11.96264,-14.28422 -10.633463,-0.73884 -10.633463,14.28422 -10.633463,14.28422 z"
-       style="fill:noneSEMICOLONstroke:#000000SEMICOLONstroke-width:0.848SEMICOLONstroke-linecap:buttSEMICOLONstroke-linejoin:miterSEMICOLONstroke-opacity:1SEMICOLONstroke-miterlimit:4SEMICOLONstroke-dasharray:none" />
-    <ellipse
-       ry="2.957778"
-       rx="3.1074717"
-       cy="39.477459"
-       cx="78.607201"
-       id="path52-8"
-       style="fill:#050000SEMICOLONfill-opacity:1SEMICOLONfill-rule:evenoddSEMICOLONstroke-width:0.145492" />
-    <path
-       style="fill:#050000SEMICOLONfill-opacity:1SEMICOLONstroke:#000000SEMICOLONstroke-width:0.108385pxSEMICOLONstroke-linecap:buttSEMICOLONstroke-linejoin:miterSEMICOLONstroke-opacity:1"
-       d="m 75.959759,61.477064 c 13.457701,5.68591 26.622331,4.339439 39.675031,0.305194 -4.21382,3.690331 -9.14664,6.997189 -19.379726,7.477228 C 85.414893,68.929287 79.496059,65.864988 75.959759,61.477064 Z"
-       id="path907"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
-  </g>
-</svg>;1584599782;1584599782
-601013677;583286873;luketimmerman314;<p>Sorry, it looks all of the code wasn't posted. Let me try again. If it doesn't post this time, my question about building the file in Adobe Illustrator still stands.</p>
-<?xml version="1.0" encoding="utf-8"?> 
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 480 480" style="enable-background:new 0 0 480 480SEMICOLON" xml:space="preserve">
-<style type="text/css">
-    .st0{fill:#FFFFFFSEMICOLON}
-    .st1{fill:#0C7F99SEMICOLON}
-</style>
-<path class="st0" d="M251.6,114.7c0,4.2-1.4,8.2-3.7,11.3l-30.4,0.3c-2.6-3.1-4-7.3-4-11.6c0-10.5,8.5-19,19-19
-    C243.1,95.6,251.6,104.2,251.6,114.7z"/>
-<path class="st0" d="M306.6,114.7c0,4.2-1.4,8.2-3.7,11.3l-30.4,0.3c-2.6-3.1-4-7.3-4-11.6c0-10.5,8.5-19,19-19
-    C298.1,95.6,306.6,104.2,306.6,114.7z"/>
-<path d="M238,99.8c-1.3,0.1-2.3,1.1-2.3,2.4c0,1.3,1.1,2.4,2.4,2.4c1.3,0,2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4
-    C238.1,99.8,238,99.8,238,99.8l2.9-1c4.3,0,7.7,3.5,7.7,7.7s-3.5,7.7-7.7,7.7s-7.7-3.5-7.7-7.7s3.5-7.7,7.7-7.7"/>
-<path d="M293,99.8c-1.3,0.1-2.3,1.1-2.3,2.4c0,1.3,1.1,2.4,2.4,2.4s2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4
-    C293.1,99.8,293,99.8,293,99.8l2.9-1c4.3,0,7.7,3.5,7.7,7.7s-3.5,7.7-7.7,7.7s-7.7-3.5-7.7-7.7s3.5-7.7,7.7-7.7"/>
-<path class="st1" d="M228.4,157.1h64.4c-15.4,63.8-25.1,105.4-25.1,151c0,8,0,69.5,23.4,69.5c12,0,22.2-10.8,22.2-20.5
-    c0-2.8,0-4-4-12.5c-15.4-39.3-15.4-88.3-15.4-92.3c0-3.4,0-43.9,12-95.1h63.8c7.4,0,26.2,0,26.2-18.2c0-12.5-10.8-12.5-21.1-12.5
-    H187.4c-13.1,0-32.5,0-58.7,27.9c-14.8,16.5-33,46.7-33,50.1s2.8,4.6,6.3,4.6c4,0,4.6-1.7,7.4-5.1c29.6-46.7,59.2-46.7,73.5-46.7
-    h32.5c-12.5,42.7-26.8,92.3-73.5,192c-4.6,9.1-4.6,10.3-4.6,13.7c0,12,10.3,14.8,15.4,14.8c16.5,0,21.1-14.8,27.9-38.7
-    c9.1-29.1,9.1-30.2,14.8-53L228.4,157.1"/>
-<path d="M246.3,149.1c5.5,0,1.9,0.1,13.5,0c10.3-0.1,12.4-0.1,15.7-0.2c0,0-0.3-3.1-0.3-3.1c-3.7,0.1-9.3,0.2-14.7,0.2
-    c-3.9,0-8.5,0-14.6,0"/>
-</svg>;1584599927;1584599927
-601017925;583286873;hanwenzhu;<p>I'm not sure of that, but if PiCreatures_plain works on your <code>PsiCreature</code> class, I guess using Adobe Illustrator would make it work. If you want you can upload the SVG file to pastebin or GitHub gist.</p>;1584600840;1584600840
-601297561;583286873;luketimmerman314;<p>Ok, thanks! I'll try it and see!</p>;1584637040;1584637040
-583202077;583202077;rpadams;<p>Thanks for contributing to manim!</p>
-<p><strong>Please ensure that your pull request works with the latest version of manim.</strong>
-You should also include:</p>
-<ol>
-<li>The motivation for making this change (or link the relevant issues)</li>
-</ol>
-<p>I changed the color of the GraphScene axis but could not change the color of the tick labels to match.  This is a small change to graph_scene.py to provide the correct information to NumberLine.</p>
-<ol>
-<li>How you tested the new behavior (e.g. a minimal working example, before/after
-screenshots, gifs, commands, etc.) This is rather informal at the moment, but
-the goal is to show us how you know the pull request works as intended.</li>
-</ol>
-<p>Before and after screenshots:
-<img width="628" alt="before" src="https://user-images.githubusercontent.com/1450174/76887507-c59c7f80-6858-11ea-9009-a98f6313bd6e.png">
-<img width="697" alt="after" src="https://user-images.githubusercontent.com/1450174/76887510-c6cdac80-6858-11ea-8cdd-b183ef14dabd.png"></p>;1584468538;1584468538
-581833854;581833854;daniel-lara-ec;<p>This remove the decimal place by default and updates the label positions</p>;1584307869;1584307869
-581411761;581411761;emanueldias242;<p>Microsoft Windows [versão 10.0.18362.657]
-(c) 2019 Microsoft Corporation. Todos os direitos reservados.</p>
-<p>C:\Manim\manim_3_feb&gtSEMICOLONpython -m manim exmaple_scenes.py SquareTocircle -pl
-Traceback (most recent call last):
-  File "C:\Users\55359\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\numpy\core__init__.py", line 16, in <module>
-    from . import multiarray
-ImportError: DLL load failed: Não foi possível encontrar o módulo especificado.</p>
-<p>During handling of the above exception, another exception occurred:</p>
-<p>Traceback (most recent call last):
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.2032.0_x64__qbz5n2kfra8p0\lib\runpy.py", line 193, in _run_module_as_main
-    "<strong>main</strong>", mod_spec)
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.2032.0_x64__qbz5n2kfra8p0\lib\runpy.py", line 85, in _run_code
-    exec(code, run_globals)
-  File "C:\Manim\manim_3_feb\manim.py", line 2, in <module>
-    import manimlib.config
-  File "C:\Manim\manim_3_feb\manimlib\config.py", line 8, in <module>
-    import manimlib.constants
-  File "C:\Manim\manim_3_feb\manimlib\constants.py", line 1, in <module>
-    import numpy as np
-  File "C:\Users\55359\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\numpy__init__.py", line 142, in <module>
-    from . import add_newdocs
-  File "C:\Users\55359\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\numpy\add_newdocs.py", line 13, in <module>
-    from numpy.lib import add_newdoc
-  File "C:\Users\55359\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\numpy\lib__init__.py", line 8, in <module>
-    from .type_check import *
-  File "C:\Users\55359\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\numpy\lib\type_check.py", line 11, in <module>
-    import numpy.core.numeric as _nx
-  File "C:\Users\55359\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\numpy\core__init__.py", line 26, in <module>
-    raise ImportError(msg)
-ImportError:
-Importing the multiarray numpy extension module failed.  Most
-likely you are trying to import a failed build of numpy.
-If you're working with a numpy git repo, try <code>git clean -xdf</code> (removes all
-files not under version control).  Otherwise reinstall numpy.</p>
-<p>Original error was: DLL load failed: Não foi possível encontrar o módulo especificado.
-<img alt="Screenshot_1" src="https://user-images.githubusercontent.com/59492262/76692039-b4bcf580-662f-11ea-8ec4-a3b40d370d44.png" /></p>
-<p>I have no ideia what to do. Can someone help me? That happen after i try python -m manim exmaple_scenes.py SquareTocircle -pl  </p>
-<p>Thanks</p>;1584227402;1584325665
-599309498;581411761;yalikes;<p>according to the graph, I think you may need to reinstall numpy.
-try run 
-<code>pip uninstall numpy</code>
-<code>pip install numpy</code></p>;1584325665;1584325665
-580929459;580929459;iGeek098;<p>updated graph scale factor @ 10:29</p>
-<p>just perfect</p>
-<p>had lots of fun</p>
-<p>couldn't test yet!</p>
-<p>Thanks for contributing to manim!</p>
-<p><strong>Please ensure that your pull request works with the latest version of manim.</strong>
-You should also include:</p>
-<ol>
-<li>The motivation for making this change (or link the relevant issues)</li>
-<li>How you tested the new behavior (e.g. a minimal working example, before/after
-screenshots, gifs, commands, etc.) This is rather informal at the moment, but
-the goal is to show us how you know the pull request works as intended.</li>
-</ol>;1584142091;1584142091
-580052922;580052922;luketimmerman314;<p>Hello, I am using the blog Manim for Mac by bhowell4 to download the Manim library, and I am having trouble installing the requirements.txt program. I have no coding experience with this kind of thing so I am coming to y'all for help. I have attached screen shots of all of the code that my Terminal spit back out at me (it is a lot of screen shots, and I know that y'all don't need all of them, but I don't have the experience to know what y'all do and do not need). A little background: I successfully got through Step 6 of the walkthrough and am currently working in a virtual environment. I believe I successfully installed sox, FFmpeg, latex, and pycairo. I then got the error message when trying to install the requirements.txt program. To try and fix the problem, I tried upgrading pip, changing the version of opencv-python in the requirements.txt file from 3.4.2.17 to 4.2.0.32, and finally changed the Pillow from 5.2.0 in the same document to 6.2.0, but I ended up downloading version 7.0.0. Thanks in advance.</p>
-<p><img alt="Screen Shot 2020-03-12 at 10 37 58 AM" src="https://user-images.githubusercontent.com/62107786/76542290-c8f7cb80-6452-11ea-9776-fe9f675a6f9c.png" />
-<img alt="Screen Shot 2020-03-12 at 10 38 28 AM" src="https://user-images.githubusercontent.com/62107786/76542291-c9906200-6452-11ea-8c51-d9ad68c8a8d1.png" />
-<img alt="Screen Shot 2020-03-12 at 10 38 53 AM" src="https://user-images.githubusercontent.com/62107786/76542292-c9906200-6452-11ea-9396-de403e5ac135.png" />
-<img alt="Screen Shot 2020-03-12 at 10 39 51 AM" src="https://user-images.githubusercontent.com/62107786/76542294-ca28f880-6452-11ea-9e99-6d75a297d2d4.png" />
-<img alt="Screen Shot 2020-03-12 at 10 40 22 AM" src="https://user-images.githubusercontent.com/62107786/76542297-ca28f880-6452-11ea-9bc1-42d0f2f11417.png" />
-<img alt="Screen Shot 2020-03-12 at 10 40 47 AM" src="https://user-images.githubusercontent.com/62107786/76542298-cac18f00-6452-11ea-977e-c913c9751a2f.png" />
-<img alt="Screen Shot 2020-03-12 at 10 41 12 AM" src="https://user-images.githubusercontent.com/62107786/76542299-cac18f00-6452-11ea-950e-7e8f9b35c8e1.png" />
-<img alt="Screen Shot 2020-03-12 at 10 41 34 AM" src="https://user-images.githubusercontent.com/62107786/76542302-cac18f00-6452-11ea-81d0-383703d34f9b.png" />
-<img alt="Screen Shot 2020-03-12 at 10 41 59 AM" src="https://user-images.githubusercontent.com/62107786/76542303-cb5a2580-6452-11ea-933b-60d1b45bc00f.png" />
-<img alt="Screen Shot 2020-03-12 at 10 42 17 AM" src="https://user-images.githubusercontent.com/62107786/76542305-cb5a2580-6452-11ea-9eb6-a693150fa5ef.png" />
-<img alt="Screen Shot 2020-03-12 at 10 42 32 AM" src="https://user-images.githubusercontent.com/62107786/76542308-cbf2bc00-6452-11ea-9558-3a8f180433eb.png" />
-<img alt="Screen Shot 2020-03-12 at 10 42 48 AM" src="https://user-images.githubusercontent.com/62107786/76542311-cbf2bc00-6452-11ea-94f7-cbbffba40b29.png" />
-<img alt="Screen Shot 2020-03-12 at 10 43 04 AM" src="https://user-images.githubusercontent.com/62107786/76542312-cbf2bc00-6452-11ea-807a-91cd4279a442.png" />
-<img alt="Screen Shot 2020-03-12 at 10 43 20 AM" src="https://user-images.githubusercontent.com/62107786/76542316-cc8b5280-6452-11ea-8036-7e63bf10ac40.png" />
-<img alt="Screen Shot 2020-03-12 at 10 43 47 AM" src="https://user-images.githubusercontent.com/62107786/76542317-cc8b5280-6452-11ea-912e-6b2a5687ba90.png" />
-<img alt="Screen Shot 2020-03-12 at 10 44 11 AM" src="https://user-images.githubusercontent.com/62107786/76542319-cd23e900-6452-11ea-91fd-d90463823900.png" />
-<img alt="Screen Shot 2020-03-12 at 10 44 27 AM" src="https://user-images.githubusercontent.com/62107786/76542321-cd23e900-6452-11ea-8441-7fd02e33efec.png" />
-<img alt="Screen Shot 2020-03-12 at 10 44 44 AM" src="https://user-images.githubusercontent.com/62107786/76542324-cdbc7f80-6452-11ea-8983-b0625934a833.png" />
-<img alt="Screen Shot 2020-03-12 at 10 45 02 AM" src="https://user-images.githubusercontent.com/62107786/76542325-ce551600-6452-11ea-9952-84cbe6afb369.png" />
-<img alt="Screen Shot 2020-03-12 at 10 45 17 AM" src="https://user-images.githubusercontent.com/62107786/76542326-ce551600-6452-11ea-8722-14efbce4a6a7.png" />
-<img alt="Screen Shot 2020-03-12 at 10 45 43 AM" src="https://user-images.githubusercontent.com/62107786/76542327-ceedac80-6452-11ea-9050-2930c76edcf7.png" />
-<img alt="Screen Shot 2020-03-12 at 10 45 59 AM" src="https://user-images.githubusercontent.com/62107786/76542328-ceedac80-6452-11ea-821c-4fab826dcf14.png" />
-<img alt="Screen Shot 2020-03-12 at 10 46 19 AM" src="https://user-images.githubusercontent.com/62107786/76542329-ceedac80-6452-11ea-8a44-7c5d0b1bfe8b.png" />
-<img alt="Screen Shot 2020-03-12 at 10 46 38 AM" src="https://user-images.githubusercontent.com/62107786/76542330-cf864300-6452-11ea-96d7-66e2881fa995.png" />
-<img alt="Screen Shot 2020-03-12 at 10 46 55 AM" src="https://user-images.githubusercontent.com/62107786/76542332-cf864300-6452-11ea-8267-c160fae937c7.png" />
-<img alt="Screen Shot 2020-03-12 at 10 47 13 AM" src="https://user-images.githubusercontent.com/62107786/76542334-cf864300-6452-11ea-8ebe-51e358da371b.png" />
-<img alt="Screen Shot 2020-03-12 at 10 47 31 AM" src="https://user-images.githubusercontent.com/62107786/76542336-d01ed980-6452-11ea-98ff-5ab26457351b.png" />
-<img alt="Screen Shot 2020-03-12 at 10 47 50 AM" src="https://user-images.githubusercontent.com/62107786/76542338-d01ed980-6452-11ea-8768-6c844c94b343.png" />
-<img alt="Screen Shot 2020-03-12 at 10 48 07 AM" src="https://user-images.githubusercontent.com/62107786/76542340-d0b77000-6452-11ea-8954-7747e1a1bf2a.png" />
-<img alt="Screen Shot 2020-03-12 at 10 48 22 AM" src="https://user-images.githubusercontent.com/62107786/76542342-d0b77000-6452-11ea-969c-053bb305927b.png" />
-<img alt="Screen Shot 2020-03-12 at 10 48 47 AM" src="https://user-images.githubusercontent.com/62107786/76542343-d1500680-6452-11ea-894e-69d2522a6623.png" />
-<img alt="Screen Shot 2020-03-12 at 10 49 02 AM" src="https://user-images.githubusercontent.com/62107786/76542344-d1500680-6452-11ea-9dec-864c3c709ffe.png" />
-<img alt="Screen Shot 2020-03-12 at 10 49 13 AM" src="https://user-images.githubusercontent.com/62107786/76542346-d1e89d00-6452-11ea-81a0-2aedc6d2621b.png" />
-<img alt="Screen Shot 2020-03-12 at 10 49 35 AM" src="https://user-images.githubusercontent.com/62107786/76542347-d1e89d00-6452-11ea-8e63-cd5c9bab4e40.png" /></p>;1584029801;1584208615
-599110339;580052922;Aathish04;<p>Manim isn't very picky when it comes to it's dependencies (at least as of now).
-It might be worth trying to install Manim's dependencies without worrying about their versions.
-First, activate your Virtual Environment.
-Then, remove all previously installed packages, so we have a clean slate to work with.</p>
-<p><code>pip3 uninstall -y $(pip3 freeze)</code></p>
-<p>Now, copy and run this pip command, which basically just installs all of Manim's dependencies, without giving a damn about their versions.</p>
-<p><code>pip3 install colour data decorator ffmpeg funcsigs future latex numpy opencv-python Pillow progressbar pycairo pydub scipy shutilwhich six sox tempdir tqdm</code></p>
-<p>See if all that works fine. It <em>should</em>, but if it doesn't, this might explain why:</p>
-<blockquote>
-<p><strong>Update 02/19/20: This post is a little bit out of date with the current Manim library. For additional resources, please see https://repperiumsci.blogspot.com/2019/12/my-adventures-with-manim-part_22.html for additional ways to get Manim working on your computer.  Additionally, I have uploaded the version of Manim (09/18) pertinent to this this tutorial on GitHub. This should have been a fork, but it is what it is…</strong>
--From his site</p>
-</blockquote>
-<p>So maybe check out https://repperiumsci.blogspot.com/2019/12/my-adventures-with-manim-part_22.html and see if the instructions there work out.</p>;1584208615;1584208615
-579660639;579660639;ddxtanx;<p>This is a merging of two pull requests to add better discontinuity detecting functionality and implicit function graphing capabilities in requests #832 and #839. I don't think it would serve much to repeat the rationale and testing again in another PR, so the relevant information is in the separate pull requests. If, however, it would be more conducive to reviewers to include such information here I would be happy to transfer it all over here. </p>;1583982162;1583982181
-318514926;318514926;Jli0423;<p>Webpack dependency not installed with 'npm install'</p>;1524855493;1524855493
+<p>he is using linux and was trying download the repo requirements </p>;1585219508000;1585219508000
 198259639;198259639;Jspsun;<p>Traceback (most recent call last):
   File "<strong>main</strong>.py", line 17, in <module>
     main()
@@ -1609,4 +1854,5 @@ Then, remove all previously installed packages, so we have a clean slate to work
     if len(actual_result.get("alternative", [])) == 0: raise UnknownValueError()
 AttributeError: 'list' object has no attribute 'get'</p>
 <p>To Reproduce:
-- Just make a horse sound. I'm not even kidding its the easiest way to reproduce the bug</p>;1483256595;1483256595
+- Just make a horse sound. I'm not even kidding its the easiest way to reproduce the bug</p>;1483256595000;1483256595000
+318514926;318514926;Jli0423;<p>Webpack dependency not installed with 'npm install'</p>;1524855493000;1524855493000

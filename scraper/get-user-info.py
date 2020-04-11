@@ -48,7 +48,7 @@ userToFollowing = {}
 
 
 def getEpochSecondTime(dateTimeString):
-    return int(dateutil.parser.parse(dateTimeString).timestamp())
+    return int(dateutil.parser.parse(dateTimeString).timestamp())*1000
 
 ##########################################################################################################
 # Get tier 1 user data (users.txt)
