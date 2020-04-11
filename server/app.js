@@ -343,23 +343,41 @@ app.post('/create/post', function (req, res) {
 });
 
 app.post('/create/comment', function (req, res) {
-    var user_name = req.body.follower;
+    var user_name = req.body.user_name;
     var id = Math.round(Math.random() * 10000000)
     var post_id = req.body.post_id;
     var comment_body = req.body.comment_body;
+    var replying_to = req.body.replying_to
     var created_at = Date.now()
     var updated_at = Date.now()
 
-    query = `
-        INSERT INTO Comment (id, post_id, username, body, created_at, updated_at)
-        VALUES (${id}, ${post_id}, '${user_name}', '${comment_body}', ${created_at}, ${updated_at})
-        `
+    async.series([
+        function (callback) {
+            var query = `
+                INSERT INTO Comment (id, post_id, username, body, created_at, updated_at)
+                VALUES (${id}, ${post_id}, '${user_name}', ${SqlString.escape(comment_body)}, ${created_at}, ${updated_at})
+                `
 
-    connection.query(query, function (err, rows, fields) {
-        if (err) throw err
-        res.status(200)
-        res.send(`${user_name} created a comment`)
-    })
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err
+                res.status(200)
+                res.send(`${user_name} created a comment`)
+                callback();
+            })
+        },
+        function (callback) {
+            if (replying_to != "") {
+                var query = `
+                    INSERT INTO Reply (comment_id, reply_id)
+                    VALUES (${replying_to}, ${id})
+                    `;
+
+            }
+            connection.query(query, function (err, rows, fields) {
+                callback();
+            })
+        }
+    ]);
 });
 
 app.post('/create/reaction', function (req, res) {
