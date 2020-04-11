@@ -81,7 +81,7 @@ export default function IssueView(props) {
             })
     };
 
-    const renderComment = (level, body, commentId) => {
+    const renderComment = (level, username, body, commentId) => {
 
         var myReplies = []
         Object.keys(replies).forEach(function (replyId) {
@@ -89,7 +89,7 @@ export default function IssueView(props) {
                 myReplies.push(replies[replyId]);
             }
         });
-        var renderReplies = myReplies.map((reply) => renderComment(level + 1, reply.body, reply.reply_id))
+        var renderReplies = myReplies.map((reply) => renderComment(level + 1, reply.username, reply.body, reply.reply_id))
         return (
             <Container
                 style={{ margin: 0, padding: 0 }}
@@ -99,6 +99,7 @@ export default function IssueView(props) {
                     className="align-items-center"
                 >
                     <Col xs={10}>
+                        <p>{username}</p>
                         <ReactMarkdown
                             // style={{ marginRight: "0.5rem" }}
                             source={body}
@@ -127,7 +128,7 @@ export default function IssueView(props) {
         return true;
     }).map(comment => {
         return (
-            renderComment(0, comment.body, comment.id)
+            renderComment(0, comment.username, comment.body, comment.id)
         )
     });
 
