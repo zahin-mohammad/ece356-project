@@ -125,7 +125,23 @@ app.get('/comments', function (req, res) {
         res.status(200)
         res.send(rows)
     })
+});
 
+app.get('/post/replies', function (req, res) {
+    var post_id = req.query.post_id;
+
+    var query = `
+        SELECT * 
+        From Reply
+        INNER JOIN Comment
+        On Comment.id = Reply.reply_id
+        WHERE Comment.post_id = '${post_id}'
+        `
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(rows)
+    })
 });
 
 app.get('/comments/reactions', function (req, res) {

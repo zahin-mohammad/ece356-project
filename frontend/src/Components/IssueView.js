@@ -15,6 +15,7 @@ export default function IssueView(props) {
     const [isSubmitting, setIsSubmitting] = useState("")
     const { state } = useContext(AuthContext)
     const [comments, setComments] = useState([])
+    const [replies, setReplies] = useState({})
 
 
     useEffect(() => {
@@ -34,10 +35,29 @@ export default function IssueView(props) {
             .then(resJson => {
                 setComments(resJson)
             })
+
+        fetch(`http://localhost:3001/post/replies?post_id=${props.id}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            },
+        })
+            .then(res => {
+                if (res.ok) {
+                    return res.json()
+                } else {
+                    throw res
+                }
+            })
+            .then(resJson => {
+                var replyMap = {}
+                resJson.forEach(element => replyMap[element.reply_id] = element)
+                setReplies(replyMap)
+            })
+
     }, [isSubmitting])
 
     const submitPost = () => {
-        // console.log(comments[0])
         fetch(`http://localhost:3001/create/comment`, {
             method: "POST",
             headers: {
@@ -62,15 +82,27 @@ export default function IssueView(props) {
             })
     };
 
-    const commentsToShow = comments.map(comment => {
+    const renderComment = (level, body, commentId) => {
+
+        var myReplies = []
+        Object.keys(replies).forEach(function (replyId) {
+            if (replies[replyId].comment_id == commentId) {
+                myReplies.push(replies[replyId]);
+            }
+        });
+        var renderReplies = myReplies.map((reply) => renderComment(level + 1, reply.body, reply.reply_id))
+        console.log(myReplies)
         return (
             <Container
-                key={comment.id}>
-                <Row className="align-items-center">
+                key={commentId}>
+                <Row
+                    style={{ marginLeft: `${0.5 * level}rem` }}
+                    className="align-items-center"
+                >
                     <Col xs={10}>
                         <ReactMarkdown
                             style={{ marginRight: "0.5rem" }}
-                            source={comment.body}
+                            source={body}
                             escapeHtml={false}
                         />
                     </Col>
@@ -78,13 +110,25 @@ export default function IssueView(props) {
                         <span
                             style={{ right: "0.5rem", bottom: "0.5rem", cursor: "pointer" }}
                             role="image"
-                            onClick={(event) => { setReplyingTo(comment.id) }}
+                            onClick={(event) => { setReplyingTo(commentId) }}
                         >
                             ↩️
                         </span>
                     </Col>
                 </Row>
+                {renderReplies}
             </Container>
+        )
+    }
+
+    const commentsToShow = comments.filter(comment => {
+        if (comment.id in replies) {
+            return false;
+        }
+        return true;
+    }).map(comment => {
+        return (
+            renderComment(1, comment.body, comment.id)
         )
     });
 
