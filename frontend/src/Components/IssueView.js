@@ -99,7 +99,8 @@ export default function IssueView(props) {
                     className="align-items-center"
                 >
                     <Col xs={10}>
-                        <p>{username}</p>
+                        <span style={{ backgroundColor: "#FDD7E4", backgroundImage: "linear-gradient(to right, #ffe359 0 %, #fff2ac 100 %)" }}
+                        >{username}</span>
                         <ReactMarkdown
                             // style={{ marginRight: "0.5rem" }}
                             source={body}
