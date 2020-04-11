@@ -67,7 +67,7 @@ export default function IssueView(props) {
         return (
             <Container
                 key={comment.id}>
-                <Row>
+                <Row className="align-items-center">
                     <Col xs={10}>
                         <ReactMarkdown
                             style={{ marginRight: "0.5rem" }}
@@ -127,6 +127,7 @@ export default function IssueView(props) {
                     onClick={() => {
                         setIsSubmitting(true)
                         setPostBody("")
+                        setReplyingTo("")
                         submitPost()
                     }}
                 >➕ Post</Button>
