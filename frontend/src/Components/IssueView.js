@@ -13,7 +13,6 @@ export default function IssueView(props) {
     const [postBody, setPostBody] = useState("")
     const [replyingTo, setReplyingTo] = useState("")
     const [isSubmitting, setIsSubmitting] = useState("")
-    const [errorMessage, setErrorMessage] = useState("")
     const { state } = useContext(AuthContext)
     const [comments, setComments] = useState([])
 
