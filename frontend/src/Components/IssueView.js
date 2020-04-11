@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react"
 import Modal from "react-bootstrap/Modal";
 import ReactMarkdown from "react-markdown";
-import Form from "react-bootstrap/Form";
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
 import { Button, Container, Row, Col } from 'react-bootstrap';
@@ -55,7 +54,7 @@ export default function IssueView(props) {
                 setReplies(replyMap)
             })
 
-    }, [isSubmitting])
+    }, [isSubmitting, props.id])
 
     const submitPost = () => {
         fetch(`http://localhost:3001/create/comment`, {
@@ -86,22 +85,22 @@ export default function IssueView(props) {
 
         var myReplies = []
         Object.keys(replies).forEach(function (replyId) {
-            if (replies[replyId].comment_id == commentId) {
+            if (replies[replyId].comment_id === commentId) {
                 myReplies.push(replies[replyId]);
             }
         });
         var renderReplies = myReplies.map((reply) => renderComment(level + 1, reply.body, reply.reply_id))
-        console.log(myReplies)
         return (
             <Container
+                style={{ margin: 0, padding: 0 }}
                 key={commentId}>
                 <Row
-                    style={{ marginLeft: `${0.5 * level}rem` }}
+                    style={{ marginLeft: `${0.5 * level}rem`, borderLeft: '3px solid red' }}
                     className="align-items-center"
                 >
                     <Col xs={10}>
                         <ReactMarkdown
-                            style={{ marginRight: "0.5rem" }}
+                            // style={{ marginRight: "0.5rem" }}
                             source={body}
                             escapeHtml={false}
                         />
@@ -109,7 +108,7 @@ export default function IssueView(props) {
                     <Col>
                         <span
                             style={{ right: "0.5rem", bottom: "0.5rem", cursor: "pointer" }}
-                            role="image"
+                            role="img" aria-label="curved arrow pointing left"
                             onClick={(event) => { setReplyingTo(commentId) }}
                         >
                             ↩️
@@ -128,7 +127,7 @@ export default function IssueView(props) {
         return true;
     }).map(comment => {
         return (
-            renderComment(1, comment.body, comment.id)
+            renderComment(0, comment.body, comment.id)
         )
     });
 
@@ -148,7 +147,7 @@ export default function IssueView(props) {
             </Modal.Body>
 
             <InputGroup className="mb-3" style={{ width: "40rem", margin: "1rem" }}>
-                {replyingTo == "" ?
+                {replyingTo === "" ?
                     null
                     : <Button
                         variant="outline-dark"
@@ -160,7 +159,7 @@ export default function IssueView(props) {
                 <FormControl
                     value={postBody}
                     onChange={(event) => setPostBody(event.target.value)}
-                    placeholder={replyingTo == "" ? "Comment" : "Reply"}
+                    placeholder={replyingTo === "" ? "Comment" : "Reply"}
                     aria-label="text"
                     aria-describedby="basic-addon1"
                 />
@@ -173,7 +172,7 @@ export default function IssueView(props) {
                         setReplyingTo("")
                         submitPost()
                     }}
-                >➕ Post</Button>
+                ><span role="img" aria-label="plus sign">➕</span> Post</Button>
             </InputGroup>
         </Modal>
     )

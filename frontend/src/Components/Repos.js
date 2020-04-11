@@ -57,7 +57,7 @@ export default function Repos() {
                     setRepos(resJson)
                 })
         }
-        if (issuesRepo != "") {
+        if (issuesRepo !== "") {
             fetch(`http://localhost:3001/repository/posts?repository_name=${issuesRepo}`, {
                 method: "GET",
                 headers: {
@@ -75,7 +75,7 @@ export default function Repos() {
                     setIssues(resJson)
                 })
         }
-    }, [addNew, followUnfollow, createdNewRepo, issuesRepo, createdNewIssue]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
+    }, [addNew, followUnfollow, createdNewRepo, issuesRepo, createdNewIssue, state.username]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
     const reposToDisplay = repos
@@ -102,7 +102,7 @@ export default function Repos() {
         />
         )
 
-    return (issuesRepo != "" ?
+    return (issuesRepo !== "" ?
         (<div>
             <InputGroup className="mb-3" style={{ width: "40rem", margin: "1rem" }}>
                 <Button
@@ -114,7 +114,7 @@ export default function Repos() {
                     }}
                 >← Back</Button>
                 <InputGroup.Prepend>
-                    <InputGroup.Text id="basic-addon1">🔍</InputGroup.Text>
+                    <InputGroup.Text id="basic-addon1"><span role="img" aria-label="search emoji">🔍</span></InputGroup.Text>
                 </InputGroup.Prepend>
                 <FormControl
                     value={search}
@@ -127,7 +127,7 @@ export default function Repos() {
                     variant="outline-dark"
                     style={{ marginLeft: "1rem" }}
                     onClick={() => setShowNewIssue(true)}
-                >➕ Issue</Button>
+                ><span role="img" aria-label="plus sign">➕</span> Issue</Button>
             </InputGroup>
             {issuesToDisplay}
 
@@ -143,7 +143,7 @@ export default function Repos() {
             <div>
                 <InputGroup className="mb-3" style={{ width: "40rem", margin: "1rem" }}>
                     <InputGroup.Prepend>
-                        <InputGroup.Text id="basic-addon1">🔍</InputGroup.Text>
+                        <InputGroup.Text id="basic-addon1"><span role="img" aria-label="search emoji">🔍</span></InputGroup.Text>
                     </InputGroup.Prepend>
                     <FormControl
                         value={search}
@@ -164,7 +164,7 @@ export default function Repos() {
                         variant="outline-dark"
                         style={{ marginLeft: "1rem" }}
                         onClick={() => setShowNewRepo(true)}
-                    >➕ Repo </Button>
+                    ><span role="img" aria-label="plus sign">➕</span> Repo </Button>
                 </InputGroup>
 
                 {reposToDisplay}
