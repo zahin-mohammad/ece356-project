@@ -69,7 +69,6 @@ export default function IssueView(props) {
                 }
             })
             .then(resJson => {
-                console.log(resJson)
                 var reactionMap = {}
                 resJson.forEach(reaction => {
                     if (!(reaction.comment_id in reactionMap)) {
