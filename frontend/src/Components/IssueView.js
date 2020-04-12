@@ -153,16 +153,16 @@ export default function IssueView(props) {
                         <ListGroup horizontal style={{ cursor: "pointer" }}>
                             <ListGroup.Item
                                 onClick={() => reactToComment("+1", commentId)}
-                            >{reactionInfo[commentId] && reactionInfo[commentId]["+1"] || 0} 👍🏽</ListGroup.Item>
+                            >{reactionInfo[commentId] && reactionInfo[commentId]["+1"] || 0} <span role="img" aria-label="thumbs up">👍🏽</span></ListGroup.Item>
                             <ListGroup.Item
                                 onClick={() => reactToComment("-1", commentId)}
-                            >{reactionInfo[commentId] && reactionInfo[commentId]["-1"] || 0} 👎🏽</ListGroup.Item>
+                            >{reactionInfo[commentId] && reactionInfo[commentId]["-1"] || 0} <span role="img" aria-label="thumbs down">👎🏽</span></ListGroup.Item>
                             <ListGroup.Item
                                 onClick={() => reactToComment("laugh", commentId)}
-                            >{reactionInfo[commentId] && reactionInfo[commentId]["laugh"] || 0} 😂</ListGroup.Item>
+                            >{reactionInfo[commentId] && reactionInfo[commentId]["laugh"] || 0} <span role="img" aria-label="laugh">😂</span></ListGroup.Item>
                             <ListGroup.Item
                                 onClick={() => reactToComment("rocket", commentId)}
-                            >{reactionInfo[commentId] && reactionInfo[commentId]["rocket"] || 0} 🚀</ListGroup.Item>
+                            >{reactionInfo[commentId] && reactionInfo[commentId]["rocket"] || 0} <span role="img" aria-label="rocketship">🚀</span></ListGroup.Item>
                         </ListGroup>
                     </Col>
                     <Col>
