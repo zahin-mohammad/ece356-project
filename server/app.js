@@ -411,6 +411,17 @@ app.post('/create/comment', function (req, res) {
             connection.query(query, function (err, rows, fields) {
                 callback();
             })
+        },
+        function (callback) {
+            var query = `
+                UPDATE Post
+                SET Post.updated_at =${updated_at} 
+                WHERE Post.id='${post_id}'`
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err;
+                callback();
+            })
         }
     ]);
 });
@@ -419,10 +430,8 @@ app.post('/create/reaction', function (req, res) {
     var user_name = req.body.user_name;
     var comment_id = req.body.comment_id;
     var reaction = req.body.reaction;
-
-
-
     var shouldLike = false
+
     async.series([
         function (callback) {
             var query = `
@@ -458,6 +467,30 @@ app.post('/create/reaction', function (req, res) {
                 if (err) throw err;
                 res.status(200)
                 res.send(`${user_name} ${shouldLike ? "reacted" : "unreacted"} ${reaction}`)
+                callback();
+            })
+        },
+        function (callback) {
+            var query = `
+                UPDATE Comment 
+                SET updated_at =${Date.now()} 
+                WHERE Comment.id='${comment_id}'`
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err;
+                callback();
+            })
+        },
+        function (callback) {
+            var query = `
+                UPDATE Post
+                INNER JOIN Comment
+                On Comment.post_id = Post.id 
+                SET Post.updated_at =${Date.now()} 
+                WHERE Comment.id='${comment_id}'`
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err;
                 callback();
             })
         }
