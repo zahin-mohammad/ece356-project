@@ -29,6 +29,7 @@ export default function CreateNewIssue(props) {
             isSubmitting: true,
             errorMessage: null
         })
+
         fetch("http://localhost:3001/create/post", {
             method: "POST",
             headers: {
@@ -38,7 +39,7 @@ export default function CreateNewIssue(props) {
                 repository_name: props.repository_name,
                 user_name: state.username,
                 title: data.title,
-                body: data.post_body,
+                post_body: data.post_body,
             })
         })
             .then(res => {
