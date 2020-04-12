@@ -156,6 +156,26 @@ app.get('/comments/reactions', function (req, res) {
     })
 })
 
+app.get('/post/reactions', function (req, res) {
+    var post_id = req.query.post_id;
+
+    query = `
+        SELECT count(*) AS 'count', emoji, comment_id
+        FROM Reaction 
+        INNER JOIN Comment 
+        ON Reaction.comment_id = Comment.id
+        INNER JOIN Post
+        ON Comment.post_id = Post.id
+        WHERE Post.id=${post_id}
+        GROUP BY emoji, comment_id`
+
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(rows)
+    })
+})
+
 app.get('/users', function (req, res) {
     user_name = req.query.user_name
 
@@ -401,16 +421,48 @@ app.post('/create/reaction', function (req, res) {
     var comment_id = req.body.comment_id;
     var reaction = req.body.reaction;
 
-    query = `
-        INSERT INTO Reaction (comment_id, emoji, username)
-        VALUES (${comment_id}, '${reaction}', '${user_name}')
-        `
 
-    connection.query(query, function (err, rows, fields) {
-        if (err) throw err
-        res.status(200)
-        res.send(`${user_name} reacted ${reaction}`)
-    })
+
+    var shouldLike = false
+    async.series([
+        function (callback) {
+            var query = `
+                SELECT * 
+                FROM Reaction 
+                WHERE emoji='${reaction}'
+                AND username ='${user_name}'
+                AND comment_id = '${comment_id}'
+                `
+
+            connection.query(query, function (err, rows, fields) {
+                if (rows.length == 0) {
+                    shouldLike = true
+                }
+                callback();
+            })
+        },
+        function (callback) {
+            var query = (shouldLike ?
+                `
+                INSERT INTO Reaction (comment_id, emoji, username)
+                VALUES (${comment_id}, '${reaction}', '${user_name}')
+                `
+                :
+                `
+                DELETE FROM Reaction
+                WHERE comment_id = '${comment_id}'
+                AND emoji = '${reaction}'
+                AND username = '${user_name}'
+                `);
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err;
+                res.status(200)
+                res.send(`${user_name} ${shouldLike ? "reacted" : "unreacted"} ${reaction}`)
+                callback();
+            })
+        }
+    ]);
 })
 
 app.post('/follow/user', function (req, res) {

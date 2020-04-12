@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import ReactMarkdown from "react-markdown";
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
-import { Button, Container, Row, Col } from 'react-bootstrap';
+import { Button, Container, Row, Col, ListGroup } from 'react-bootstrap';
 import { AuthContext } from "../App";
 
 
@@ -15,7 +15,8 @@ export default function IssueView(props) {
     const { state } = useContext(AuthContext)
     const [comments, setComments] = useState([])
     const [replies, setReplies] = useState({})
-
+    const [toggleRefresh, setToggleRefresh] = useState(false)
+    const [reactionInfo, setReactionInfo] = useState({})
 
     useEffect(() => {
         fetch(`http://localhost:3001/comments?post_id=${props.id}`, {
@@ -54,7 +55,32 @@ export default function IssueView(props) {
                 setReplies(replyMap)
             })
 
-    }, [isSubmitting, props.id])
+        fetch(`http://localhost:3001/post/reactions?post_id=${props.id}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            },
+        })
+            .then(res => {
+                if (res.ok) {
+                    return res.json()
+                } else {
+                    throw res
+                }
+            })
+            .then(resJson => {
+                console.log(resJson)
+                var reactionMap = {}
+                resJson.forEach(reaction => {
+                    if (!(reaction.comment_id in reactionMap)) {
+                        reactionMap[reaction.comment_id] = {}
+                    }
+                    reactionMap[reaction.comment_id][reaction.emoji] = reaction.count
+                })
+                setReactionInfo(reactionMap)
+            })
+
+    }, [isSubmitting, props.id, toggleRefresh])
 
     const submitPost = () => {
         fetch(`http://localhost:3001/create/comment`, {
@@ -81,6 +107,27 @@ export default function IssueView(props) {
             })
     };
 
+    const reactToComment = (reaction, commentId) => {
+        fetch("http://localhost:3001/create/reaction", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                user_name: state.username,
+                comment_id: commentId,
+                reaction: reaction,
+            })
+        })
+            .then(res => {
+                if (res.ok) {
+                    setToggleRefresh(!toggleRefresh)
+                } else {
+                    throw res
+                }
+            })
+    }
+
     const renderComment = (level, username, body, commentId) => {
         var renderReplies = Object
             .values(replies)
@@ -100,10 +147,23 @@ export default function IssueView(props) {
                         <span style={{ backgroundColor: "#FDD7E4", backgroundImage: "linear-gradient(to right, #ffe359 0 %, #fff2ac 100 %)" }}
                         >{username}</span>
                         <ReactMarkdown
-                            // style={{ marginRight: "0.5rem" }}
                             source={body}
                             escapeHtml={false}
                         />
+                        <ListGroup horizontal style={{ cursor: "pointer" }}>
+                            <ListGroup.Item
+                                onClick={() => reactToComment("+1", commentId)}
+                            >{reactionInfo[commentId] && reactionInfo[commentId]["+1"] || 0} 👍🏽</ListGroup.Item>
+                            <ListGroup.Item
+                                onClick={() => reactToComment("-1", commentId)}
+                            >{reactionInfo[commentId] && reactionInfo[commentId]["-1"] || 0} 👎🏽</ListGroup.Item>
+                            <ListGroup.Item
+                                onClick={() => reactToComment("laugh", commentId)}
+                            >{reactionInfo[commentId] && reactionInfo[commentId]["laugh"] || 0} 😂</ListGroup.Item>
+                            <ListGroup.Item
+                                onClick={() => reactToComment("rocket", commentId)}
+                            >{reactionInfo[commentId] && reactionInfo[commentId]["rocket"] || 0} 🚀</ListGroup.Item>
+                        </ListGroup>
                     </Col>
                     <Col>
                         <span
