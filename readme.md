@@ -5,4 +5,5 @@
 
 # Running the Application
 - Follow the `Getting Started` steps in `./server`
+- Make sure your Docker Desktop is on and running
 - In the root folder run `npm install` and then `npm run dev` (this will both start docker, server and web application)
