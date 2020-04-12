@@ -90,7 +90,7 @@ export default function IssueView(props) {
             },
             body: JSON.stringify({
                 user_name: state.username,
-                post_id: comments[0].post_id,
+                post_id: props.id,
                 comment_body: postBody,
                 replying_to: replyingTo
             }),
