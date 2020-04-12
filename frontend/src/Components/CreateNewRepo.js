@@ -41,58 +41,58 @@ export default function CreateNewRepo(props) {
                 description: data.description
             })
         })
-        .then(res => {
-            if (res.ok) {
-                return res.text()
-            } else {
-                throw res
-            }
-        })
-        .then(res => {
-            props.createdNewRepoCallback()
-            alert("Response: " + res)
-        })
-        .catch(error => {
-            alert("Error: " + error.message || error.statusText)
-        })
+            .then(res => {
+                if (res.ok) {
+                    return res.text()
+                } else {
+                    throw res
+                }
+            })
+            .then(res => {
+                props.createdNewRepoCallback()
+                // alert("Response: " + res)
+            })
+            .catch(error => {
+                alert("Error: " + error.message || error.statusText)
+            })
     }
 
     return (
         <Modal show={props.showNewRepo} onHide={() => props.setShowNewRepo(false)}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Create New Repository</Modal.Title>
-                </Modal.Header>
+            <Modal.Header closeButton>
+                <Modal.Title>Create New Repository</Modal.Title>
+            </Modal.Header>
 
-                <Form style={{ margin: "1rem" }} onSubmit={handleFormSubmit}>
-                    
-                    <Form.Group controlId="formBasicName">
-                        <Form.Control 
-                            name="name"
-                            type="name" 
-                            placeholder="Enter Repository Name" 
-                            value={data.name}
-                            onChange={handleInputChange}
-                        />
-                        <Form.Text className="text-muted">Name must be unique from all other existing repos.</Form.Text>
-                    </Form.Group>
+            <Form style={{ margin: "1rem" }} onSubmit={handleFormSubmit}>
 
-                    <Form.Group controlId="formBasicDesc">
-                        <Form.Control 
-                            name="description"
-                            type="description"
-                            placeholder="Enter description"
-                            value={data.description}
-                            onChange={handleInputChange}
-                        />
-                    </Form.Group>
+                <Form.Group controlId="formBasicName">
+                    <Form.Control
+                        name="name"
+                        type="name"
+                        placeholder="Enter Repository Name"
+                        value={data.name}
+                        onChange={handleInputChange}
+                    />
+                    <Form.Text className="text-muted">Name must be unique from all other existing repos.</Form.Text>
+                </Form.Group>
 
-                    <Button 
-                        variant="primary" 
-                        type="submit" 
-                        onClick={() => props.setShowNewRepo(false)}
-                    >Save New Repo</Button>
-                </Form>
+                <Form.Group controlId="formBasicDesc">
+                    <Form.Control
+                        name="description"
+                        type="description"
+                        placeholder="Enter description"
+                        value={data.description}
+                        onChange={handleInputChange}
+                    />
+                </Form.Group>
 
-            </Modal>
+                <Button
+                    variant="primary"
+                    type="submit"
+                    onClick={() => props.setShowNewRepo(false)}
+                >Save New Repo</Button>
+            </Form>
+
+        </Modal>
     )
 }
