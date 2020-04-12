@@ -1,5 +1,4 @@
 import React, { useEffect, useReducer } from "react"
-import "./App.css";
 import Home from "./Components/Home"
 import Login from "./Components/Login"
 import Header from "./Components/Header"
@@ -13,7 +12,7 @@ const initialState = {
 }
 
 const reducer = (state, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case "LOGIN":
       localStorage.setItem("username", JSON.stringify(action.payload.username))
       return {

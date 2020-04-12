@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "database": "docker-compose up -d",
+    "start": "docker-compose up -d && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
