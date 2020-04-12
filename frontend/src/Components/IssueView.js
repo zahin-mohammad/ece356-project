@@ -24,16 +24,16 @@ export default function IssueView(props) {
                 "Content-Type": "application/json"
             },
         })
-            .then(res => {
-                if (res.ok) {
-                    return res.json()
-                } else {
-                    throw res
-                }
-            })
-            .then(resJson => {
-                setComments(resJson)
-            })
+        .then(res => {
+            if (res.ok) {
+                return res.json()
+            } else {
+                throw res
+            }
+        })
+        .then(resJson => {
+            setComments(resJson)
+        })
 
         fetch(`http://localhost:3001/post/replies?post_id=${props.id}`, {
             method: "GET",
@@ -41,18 +41,18 @@ export default function IssueView(props) {
                 "Content-Type": "application/json"
             },
         })
-            .then(res => {
-                if (res.ok) {
-                    return res.json()
-                } else {
-                    throw res
-                }
-            })
-            .then(resJson => {
-                var replyMap = {}
-                resJson.forEach(element => replyMap[element.reply_id] = element)
-                setReplies(replyMap)
-            })
+        .then(res => {
+            if (res.ok) {
+                return res.json()
+            } else {
+                throw res
+            }
+        })
+        .then(resJson => {
+            var replyMap = {}
+            resJson.forEach(element => replyMap[element.reply_id] = element)
+            setReplies(replyMap)
+        })
 
     }, [isSubmitting, props.id])
 
@@ -69,23 +69,23 @@ export default function IssueView(props) {
                 replying_to: replyingTo
             }),
         })
-            .then(res => {
-                if (res.ok) {
-                    return res.text()
-                } else {
-                    throw res
-                }
-            })
-            .then(resJson => {
-                setIsSubmitting(false)
-            })
+        .then(res => {
+            if (res.ok) {
+                return res.text()
+            } else {
+                throw res
+            }
+        })
+        .then(resJson => {
+            setIsSubmitting(false)
+        })
     };
 
     const renderComment = (level, username, body, commentId) => {
         var renderReplies = Object
-            .values(replies)
-            .filter(reply => reply.comment_id === commentId)
-            .map(reply => renderComment(level + 1, reply.username, reply.body, reply.reply_id))
+                            .values(replies)
+                            .filter(reply => reply.comment_id == commentId)
+                            .map(reply => renderComment(level + 1, reply.username, reply.body, reply.reply_id))
 
 
         return (
@@ -121,8 +121,8 @@ export default function IssueView(props) {
     }
 
     const commentsToShow = comments
-        .filter(comment => !(comment.id in replies))
-        .map(comment => renderComment(0, comment.username, comment.body, comment.id))
+                            .filter(comment => !(comment.id in replies) )
+                            .map(comment => renderComment(0, comment.username, comment.body, comment.id))
 
     return (
         <Modal
@@ -150,7 +150,7 @@ export default function IssueView(props) {
                 <FormControl
                     value={postBody}
                     onChange={event => setPostBody(event.target.value)}
-                    placeholder={replyingTo === "" ? "Comment" : "Reply"}
+                    placeholder={replyingTo == "" ? "Comment" : "Reply"}
                     aria-label="text"
                     aria-describedby="basic-addon1"
                 />
