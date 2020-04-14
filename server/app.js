@@ -379,6 +379,18 @@ app.post('/create/post', function (req, res) {
                 callback()
             })
         },
+        function (callback) {
+            var query = `
+                UPDATE Repository
+                SET Repository.updated_at =${Date.now()} 
+                WHERE Repository.name='${repository_name}'`
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err;
+                callback();
+            })
+        }
+
     ])
 });
 
@@ -479,19 +491,6 @@ app.post('/create/reaction', function (req, res) {
             var query = `
                 UPDATE Comment 
                 SET updated_at =${Date.now()} 
-                WHERE Comment.id='${comment_id}'`
-
-            connection.query(query, function (err, rows, fields) {
-                if (err) throw err;
-                callback();
-            })
-        },
-        function (callback) {
-            var query = `
-                UPDATE Post
-                INNER JOIN Comment
-                On Comment.post_id = Post.id 
-                SET Post.updated_at =${Date.now()} 
                 WHERE Comment.id='${comment_id}'`
 
             connection.query(query, function (err, rows, fields) {
