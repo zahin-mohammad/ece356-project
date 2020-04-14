@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
+import { AuthContext } from "../App"
 import UserCard from "./UserCard"
 import CardColumns from 'react-bootstrap/CardColumns'
 import InputGroup from 'react-bootstrap/InputGroup'
@@ -7,6 +8,7 @@ import Button from "react-bootstrap/Button"
 
 
 export default function People() {
+    const { state } = useContext(AuthContext)
     const [search, setSearch] = useState("")
     const [users, setUsers] = useState([])
     const [addNew, setAddNew] = useState(false)
@@ -14,7 +16,7 @@ export default function People() {
 
     useEffect(() => {
         if (!addNew) {
-            fetch("http://localhost:3001/following/user?user_name=atulbipin", { // People they're following
+            fetch(`http://localhost:3001/following/user?user_name=${state.username}`, { // People they're following
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -31,7 +33,7 @@ export default function People() {
                     setUsers(resJson)
                 })
         } else {
-            fetch("http://localhost:3001/users?user_name=atulbipin", { // People they're not following
+            fetch(`http://localhost:3001/users?user_name=${state.username}`, { // People they're not following
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
