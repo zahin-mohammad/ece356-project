@@ -5,7 +5,7 @@ Project by Brian Norman (20648284) and Zahin Mohammad (20669584).
 1. The Entity-Relationshup Model is in the root directory called `er-model-writeup.pdf`
 2. The schema for the database is in `/server/database_scripts/create_schema.sql`
 3. The code for the scraper can be found in `/scraper` and the code to import the data is in `/server/database_scripts`
-4. The Video Demo of the project is in the root directory titled `356-demo.mov` and the code for the client code can be found in `/frontend/`
+4. The Video Demo of the project is in the root directory titled `356-demo.mov` and the code for the client code can be found in `/frontend/`, while the SQL queries are in `/server/app.js`
 
 # Running the Application
 
