@@ -61,7 +61,7 @@ export default function CreateNewIssue(props) {
     return (
         <Modal show={props.showNewIssue} onHide={() => props.setShowNewIssue(false)}>
             <Modal.Header closeButton>
-                <Modal.Title>Create New Repository</Modal.Title>
+                <Modal.Title>Create New Issue</Modal.Title>
             </Modal.Header>
 
             <Form style={{ margin: "1rem" }} onSubmit={handleFormSubmit}>
