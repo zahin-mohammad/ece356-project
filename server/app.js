@@ -91,18 +91,23 @@ app.get('/feed', function (req, res) {
     }
 
     var query = `
-    select Post.*, User.username, User.name, User.avatar_url, User.email, User.last_login_time
-    FROM Post
-    INNER JOIN User ON User.username = Post.username
-    INNER JOIN FollowsUser on FollowsUser.followee = Post.username
-    WHERE FollowsUser.follower = '${user_name}'
-    UNION
-    select Post.*, User.username, User.name, User.avatar_url, User.email, User.last_login_time
-    FROM Post
-    INNER JOIN User ON User.username = Post.username
-    INNER JOIN Repository ON Repository.name = Post.repository_name
-    INNER JOIN FollowsRepository ON FollowsRepository.repository_name = Post.repository_name
-    WHERE FollowsRepository.follower = '${user_name}'; 
+    SELECT * 
+    FROM
+    (
+        select Post.*, User.name, User.avatar_url, User.email
+        FROM Post
+        INNER JOIN User ON User.username = Post.username
+        INNER JOIN FollowsUser on FollowsUser.followee = Post.username
+        WHERE FollowsUser.follower = '${user_name}'
+        UNION
+        select Post.*, User.name, User.avatar_url, User.email
+        FROM Post
+        INNER JOIN User ON User.username = Post.username
+        INNER JOIN Repository ON Repository.name = Post.repository_name
+        INNER JOIN FollowsRepository ON FollowsRepository.repository_name = Post.repository_name
+        WHERE FollowsRepository.follower = '${user_name}'
+    ) as q2
+    ORDER BY updated_at desc; 
     `
     postsFromUsersWeFollow = []
     connection.query(query, function (err, rows, fields) {
