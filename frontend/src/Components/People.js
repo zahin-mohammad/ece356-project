@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
+import { AuthContext } from "../App"
 import UserCard from "./UserCard"
 import CardColumns from 'react-bootstrap/CardColumns'
 import InputGroup from 'react-bootstrap/InputGroup'
@@ -7,6 +8,7 @@ import Button from "react-bootstrap/Button"
 
 
 export default function People() {
+    const { state } = useContext(AuthContext)
     const [search, setSearch] = useState("")
     const [users, setUsers] = useState([])
     const [addNew, setAddNew] = useState(false)
@@ -14,63 +16,63 @@ export default function People() {
 
     useEffect(() => {
         if (!addNew) {
-            fetch("http://localhost:3001/following/user?user_name=atulbipin", { // People they're following
+            fetch(`http://localhost:3001/following/user?user_name=${state.username}`, { // People they're following
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
                 }
             })
-            .then(res => {
-                if (res.ok) {
-                    return res.json()
-                } else {
-                    throw res
-                }
-            })
-            .then(resJson => {
-                setUsers(resJson)
-            })
+                .then(res => {
+                    if (res.ok) {
+                        return res.json()
+                    } else {
+                        throw res
+                    }
+                })
+                .then(resJson => {
+                    setUsers(resJson)
+                })
         } else {
-            fetch("http://localhost:3001/users?user_name=atulbipin", { // People they're not following
+            fetch(`http://localhost:3001/users?user_name=${state.username}`, { // People they're not following
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
                 }
             })
-            .then(res => {
-                if (res.ok) {
-                    return res.json()
-                } else {
-                    throw res
-                }
-            })
-            .then(resJson => {
-                setUsers(resJson)
-            })
+                .then(res => {
+                    if (res.ok) {
+                        return res.json()
+                    } else {
+                        throw res
+                    }
+                })
+                .then(resJson => {
+                    setUsers(resJson)
+                })
         }
-        
+
     }, [addNew, followUnfollow]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
 
     const usersToDisplay = users
-                            .filter(user => user.name.toLowerCase().includes(search.toLowerCase()))
-                            .map(user => <UserCard 
-                                            key={user.username} 
-                                            username={user.username} 
-                                            name={user.name} 
-                                            avatar_url={user.avatar_url} 
-                                            email={user.email} 
-                                            following={!addNew} 
-                                            followUnfollowCallback={() => setFollowUnfollow(!followUnfollow)}
-                                        />
-                                )
+        .filter(user => user.name.toLowerCase().includes(search.toLowerCase()))
+        .map(user => <UserCard
+            key={user.username}
+            username={user.username}
+            name={user.name}
+            avatar_url={user.avatar_url}
+            email={user.email}
+            following={!addNew}
+            followUnfollowCallback={() => setFollowUnfollow(!followUnfollow)}
+        />
+        )
 
     return (
         <div>
-            <InputGroup className="mb-3" style={{width: "40rem", margin: "1rem"}}>
+            <InputGroup className="mb-3" style={{ width: "40rem", margin: "1rem" }}>
                 <InputGroup.Prepend>
-                    <InputGroup.Text id="basic-addon1">🔍</InputGroup.Text>
+                    <InputGroup.Text id="basic-addon1"><span role="img" aria-label="search emoji">🔍</span></InputGroup.Text>
                 </InputGroup.Prepend>
                 <FormControl
                     value={search}
@@ -79,8 +81,8 @@ export default function People() {
                     aria-label="search"
                     aria-describedby="basic-addon1"
                 />
-                <Button 
-                    variant="outline-dark" 
+                <Button
+                    variant="outline-dark"
                     style={{ marginLeft: "1rem" }}
                     onClick={(event) => {
                         setAddNew(!addNew)
@@ -88,7 +90,7 @@ export default function People() {
                     }}
                 >{addNew ? "← Back" : "Follow New"}</Button>
             </InputGroup>
-            
+
 
             <CardColumns>
                 {usersToDisplay}

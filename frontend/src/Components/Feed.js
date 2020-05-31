@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react"
 import IssueCard from "./IssueCard.js"
-import IssueView from "./IssueView.js"
 import { AuthContext } from "../App.js"
 
 
@@ -15,30 +14,30 @@ export default function Feed() {
                 "Content-Type": "application/json"
             }
         })
-        .then(res => {
-            if (res.ok) {
-                return res.json()
-            } else {
-                throw res
-            }
-        })
-        .then(resJson => {
-            setIssues(resJson)
-        })
-    }, [])
+            .then(res => {
+                if (res.ok) {
+                    return res.json()
+                } else {
+                    throw res
+                }
+            })
+            .then(resJson => {
+                setIssues(resJson)
+            })
+    })
 
     // Notification logic will need to be more ... logical :) Should do it in SQL!
     const issuesToDisplay = issues
-                                .map(issue => <IssueCard 
-                                                    key={issue.id} 
-                                                    id={issue.id}
-                                                    title={issue.title} 
-                                                    repository_name={issue.repository_name}
-                                                    user={issue.username} 
-                                                    date={new Date(issue.created_at * 1000).toISOString().split('T')[0]}
-                                                    notif={issue.updated_at > state.lastLogin} 
-                                                />
-                                    )
+        .map(issue => <IssueCard
+            key={issue.id}
+            id={issue.id}
+            title={issue.title}
+            repository_name={issue.repository_name}
+            user={issue.username}
+            date={new Date(issue.created_at).toISOString().split('T')[0]}
+            notif={issue.updated_at > state.lastLogin}
+        />
+        )
 
     return (
         <div>

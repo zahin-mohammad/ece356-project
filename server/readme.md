@@ -1,6 +1,6 @@
 # Prereqs
 - docker-compose
-- mycli (command line cli) or mysql workbench
+- mycli (command line cli) or any mysql client of your choosing
 - npm v13.12
 
 # Getting Started
@@ -16,6 +16,7 @@
 # Database
 - In the server directory run `docker-compose up -d`
 - To stop the database run `docker-compose down`
+- To delete the data run `docker-compose down -v`
 
 ## Connecting to database
 - host: localhost

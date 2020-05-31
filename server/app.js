@@ -3,9 +3,14 @@ const mysql = require('mysql')
 const cors = require('cors')
 const bodyParser = require('body-parser');
 var async = require("async");
+var SqlString = require('sqlstring');
 
 
 
+
+//////////////////////////////////////////////////////////////////////
+// Database Setup
+//////////////////////////////////////////////////////////////////////
 
 var connection = mysql.createConnection({
     host: 'localhost',
@@ -15,24 +20,61 @@ var connection = mysql.createConnection({
     database: 'github'
 })
 
-connection.connect()
+function connect() {
+    return new Promise((resolve, reject) => {
+        connection = mysql.createConnection({
+            host: 'localhost',
+            port: '3308',
+            user: 'express',
+            password: 'password',
+            database: 'github'
+        })
 
-// Test if database works
-connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
-    if (err) throw err
-    if (rows[0].solution == 2) {
-        console.log("MYSQL connection works")
-    } else {
-        console.log("MYSQL connection doesn't work")
-    }
-})
+        connection.connect(function (err) {
+            if (err) {
+                console.error('error connecting: ' + err.stack);
+                reject(err);
+                return;
+            }
+            resolve('connected as id ' + connection.threadId);
+        })
+    });
+}
 
+function establishConnection() {
+    var a = connect();
+    a.then(a => console.log("Database connection: success"))
+        .catch(err => {
+            console.error(err);
+            console.error("Database connection: retrying");
+            setTimeout(establishConnection, 2000);
+        });
+};
+
+establishConnection();
+
+//////////////////////////////////////////////////////////////////////
+// Express Setup
+//////////////////////////////////////////////////////////////////////
 const app = express()
+const port = 3001
+
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-const port = 3001
+app.on('uncaughtException', function (req, res, route, err) {
+    log.info('******* Begin Error *******\n%s\n*******\n%s\n******* End Error *******', route, err.stack);
+    if (!res.headersSent) {
+        return res.send(500, { ok: false });
+    }
+    res.write('\n');
+    res.end();
+});
+
+//////////////////////////////////////////////////////////////////////
+// Endpoints
+//////////////////////////////////////////////////////////////////////
 
 // Test
 app.get('/', function (req, res) {
@@ -49,18 +91,23 @@ app.get('/feed', function (req, res) {
     }
 
     var query = `
-    select Post.*, User.username, User.name, User.avatar_url, User.email, User.last_login_time
-    FROM Post
-    INNER JOIN User ON User.username = Post.username
-    INNER JOIN FollowsUser on FollowsUser.followee = Post.username
-    WHERE FollowsUser.follower = '${user_name}'
-    UNION
-    select Post.*, User.username, User.name, User.avatar_url, User.email, User.last_login_time
-    FROM Post
-    INNER JOIN User ON User.username = Post.username
-    INNER JOIN Repository ON Repository.name = Post.repository_name
-    INNER JOIN FollowsRepository ON FollowsRepository.repository_name = Post.repository_name
-    WHERE FollowsRepository.follower = '${user_name}'; 
+    SELECT * 
+    FROM
+    (
+        select Post.*, User.name, User.avatar_url, User.email
+        FROM Post
+        INNER JOIN User ON User.username = Post.username
+        INNER JOIN FollowsUser on FollowsUser.followee = Post.username
+        WHERE FollowsUser.follower = '${user_name}'
+        UNION
+        select Post.*, User.name, User.avatar_url, User.email
+        FROM Post
+        INNER JOIN User ON User.username = Post.username
+        INNER JOIN Repository ON Repository.name = Post.repository_name
+        INNER JOIN FollowsRepository ON FollowsRepository.repository_name = Post.repository_name
+        WHERE FollowsRepository.follower = '${user_name}'
+    ) as q2
+    ORDER BY updated_at desc; 
     `
     postsFromUsersWeFollow = []
     connection.query(query, function (err, rows, fields) {
@@ -83,13 +130,49 @@ app.get('/comments', function (req, res) {
         res.status(200)
         res.send(rows)
     })
+});
 
+app.get('/post/replies', function (req, res) {
+    var post_id = req.query.post_id;
+
+    var query = `
+        SELECT * 
+        From Reply
+        INNER JOIN Comment
+        On Comment.id = Reply.reply_id
+        WHERE Comment.post_id = '${post_id}'
+        `
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(rows)
+    })
 });
 
 app.get('/comments/reactions', function (req, res) {
     var comment_id = req.query.comment_id;
 
     query = `SELECT * FROM Reaction WHERE comment_id='${comment_id}'`
+
+    connection.query(query, function (err, rows, fields) {
+        if (err) throw err
+        res.status(200)
+        res.send(rows)
+    })
+})
+
+app.get('/post/reactions', function (req, res) {
+    var post_id = req.query.post_id;
+
+    query = `
+        SELECT count(*) AS 'count', emoji, comment_id
+        FROM Reaction 
+        INNER JOIN Comment 
+        ON Reaction.comment_id = Comment.id
+        INNER JOIN Post
+        ON Comment.post_id = Post.id
+        WHERE Post.id=${post_id}
+        GROUP BY emoji, comment_id`
 
     connection.query(query, function (err, rows, fields) {
         if (err) throw err
@@ -209,7 +292,7 @@ app.get('/following/repository', function (req, res) {
     })
 });
 
-// Post
+// POST Requests
 
 app.post('/create/repository', function (req, res) {
 
@@ -270,14 +353,12 @@ app.post('/create/post', function (req, res) {
         res.send(`Invalid title ${title}`)
         return
     }
-    if (!post_body) {
-        post_body = ""
-    }
+
     async.series([
         function (callback) {
             query = `
             INSERT INTO Post (id, repository_name, title, username, created_at, updated_at)
-            VALUES (${post_id}, '${repository_name}', '${title}', '${user_name}', ${created_at}, ${updated_at})
+            VALUES (${post_id}, '${repository_name}', ${SqlString.escape(title)}, '${user_name}', ${created_at}, ${updated_at})
             `
             connection.query(query, function (err, rows, fields) {
                 if (err) throw err
@@ -288,7 +369,7 @@ app.post('/create/post', function (req, res) {
             var id = Math.round(Math.random() * 10000000)
             query = `
                 INSERT INTO Comment (id, post_id, username, body, created_at, updated_at)
-                VALUES (${id}, ${post_id}, '${user_name}', '${post_body}', ${created_at}, ${updated_at})
+                VALUES (${id}, ${post_id}, '${user_name}', ${SqlString.escape(post_body)}, ${created_at}, ${updated_at})
                 `
 
             connection.query(query, function (err, rows, fields) {
@@ -298,44 +379,126 @@ app.post('/create/post', function (req, res) {
                 callback()
             })
         },
+        function (callback) {
+            var query = `
+                UPDATE Repository
+                SET Repository.updated_at =${Date.now()} 
+                WHERE Repository.name='${repository_name}'`
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err;
+                callback();
+            })
+        }
+
     ])
 });
 
 app.post('/create/comment', function (req, res) {
-    var user_name = req.body.follower;
+    var user_name = req.body.user_name;
     var id = Math.round(Math.random() * 10000000)
     var post_id = req.body.post_id;
     var comment_body = req.body.comment_body;
+    var replying_to = req.body.replying_to
     var created_at = Date.now()
     var updated_at = Date.now()
 
-    query = `
-        INSERT INTO Comment (id, post_id, username, body, created_at, updated_at)
-        VALUES (${id}, ${post_id}, '${user_name}', '${comment_body}', ${created_at}, ${updated_at})
-        `
+    async.series([
+        function (callback) {
+            var query = `
+                INSERT INTO Comment (id, post_id, username, body, created_at, updated_at)
+                VALUES (${id}, ${post_id}, '${user_name}', ${SqlString.escape(comment_body)}, ${created_at}, ${updated_at})
+                `
 
-    connection.query(query, function (err, rows, fields) {
-        if (err) throw err
-        res.status(200)
-        res.send(`${user_name} created a comment`)
-    })
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err
+                res.status(200)
+                res.send(`${user_name} created a comment`)
+                callback();
+            })
+        },
+        function (callback) {
+            if (replying_to != "") {
+                var query = `
+                    INSERT INTO Reply (comment_id, reply_id)
+                    VALUES (${replying_to}, ${id})
+                    `;
+
+            }
+            connection.query(query, function (err, rows, fields) {
+                callback();
+            })
+        },
+        function (callback) {
+            var query = `
+                UPDATE Post
+                SET Post.updated_at =${updated_at} 
+                WHERE Post.id='${post_id}'`
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err;
+                callback();
+            })
+        }
+    ]);
 });
 
 app.post('/create/reaction', function (req, res) {
     var user_name = req.body.user_name;
     var comment_id = req.body.comment_id;
     var reaction = req.body.reaction;
+    var shouldLike = false
 
-    query = `
-        INSERT INTO Reaction (comment_id, emoji, username)
-        VALUES (${comment_id}, '${reaction}', '${user_name}')
-        `
+    async.series([
+        function (callback) {
+            var query = `
+                SELECT * 
+                FROM Reaction 
+                WHERE emoji='${reaction}'
+                AND username ='${user_name}'
+                AND comment_id = '${comment_id}'
+                `
 
-    connection.query(query, function (err, rows, fields) {
-        if (err) throw err
-        res.status(200)
-        res.send(`${user_name} reacted ${reaction}`)
-    })
+            connection.query(query, function (err, rows, fields) {
+                if (rows.length == 0) {
+                    shouldLike = true
+                }
+                callback();
+            })
+        },
+        function (callback) {
+            var query = (shouldLike ?
+                `
+                INSERT INTO Reaction (comment_id, emoji, username)
+                VALUES (${comment_id}, '${reaction}', '${user_name}')
+                `
+                :
+                `
+                DELETE FROM Reaction
+                WHERE comment_id = '${comment_id}'
+                AND emoji = '${reaction}'
+                AND username = '${user_name}'
+                `);
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err;
+                res.status(200)
+                res.send(`${user_name} ${shouldLike ? "reacted" : "unreacted"} ${reaction}`)
+                callback();
+            })
+        },
+        function (callback) {
+            var query = `
+                UPDATE Comment 
+                SET updated_at =${Date.now()} 
+                WHERE Comment.id='${comment_id}'`
+
+            connection.query(query, function (err, rows, fields) {
+                if (err) throw err;
+                callback();
+            })
+        }
+    ]);
 })
 
 app.post('/follow/user', function (req, res) {
@@ -370,7 +533,7 @@ app.post('/follow/repo', function (req, res) {
     })
 });
 
-// Delete 
+// DELETE Requests
 
 app.delete('/unfollow/user', function (req, res) {
     // stored procedure to avoid unfollowing someone we don't followed?
@@ -439,13 +602,6 @@ app.post('/login', function (req, res) {
 
 });
 
-app.on('uncaughtException', function (req, res, route, err) {
-    log.info('******* Begin Error *******\n%s\n*******\n%s\n******* End Error *******', route, err.stack);
-    if (!res.headersSent) {
-        return res.send(500, { ok: false });
-    }
-    res.write('\n');
-    res.end();
-});
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+
+app.listen(port, () => console.log(`Social Network Server listening at http://localhost:${port}`))

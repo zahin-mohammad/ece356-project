@@ -19,7 +19,7 @@ export default function Repos() {
     const [showNewIssue, setShowNewIssue] = useState(false)
     const [createdNewRepo, setCreatedNewRepo] = useState(false)
     const [createdNewIssue, setcreatedNewIssue] = useState(false)
-    const [issuesRepo, setIssuesRepo] = useState("")
+    const [selectedRepo, setSelectedRepo] = useState("")
 
     useEffect(() => {
         if (!addNew) {
@@ -57,8 +57,8 @@ export default function Repos() {
                     setRepos(resJson)
                 })
         }
-        if (issuesRepo != "") {
-            fetch(`http://localhost:3001/repository/posts?repository_name=${issuesRepo}`, {
+        if (selectedRepo !== "") {
+            fetch(`http://localhost:3001/repository/posts?repository_name=${selectedRepo}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -75,7 +75,7 @@ export default function Repos() {
                     setIssues(resJson)
                 })
         }
-    }, [addNew, followUnfollow, createdNewRepo, issuesRepo, createdNewIssue]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
+    }, [addNew, followUnfollow, createdNewRepo, selectedRepo, createdNewIssue, state.username]) // TODO: can add search to the trigger variables and do a fetch with MYSQL Query for search
 
     // TODO: Should probably actually do filtering with SQL...
     const reposToDisplay = repos
@@ -83,7 +83,7 @@ export default function Repos() {
         .map(repo => <RepoCard
             key={repo.name}
             name={repo.name}
-            viewRepoCallback={() => setIssuesRepo(repo.name)}
+            viewRepoCallback={() => setSelectedRepo(repo.name)}
             description={repo.description}
             following={!addNew}
             followUnfollowCallback={() => setFollowUnfollow(!followUnfollow)}
@@ -97,84 +97,64 @@ export default function Repos() {
             title={issue.title}
             repository_name={issue.repository_name}
             user={issue.username}
-            date={new Date(issue.created_at * 1000).toISOString().split('T')[0]}
+            date={new Date(issue.created_at).toISOString().split('T')[0]}
             notif={false}
         />
         )
 
-    return (issuesRepo != "" ?
-        (<div>
-            <InputGroup className="mb-3" style={{ width: "40rem", margin: "1rem" }}>
-                <Button
-                    variant="outline-dark"
-                    style={{ marginRight: "0.5rem" }}
-                    onClick={(event) => {
-                        setIssuesRepo(false)
-                        setSearch("")
-                    }}
-                >← Back</Button>
-                <InputGroup.Prepend>
-                    <InputGroup.Text id="basic-addon1">🔍</InputGroup.Text>
-                </InputGroup.Prepend>
-                <FormControl
-                    value={search}
-                    onChange={(event) => setSearch(event.target.value)}
-                    placeholder="Search"
-                    aria-label="search"
-                    aria-describedby="basic-addon1"
-                />
-                <Button
-                    variant="outline-dark"
-                    style={{ marginLeft: "1rem" }}
-                    onClick={() => setShowNewIssue(true)}
-                >➕ Issue</Button>
-            </InputGroup>
-            {issuesToDisplay}
+    const searchBar = (
+        <InputGroup className="mb-3" style={{ width: "40rem", margin: "1rem" }}>
+            <Button
+                variant="outline-dark"
+                style={{ marginRight: "0.5rem" }}
+                onClick={(event) => {
+                    setSearch("")
+                    selectedRepo !== "" ? setSelectedRepo("") : setAddNew(!addNew)
 
-            <CreateNewIssue
-                repository_name={issuesRepo}
-                showNewIssue={showNewIssue}
-                setShowNewIssue={() => setShowNewIssue()}
-                createdNewIssueCallback={() => setcreatedNewIssue(!createdNewIssue)}
+                }}
+            >
+                {addNew || selectedRepo !== "" ? "← Back" : "Follow New"}
+            </Button>
+            <InputGroup.Prepend>
+                <InputGroup.Text id="basic-addon1"><span role="img" aria-label="search emoji">🔍</span></InputGroup.Text>
+            </InputGroup.Prepend>
+            <FormControl
+                value={search}
+                onChange={(event) => setSearch(event.target.value)}
+                placeholder="Search"
+                aria-label="search"
+                aria-describedby="basic-addon1"
             />
-        </div>)
-        :
-        (
-            <div>
-                <InputGroup className="mb-3" style={{ width: "40rem", margin: "1rem" }}>
-                    <InputGroup.Prepend>
-                        <InputGroup.Text id="basic-addon1">🔍</InputGroup.Text>
-                    </InputGroup.Prepend>
-                    <FormControl
-                        value={search}
-                        onChange={(event) => setSearch(event.target.value)}
-                        placeholder="Search"
-                        aria-label="search"
-                        aria-describedby="basic-addon1"
-                    />
-                    <Button
-                        variant="outline-dark"
-                        style={{ marginLeft: "1rem" }}
-                        onClick={(event) => {
-                            setAddNew(!addNew)
-                            setSearch("")
-                        }}
-                    >{addNew ? "← Back" : "Follow New"}</Button>
-                    <Button
-                        variant="outline-dark"
-                        style={{ marginLeft: "1rem" }}
-                        onClick={() => setShowNewRepo(true)}
-                    >➕ Repo </Button>
-                </InputGroup>
+            <Button
+                variant="outline-dark"
+                style={{ marginLeft: "1rem" }}
+                onClick={() => selectedRepo !== "" ? setShowNewIssue(true) : setShowNewRepo(true)}
+            ><span role="img" aria-label="plus sign">➕</span> {selectedRepo !== "" ? "Issue" : "Repo"}</Button>
+        </InputGroup >
+    );
 
-                {reposToDisplay}
+    const createNewIssue = (
+        <CreateNewIssue
+            repository_name={selectedRepo}
+            showNewIssue={showNewIssue}
+            setShowNewIssue={() => setShowNewIssue()}
+            createdNewIssueCallback={() => setcreatedNewIssue(!createdNewIssue)}
+        />
+    );
 
-                <CreateNewRepo
-                    showNewRepo={showNewRepo}
-                    setShowNewRepo={() => setShowNewRepo()}
-                    createdNewRepoCallback={() => setCreatedNewRepo(!createdNewRepo)}
-                />
+    const createNewRepo = (
+        <CreateNewRepo
+            showNewRepo={showNewRepo}
+            setShowNewRepo={() => setShowNewRepo()}
+            createdNewRepoCallback={() => setCreatedNewRepo(!createdNewRepo)}
+        />
+    );
 
-            </div>
-        ))
+    return (
+        <div>
+            {searchBar}
+            {selectedRepo !== "" ? issuesToDisplay : reposToDisplay}
+            {selectedRepo !== "" ? createNewIssue : createNewRepo}
+        </div>
+    )
 }
