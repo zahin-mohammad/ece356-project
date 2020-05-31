@@ -1,4 +1,6 @@
-Project by Brian Norman (20648284) and Zahin Mohammad (20669584). 
+Project by [Brian Norman](https://github.com/brian-norman) (20648284) and [Zahin Mohammad](https://github.com/zahin-mohammad) (20669584).
+
+![Banner](./Github-Poc.svg)
 
 # Deliverables
 
