@@ -1,6 +1,6 @@
 Project by [Brian Norman](https://github.com/brian-norman) (20648284) and [Zahin Mohammad](https://github.com/zahin-mohammad) (20669584).
 
-![Banner](./Github-Poc.svg)
+<img alt="my image" src="https://raw.githubusercontent.com/zahin-mohammad/ece356-project/62be6c0cda7a4d25199ce108813421553027c2b2/Github-PoC.svg&sanitize=true">
 
 # Deliverables
 
